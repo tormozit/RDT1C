@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.26</Version>
+			<Version>3.32</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -210,13 +210,12 @@ http://infostart.ru/projects/1274</v8:content>
 			<StyleItem>ирЦветФонаЧередованияСтрок</StyleItem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
-			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
 			<CommonPicture>ирАлгоритм</CommonPicture>
 			<CommonPicture>ирАноним</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирБлокировка</CommonPicture>
 			<CommonPicture>ирБулево</CommonPicture>
 			<CommonPicture>ирВключено</CommonPicture>
@@ -327,11 +326,15 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирТип</CommonPicture>
 			<CommonPicture>ирТипыДоступныхПолейКомпоновки</CommonPicture>
 			<CommonPicture>ирТипыСловПодсказки</CommonPicture>
+			<CommonPicture>ирУдалитьСКонтролемСсылок</CommonPicture>
 			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
 			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ирУсечениеТипов</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирБитаяСсылка</CommonPicture>
+			<CommonPicture>ирПерерасчет</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -346,7 +349,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
-			<CommonCommand>ирОбъединитьСсылки</CommonCommand>
 			<CommonCommand>ирОперироватьИсточник</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
@@ -379,6 +381,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирПлатформа</DataProcessor>
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
 			<DataProcessor>ирПодготовкаБазыДанныхКУсечениюТипов</DataProcessor>
+			<DataProcessor>ирПоискБитыхСсылок</DataProcessor>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПоискСсылокНаОбъект</DataProcessor>
 			<DataProcessor>ирПортативный</DataProcessor>

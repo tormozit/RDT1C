@@ -28,10 +28,49 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="fdbb284d-3b67-453f-822b-b24c1daebb24">
+				<Properties>
+					<Name>ИмяПланОбмена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя план обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Form>ВыборУзловПриемниковДляКопирования</Form>
+			<Form>ИзменениеНомеровСообщений</Form>
 			<Form>Форма</Form>
 			<Form>ФормаВыбораОбновленияРегистрации</Form>
 			<Form>ФормаВыбораОбъектовДляРегистрации</Form>
-			<Form>ИзменениеНомеровСообщений</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

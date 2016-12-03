@@ -509,13 +509,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирОбъединитьСсылки</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаТипов.Attribute.Пометка</name>
 		<right>
 			<name>Edit</name>
@@ -1479,13 +1472,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирРедакторПользователей.TabularSection.Пользователи.Attribute.Роли</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.Параметры.Attribute.Комментарий</name>
 		<right>
 			<name>Edit</name>
@@ -1951,7 +1937,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирРедакторОбъектаБД.TabularSection.СвязанныеДанные.Attribute.КоличествоСсылок</name>
+		<name>DataProcessor.ирРедакторОбъектаБД.TabularSection.СвязанныеДанные.Attribute.КоличествоСсылающихся</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2174,6 +2160,17 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирРедакторОбъектаБД</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПоискБитыхСсылок</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

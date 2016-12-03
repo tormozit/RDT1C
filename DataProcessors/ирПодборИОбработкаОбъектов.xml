@@ -647,13 +647,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="2f70da95-36f9-4099-8119-1c9ed33f0a8d">
+			<Attribute uuid="00dcc39b-2212-4c9d-bd51-6c67df44ae5f">
 				<Properties>
-					<Name>УдалятьРегистрациюПослеОбработки</Name>
+					<Name>УдалятьРегистрациюНаУзлеПослеОбработкиОбъекта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Удалять регистрацию после успешной обработки</v8:content>
+							<v8:content>Удалять регистрацию на узле после обработки объекта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -663,7 +663,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Снятие регистрации на узле выборки выполняется в конце пакета обработки объекта</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -756,7 +761,7 @@
 								<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 								<v8:NumberQualifiers>
 									<v8:Digits>20</v8:Digits>
-									<v8:FractionDigits>5</v8:FractionDigits>
+									<v8:FractionDigits>6</v8:FractionDigits>
 									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
 								<v8:StringQualifiers>
@@ -986,14 +991,17 @@
 			</TabularSection>
 			<Form>ВыгрузкаВФайл</Form>
 			<Form>Записать</Form>
+			<Form>ИзменитьИдентификаторы</Form>
 			<Form>ИзменитьПометкуНаУдаление</Form>
 			<Form>ИзменитьРегистрирациюНаУзле</Form>
+			<Form>ОбъединитьСсылкиНаОбъекты</Form>
 			<Form>ОтменитьПроведениеДокументов</Form>
 			<Form>ПеренумерацияОбъектов</Form>
 			<Form>ПодборИОбработка</Form>
 			<Form>ПровестиДокументы</Form>
 			<Form>ПроизвольныйАлгоритм</Form>
 			<Form>Удалить</Form>
+			<Form>УдалитьСКонтролемСсылок</Form>
 			<Form>УстановкаРеквизитов</Form>
 			<Form>ШаблонОбработки</Form>
 			<Template>Обработки</Template>

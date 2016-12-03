@@ -26,6 +26,9 @@
 			<eq property="name" value="qerr"/>
 		</event>
 		<event>
+			<eq property="Name" value="TDEADLOCK"/>
+		</event>
+		<event>
 			<eq property="name" value="SDBL"/>
 			<gt property="duration" value="200000"/>
 		</event>

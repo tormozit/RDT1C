@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 3.26</v8:content>
+					<v8:content>Инструменты разработчика 3.32</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>3.26</Comment>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<Comment>3.32</Comment>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture>
@@ -87,7 +87,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУсечениеТипов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСвертка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьОбъект</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОбъединитьСсылки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирИсследоватьИсточник</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирКоманднаяПанельФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОбработатьОбъекты</xr:Item>
@@ -207,6 +206,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыгрузкаЗагрузка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУдалениеОбъектовСКонтролемСсылок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИсключение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУдалитьСКонтролемСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискБитыхСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирБитаяСсылка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПерерасчет</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
