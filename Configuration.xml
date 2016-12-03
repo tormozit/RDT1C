@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.40</Version>
+			<Version>3.50</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -220,6 +220,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирБитаяСсылка</CommonPicture>
 			<CommonPicture>ирБлокировка</CommonPicture>
 			<CommonPicture>ирБулево</CommonPicture>
+			<CommonPicture>ирВиртуальнаяТаблица</CommonPicture>
 			<CommonPicture>ирВключено</CommonPicture>
 			<CommonPicture>ирВлево</CommonPicture>
 			<CommonPicture>ирВложенныйЗапрос</CommonPicture>
@@ -244,13 +245,16 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирДобавитьАлгоритм</CommonPicture>
 			<CommonPicture>ирДобавитьВИзбранное</CommonPicture>
 			<CommonPicture>ирДобавитьПапку</CommonPicture>
+			<CommonPicture>ирДокумент</CommonPicture>
 			<CommonPicture>ирЖурнал</CommonPicture>
 			<CommonPicture>ирЗаменитьТаблицу</CommonPicture>
 			<CommonPicture>ирЗамер</CommonPicture>
+			<CommonPicture>ирЗаполнить</CommonPicture>
 			<CommonPicture>ирЗаполнитьЗапросом</CommonPicture>
 			<CommonPicture>ирЗапрос</CommonPicture>
 			<CommonPicture>ирИдентификатор</CommonPicture>
 			<CommonPicture>ирИзмененияНаУзле</CommonPicture>
+			<CommonPicture>ирИндексы</CommonPicture>
 			<CommonPicture>ирИнтерфейснаяПанель</CommonPicture>
 			<CommonPicture>ирИсключение</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
@@ -304,6 +308,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
 			<CommonPicture>ирПусто</CommonPicture>
 			<CommonPicture>ирРазвернутьВсе</CommonPicture>
+			<CommonPicture>ирРазличия</CommonPicture>
 			<CommonPicture>ирРедактироватьОбъектБД</CommonPicture>
 			<CommonPicture>ирРедакторСтроковогоЛитерала</CommonPicture>
 			<CommonPicture>ирРеквизит</CommonPicture>
@@ -316,6 +321,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирСостояниеСсылки</CommonPicture>
 			<CommonPicture>ирСохранитьКакНастройкуПоУмолчанию</CommonPicture>
 			<CommonPicture>ирСписокЗначений</CommonPicture>
+			<CommonPicture>ирСписокСПометками</CommonPicture>
 			<CommonPicture>ирСравнить</CommonPicture>
 			<CommonPicture>ирСсылка</CommonPicture>
 			<CommonPicture>ирСтрока</CommonPicture>
@@ -359,6 +365,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
+			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
@@ -388,6 +395,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирПоискСсылокНаОбъект</DataProcessor>
 			<DataProcessor>ирПортативный</DataProcessor>
 			<DataProcessor>ирПортативныйСервер</DataProcessor>
+			<DataProcessor>ирРазличныеЗначенияКолонки</DataProcessor>
 			<DataProcessor>ирРедакторИзмененийПоПлануОбмена</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>

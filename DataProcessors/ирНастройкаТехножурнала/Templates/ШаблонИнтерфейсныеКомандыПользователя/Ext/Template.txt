@@ -1,0 +1,11 @@
+﻿Шаблон для записи системных событий интерфейсных команд пользователя
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<dump create="false" type="0" prntscrn="false"/>
+	<log history="2">
+		<event>
+			<eq property="name" value="SYSTEM"/>
+		</event>
+	</log>
+	<system level="trace" class="MsgLoop"/>
+</config>

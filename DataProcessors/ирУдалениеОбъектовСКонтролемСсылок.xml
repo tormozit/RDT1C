@@ -62,6 +62,74 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="daf65c27-b6fe-47c9-be12-08b8e1baacd7">
+				<Properties>
+					<Name>СтандартныйПоискСсылок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стандартный поиск ссылок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="00859437-755f-4703-838b-17db2507c8bc">
+				<Properties>
+					<Name>ТипыДляЗаполненияКандидатов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы для заполнения кандидатов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="455f93bc-8189-4538-9b60-8cbaa71a024f">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.ирУдалениеОбъектовСКонтролемСсылок.УдаляемыеОбъекты" category="TabularSection">
@@ -287,7 +355,14 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+								<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+								<v8:TypeSet>cfg:BusinessProcessRef</v8:TypeSet>
+								<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+								<v8:TypeSet>cfg:ChartOfCalculationTypesRef</v8:TypeSet>
+								<v8:TypeSet>cfg:TaskRef</v8:TypeSet>
+								<v8:TypeSet>cfg:ChartOfCharacteristicTypesRef</v8:TypeSet>
+								<v8:TypeSet>cfg:ChartOfAccountsRef</v8:TypeSet>
+								<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -391,11 +466,11 @@
 					</Attribute>
 					<Attribute uuid="a0a9f7dd-100e-48cb-9628-9fee73000dc2">
 						<Properties>
-							<Name>Удалять</Name>
+							<Name>Разрешен</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Удалять</v8:content>
+									<v8:content>Разрешен</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -429,21 +504,21 @@
 			</TabularSection>
 			<TabularSection uuid="1be92842-ca59-45f8-9cdc-40cef2a1ba79">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУдалениеОбъектовСКонтролемСсылок.СсылкиНаУдаляемыеОбъекты" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУдалениеОбъектовСКонтролемСсылок.СсылкиНаКандидата" category="TabularSection">
 						<xr:TypeId>0c030ccf-af21-4cd9-8135-152e2256c180</xr:TypeId>
 						<xr:ValueId>26f0c9da-dc3f-41ab-b0fb-cfa8bf7685ea</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУдалениеОбъектовСКонтролемСсылок.СсылкиНаУдаляемыеОбъекты" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУдалениеОбъектовСКонтролемСсылок.СсылкиНаКандидата" category="TabularSectionRow">
 						<xr:TypeId>d46f56c9-c721-4ace-ba38-4a5b8cac817c</xr:TypeId>
 						<xr:ValueId>9721ac71-b70b-4aa9-8398-6bc7e8bf9579</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>СсылкиНаУдаляемыеОбъекты</Name>
+					<Name>СсылкиНаКандидата</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылки на удаляемые объекты</v8:content>
+							<v8:content>Ссылки на кандидата</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -593,11 +668,11 @@
 					</Attribute>
 					<Attribute uuid="08b0fd45-9872-4492-9579-5ff30ba8c357">
 						<Properties>
-							<Name>Удаляется</Name>
+							<Name>Блокирует</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Удаляется</v8:content>
+									<v8:content>Блокирует</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -751,11 +826,11 @@
 					</Attribute>
 					<Attribute uuid="a3957ce9-86c1-4b9b-bfbc-f49aa3fb7515">
 						<Properties>
-							<Name>ЕстьВУдаляемыхОбъектах</Name>
+							<Name>ЕстьВКандидатах</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Есть в удаляемых объектах</v8:content>
+									<v8:content>Есть в кандидатах</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -868,6 +943,42 @@
 							<MaxValue xsi:nil="true"/>
 							<FillFromFillingValue>false</FillFromFillingValue>
 							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="ac3a464a-278b-4147-af6f-42b6be9b2316">
+						<Properties>
+							<Name>Игнорировать</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игнорировать</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>

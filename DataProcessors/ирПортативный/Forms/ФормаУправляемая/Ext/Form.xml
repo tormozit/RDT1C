@@ -27,7 +27,19 @@
 			<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="6"/>
 		</LabelDecoration>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ирПортативный</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
 	<Commands>
 		<Command name="ЗапуститьОбычноеПриложение" id="1">
 			<Title>
