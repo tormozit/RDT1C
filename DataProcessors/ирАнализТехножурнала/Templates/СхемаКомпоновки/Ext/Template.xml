@@ -440,7 +440,7 @@
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>999</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</valueType>
@@ -1016,6 +1016,23 @@
 			</v8:DateQualifiers>
 		</valueType>
 	</calculatedField>
+	<calculatedField>
+		<dataPath>ПримерОписания</dataPath>
+		<expression>Описание</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пример описания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+	</calculatedField>
 	<totalField>
 		<dataPath>Интервал</dataPath>
 		<expression>РАЗНОСТЬДАТ(Минимум(Дата), Максимум(Дата), "СЕКУНДА")</expression>
@@ -1051,6 +1068,10 @@
 	<totalField>
 		<dataPath>Длительность</dataPath>
 		<expression>Сумма(Длительность)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПримерОписания</dataPath>
+		<expression>Максимум(ПримерОписания)</expression>
 	</totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>

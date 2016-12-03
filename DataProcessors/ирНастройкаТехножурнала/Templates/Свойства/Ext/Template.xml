@@ -77,7 +77,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МинимальнаяВерсияПлатформы</v8:content>
+							<v8:content>МинимальнаяИзданиеПлатформы</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -647,7 +647,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип консольного сообщения: информационное или об ошибке</v8:content>
+							<v8:content>Тип консольного сообщения: информационное (0) или об ошибке (1)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1157,6 +1157,55 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>InBytes</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочитано байт с диска</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество прочитанных за вызов данных с диска, в байтах</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803005</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Locks</v8:content>
 						</v8:item>
 					</tl>
@@ -1187,7 +1236,105 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>30</index>
+		<index>31</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Memory</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неосвобожденная память</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем памяти в байтах, занятой, но не освобожденной за вызов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803005</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>32</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>MemoryPeak</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неосвобожденная память пиковая</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем памяти в байтах, занятой, но не освобожденной за вызов. Пиковое значение</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803005</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>33</index>
 		<row>
 			<c>
 				<c>
@@ -1225,7 +1372,45 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>31</index>
+		<index>34</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Module</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модуль конфигурации</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программный модуль конфигурации</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>35</index>
 		<row>
 			<c>
 				<c>
@@ -1263,7 +1448,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>32</index>
+		<index>36</index>
 		<row>
 			<c>
 				<c>
@@ -1301,7 +1486,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>33</index>
+		<index>37</index>
 		<row>
 			<c>
 				<c>
@@ -1339,7 +1524,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>34</index>
+		<index>38</index>
 		<row>
 			<c>
 				<c>
@@ -1377,7 +1562,56 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>35</index>
+		<index>39</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>OutBytes</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записано байт на диск</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество записанных за вызов данных на диск, в байтах</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803005</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>40</index>
 		<row>
 			<c>
 				<c>
@@ -1415,7 +1649,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>36</index>
+		<index>41</index>
 		<row>
 			<c>
 				<c>
@@ -1453,7 +1687,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>37</index>
+		<index>42</index>
 		<row>
 			<c>
 				<c>
@@ -1502,7 +1736,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>38</index>
+		<index>43</index>
 		<row>
 			<c>
 				<c>
@@ -1540,7 +1774,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>39</index>
+		<index>44</index>
 		<row>
 			<c>
 				<c>
@@ -1578,7 +1812,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>40</index>
+		<index>45</index>
 		<row>
 			<c>
 				<c>
@@ -1616,7 +1850,45 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>41</index>
+		<index>46</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Query</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса на языке запросов 1С</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>47</index>
 		<row>
 			<c>
 				<c>
@@ -1654,7 +1926,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>42</index>
+		<index>48</index>
 		<row>
 			<c>
 				<c>
@@ -1703,7 +1975,56 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>43</index>
+		<index>49</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Report</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя отчета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя объекта метаданных выполняемого отчета</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803005</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>50</index>
 		<row>
 			<c>
 				<c>
@@ -1741,7 +2062,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>44</index>
+		<index>51</index>
 		<row>
 			<c>
 				<c>
@@ -1779,7 +2100,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>45</index>
+		<index>52</index>
 		<row>
 			<c>
 				<c>
@@ -1817,7 +2138,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>46</index>
+		<index>53</index>
 		<row>
 			<c>
 				<c>
@@ -1855,7 +2176,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>47</index>
+		<index>54</index>
 		<row>
 			<c>
 				<c>
@@ -1893,7 +2214,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>48</index>
+		<index>55</index>
 		<row>
 			<c>
 				<c>
@@ -1931,7 +2252,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>49</index>
+		<index>56</index>
 		<row>
 			<c>
 				<c>
@@ -1969,7 +2290,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>50</index>
+		<index>57</index>
 		<row>
 			<c>
 				<c>
@@ -2007,7 +2328,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>51</index>
+		<index>58</index>
 		<row>
 			<c>
 				<c>
@@ -2045,7 +2366,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>52</index>
+		<index>59</index>
 		<row>
 			<c>
 				<c>
@@ -2083,7 +2404,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>53</index>
+		<index>60</index>
 		<row>
 			<c>
 				<c>
@@ -2121,7 +2442,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>54</index>
+		<index>61</index>
 		<row>
 			<c>
 				<c>
@@ -2159,7 +2480,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>55</index>
+		<index>62</index>
 		<row>
 			<c>
 				<c>
@@ -2197,7 +2518,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>56</index>
+		<index>63</index>
 		<row>
 			<c>
 				<c>
@@ -2235,7 +2556,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>57</index>
+		<index>64</index>
 		<row>
 			<c>
 				<c>
@@ -2273,7 +2594,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>58</index>
+		<index>65</index>
 		<row>
 			<c>
 				<c>
@@ -2311,7 +2632,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>59</index>
+		<index>66</index>
 		<row>
 			<c>
 				<c>
@@ -2349,7 +2670,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>60</index>
+		<index>67</index>
 		<row>
 			<c>
 				<c>
@@ -2387,7 +2708,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>61</index>
+		<index>68</index>
 		<row>
 			<c>
 				<c>
@@ -2425,7 +2746,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>62</index>
+		<index>69</index>
 		<row>
 			<c>
 				<c>
@@ -2463,7 +2784,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>63</index>
+		<index>70</index>
 		<row>
 			<c>
 				<c>
@@ -2501,7 +2822,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>64</index>
+		<index>71</index>
 		<row>
 			<c>
 				<c>
@@ -2539,7 +2860,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>65</index>
+		<index>72</index>
 		<row>
 			<c>
 				<c>
@@ -2577,7 +2898,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>66</index>
+		<index>73</index>
 		<row>
 			<c>
 				<c>
@@ -2615,7 +2936,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>67</index>
+		<index>74</index>
 		<row>
 			<c>
 				<c>
@@ -2653,7 +2974,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>68</index>
+		<index>75</index>
 		<row>
 			<c>
 				<c>
@@ -2680,7 +3001,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>69</index>
+		<index>76</index>
 		<row>
 			<c>
 				<c>
@@ -2706,11 +3027,49 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>77</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>setUnhandledExceptionFilter</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фильтр исключений</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установленный фильтр исключений</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
 	<stepDirection>ByRows</stepDirection>
 	<defaultFormatIndex>6</defaultFormatIndex>
-	<height>70</height>
-	<vgRows>70</vgRows>
+	<height>78</height>
+	<vgRows>78</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
 		<width>190</width>

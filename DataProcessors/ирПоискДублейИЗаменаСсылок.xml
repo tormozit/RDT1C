@@ -28,13 +28,47 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="e17914c4-7035-422a-9188-5b0b75ced00e">
+			<Attribute uuid="ef782aa4-c7a3-4429-923e-d874b2a579ae">
 				<Properties>
-					<Name>ОтключатьКонтрольЗаписи</Name>
+					<Name>АвтовидимостьКолонокСоставаГруппы</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отключать контроль записи</v8:content>
+							<v8:content>Автовидимость колонок состава группы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b4be61c2-044a-497f-8c75-28e44b15e441">
+				<Properties>
+					<Name>АвтоматическийВыборПриЗамещенииВРегистреСведений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматический выбор при замещении в регистре сведений</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -135,51 +169,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="a21dd44a-db4b-4e56-9159-b9cc15e7077f">
+			<Attribute uuid="73e766db-d7a2-4fbb-b577-86ffd41ac6ea">
 				<Properties>
-					<Name>ПолноеИмяОбъекта</Name>
+					<Name>ЗаписьНаСервере</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Полное имя объекта</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>256</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="913eeaf3-6174-460a-b54c-7add6453db2d">
-				<Properties>
-					<Name>РазрешитьУдалениеСНарушениемСсылочнойЦелостности</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Разрешить удаление с нарушением ссылочной целостности</v8:content>
+							<v8:content>Запись на сервере</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -207,23 +203,26 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="31cd59b0-bdcd-4cab-8058-fa8291484af0">
+			<Attribute uuid="27aa3062-ae8c-4b19-bbb5-58028bef8fa4">
 				<Properties>
-					<Name>ЗагружатьГруппуПриАктивизацииСтроки</Name>
+					<Name>КомпоновкаСсылающихсяОбъектов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Загружать группу при активизации строки</v8:content>
+							<v8:content>Компоновка ссылающихся объектов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
+					<Type/>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для сохранения и восстановления</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -273,13 +272,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="73e766db-d7a2-4fbb-b577-86ffd41ac6ea">
+			<Attribute uuid="e17914c4-7035-422a-9188-5b0b75ced00e">
 				<Properties>
-					<Name>ЗаписьНаСервере</Name>
+					<Name>ОтключатьКонтрольЗаписи</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запись на сервере</v8:content>
+							<v8:content>Отключать контроль записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -341,18 +340,22 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ef782aa4-c7a3-4429-923e-d874b2a579ae">
+			<Attribute uuid="a21dd44a-db4b-4e56-9159-b9cc15e7077f">
 				<Properties>
-					<Name>АвтовидимостьКолонокСоставаГруппы</Name>
+					<Name>ПолноеИмяОбъекта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Автовидимость колонок состава группы</v8:content>
+							<v8:content>Полное имя объекта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -375,26 +378,23 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="27aa3062-ae8c-4b19-bbb5-58028bef8fa4">
+			<Attribute uuid="913eeaf3-6174-460a-b54c-7add6453db2d">
 				<Properties>
-					<Name>КомпоновкаСсылающихсяОбъектов</Name>
+					<Name>РазрешитьУдалениеСНарушениемСсылочнойЦелостности</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Компоновка ссылающихся объектов</v8:content>
+							<v8:content>Разрешить удаление с нарушением ссылочной целостности</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Type/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Используется для сохранения и восстановления</v8:content>
-						</v8:item>
-					</ToolTip>
+					<ToolTip/>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

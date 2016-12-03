@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.06</Version>
+			<Version>3.18</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -168,7 +168,7 @@
 			</RequiredMobileApplicationPermissions>
 			<StandaloneConfigurationRestrictionRoles/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
-			<DefaultInterface>Interface.ирДемонстрация</DefaultInterface>
+			<DefaultInterface/>
 			<DefaultStyle>Style.ирОсновной</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
@@ -216,6 +216,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирАноним</CommonPicture>
 			<CommonPicture>ирБлокировка</CommonPicture>
 			<CommonPicture>ирБулево</CommonPicture>
+			<CommonPicture>ирВключено</CommonPicture>
 			<CommonPicture>ирВлево</CommonPicture>
 			<CommonPicture>ирВложенныйЗапрос</CommonPicture>
 			<CommonPicture>ирВолшебство1</CommonPicture>
@@ -224,6 +225,8 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирВременнаяТаблица</CommonPicture>
 			<CommonPicture>ирВставить</CommonPicture>
 			<CommonPicture>ирВходящий</CommonPicture>
+			<CommonPicture>ирВыгрузкаЗагрузка</CommonPicture>
+			<CommonPicture>ирВыключено</CommonPicture>
 			<CommonPicture>ирВыполнить</CommonPicture>
 			<CommonPicture>ирВыполнить2</CommonPicture>
 			<CommonPicture>ирВыполнитьНаСервере</CommonPicture>
@@ -241,6 +244,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирЗамер</CommonPicture>
 			<CommonPicture>ирЗаполнитьЗапросом</CommonPicture>
 			<CommonPicture>ирЗапрос</CommonPicture>
+			<CommonPicture>ирИдентификатор</CommonPicture>
 			<CommonPicture>ирИзмененияНаУзле</CommonPicture>
 			<CommonPicture>ирИнтерфейснаяПанель</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
@@ -266,6 +270,9 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирНастройкаЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ирНастройкаТехножурнала</CommonPicture>
 			<CommonPicture>ирНастройкиАлгоритмов</CommonPicture>
+			<CommonPicture>ирНеКлючевыеСлова</CommonPicture>
+			<CommonPicture>ирНеМетоды</CommonPicture>
+			<CommonPicture>ирНеСвойства</CommonPicture>
 			<CommonPicture>ирНовоеОкно</CommonPicture>
 			<CommonPicture>ирОбработкаОбъектов</CommonPicture>
 			<CommonPicture>ирОписаниеТипов</CommonPicture>
@@ -280,6 +287,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирПапка</CommonPicture>
 			<CommonPicture>ирПараметрыМетода</CommonPicture>
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
+			<CommonPicture>ирПовторить</CommonPicture>
 			<CommonPicture>ирПоискИЗаменаДублей</CommonPicture>
 			<CommonPicture>ирПоискСсылокНаОбъект</CommonPicture>
 			<CommonPicture>ирПользователи</CommonPicture>
@@ -320,7 +328,6 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирУсечениеТипов</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<Interface>ирДемонстрация</Interface>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -328,10 +335,11 @@ http://devtool1c.ucoz.ru/
 			<Role>ирРазработчик</Role>
 			<CommonModule>ирГлобальный</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
-			<CommonModule>ирМобильный</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
+			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
+			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОбъединитьСсылки</CommonCommand>
@@ -350,6 +358,7 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
@@ -361,7 +370,6 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирКонсольПостроителейОтчетов</DataProcessor>
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>
 			<DataProcessor>ирМенеджерТабличногоПоля</DataProcessor>
-			<DataProcessor>ирМобильный</DataProcessor>
 			<DataProcessor>ирНастройкаЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
@@ -369,7 +377,8 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирПодготовкаБазыДанныхКУсечениюТипов</DataProcessor>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПоискСсылокНаОбъект</DataProcessor>
-			<DataProcessor>ирРедакторИзмененийНаУзле</DataProcessor>
+			<DataProcessor>ирПортативный</DataProcessor>
+			<DataProcessor>ирРедакторИзмененийПоПлануОбмена</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>

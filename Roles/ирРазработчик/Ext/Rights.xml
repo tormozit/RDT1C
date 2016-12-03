@@ -453,13 +453,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.Attribute.ЗагружатьГруппуПриАктивизацииСтроки</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.МноготабличнаяВыборка</name>
 		<right>
 			<name>Edit</name>
@@ -804,6 +797,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1276,7 +1280,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирМобильный</name>
+		<name>DataProcessor.ирПортативный</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -1418,7 +1422,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирРедакторИзмененийНаУзле</name>
+		<name>DataProcessor.ирРедакторИзмененийПоПлануОбмена</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

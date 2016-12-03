@@ -1,0 +1,24 @@
+﻿Ошибки и все запросы к модели базы данных, длительность которых превышает 1 секунд. Предназначен для оптимизации программного кода. Объем выводимой информации может быть большим.
+<?xml version="1.0"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<log history="24">
+		<property name="all"/>
+		<event>
+			<eq property="name" value="proc"/>
+		</event>
+		<event>
+			<eq property="name" value="excp"/>
+		</event>
+		<event>
+			<eq property="name" value="EXCPCNTX"/>
+		</event>
+		<event>
+			<eq property="name" value="qerr"/>
+		</event>
+		<event>
+			<eq property="name" value="SDBL"/>
+			<gt property="duration" value="10000"/>
+		</event>
+	</log>
+	<dump create="false" type="0" prntscrn="false"/>
+</config>
