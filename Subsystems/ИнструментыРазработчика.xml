@@ -6,7 +6,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 3.00</v8:content>
+					<v8:content>Инструменты разработчика 3.06</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -14,7 +14,7 @@
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture>
-				<xr:Ref>CommonPicture.ирИнструментыРазработчика</xr:Ref>
+				<xr:Ref>CommonPicture.ирЛоготипБольшой</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Content>
@@ -26,8 +26,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИнтерфейснаяПанель</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИсполняемыйЗапрос</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонсольЗапросов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонсольКомпоновок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонсольПостроителей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонсольКомпоновокДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонсольПостроителейОтчетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонстанты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонфигуратор1С8</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНаборыДанныхСхемыКомпоновки</xr:Item>
@@ -51,9 +51,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНовоеОкно</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Interface.ирРазработчик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирОтладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирГлобальный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирПривилегированный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирНастройкиАлгоритмов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирАлгоритмы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ирКонсольКомпоновокДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирВводВыраженияВстроенногоЯзыка</xr:Item>
@@ -71,14 +70,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторКонстант</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторОбъектаБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирДинамическийСписок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирПустышка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОткрыть</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПараметровСеанса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПаметрСеанса82</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирКэш</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирПользователь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирПравоАдминистрирование</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирАдминистративнаяРегистрацияCOM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирЦветФонаВычисляемогоЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьОтладчик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирCOM</xr:Item>
@@ -86,7 +83,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьРегистрациюCOMКомпонент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтладка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНайтиВДереве</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирКонсольКода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыполнить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУсечениеТипов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСвертка</xr:Item>
@@ -102,7 +98,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВставить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыполнитьНаСервере</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКопировать2</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьКонсольКода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирАвтоКонтекстнаяПомощь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирТекстИнформационнойНадписи</xr:Item>
@@ -111,7 +106,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДата</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСтрока</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирБулево</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИнструментыРазработчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЛоготипБольшой</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирБлокировка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирНастройки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНайтиВСписке</xr:Item>
@@ -175,10 +170,31 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирРазвернутьВсе</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВременнаяТаблица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКоманднаяПанель</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирОПодсистеме</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ирОПодсистеме</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирXML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗаполнитьЗапросом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирМенеджерТабличногоПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСсылка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКонструкторЗапроса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОткрытьОбъединить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПусто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСжатьКолонку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКолонкаТабличногоПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольКода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИсследовать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДеревоМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКотекстныйСинтаксПомощник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирРедакторСтроковогоЛитерала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.ирОсновной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирЦветФонаРасширенногоПредставленияЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПлатформа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирОбщий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЛоготипМаленький</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторХранилищНастроек</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

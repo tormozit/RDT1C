@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.00</Version>
+			<Version>3.06</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -239,22 +239,27 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирЖурнал</CommonPicture>
 			<CommonPicture>ирЗаменитьТаблицу</CommonPicture>
 			<CommonPicture>ирЗамер</CommonPicture>
+			<CommonPicture>ирЗаполнитьЗапросом</CommonPicture>
 			<CommonPicture>ирЗапрос</CommonPicture>
 			<CommonPicture>ирИзмененияНаУзле</CommonPicture>
-			<CommonPicture>ирИнструментыРазработчика</CommonPicture>
 			<CommonPicture>ирИнтерфейснаяПанель</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
 			<CommonPicture>ирИсследовать</CommonPicture>
+			<CommonPicture>ирКолонкаТабличногоПоля</CommonPicture>
 			<CommonPicture>ирКоманднаяПанель</CommonPicture>
 			<CommonPicture>ирКонсольЗапросов</CommonPicture>
 			<CommonPicture>ирКонсольКода</CommonPicture>
-			<CommonPicture>ирКонсольКомпоновок</CommonPicture>
-			<CommonPicture>ирКонсольПостроителей</CommonPicture>
+			<CommonPicture>ирКонсольКомпоновокДанных</CommonPicture>
+			<CommonPicture>ирКонсольПостроителейОтчетов</CommonPicture>
 			<CommonPicture>ирКонстанты</CommonPicture>
+			<CommonPicture>ирКонструкторЗапроса</CommonPicture>
 			<CommonPicture>ирКонфигуратор1С8</CommonPicture>
 			<CommonPicture>ирКопировать</CommonPicture>
 			<CommonPicture>ирКопировать2</CommonPicture>
 			<CommonPicture>ирКотекстныйСинтаксПомощник</CommonPicture>
+			<CommonPicture>ирЛоготипБольшой</CommonPicture>
+			<CommonPicture>ирЛоготипМаленький</CommonPicture>
+			<CommonPicture>ирМенеджерТабличногоПоля</CommonPicture>
 			<CommonPicture>ирНаборыДанныхСхемыКомпоновки</CommonPicture>
 			<CommonPicture>ирНайтиВДереве</CommonPicture>
 			<CommonPicture>ирНайтиВСписке</CommonPicture>
@@ -269,6 +274,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирОтборПоЗначению</CommonPicture>
 			<CommonPicture>ирОтборПоПодсистеме</CommonPicture>
 			<CommonPicture>ирОткрыть</CommonPicture>
+			<CommonPicture>ирОткрытьОбъединить</CommonPicture>
 			<CommonPicture>ирОтладка</CommonPicture>
 			<CommonPicture>ирПаметрСеанса82</CommonPicture>
 			<CommonPicture>ирПапка</CommonPicture>
@@ -280,6 +286,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирПользователь</CommonPicture>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
+			<CommonPicture>ирПусто</CommonPicture>
 			<CommonPicture>ирРазвернутьВсе</CommonPicture>
 			<CommonPicture>ирРедактироватьОбъектБД</CommonPicture>
 			<CommonPicture>ирРедакторСтроковогоЛитерала</CommonPicture>
@@ -287,12 +294,14 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирСвернутьВсе</CommonPicture>
 			<CommonPicture>ирСвертка</CommonPicture>
 			<CommonPicture>ирСвязаннаяТаблица</CommonPicture>
+			<CommonPicture>ирСжатьКолонку</CommonPicture>
 			<CommonPicture>ирСинтаксПомощник</CommonPicture>
 			<CommonPicture>ирСоставнойТип</CommonPicture>
 			<CommonPicture>ирСостояниеСсылки</CommonPicture>
 			<CommonPicture>ирСохранитьКакНастройкуПоУмолчанию</CommonPicture>
 			<CommonPicture>ирСписокЗначений</CommonPicture>
 			<CommonPicture>ирСравнить</CommonPicture>
+			<CommonPicture>ирСсылка</CommonPicture>
 			<CommonPicture>ирСтрока</CommonPicture>
 			<CommonPicture>ирСумма</CommonPicture>
 			<CommonPicture>ирСхемаКомпоновкиДанных</CommonPicture>
@@ -311,26 +320,22 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирУсечениеТипов</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирЗаполнитьЗапросом</CommonPicture>
 			<Interface>ирДемонстрация</Interface>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
 			<Role>ирПравоАдминистрирование</Role>
 			<Role>ирРазработчик</Role>
-			<CommonTemplate>ирHiddenStart</CommonTemplate>
-			<CommonTemplate>ирОПодсистеме</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
-			<CommonModule>ирНеглобальный</CommonModule>
-			<CommonModule>ирОтладка</CommonModule>
+			<CommonModule>ирМобильный</CommonModule>
+			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОбъединитьСсылки</CommonCommand>
 			<CommonCommand>ирОперироватьИсточник</CommonCommand>
-			<CommonCommand>ирОткрытьКонсольКода</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
@@ -338,11 +343,6 @@ http://devtool1c.ucoz.ru/
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
-			<CommonForm>ирАдминистративнаяРегистрацияCOM</CommonForm>
-			<CommonForm>ирКонсольКода</CommonForm>
-			<CommonForm>ирНастройкиАлгоритмов</CommonForm>
-			<CommonForm>ирОПодсистеме</CommonForm>
-			<CommonForm>ирПустышка</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
@@ -357,9 +357,11 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</DataProcessor>
 			<DataProcessor>ирКонсольЗаданий</DataProcessor>
 			<DataProcessor>ирКонсольЗапросов</DataProcessor>
+			<DataProcessor>ирКонсольКода</DataProcessor>
 			<DataProcessor>ирКонсольПостроителейОтчетов</DataProcessor>
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>
 			<DataProcessor>ирМенеджерТабличногоПоля</DataProcessor>
+			<DataProcessor>ирМобильный</DataProcessor>
 			<DataProcessor>ирНастройкаЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
@@ -372,6 +374,7 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>
 			<DataProcessor>ирРедакторПользователей</DataProcessor>
+			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 		</ChildObjects>
