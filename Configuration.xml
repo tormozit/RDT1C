@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.50</Version>
+			<Version>3.61</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,7 +211,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
@@ -242,11 +241,14 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирДата</CommonPicture>
 			<CommonPicture>ирДеревоЗначений</CommonPicture>
 			<CommonPicture>ирДеревоМетаданных</CommonPicture>
+			<CommonPicture>ирДеревоФормы</CommonPicture>
 			<CommonPicture>ирДобавитьАлгоритм</CommonPicture>
 			<CommonPicture>ирДобавитьВИзбранное</CommonPicture>
 			<CommonPicture>ирДобавитьПапку</CommonPicture>
 			<CommonPicture>ирДокумент</CommonPicture>
 			<CommonPicture>ирЖурнал</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирЗагрузитьИзФайла</CommonPicture>
 			<CommonPicture>ирЗаменитьТаблицу</CommonPicture>
 			<CommonPicture>ирЗамер</CommonPicture>
 			<CommonPicture>ирЗаполнить</CommonPicture>
@@ -259,6 +261,8 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирИсключение</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
 			<CommonPicture>ирИсследовать</CommonPicture>
+			<CommonPicture>ирКнопка</CommonPicture>
+			<CommonPicture>ирКнопкаКоманднойПанели</CommonPicture>
 			<CommonPicture>ирКолонкаТабличногоПоля</CommonPicture>
 			<CommonPicture>ирКоманднаяПанель</CommonPicture>
 			<CommonPicture>ирКонсольЗапросов</CommonPicture>
@@ -275,6 +279,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирЛоготипМаленький</CommonPicture>
 			<CommonPicture>ирМенеджерТабличногоПоля</CommonPicture>
 			<CommonPicture>ирНаборыДанныхСхемыКомпоновки</CommonPicture>
+			<CommonPicture>ирНадпись</CommonPicture>
 			<CommonPicture>ирНайтиВДереве</CommonPicture>
 			<CommonPicture>ирНайтиВСписке</CommonPicture>
 			<CommonPicture>ирНастройкаЖурналаРегистрации</CommonPicture>
@@ -293,7 +298,9 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирОткрыть</CommonPicture>
 			<CommonPicture>ирОткрытьОбъединить</CommonPicture>
 			<CommonPicture>ирОтладка</CommonPicture>
+			<CommonPicture>ирОтладкаВнешнейОбработки</CommonPicture>
 			<CommonPicture>ирПаметрСеанса82</CommonPicture>
+			<CommonPicture>ирПанель</CommonPicture>
 			<CommonPicture>ирПапка</CommonPicture>
 			<CommonPicture>ирПараметрыМетода</CommonPicture>
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
@@ -301,8 +308,15 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирПовторить</CommonPicture>
 			<CommonPicture>ирПоискИЗаменаДублей</CommonPicture>
 			<CommonPicture>ирПоискСсылокНаОбъект</CommonPicture>
+			<CommonPicture>ирПолеHtmlДокумента</CommonPicture>
+			<CommonPicture>ирПолеВвода</CommonPicture>
+			<CommonPicture>ирПолеВыбора</CommonPicture>
+			<CommonPicture>ирПолеГрафическойСхемы</CommonPicture>
+			<CommonPicture>ирПолеТабличногоДокумента</CommonPicture>
+			<CommonPicture>ирПолеТекстовогоДокумента</CommonPicture>
 			<CommonPicture>ирПользователи</CommonPicture>
 			<CommonPicture>ирПользователь</CommonPicture>
+			<CommonPicture>ирПоследовательность</CommonPicture>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
 			<CommonPicture>ирПредопределенный</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
@@ -315,15 +329,17 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирСвернутьВсе</CommonPicture>
 			<CommonPicture>ирСвертка</CommonPicture>
 			<CommonPicture>ирСвязаннаяТаблица</CommonPicture>
+			<CommonPicture>ирСердцебиение</CommonPicture>
 			<CommonPicture>ирСжатьКолонку</CommonPicture>
 			<CommonPicture>ирСинтаксПомощник</CommonPicture>
 			<CommonPicture>ирСоставнойТип</CommonPicture>
 			<CommonPicture>ирСостояниеСсылки</CommonPicture>
-			<CommonPicture>ирСохранитьКакНастройкуПоУмолчанию</CommonPicture>
+			<CommonPicture>ирСохранитьВариантНастроек</CommonPicture>
 			<CommonPicture>ирСписокЗначений</CommonPicture>
 			<CommonPicture>ирСписокСПометками</CommonPicture>
 			<CommonPicture>ирСравнить</CommonPicture>
 			<CommonPicture>ирСсылка</CommonPicture>
+			<CommonPicture>ирСтраницаПанели</CommonPicture>
 			<CommonPicture>ирСтрока</CommonPicture>
 			<CommonPicture>ирСумма</CommonPicture>
 			<CommonPicture>ирСхемаКомпоновкиДанных</CommonPicture>
@@ -331,6 +347,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирТаблицаИзменений</CommonPicture>
 			<CommonPicture>ирТаблицыЗапроса</CommonPicture>
 			<CommonPicture>ирТабличнаяЧасть</CommonPicture>
+			<CommonPicture>ирТабличноеПоле</CommonPicture>
 			<CommonPicture>ирТабличныйДокумент</CommonPicture>
 			<CommonPicture>ирТестирование</CommonPicture>
 			<CommonPicture>ирТехноЖурнал</CommonPicture>
@@ -341,8 +358,11 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
 			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ирУсечениеТипов</CommonPicture>
+			<CommonPicture>ирФлажок</CommonPicture>
+			<CommonPicture>ирФорма</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирЗагрузитьВариантНастроек</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -356,16 +376,18 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonModule>ирСервер</CommonModule>
 			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
-			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОперироватьИсточник</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
+			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
+			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
+			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
@@ -384,7 +406,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирКонсольКода</DataProcessor>
 			<DataProcessor>ирКонсольПостроителейОтчетов</DataProcessor>
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>
-			<DataProcessor>ирМенеджерТабличногоПоля</DataProcessor>
 			<DataProcessor>ирНастройкаЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
@@ -396,7 +417,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирПортативный</DataProcessor>
 			<DataProcessor>ирПортативныйСервер</DataProcessor>
 			<DataProcessor>ирРазличныеЗначенияКолонки</DataProcessor>
-			<DataProcessor>ирРедакторИзмененийПоПлануОбмена</DataProcessor>
+			<DataProcessor>ирРедакторИзмененийНаУзлах</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>
@@ -404,6 +425,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
+			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 		</ChildObjects>

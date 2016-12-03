@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16440"></meta></head><body>
-<p align="justify"><span style="FONT-FAMILY: 'Comic Sans MS'; FONT-SIZE: 13.5pt">Подсистема "Контекстная подсказка" для 1С:Предприятие 8.2</span></p>
-<p align="justify"><span style="FONT-FAMILY: 'Comic Sans MS'"><font size="3">Общая информация</font></span></p>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<p align="justify"><span style="FONT-SIZE: 13.5pt; FONT-FAMILY: 'Comic Sans MS'">Подсистема "Контекстная подсказка" для 1С:Предприятие 8.2</span></p>
+<h5 align="justify"><span style="FONT-FAMILY: 'Comic Sans MS'">Общая информация</span></h5>
 <p align="justify"><font size="3" face="Times New Roman">Иногда удобно хранить фрагменты программы непосредственно в БД. Это касается как внутреннего языка, так и языка запросов. Однако редактировать программу в режиме предприятия довольно сложно из-за отсутствия контекстной подсказки и справки. Если для языка запросов это компенсируется наличием конструктора (при использовании которого вы лишаетесь драгоценных комментариев в тексте запроса), то для внутреннего языка никаких средств не предусмотрено. Данная внутренняя компонента предназначена для поднятия эффективности работы с программным текстом в режиме предприятия.</font></p>
 <p align="justify"><font size="3" face="Times New Roman">Основное предназначение - быстрый выбор слова исходя из вычисляемого контекста. Поддерживается режим внутреннего языка и режим языка запросов. Принцип работы основан на безопасном вычислении типа и сборе статистики обращения к свойствам и методам объекта. В рамках безопасного вычисления типа реализована хорошая поддержка метаданных. Используется упрощенный анализ синтаксиса языков, который однако позволяет в подавляющем большинстве случаев правильно выполнять заявленные функции.</font></p>
-<h5 align="justify"><span style="FONT-SIZE: 10pt">Основные возможности:</span></h5>
+<p align="justify"><span style="FONT-SIZE: 10pt"><strong>Основные возможности:</strong></span></p>
 <ul><li><span style="FONT-SIZE: 10pt"></span><font size="3" face="Times New Roman">вычисление предопределенных свойств и методов</font> 
 </li><li>
 <div align="justify"><font size="3" face="Times New Roman">вычисление свойств, определяемых метаданными</font></div>
@@ -20,9 +20,10 @@
 </li><li>
 <div align="justify"><font size="3" face="Times New Roman">поддержка программного указания свойств локального контекста</font></div>
 </li><li>
-<div align="justify"><font size="3" face="Times New Roman">поддержка указания типа в комментариях (//: Таб=Новый Таблица;)</font></div></li></ul><h5 align="justify"><span style="FONT-SIZE: 10pt">Основные невозможности:</span></h5>
+<div align="justify"><font size="3" face="Times New Roman">поддержка указания типа в комментариях (//: Таб=Новый Таблица;)</font></div></li></ul><p align="justify"><span style="FONT-SIZE: 10pt"><strong></strong></span> </p>
+<p align="justify"><span style="FONT-SIZE: 10pt"><strong>Основные невозможности:</strong></span></p>
 <ul><li>
-<div align="justify"><span style="FONT-SIZE: 10pt">в режиме языка запросов не производится анализ разграничения между вложенными запросами<br><br></span></div></li></ul><p align="justify"><strong><font size="3" face="Times New Roman">Поле текстового документа текста программы</font></strong></p>
+<div align="justify"><span style="FONT-SIZE: 10pt">в режиме языка запросов не производится анализ разграничения между вложенными запросами</span></div></li></ul><h5 align="justify">Поле текстового документа текста программы</h5>
 <p align="justify"><font size="3" face="Times New Roman">При подключении компоненты к полю текстового документа на рядом расположенной командной панели обычно будут присутствовать следующие команды:</font></p><font size="3" face="Times New Roman">
 <ul><li>
 <div align="justify"><em>язык запросов - </em>Удалить переносы</div>
@@ -56,7 +57,7 @@
 </li><li>
 <div align="justify"><font size="3" face="Times New Roman">Команда "Настройка компоненты" - открывает окно настройки компоненты.</font></div></li></ul><p align="justify"></p>
 <dl><dd>
-<div align="justify"><font style="BACKGROUND-COLOR: #ffff99" size="3" face="Times New Roman">Для отображения значения какого либо выражения в нужном месте текста программы можно использовать специальную функцию глобального контекста Исследовать(Параметр, Модально = Истина). В качестве первого параметра нужно указать интересующее выражение, а вторым параметром задается необходимость модального режима. При выполнении функции будет открыто окно "Исследователь объектов", являющееся аналогом диалога "Вычислить выражение" отладчика.</font></div></dd></dl><p align="justify"><strong><font size="3" face="Times New Roman">Форма подсказки</font></strong></p>
+<div align="justify"><font style="BACKGROUND-COLOR: #ffff99" size="3" face="Times New Roman">Для отображения значения какого либо выражения в нужном месте текста программы можно использовать специальную функцию глобального контекста Исследовать(Параметр, Модально = Истина). В качестве первого параметра нужно указать интересующее выражение, а вторым параметром задается необходимость модального режима. При выполнении функции будет открыто окно "Исследователь объектов", являющееся аналогом диалога "Вычислить выражение" отладчика.</font></div></dd></dl><h5 align="justify">Форма подсказки</h5>
 <p align="justify"><font size="3" face="Times New Roman">В заголовке формы после слова "Контекст: " отображает идентификатор текущего родительского контекста. В самом верху формы расположено поле типа родительского контекста. Ниже расположено поле ввода текущего слова. Вводить можно только части слов из списка. Т.е. последовательности символов, не совпадающие ни с одним словом в списке, ввести не получится. После ввода каждого символа текущего слова происходит позиционирование в списке слов, а также промежуточное дополнение слова исходя из набора слов, чье начало совпадает с введенной строкой. При удалении каждого символа происходит аналогичное сокращение текущего слова.<br>Рассмотрим на примере. Например имеем список слов<br></font><font size="3"><span style="FONT-FAMILY: 'Georgia','serif'">...<br>-ПеребратьЭлементы() <br>-ПолуПериод <br>-ПолученноеСреднее<br>... <br>-ПолучитьСреднееСРазбивкойПоИнтервалам() <br>-ПолучитьСреднееБезРазбивкиПоИнтервалам()<br>-ПреобразоватьКСтроке()<br>...</span><br><font face="Times New Roman">и нам требуется длинное слово "ПолучитьСреднееБезРазбивкиПоИнтервалам". В штатной контекстной подсказке конфигуратора нам потребовалось бы набрать "ПолучитьСреднееБ" и выбрать слово. В нашем же случае после ввода "По" программа сразу дополнит слово до "Полу", как максимальной общей части всех элементов списка, начинающихся с заданной строки. Затем вводим "и" ("Получи") и сразу же происходит дополнение до ("ПолучитьСреднее"). Затем символ "б" ("ПолучитьСреднееБ") и уже видим "ПолучитьСреднееБезРазбивкиПоИнтервалам". Так как такой подход немного непривычен, сделана специальная колонка "Ключевая буква", где для каждого слова отображается следующая буква. По умолчанию эта колонка, как и многие другие скрыта.</font></font></p>
 <p align="justify"><font size="3" face="Times New Roman">В списке слов всего доступно 6 настраиваемых колонок: Определение, Частота, Тип значения, Тип слова, Ключевая буква. Описание колонок:</font></p>
 <ul><li>
@@ -75,7 +76,7 @@
 <p align="justify"><font size="3" face="Times New Roman">После выбора нужного слова путем двойного щелчка мышкой или нажатия &lt;ENTER&gt; текущее слово в тексте будет заменено на выбранное. Если новое слово является методом, то автоматически будет добавлено "(", "()" или "();" в зависимости от того, процедура это или функция, и режима языка. Если нажать "=", то произойдет все тоже самое, но дополнительно будет добавлено " = ".</font></p>
 <dl><dd>
 <div align="justify"><span style="BACKGROUND: #ffff99"><font size="3" face="Times New Roman">Если на выбранном слове нажать "." (кириллическая точка; при этом фокус ввода должен находиться в поле ввода), то текущее слово в тексте будет также заменено на выбранное, и после него будет сразу добавлена точка и окно подсказки переоткроется. Таким образом вы сразу переходите "внутрь" выбранного слова. В данном случае ввод параметров всех выбранных функций откладывается на потом.</font></span></div></dd></dl><p align="justify"><span style="BACKGROUND: #ffff99"><font style="BACKGROUND-COLOR: #ffffff" size="3" face="Times New Roman">В случае определения у контекста нескольких агрегатных типов будет предложено выбрать конкретный тип из списка.</font></span></p>
-<p align="justify"><strong><font size="3" face="Times New Roman">Форма настройки</font></strong></p>
+<h5 align="justify">Форма настройки</h5>
 <p align="justify"><font size="3" face="Times New Roman">Настройки компоненты хранятся в профиле пользователя информационной базы. </font></p>
 <ul><li>
 <div align="justify"><font size="3" face="Times New Roman">Путь к файлу шаблонов позволяет подключить стандартный файл шаблонов (ST).</font></div>
@@ -85,8 +86,8 @@
 <div align="justify"><font size="3" face="Times New Roman">Возвращением фокуса главному окну при открытии окна справки управляет опция "Активизировать окно справки при его открытии".</font></div>
 </li><li>
 <div align="justify"><font size="3" face="Times New Roman">Для включения промежуточных дополнений непосредственно в поле текстового документа предназначена опция "Использовать промежуточные дополнения"</font></div></li></ul><p></p>
-<p align="justify"><strong><font size="3" face="Times New Roman">Форма синтакс-помощника</font></strong></p>
+<h5 align="justify">Форма синтакс-помощника</h5>
 <p align="justify"><font size="3" face="Times New Roman">Представляет собой браузер для отображения оглавления книг и страниц синтакс-помощника.</font></p>
-<p align="justify"><span style="FONT-FAMILY: 'Comic Sans MS'"><font size="3">О программе</font></span></p>
+<h5 align="justify"><span style="FONT-FAMILY: 'Comic Sans MS'">О программе</span></h5>
 <p align="justify"><font size="3" face="Times New Roman">Страница проекта </font><a href="http://infostart.ru/public/14700/">http://infostart.ru/public/14700/</a><font size="3" face="Times New Roman">. Автор tormozit, skype: tormozit, icq:283511553, <span style="mso-field-code: ' HYPERLINK '''"><span class="MsoHyperlink"><u><font color="#0000ff">mailto:tormozit@mail.ru</font></u></span></span>. </font></p>
-<p style="MARGIN: 0cm 0cm 10pt" class="MsoNormal" align="justify"><o:p><font size="3" face="Calibri"></font></o:p></p></body></html>
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 10pt" align="justify"><o:p><font size="3" face="Calibri"></font></o:p></p></body></html>

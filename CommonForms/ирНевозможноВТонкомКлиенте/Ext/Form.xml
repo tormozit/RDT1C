@@ -8,7 +8,17 @@
 	</Title>
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПоискВСправкеГлобальнаяИис" id="7999">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<DataPath>ПараметрГлобальныхКомандИис</DataPath>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ПоискВСправкеГлобальнаяИисРасширеннаяПодсказка" id="8000"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<LabelDecoration name="Декорация2" id="6">
 			<TextColor>style:SpecialTextColor</TextColor>
@@ -19,7 +29,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
-			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8001"/>
 			<Events>
 				<Event name="Click">Декорация1Нажатие</Event>
 			</Events>
@@ -27,7 +37,7 @@
 		<Button name="ЗапуститьОбычноеПриложение" id="4">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.ЗапуститьОбычноеПриложение</CommandName>
-			<ExtendedTooltip name="ЗапуститьОбычноеПриложениеРасширеннаяПодсказка" id="9"/>
+			<ExtendedTooltip name="ЗапуститьОбычноеПриложениеРасширеннаяПодсказка" id="8002"/>
 		</Button>
 		<LabelDecoration name="Декорация1" id="1">
 			<TextColor>style:ирТекстИнформационнойНадписи</TextColor>
@@ -45,13 +55,23 @@
 			</ToolTip>
 			<Hyperlink>true</Hyperlink>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="10"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="8003"/>
 			<Events>
 				<Event name="Click">Декорация1Нажатие</Event>
 			</Events>
 		</LabelDecoration>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="ПараметрГлобальныхКомандИис" id="7999">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
 	<Commands>
 		<Command name="ЗапуститьОбычноеПриложение" id="2">
 			<Title>

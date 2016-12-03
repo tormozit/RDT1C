@@ -1,7 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПоискВСправкеГлобальнаяИис" id="7999">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<DataPath>ПараметрГлобальныхКомандИис</DataPath>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ПоискВСправкеГлобальнаяИисРасширеннаяПодсказка" id="8002"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаирОПодсистеме" id="8001">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ирОПодсистеме</CommandName>
+				<ExtendedTooltip name="ФормаОбщаяКомандаирОПодсистемеРасширеннаяПодсказка" id="8003"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
@@ -33,57 +48,56 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="18"/>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="19">
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="8004"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="8005">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="20"/>
-				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8006"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="8007"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="22">
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8008">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="23"/>
-				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="8009"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="8010"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="25">
+			<SearchControlAddition name="СписокУправлениеПоиском" id="8011">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="26"/>
-				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="8012"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="8013"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Код" id="14">
 					<DataPath>Список.Code</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="28"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="8014"/>
 				</LabelField>
 				<LabelField name="Наименование" id="4">
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="29"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="8015"/>
 				</LabelField>
 				<LabelField name="ДатаИзменения" id="6">
 					<DataPath>Список.ДатаИзменения</DataPath>
 					<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="30"/>
+					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="8016"/>
 				</LabelField>
 				<LabelField name="ЧислоСимволов" id="16">
 					<DataPath>Список.ЧислоСимволов</DataPath>
 					<ContextMenu name="ЧислоСимволовКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ЧислоСимволовРасширеннаяПодсказка" id="31"/>
+					<ExtendedTooltip name="ЧислоСимволовРасширеннаяПодсказка" id="8017"/>
 				</LabelField>
 				<LabelField name="Комментарий" id="8">
-					<DataPath>~Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="32"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="8018"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -91,7 +105,7 @@
 			<DataPath>Items.Список.CurrentData.XML</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<ContextMenu name="XMLКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="XMLРасширеннаяПодсказка" id="33"/>
+			<ExtendedTooltip name="XMLРасширеннаяПодсказка" id="8019"/>
 		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -123,6 +137,15 @@
 					</dcsset:conditionalAppearance>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="ПараметрГлобальныхКомандИис" id="7999">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

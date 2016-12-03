@@ -520,6 +520,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.ирОтладкаВнешнихОбработокБСП</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаТипов.Attribute.Пометка</name>
 		<right>
 			<name>Edit</name>
@@ -878,10 +885,17 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.АвтоВыбранныеПоля</name>
+		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.АвтовВыбранныеПоляИзОтбора</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ирОПодсистеме</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1041,17 +1055,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирМенеджерТабличногоПоля</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1274,6 +1277,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирСтруктураХраненияБД</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.ОбластьПоиска</name>
 		<right>
 			<name>Edit</name>
@@ -1430,7 +1444,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирРедакторИзмененийПоПлануОбмена</name>
+		<name>DataProcessor.ирРедакторИзмененийНаУзлах</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -1763,6 +1777,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ирНевозможноВТонкомКлиенте</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

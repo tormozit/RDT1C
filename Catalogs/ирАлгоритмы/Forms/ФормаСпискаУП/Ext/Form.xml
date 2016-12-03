@@ -6,7 +6,19 @@
 			<Button name="ФормаКонсольКода" id="12">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.КонсольКода</CommandName>
-				<ExtendedTooltip name="ФормаКонсольКодаРасширеннаяПодсказка" id="13"/>
+				<ExtendedTooltip name="ФормаКонсольКодаРасширеннаяПодсказка" id="8002"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаирОПодсистеме" id="8001">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ирОПодсистеме</CommandName>
+				<ExtendedTooltip name="ФормаОбщаяКомандаирОПодсистемеРасширеннаяПодсказка" id="8003"/>
+			</Button>
+			<Button name="ПоискВСправкеГлобальнаяИис" id="7999">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<DataPath>ПараметрГлобальныхКомандИис</DataPath>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ПоискВСправкеГлобальнаяИисРасширеннаяПодсказка" id="8004"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -41,47 +53,47 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="14"/>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="15">
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="8005"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="8006">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="16"/>
-				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8007"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="8008"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="18">
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8009">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="19"/>
-				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="8010"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="8011"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="21">
+			<SearchControlAddition name="СписокУправлениеПоиском" id="8012">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="22"/>
-				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="8013"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="8014"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Наименование" id="4">
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="24"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="8015"/>
 				</LabelField>
 				<LabelField name="ДатаИзменения" id="6">
 					<DataPath>Список.ДатаИзменения</DataPath>
 					<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="25"/>
+					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="8016"/>
 				</LabelField>
 				<LabelField name="Комментарий" id="8">
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="9"/>
-					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="26"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="8017"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -89,7 +101,7 @@
 			<DataPath>Items.Список.CurrentData.ТекстАлгоритма</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<ContextMenu name="ТекстАлгоритмаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ТекстАлгоритмаРасширеннаяПодсказка" id="27"/>
+			<ExtendedTooltip name="ТекстАлгоритмаРасширеннаяПодсказка" id="8018"/>
 		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -121,6 +133,15 @@
 					</dcsset:conditionalAppearance>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="ПараметрГлобальныхКомандИис" id="7999">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

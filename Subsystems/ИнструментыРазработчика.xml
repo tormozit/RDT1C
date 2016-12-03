@@ -6,10 +6,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 3.50</v8:content>
+					<v8:content>Инструменты разработчика 3.61</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>3.50</Comment>
+			<Comment>3.61</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
@@ -38,7 +38,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПоискИЗаменаДублей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПоискСсылокНаОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСостояниеСсылки</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСохранитьКакНастройкуПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСохранитьВариантНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСписокЗначений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСравнить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТаблицаЗначений</xr:Item>
@@ -62,7 +62,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольЗапросов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольПостроителейОтчетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирМенеджерИнтерфейсов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирМенеджерТабличногоПоля</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодготовкаБазыДанныхКУсечениюТипов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискДублейИЗаменаСсылок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискСсылокНаОбъект</xr:Item>
@@ -111,7 +110,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНайтиВСписке</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирОтладкаПользователя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИзмененияНаУзле</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторИзмененийПоПлануОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторИзмененийНаУзлах</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирКомандаРедактироватьОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьИзмененияНаУзле</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирАнализЖурналаРегистрации</xr:Item>
@@ -222,6 +221,29 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИндексы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДокумент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗаполнить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСтруктураХраненияБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСердцебиение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПоследовательность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирОтладкаВнешнихОбработокБСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗагрузитьИзФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтладкаВнешнейОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДеревоФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКнопка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирФорма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеВвода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирФлажок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНадпись</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеТекстовогоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПанель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСтраницаПанели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТабличноеПоле</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКнопкаКоманднойПанели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеHtmlДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеГрафическойСхемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеТабличногоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеВыбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗагрузитьВариантНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОПодсистеме</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

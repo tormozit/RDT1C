@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьОбщиеНастройки" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрочитатьАктуальныеНастройки</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьОбщиеНастройкиРасширеннаяПодсказка" id="55"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаирОткрытьОтладчик" id="49">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>CommonCommand.ирОткрытьОтладчик</CommandName>
+				<ExtendedTooltip name="ФормаОбщаяКомандаирОткрытьОтладчикРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаирОПодсистеме" id="54">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ирОПодсистеме</CommandName>
+				<ExtendedTooltip name="ФормаОбщаяКомандаирОПодсистемеРасширеннаяПодсказка" id="57"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="ПерехватВнешнихОбработок" id="40">
+			<DataPath>ПерехватВнешнихОбработок</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перехват создания внешних обработок для всех пользователей. Выключайте в случае проблем.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПерехватВнешнихОбработокКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ПерехватВнешнихОбработокРасширеннаяПодсказка" id="58"/>
+			<Events>
+				<Event name="OnChange">ПерехватВнешнихОбработокПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="КаталогФайловогоКэша" id="4">
+			<DataPath>КаталогФайловогоКэша</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ChoiceButton>true</ChoiceButton>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="КаталогФайловогоКэшаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="КаталогФайловогоКэшаРасширеннаяПодсказка" id="59"/>
+			<Events>
+				<Event name="OnChange">КаталогФайловогоКэшаПриИзменении</Event>
+				<Event name="StartChoice">КаталогФайловогоКэшаНачалоВыбора</Event>
+				<Event name="Opening">КаталогФайловогоКэшаОткрытие</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ОтладкаДляТекущегоПользователя" id="1">
+			<DataPath>СозданиеВнешнихОбработокЧерезФайл</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Под текущим пользователем внешние обработки будут создаваться через постоянные файлы и будет доступна их отладка.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтладкаДляТекущегоПользователяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОтладкаДляТекущегоПользователяРасширеннаяПодсказка" id="60"/>
+			<Events>
+				<Event name="OnChange">ОтладкаДляТекущегоПользователяПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<LabelDecoration name="НадписьНеРаботаютТочкиОстанова" id="51">
+			<TextColor>style:SpecialTextColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В 8.3.6 точки останова во внеших обработках не работают из-за ошибки платформы</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НадписьНеРаботаютТочкиОстановаКонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="НадписьНеРаботаютТочкиОстановаРасширеннаяПодсказка" id="61"/>
+		</LabelDecoration>
+		<Table name="Список" id="7">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="9">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ВнешниеОбработкиСортироватьСписокПоВозрастанию" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.SortListAsc</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ВнешниеОбработкиСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="62"/>
+					</Button>
+					<Button name="ВнешниеОбработкиСортироватьСписокПоУбыванию" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.SortListDesc</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ВнешниеОбработкиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="ВнешниеОбработкиОбновить" id="35">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСписок</CommandName>
+						<ExtendedTooltip name="ВнешниеОбработкиОбновитьРасширеннаяПодсказка" id="64"/>
+					</Button>
+					<Button name="ВнешниеОбработкиОткрытьВОтладчике" id="33">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьВОтладчике</CommandName>
+						<ExtendedTooltip name="ВнешниеОбработкиОткрытьВОтладчикеРасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="ВнешниеОбработкиЗагрузитьИзФайла" id="45">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="ВнешниеОбработкиЗагрузитьИзФайлаРасширеннаяПодсказка" id="66"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="67"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="68">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="69"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="71">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="72"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="74">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="75"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ВнешниеОбработкиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ВнешниеОбработкиСсылка" id="20">
+					<DataPath>Список.Ссылка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВнешниеОбработкиСсылкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВнешниеОбработкиСсылкаРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ВнешниеОбработкиИмяФайла" id="23">
+					<DataPath>Список.ИмяФайла</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВнешниеОбработкиИмяФайлаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ВнешниеОбработкиИмяФайлаРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<InputField name="ВнешниеОбработкиДатаИзмененияФайла" id="26">
+					<DataPath>Список.ДатаИзмененияФайла</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВнешниеОбработкиДатаИзмененияФайлаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВнешниеОбработкиДатаИзмененияФайлаРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<CheckBoxField name="ВнешниеОбработкиФайлСоответствуетДанным" id="37">
+					<DataPath>Список.ФайлОтличаетсяОтХранилища</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВнешниеОбработкиФайлСоответствуетДаннымКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ВнешниеОбработкиФайлСоответствуетДаннымРасширеннаяПодсказка" id="80"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СозданиеВнешнихОбработокЧерезФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создание внешних обработок через файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогФайловогоКэша" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог файлового кэша</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Список" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ИмяФайла" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаИзмененияФайла" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата изменения файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФайлОтличаетсяОтХранилища" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл отличается от хранилища</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПерехватВнешнихОбработок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перехват внешних обработок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВнешниеОбработкиСсылка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ВнешниеОбработкиИмяФайла</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ВнешниеОбработкиДатаИзмененияФайла</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ВнешниеОбработкиФайлСоответствуетДанным</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ФайлОтличаетсяОтХранилища</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Sienna</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьВОтладчике" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в отладчике</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл внешней обработки в уже открытом отладчике. Окна отладчика ищутся по подстроке "Конфигуратор" в заголовке.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКонфигуратор1С8</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВОтладчике</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПрочитатьАктуальныеНастройки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать актуальные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полезно в случае их изменения настроек в другом сеансе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПрочитатьАктуальныеНастройки</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить файл в хранилище внешней обработки в базе. После этого он станет использоваться всеми пользователями.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирЗагрузитьИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКонфигуратор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигуратор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКонфигуратор1С8</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонфигуратор</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -30,7 +30,7 @@
 		<ChildObjects>
 			<Attribute uuid="606e353d-6bb9-4084-9c2c-f98e8e0f4d5b">
 				<Properties>
-					<Name>АвтоВыбранныеПоля</Name>
+					<Name>АвтовВыбранныеПоляИзОтбора</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -952,7 +952,6 @@
 								<v8:Type>xs:string</v8:Type>
 								<v8:Type>xs:dateTime</v8:Type>
 								<v8:Type>xs:decimal</v8:Type>
-								<v8:Type>v8:UUID</v8:Type>
 								<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 								<v8:NumberQualifiers>
 									<v8:Digits>20</v8:Digits>
@@ -1046,6 +1045,42 @@
 									<v8:Length>30</v8:Length>
 									<v8:AllowedLength>Variable</v8:AllowedLength>
 								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fe4d15dc-8a2c-4033-9198-7bf5ffc43492">
+						<Properties>
+							<Name>КлючПоиска</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ключ поиска</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -1186,9 +1221,10 @@
 			</TabularSection>
 			<Form>ВыгрузкаВФайл</Form>
 			<Form>Записать</Form>
+			<Form>ИзменитьДобавитьСтроку</Form>
 			<Form>ИзменитьИдентификаторы</Form>
 			<Form>ИзменитьПометкуНаУдаление</Form>
-			<Form>ИзменитьРегистрирациюНаУзле</Form>
+			<Form>ИзменитьРегистрациюНаУзле</Form>
 			<Form>ОбъединитьСсылкиНаОбъекты</Form>
 			<Form>ОтменитьПроведениеДокументов</Form>
 			<Form>ПеренумерацияОбъектов</Form>
@@ -1197,7 +1233,6 @@
 			<Form>ПроизвольныйАлгоритм</Form>
 			<Form>Удалить</Form>
 			<Form>УдалитьСКонтролемСсылок</Form>
-			<Form>УстановкаРеквизитов</Form>
 			<Form>ШаблонОбработки</Form>
 			<Template>Обработки</Template>
 		</ChildObjects>
