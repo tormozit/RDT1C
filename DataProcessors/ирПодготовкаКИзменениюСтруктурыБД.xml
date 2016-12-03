@@ -2,26 +2,26 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<DataProcessor uuid="d816f8b5-9624-4be5-8039-b62d2ced8512">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.ирПодготовкаБазыДанныхКУсечениюТипов" category="Object">
+			<xr:GeneratedType name="DataProcessorObject.ирПодготовкаКИзменениюСтруктурыБД" category="Object">
 				<xr:TypeId>e8073afa-e45f-48d6-b504-2b122b7ad7c1</xr:TypeId>
 				<xr:ValueId>4e91a4ec-50b5-407b-90d9-65b535d04a84</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.ирПодготовкаБазыДанныхКУсечениюТипов" category="Manager">
+			<xr:GeneratedType name="DataProcessorManager.ирПодготовкаКИзменениюСтруктурыБД" category="Manager">
 				<xr:TypeId>5fac45f6-5372-4afc-8649-da177826b2f5</xr:TypeId>
 				<xr:ValueId>51b98d18-7506-4235-a3ce-3c152c0508e0</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ирПодготовкаБазыДанныхКУсечениюТипов</Name>
+			<Name>ирПодготовкаКИзменениюСтруктурыБД</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверка базы данных перед усечением типов (ИР)</v8:content>
+					<v8:content>Подготовкак изменению структуры БД (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment> </Comment>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.ирПодготовкаБазыДанныхКУсечениюТипов.Form.Форма</DefaultForm>
+			<DefaultForm>DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
@@ -237,13 +237,47 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="1d436f12-9d24-427e-ac23-f046cb8244e4">
+			<Attribute uuid="3176060a-e468-4bac-945a-b5e6a0a2c176">
 				<Properties>
-					<Name>УсекаемыеТипы</Name>
+					<Name>УдаляемыеИзмерения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Усекаемые типы</v8:content>
+							<v8:content>Удаляемые измерения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1d436f12-9d24-427e-ac23-f046cb8244e4">
+				<Properties>
+					<Name>УдаляемыеТипы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удаляемые типы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -307,11 +341,11 @@
 			</Attribute>
 			<TabularSection uuid="accde806-ca5f-42e6-9faf-01c246a3a6f7">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирПодготовкаБазыДанныхКУсечениюТипов.ПроблемныеРегистры" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирПодготовкаКИзменениюСтруктурыБД.ПроблемныеРегистры" category="TabularSection">
 						<xr:TypeId>50e41868-80b3-4400-8531-c3a9e4889410</xr:TypeId>
 						<xr:ValueId>7cd8d475-d0a3-4575-ad62-2356b57501bd</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПодготовкаБазыДанныхКУсечениюТипов.ПроблемныеРегистры" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПодготовкаКИзменениюСтруктурыБД.ПроблемныеРегистры" category="TabularSectionRow">
 						<xr:TypeId>2ddfcd14-e4f0-4b01-9f68-a623ab71bbc4</xr:TypeId>
 						<xr:ValueId>c200cfd4-b63c-4122-9c52-01678698bff4</xr:ValueId>
 					</xr:GeneratedType>
@@ -454,11 +488,11 @@
 			</TabularSection>
 			<TabularSection uuid="58348d85-6628-4d2c-82f8-d225051a467d">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирПодготовкаБазыДанныхКУсечениюТипов.ПроблемныеПланыВидовХарактеристик" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирПодготовкаКИзменениюСтруктурыБД.ПроблемныеПланыВидовХарактеристик" category="TabularSection">
 						<xr:TypeId>9de6b320-8fb6-4779-8d8f-526555a26513</xr:TypeId>
 						<xr:ValueId>999f757e-89fb-4d63-be08-764de5dea6e7</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПодготовкаБазыДанныхКУсечениюТипов.ПроблемныеПланыВидовХарактеристик" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПодготовкаКИзменениюСтруктурыБД.ПроблемныеПланыВидовХарактеристик" category="TabularSectionRow">
 						<xr:TypeId>2c7b2fae-62ec-47fb-9adb-7cab5d592fff</xr:TypeId>
 						<xr:ValueId>68950adf-aa0b-457d-bed2-dfb64743b66c</xr:ValueId>
 					</xr:GeneratedType>

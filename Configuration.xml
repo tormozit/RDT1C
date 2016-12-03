@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.71</Version>
+			<Version>3.75</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,7 +211,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирWMI</CommonPicture>
+			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАлгоритм</CommonPicture>
 			<CommonPicture>ирАноним</CommonPicture>
 			<CommonPicture>ирБитаяСсылка</CommonPicture>
@@ -287,6 +287,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирНеМетоды</CommonPicture>
 			<CommonPicture>ирНеСвойства</CommonPicture>
 			<CommonPicture>ирНовоеОкно</CommonPicture>
+			<CommonPicture>ирНовыйФайл</CommonPicture>
 			<CommonPicture>ирОбработкаОбъектов</CommonPicture>
 			<CommonPicture>ирОписаниеТипов</CommonPicture>
 			<CommonPicture>ирОстановить</CommonPicture>
@@ -321,7 +322,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
 			<CommonPicture>ирПредопределенный</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирПриходРасход</CommonPicture>
 			<CommonPicture>ирПусто</CommonPicture>
 			<CommonPicture>ирРазвернутьВсе</CommonPicture>
 			<CommonPicture>ирРазличия</CommonPicture>
@@ -338,6 +339,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирСоставнойТип</CommonPicture>
 			<CommonPicture>ирСостояниеСсылки</CommonPicture>
 			<CommonPicture>ирСохранитьВариантНастроек</CommonPicture>
+			<CommonPicture>ирСохранитьКак</CommonPicture>
 			<CommonPicture>ирСписокЗначений</CommonPicture>
 			<CommonPicture>ирСписокСПометками</CommonPicture>
 			<CommonPicture>ирСравнить</CommonPicture>
@@ -361,16 +363,17 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирУдалитьСКонтролемСсылок</CommonPicture>
 			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
 			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
-			<CommonPicture>ирУсечениеТипов</CommonPicture>
+			<CommonPicture>ирУдалениеТипов</CommonPicture>
 			<CommonPicture>ирФлажок</CommonPicture>
 			<CommonPicture>ирФорма</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирXML</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирСохранитьНастройки</CommonPicture>
+			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
-			<CommonPicture>ирПриходРасход</CommonPicture>
-			<CommonPicture>ирНовыйФайл</CommonPicture>
-			<CommonPicture>ирСохранитьКак</CommonPicture>
+			<CommonPicture>ирСправкаМетаданного</CommonPicture>
+			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -418,7 +421,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
-			<DataProcessor>ирПодготовкаБазыДанныхКУсечениюТипов</DataProcessor>
+			<DataProcessor>ирПодготовкаКИзменениюСтруктурыБД</DataProcessor>
 			<DataProcessor>ирПоискБитыхСсылок</DataProcessor>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПоискСсылокНаОбъект</DataProcessor>

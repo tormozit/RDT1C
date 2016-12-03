@@ -2098,7 +2098,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Обработка.ирПодготовкаБазыДанныхКУсечениюТипов</v8:content>
+							<v8:content>Обработка.ирПодготовкаКИзменениюСтруктурыБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2109,7 +2109,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проверка базы данных перед усечением типов</v8:content>
+							<v8:content>Подготовка базы данных к изменению структуры</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2120,7 +2120,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ирУсечениеТипов</v8:content>
+							<v8:content>ирУдалениеТипов</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3205,6 +3205,71 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>ирОбщий.СохранитьНастройкиПользователяЛкс</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить настройки пользователя. Настройки окон формируются при их закрытии. Поэтому для незакрытых окон команда не будет сохранять новые варианты настроек.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ирСохранитьНастройки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>47</index>
+		<row>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Разделитель</v8:content>
 						</v8:item>
 					</tl>
@@ -3257,7 +3322,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>47</index>
+		<index>48</index>
 		<row>
 			<c>
 				<c>
@@ -3308,7 +3373,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>48</index>
+		<index>49</index>
 		<row>
 			<c>
 				<c>
@@ -3359,7 +3424,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>49</index>
+		<index>50</index>
 		<row>
 			<c>
 				<c>
@@ -3411,8 +3476,8 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>11</defaultFormatIndex>
-	<height>50</height>
-	<vgRows>50</vgRows>
+	<height>51</height>
+	<vgRows>51</vgRows>
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>

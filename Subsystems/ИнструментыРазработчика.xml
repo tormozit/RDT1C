@@ -6,10 +6,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 3.71</v8:content>
+					<v8:content>Инструменты разработчика 3.75</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>3.71</Comment>
+			<Comment>3.75</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
@@ -62,7 +62,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольЗапросов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольПостроителейОтчетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирМенеджерИнтерфейсов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодготовкаБазыДанныхКУсечениюТипов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодготовкаКИзменениюСтруктурыБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискДублейИЗаменаСсылок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискСсылокНаОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодборИОбработкаОбъектов</xr:Item>
@@ -83,7 +83,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтладка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНайтиВДереве</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыполнить</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУсечениеТипов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУдалениеТипов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСвертка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирИсследоватьИсточник</xr:Item>
@@ -254,6 +254,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПриходРасход</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНовыйФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСохранитьКак</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСохранитьНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСправкаМетаданного</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирФункциональнаяОпция</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
