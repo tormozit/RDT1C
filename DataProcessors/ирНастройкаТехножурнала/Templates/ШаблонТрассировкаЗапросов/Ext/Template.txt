@@ -1,0 +1,36 @@
+﻿Шаблон для записи трассы из основных событий. Срок хранения 1ч. Объем выводимой информации может быть очень большим. Для серверной СУБД настоятельно рекомендуется устаналивать дополнительную фильтрацию по текущим базе/пользователю/сеансу.
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<dump create="false" type="0"/>
+	<log history="1">
+		<event>
+			<eq property="name" value="db2"/>
+		</event>
+		<event>
+			<eq property="name" value="dbmssql"/>
+		</event>
+		<event>
+			<eq property="name" value="dbpostgrs"/>
+		</event>
+		<event>
+			<eq property="name" value="dboracle"/>
+		</event>
+		<event>
+			<eq property="name" value="SDBL"/>
+		</event>
+		<event>
+			<eq property="name" value="DBV8DBEng"/>
+		</event>
+		<event>
+			<eq property="name" value="QERR"/>
+		</event>
+		<event>
+			<eq property="name" value="EXCP"/>
+		</event>
+		<event>
+			<eq property="name" value="EXCPCNTX"/>
+		</event>
+		<property name="all"/>
+	</log>
+	<plansql/>
+</config>

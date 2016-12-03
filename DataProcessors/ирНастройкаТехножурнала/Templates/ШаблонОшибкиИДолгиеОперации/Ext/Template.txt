@@ -1,0 +1,34 @@
+﻿Конфигурационный файл, получаемый из данного шаблона, добавляет все операции, длительность которых превышает 10 секунд. Это может оказаться полезным для обнаружения действий пользователей, которые выполнялись длительное время, с целью, например, их последующей оптимизации.
+<?xml version="1.0"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<log history="24">
+		<property name="all"/>
+		<event>
+			<eq property="name" value="admin"/>
+			<gt property="duration" value="100000"/>
+		</event>
+		<event>
+			<eq property="name" value="scom"/>
+			<gt property="duration" value="100000"/>
+		</event>
+		<event>
+			<eq property="name" value="proc"/>
+			<gt property="duration" value="100000"/>
+		</event>
+		<event>
+			<eq property="name" value="excp"/>
+		</event>
+		<event>
+			<eq property="name" value="qerr"/>
+		</event>
+		<event>
+			<eq property="name" value="SDBL"/>
+			<gt property="duration" value="100000"/>
+		</event>
+		<event>
+			<eq property="name" value="DBMSSQL"/>
+			<gt property="duration" value="100000"/>
+		</event>
+	</log>
+	<dump create="false" type="0" prntscrn="false"/>
+</config>

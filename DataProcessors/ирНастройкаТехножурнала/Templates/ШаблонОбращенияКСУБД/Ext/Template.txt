@@ -1,0 +1,26 @@
+﻿Технологический журнал будет содержать только обращения 1С:Предприятия к СУБД, а так же информацию об ошибочных ситуациях. Объем выводимой информации может быть очень большим особенно в файловой СУБД, т.к. в ней значительно меньше возможностей для фильтрации.
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<dump create="false"/>
+	<log history="6">
+		<event>
+			<eq property="name" value="db2"/>
+		</event>
+		<event>
+			<eq property="name" value="dbmssql"/>
+		</event>
+		<event>
+			<eq property="name" value="dbpostgrs"/>
+		</event>
+		<event>
+			<eq property="name" value="dboracle"/>
+		</event>
+		<event>
+			<eq property="name" value="excp"/>
+		</event>
+		<event>
+			<eq property="name" value="DBV8DBEng"/>
+		</event>
+		<property name="all"/>
+	</log>
+</config>
