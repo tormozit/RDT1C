@@ -11,7 +11,28 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.КоличествоЗадублированных</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ЯзыкПрограммы</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.Attribute.РежимОбновления</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.КоличествоОтсутствующих</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -58,7 +79,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.ВыполнятьВТранзакции</name>
+		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.ОбщаяТранзакция</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -172,6 +193,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПортативныйСервер</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.РасширенныйРежим</name>
 		<right>
 			<name>Edit</name>
@@ -180,6 +212,13 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.Конфигурация</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.КоличествоЗадублированных</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -278,6 +317,20 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.ИмяТипаСсылки</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.КоличествоВсего</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаТипов.Attribute.ИндексКартинки</name>
 		<right>
 			<name>Edit</name>
@@ -314,6 +367,13 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирПодборИОбработкаОбъектов.Attribute.НайденныеОбъекты</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.РежимОбновления</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -398,10 +458,28 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.Ссылка</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольЗапросов.Attribute.ИнтервалАвтосохранения</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -513,7 +591,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.Attribute.ВыполнятьВТранзакции</name>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.ИмяТипаСсылки</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -535,6 +613,20 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.КоличествоОтсутствующих</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.Идентификатор</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -589,6 +681,13 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирКлсПолеТабличногоДокументаСГруппировками.Attribute.ПолеТабличногоДокумента</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.КоличествоВсего</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -706,6 +805,20 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.ПредставлениеТипаСсылки</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.ИмяПредопределенного</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.ТипЗначения</name>
 		<right>
 			<name>Edit</name>
@@ -802,6 +915,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1035,6 +1155,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаРедактируемыхТипов.Attribute.Представление</name>
 		<right>
 			<name>Edit</name>
@@ -1163,6 +1290,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.КоличествоДанных</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ирАлгоритмы.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
@@ -1254,13 +1388,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.НСлово</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирВводВыраженияВстроенногоЯзыка.Attribute.ОбработкаПолеТекстовогоДокументаСКонтекстнойПодсказкой</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

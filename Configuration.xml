@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.32</Version>
+			<Version>3.40</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -210,12 +210,14 @@ http://infostart.ru/projects/1274</v8:content>
 			<StyleItem>ирЦветФонаЧередованияСтрок</StyleItem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
+			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
 			<CommonPicture>ирАлгоритм</CommonPicture>
 			<CommonPicture>ирАноним</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирБитаяСсылка</CommonPicture>
 			<CommonPicture>ирБлокировка</CommonPicture>
 			<CommonPicture>ирБулево</CommonPicture>
 			<CommonPicture>ирВключено</CommonPicture>
@@ -233,6 +235,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирВыполнить2</CommonPicture>
 			<CommonPicture>ирВыполнитьНаСервере</CommonPicture>
 			<CommonPicture>ирВыражение</CommonPicture>
+			<CommonPicture>ирВырезать</CommonPicture>
 			<CommonPicture>ирВыходящий</CommonPicture>
 			<CommonPicture>ирГенератор</CommonPicture>
 			<CommonPicture>ирДата</CommonPicture>
@@ -290,12 +293,14 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирПапка</CommonPicture>
 			<CommonPicture>ирПараметрыМетода</CommonPicture>
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
+			<CommonPicture>ирПерерасчет</CommonPicture>
 			<CommonPicture>ирПовторить</CommonPicture>
 			<CommonPicture>ирПоискИЗаменаДублей</CommonPicture>
 			<CommonPicture>ирПоискСсылокНаОбъект</CommonPicture>
 			<CommonPicture>ирПользователи</CommonPicture>
 			<CommonPicture>ирПользователь</CommonPicture>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
+			<CommonPicture>ирПредопределенный</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
 			<CommonPicture>ирПусто</CommonPicture>
 			<CommonPicture>ирРазвернутьВсе</CommonPicture>
@@ -332,9 +337,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирУсечениеТипов</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирБитаяСсылка</CommonPicture>
-			<CommonPicture>ирПерерасчет</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -385,11 +387,13 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПоискСсылокНаОбъект</DataProcessor>
 			<DataProcessor>ирПортативный</DataProcessor>
+			<DataProcessor>ирПортативныйСервер</DataProcessor>
 			<DataProcessor>ирРедакторИзмененийПоПлануОбмена</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>
 			<DataProcessor>ирРедакторПользователей</DataProcessor>
+			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>

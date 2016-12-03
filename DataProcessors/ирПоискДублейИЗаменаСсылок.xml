@@ -96,13 +96,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="7f4c62eb-5f36-447b-b618-b1b33c77ec3a">
+			<Attribute uuid="37fd1cf4-21c6-4422-a3ec-6055ef0047c1">
 				<Properties>
-					<Name>ВыполнятьВТранзакции</Name>
+					<Name>БезАвторегистрацииИзменений</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выполнять в транзакции</v8:content>
+							<v8:content>Без авторегистрации изменений</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -112,7 +112,12 @@
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При записи не выполнять авторегистрацию изменений на узлах планов обмена. Включайте только при полной уверенности!</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -176,6 +181,45 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запись на сервере</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнять запись объектов на сервере. Обычно это бывает нужно для конфигураций написанных под управляемое приложение.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6b0438ad-0135-44ed-875a-ef1b2b89c510">
+				<Properties>
+					<Name>КомментироватьЗаменуСсылок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментировать замену ссылок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -272,13 +316,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e17914c4-7035-422a-9188-5b0b75ced00e">
+			<Attribute uuid="f9f683f0-fb12-4cee-b4f0-9327a4303cbe">
 				<Properties>
-					<Name>ОтключатьКонтрольЗаписи</Name>
+					<Name>ОбщаяТранзакция</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отключать контроль записи</v8:content>
+							<v8:content>Общая транзакция</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -306,13 +350,52 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="3a4e2e1d-8bcf-4b45-b02f-0f3b9a95270e">
+			<Attribute uuid="e17914c4-7035-422a-9188-5b0b75ced00e">
 				<Properties>
-					<Name>ПерезаписыватьПравильныеЭлементыПослеЗамены</Name>
+					<Name>ОтключатьКонтрольЗаписи</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Перезаписывать правильные элементы после замены</v8:content>
+							<v8:content>Отключать контроль записи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись без проверок (ОбменДанными.Загрузка = Истина)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3a4e2e1d-8bcf-4b45-b02f-0f3b9a95270e">
+				<Properties>
+					<Name>ПерезаписыватьПравильныеПослеЗамены</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перезаписывать правильные после замены</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -385,6 +468,40 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Разрешить удаление с нарушением ссылочной целостности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b828bc78-0e2c-44e1-9042-3659698d39f8">
+				<Properties>
+					<Name>СнятьПометкиУдаленияПравильныхПослеЗамены</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Снять пометки удаления правильных после замены</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
