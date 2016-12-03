@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ПоискВСправкеГлобальнаяИис" id="7999">
-				<Type>CommandBarButton</Type>
-				<CommandName>0</CommandName>
-				<DataPath>ПараметрГлобальныхКомандИис</DataPath>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ПоискВСправкеГлобальнаяИисРасширеннаяПодсказка" id="8005"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="8004">
 			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8006"/>
 			<ChildItems>
 				<Button name="ЗапуститьОбычноеПриложение" id="4">
@@ -29,8 +23,45 @@
 					</Picture>
 					<ExtendedTooltip name="ЗапуститьОбычноеПриложениеРасширеннаяПодсказка" id="8007"/>
 				</Button>
+				<CheckBoxField name="ЗакрытьФорму" id="8013">
+					<DataPath>ЗакрытьФорму</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыть эту форму после запуска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗакрытьФормуКонтекстноеМеню" id="8014"/>
+					<ExtendedTooltip name="ЗакрытьФормуРасширеннаяПодсказка" id="8015"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПодключитьОтладчик" id="8010">
+					<DataPath>ПодключитьОтладчик</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключить к запускаемому приложению отладчик, если он подключен к текущему сеансу.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодключитьОтладчикКонтекстноеМеню" id="8011"/>
+					<ExtendedTooltip name="ПодключитьОтладчикРасширеннаяПодсказка" id="8012"/>
+				</CheckBoxField>
+				<CheckBoxField name="ТекущийПользователь" id="8016">
+					<DataPath>ТекущийПользователь</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запустить от имени текущего пользователя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТекущийПользовательКонтекстноеМеню" id="8017"/>
+					<ExtendedTooltip name="ТекущийПользовательРасширеннаяПодсказка" id="8018"/>
+				</CheckBoxField>
 				<InputField name="КодРазрешения" id="8001">
 					<DataPath>КодРазрешения</DataPath>
+					<Width>15</Width>
 					<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="8002"/>
 					<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="8008"/>
 				</InputField>
@@ -60,15 +91,6 @@
 				<v8:Type>cfg:DataProcessorObject.ирПортативный</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ПараметрГлобальныхКомандИис" id="7999">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="КодРазрешения" id="8000">
 			<Title>
 				<v8:item>
@@ -83,6 +105,51 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<Save>
+				<Field>КодРазрешения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПодключитьОтладчик" id="8001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить отладчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПодключитьОтладчик</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗакрытьФорму" id="8002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗакрытьФорму</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="8003">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ТекущийПользователь</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -1,5 +1,4 @@
-﻿use [<Database>];
-DECLARE @pagesizeKB int
+﻿DECLARE @pagesizeKB int
 SELECT @pagesizeKB = low / 1024 FROM master.dbo.spt_values
 WHERE number = 1 AND type = 'E';
 
