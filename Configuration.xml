@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>3.18</Version>
+			<Version>3.26</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -181,14 +181,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Интегрированный набор инструментов для разработчика 1С 8
-http://infostart.ru/public/15126/
-http://devtool1c.ucoz.ru/
-</v8:content>
+http://infostart.ru/projects/1274</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright/>
 			<VendorInformationAddress/>
-			<ConfigurationInformationAddress/>
+			<ConfigurationInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>http://devtool1c.ucoz.ru/</v8:content>
+				</v8:item>
+			</ConfigurationInformationAddress>
 			<DataLockControlMode>Automatic</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>Use</ModalityUseMode>
@@ -247,6 +250,7 @@ http://devtool1c.ucoz.ru/
 			<CommonPicture>ирИдентификатор</CommonPicture>
 			<CommonPicture>ирИзмененияНаУзле</CommonPicture>
 			<CommonPicture>ирИнтерфейснаяПанель</CommonPicture>
+			<CommonPicture>ирИсключение</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
 			<CommonPicture>ирИсследовать</CommonPicture>
 			<CommonPicture>ирКолонкаТабличногоПоля</CommonPicture>
@@ -386,6 +390,7 @@ http://devtool1c.ucoz.ru/
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
+			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

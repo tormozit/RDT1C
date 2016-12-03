@@ -3,15 +3,27 @@
 <config xmlns="http://v8.1c.ru/v8/tech-log">
 	<log history="24">
 		<property name="all"/>
-		  <event>
-		      <eq property="Name" value="TLOCK"/>
-		  </event>
-		  <event>
-		      <eq property="Name" value="TTIMEOUT"/>
-		  </event>
-		  <event>
-		      <eq property="Name" value="TDEADLOCK"/>
-		  </event>
+			<event>
+				<eq property="Name" value="TLOCK"/>
+			</event>
+			<event>
+				<eq property="Name" value="TTIMEOUT"/>
+			</event>
+			<event>
+				<eq property="Name" value="TDEADLOCK"/>
+			</event>
+			<event>
+				<eq property="name" value="SDBL"/>
+				<eq property="func" value="begintransaction"/>
+			</event>
+			<event>
+				<eq property="name" value="SDBL"/>
+				<eq property="func" value="committransaction"/>
+			</event>
+			<event>
+				<eq property="name" value="SDBL"/>
+				<eq property="func" value="rollbacktransaction"/>
+			</event>
 	</log>
 	<dump create="false" type="0" prntscrn="false"/>
 </config>

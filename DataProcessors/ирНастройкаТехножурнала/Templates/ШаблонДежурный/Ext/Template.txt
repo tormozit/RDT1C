@@ -1,4 +1,11 @@
-﻿Ошибки, важные операции и операции, длительность которых превышает 10 секунд.
+﻿Шаблон создает технологический журнал небольшого объема, в котором содержится информация о:
+- запуске и завершении процессов
+- установке и разрыве соединений с кластером серверов 1С:Предприятия
+- действиях администратора кластера
+- ошибочных ситуациях в работе 1С:Предприятия
+- длительных запросах
+- больших захватах памяти (8.3+)
+Такой журнал в большинстве случаев достаточен, для расследования ошибочных ситуаций как в конфигурации, так и в технологической платформе 1С:Предприятия.
 <?xml version="1.0"?>
 <config xmlns="http://v8.1c.ru/v8/tech-log">
 	<log history="24">
@@ -7,34 +14,32 @@
 			<eq property="name" value="admin"/>
 		</event>
 		<event>
-			<eq property="name" value="scom"/>
-			<gt property="duration" value="100000"/>
-		</event>
-		<event>
 			<eq property="name" value="proc"/>
 		</event>
 		<event>
-			<eq property="name" value="excp"/>
+			<eq property="name" value="conn"/>
 		</event>
 		<event>
-			<eq property="name" value="EXCPCNTX"/>
+			<eq property="name" value="excp"/>
 		</event>
 		<event>
 			<eq property="name" value="qerr"/>
 		</event>
 		<event>
 			<eq property="name" value="SDBL"/>
-			<gt property="duration" value="100000"/>
+			<gt property="duration" value="200000"/>
+		</event>
+		<event>
+			<eq property="name" value="SDBL"/>
+			<eq property="func" value="setrollbackonly"/>
 		</event>
 		<event>
 			<eq property="name" value="DBMSSQL"/>
-			<gt property="duration" value="100000"/>
+			<gt property="duration" value="200000"/>
 		</event>
 		<event>
-			<eq property="Name" value="CLSTR"/>
-		</event>
-		<event>
-			<eq property="Name" value="SRVC"/>
+			<eq property="name" value="CALL"/>
+			<gt property="memorypeak" value="100000000"/>
 		</event>
 	</log>
 	<dump create="false" type="0" prntscrn="false"/>
