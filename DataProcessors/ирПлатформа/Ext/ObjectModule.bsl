@@ -5430,14 +5430,7 @@
 	Если Не ЗначениеЗаполнено(КаталогУстановки) Тогда
 		КаталогУстановки = ПапкаВнешнихКомпонент.ПолноеИмя;
 	КонецЕсли;
-	Если Метаданные().Макеты.Найти(ИмяМакетаКомпоненты) = Неопределено Тогда
-		Если ирКэш.Это64битныйПроцессЛкс() Тогда
-			ИмяМакетаКомпоненты = ИмяМакетаКомпоненты + "64";
-		Иначе
-			ИмяМакетаКомпоненты = ИмяМакетаКомпоненты + "32";
-		КонецЕсли; 
-	КонецЕсли; 
-	ДвоичныеДанныеМакета = ПолучитьМакет(ИмяМакетаКомпоненты);
+	ДвоичныеДанныеМакета = ПолучитьДвоичныеДанныеКомпоненты(ИмяМакетаКомпоненты);
 	ФайлКомпоненты = Новый Файл(КаталогУстановки + "\" + ИмяМакетаКомпоненты + "." + Расширение);
 	ВременныйФайл = Новый Файл(ПолучитьИмяВременногоФайла());
 	ДвоичныеДанныеМакета.Записать(ВременныйФайл.ПолноеИмя);
@@ -5472,6 +5465,20 @@
 		КонецПопытки; 
 	КонецЕсли; 
 	Возврат ФайлКомпоненты;
+
+КонецФункции
+
+Функция ПолучитьДвоичныеДанныеКомпоненты(БазовоеИмяМакетаКомпоненты) Экспорт 
+	
+	Если Метаданные().Макеты.Найти(БазовоеИмяМакетаКомпоненты) = Неопределено Тогда
+		Если ирКэш.Это64битныйПроцессЛкс() Тогда
+			БазовоеИмяМакетаКомпоненты = БазовоеИмяМакетаКомпоненты + "64";
+		Иначе
+			БазовоеИмяМакетаКомпоненты = БазовоеИмяМакетаКомпоненты + "32";
+		КонецЕсли; 
+	КонецЕсли; 
+	ДвоичныеДанныеМакета = ПолучитьМакет(БазовоеИмяМакетаКомпоненты);
+	Возврат ДвоичныеДанныеМакета;
 
 КонецФункции
 
@@ -7119,6 +7126,8 @@
 		|			pObj2 = Wrap.GetObj1(pObj1)
 		|		End If
 		|		
+		//|		MsgBox(""pObj2 = "" & Hex(pObj2))
+		|		
 		|		If VersPlatform = 82 Then
 		|			Select Case curVers
 		|				Case 13
@@ -7140,6 +7149,8 @@
 		|					numfunc = 69
 		|				Case 7
 		|					numfunc = 62
+		|				Case 8
+		|					numfunc = 62
 		|				Case 9
 		|					numfunc = 63
 		|				Case Else
@@ -7155,6 +7166,8 @@
 		|			res1  = Wrap.GetObj2(pObj2, ppv)	
 		|			pObj3 = Wrap.NumGet(ppv)
 		|		End If
+		|
+		//|		MsgBox(""pObj3 = "" & Hex(pObj3))
 		|
 		|		off_array = &h10
 		|		If VersPlatform = 82 Then
@@ -7173,6 +7186,7 @@
 		|				Case 6
 		|					off_array = &h20
 		|				Case 7
+		|				Case 8
 		|				Case 9
 		|				Case Else
 		|           		off_array = &h24
@@ -7186,6 +7200,7 @@
 		|		numGK = (Wrap.NumGet(pObj3, off_array + 4) - GetArrayGC) / 4
 		|		numGK = numGK - 1
 		|
+		//|		MsgBox(""numGK = "" & Hex(numGK))
 		//|		Release pObj3
 		|
 		|		If release_flag THEN
@@ -7302,6 +7317,8 @@
 //}		|
 //{		|Class_Terminate
 		|	Private Sub Class_Terminate
+		//|		Message Hex(pMes)
+		|	
 		|		Wrap.HeapFree hHeap, 0, buf_thiscall
 		|		Wrap.HeapFree hHeap, 0,	ppv
 		|		Wrap.HeapFree hHeap, 0, pIID
@@ -7634,7 +7651,6 @@
 		|		Do While j > -1
 		|			oServ.vfunc pIContext, 4 * (nfunc - 1)	
 		|			pbstrName = Wrap.ImplBase_getName(pIContext, num, j)
-		|
 		|			If (pbstrName <> 0) Then
 		|				If Wrap.StrGet(pbstrName) <> """"  Then
 		|					ImplBase_getName = pbstrName	
@@ -7653,6 +7669,9 @@
 		|		If (pStr <> 0) Then
 		|			Set nRow 	= valTable.Add()
 		|			nRow.Name	= Wrap.StrGet(pStr)	
+		|			nRow.ContID	= ContID
+		|			nRow.ID		 = j			
+		//|			oServ.Message nRow.Name + "" ~ "" + CSTR(j)
 		|			
 		|			If nfunc > 5 Then
 		|				oServ.vfunc pIContext, 4 * (15 - 1)
@@ -7660,8 +7679,8 @@
 		|
 		|				oServ.vfunc pIContext, 4 * (11 - 1)
 		|           	nRow.NParams  = Wrap.ImplBase_getNParams(pIContext, j)
-		|				nRow.ID		  = j
-		|				nRow.ContID	  = ContID
+		//|				nRow.ID		  = j
+		//|				nRow.ContID	  = ContID
 		|			End If	
 		|		End If
 		|	Next
