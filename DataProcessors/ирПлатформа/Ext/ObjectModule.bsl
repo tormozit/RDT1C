@@ -7820,9 +7820,15 @@
 	ТекстМодуля = ТекстМодуля + Class_Service();
 	ТекстМодуля = ТекстМодуля + Funcs();
 	
-	ScrptCtrl          	= Новый COMОбъект("MSScriptControl.ScriptControl");
-	ScrptCtrl.Language 	= "vbscript";
-	ScrptCtrl.TimeOut	= -1;
+	Попытка
+		ScrptCtrl = Новый COMОбъект("MSScriptControl.ScriptControl"); // Не работает в 64x процессе
+	Исключение
+		мОшибкаИнформаторУжеВыводилась = Истина;
+		Сообщить("Ошибка низкоуровневого получения описаний объектов: " + ОписаниеОшибки());
+		Возврат;
+	КонецПопытки;
+	ScrptCtrl.Language = "vbscript";
+	ScrptCtrl.TimeOut = -1;
 	
 	Попытка
 		ScrptCtrl.AddCode(ТекстМодуля);
