@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>ИнструментыРазработчика</Name>
+			<Name>ИнструментыРазработчикаTormozit</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Конфигурация "Инструменты разработчика"</v8:content>
+					<v8:content>Инструменты разработчика (tormozit)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>tormozit</Vendor>
-			<Version>4.04</Version>
+			<Version>4.05</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -202,7 +202,7 @@ http://infostart.ru/projects/1274</v8:content>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>ИнструментыРазработчика</Subsystem>
+			<Subsystem>ИнструментыРазработчикаTormozit</Subsystem>
 			<StyleItem>ирТекстИнформационнойНадписи</StyleItem>
 			<StyleItem>ирЦветФонаВычисляемогоЗначения</StyleItem>
 			<StyleItem>ирЦветФонаОшибки</StyleItem>
@@ -382,6 +382,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<Role>ирПользователь</Role>
 			<Role>ирПравоАдминистрирование</Role>
 			<Role>ирРазработчик</Role>
+			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
@@ -400,8 +401,8 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
-			<CommonForm>ирВыпускПортативногоВарианта</CommonForm>
-			<CommonForm>ирВыпускРасширения</CommonForm>
+			<CommonForm>ирВыпускПортативные</CommonForm>
+			<CommonForm>ирВыпускРасширение</CommonForm>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
 			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
