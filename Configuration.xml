@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>ИнструментыРазработчикаTormozit</Name>
+			<Name>ИнструментыРазработчика</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика (tormozit)</v8:content>
+					<v8:content>Инструменты разработчика</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -46,8 +46,8 @@
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
-			<Vendor>tormozit</Vendor>
-			<Version>4.06</Version>
+			<Vendor>Tormozit</Vendor>
+			<Version>4.07</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -210,7 +210,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<StyleItem>ирЦветФонаЧередованияСтрок</StyleItem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
-			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
@@ -377,6 +377,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирЗакомментировать</CommonPicture>
 			<CommonPicture>ирРаскомментировать</CommonPicture>
+			<CommonPicture>ирCOM</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -397,8 +398,10 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
+			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
+			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
 			<CommonForm>ирВыпускПортативные</CommonForm>
@@ -441,9 +444,11 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
+			<DataProcessor>ирСлужебный</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
+			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
 		</ChildObjects>

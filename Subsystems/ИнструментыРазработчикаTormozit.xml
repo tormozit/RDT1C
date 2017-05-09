@@ -6,13 +6,18 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 4.06</v8:content>
+					<v8:content>Инструменты разработчика 4.07</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>4.06</Comment>
+			<Comment>4.07</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
-			<Explanation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты разработчика (Tormozit) 4.07</v8:content>
+				</v8:item>
+			</Explanation>
 			<Picture>
 				<xr:Ref>CommonPicture.ирЛоготипБольшой</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -75,7 +80,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирПравоАдминистрирование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирЦветФонаВычисляемогоЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьОтладчик</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирCOM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирCOMАдмин</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьНастройкиАлгоритмов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьРегистрациюCOMКомпонент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтладка</xr:Item>
@@ -261,6 +266,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗакомментировать</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирРаскомментировать</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирВыпускРасширение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирСохранитьНастройкиПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьСписокИнструментов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеCOMКлассами1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирCOM</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

@@ -953,7 +953,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.ИнструментыРазработчикаTormozit</name>
+		<name>Configuration.ИнструментыРазработчика</name>
 		<right>
 			<name>ExclusiveMode</name>
 			<value>true</value>
@@ -1211,6 +1211,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирСлужебный</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.Инфобаза</name>
 		<right>
 			<name>Edit</name>
@@ -1433,6 +1444,13 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ирОткрытьСписокИнструментов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -2179,6 +2197,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonCommand.ирСохранитьНастройкиПользователя</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирРедакторОбъектаБД</name>
 		<right>
 			<name>Use</name>
@@ -2314,6 +2339,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирУправлениеCOMКлассами1С</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
