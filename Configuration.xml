@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.07</Version>
+			<Version>4.08</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -210,7 +210,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<StyleItem>ирЦветФонаЧередованияСтрок</StyleItem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
@@ -378,6 +377,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирЗакомментировать</CommonPicture>
 			<CommonPicture>ирРаскомментировать</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -391,16 +391,16 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
 			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
-			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
-			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОперироватьИсточник</CommonCommand>
-			<CommonCommand>ирОПодсистеме</CommonCommand>
+			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
-			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
+			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
+			<CommonCommand>ирОПодсистеме</CommonCommand>
+			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
@@ -413,10 +413,8 @@ http://infostart.ru/projects/1274</v8:content>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирКонсольКомпоновокДанных</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
-			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
-			<DataProcessor>ирДинамическийСписок</DataProcessor>
+			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
@@ -444,13 +442,15 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
-			<DataProcessor>ирСлужебный</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
-			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
+			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
+			<DataProcessor>ирСлужебный</DataProcessor>
+			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
