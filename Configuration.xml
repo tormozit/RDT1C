@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.08</Version>
+			<Version>4.10</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -413,8 +413,10 @@ http://infostart.ru/projects/1274</v8:content>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирКонсольКомпоновокДанных</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
-			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
+			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
@@ -442,15 +444,13 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирСлужебный</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
-			<DataProcessor>ирДинамическийСписок</DataProcessor>
+			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
-			<DataProcessor>ирСлужебный</DataProcessor>
-			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
