@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.13</Version>
+			<Version>4.14</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -391,19 +391,21 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
 			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
-			<CommonCommand>ирОперироватьИсточник</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
+			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
+			<CommonCommand>ирОперироватьИсточник</CommonCommand>
+			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
-			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
+			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
-			<CommonCommand>ирОПодсистеме</CommonCommand>
-			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
+			<CommandGroup>ирРазработка</CommandGroup>
+			<CommandGroup>ирАдминистрирование</CommandGroup>
 			<CommonForm>ирВыпускВариантаПортативный</CommonForm>
 			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>

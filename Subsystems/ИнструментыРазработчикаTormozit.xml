@@ -6,16 +6,16 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 4.13</v8:content>
+					<v8:content>Инструменты разработчика 4.14</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>4.13</Comment>
+			<Comment>4.14</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика (Tormozit) 4.13</v8:content>
+					<v8:content>Инструменты разработчика (Tormozit)</v8:content>
 				</v8:item>
 			</Explanation>
 			<Picture>
@@ -59,21 +59,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирПривилегированный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирАлгоритмы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ирКонсольКомпоновокДанных</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирВводВыраженияВстроенногоЯзыка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирИнтерфейснаяПанель</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирИсследовательОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКлсПолеТабличногоДокументаСГруппировками</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольЗапросов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольПостроителейОтчетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирМенеджерИнтерфейсов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодготовкаКИзменениюСтруктурыБД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискДублейИЗаменаСсылок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодборИОбработкаОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторКонстант</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторОбъектаБД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирДинамическийСписок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОткрыть</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПараметровСеанса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПаметрСеанса82</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирКэш</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирПользователь</xr:Item>
@@ -113,10 +102,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНайтиВСписке</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирОтладкаПользователя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИзмененияНаУзле</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторИзмененийНаУзлах</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирКомандаРедактироватьОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьИзмененияНаУзле</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирАнализЖурналаРегистрации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЖурнал</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУровниЖурналаРегистрации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтборБезЗначения</xr:Item>
@@ -128,7 +115,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирГенератор</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТаблицаИзменений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСвязаннаяТаблица</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСинтаксПомощник</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСумма</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТипыСловПодсказки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтборПоЗначению</xr:Item>
@@ -137,23 +123,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОтборПоПодсистеме</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирЦветФонаОшибки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДобавитьВИзбранное</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПользователь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирАноним</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПредприятие1С8</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ирОбъектыДляОтладки</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирАнализТехножурнала</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТехноЖурнал</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВложенныйЗапрос</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыходящий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВходящий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНастройкаЖурналаРегистрации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирТестированиеМетаданных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТестирование</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирНастройкаЖурналаРегистрации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНастройкаТехножурнала</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирНастройкаТехножурнала</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗамер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСхемаКомпоновкиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПостроительЗапроса</xr:Item>
@@ -181,7 +162,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПусто</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСжатьКолонку</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКолонкаТабличногоПоля</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольКода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирПортативный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИсследовать</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВопрос</xr:Item>
@@ -191,11 +171,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Style.ирОсновной</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ирЦветФонаРасширенногоПредставленияЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПлатформа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирОбщий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ирСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЛоготипМаленький</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторХранилищНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыключено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВключено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирЗапуститьОбычноеПриложение</xr:Item>
@@ -204,17 +182,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНеКлючевыеСлова</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПовторить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИдентификатор</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВыгрузкаЗагрузка</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУдалениеОбъектовСКонтролемСсылок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИсключение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУдалитьСКонтролемСсылок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискБитыхСсылок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирБитаяСсылка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПерерасчет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПортативныйСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВырезать</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПредопределенных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПредопределенный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРазличныеЗначенияКолонки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСписокСПометками</xr:Item>
@@ -224,7 +198,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирИндексы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДокумент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗаполнить</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСтруктураХраненияБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСердцебиение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПоследовательность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирОтладкаВнешнихОбработокБСП</xr:Item>
@@ -247,8 +220,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеВыбора</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗагрузитьВариантНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОПодсистеме</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеИтогамиРегистров</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеСлужбамиСерверов1С</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСистемнаяСлужба</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПерезапустить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирОстановить</xr:Item>
@@ -269,9 +240,40 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирСохранитьНастройкиПользователя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьСписокИнструментов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеCOMКлассами1С</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирCOM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ирШаблонРасширения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПлатформа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирАнализЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирАнализТехножурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирВводВыраженияВстроенногоЯзыка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирДинамическийСписок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирИсследовательОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольКода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКонсольПостроителейОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирНастройкаЖурналаРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирНастройкаТехножурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодборИОбработкаОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПодготовкаКИзменениюСтруктурыБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискБитыхСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискДублейИЗаменаСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторИзмененийНаУзлах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторОбъектаБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПараметровСеанса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторПредопределенных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирРедакторХранилищНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСинтаксПомощник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСтруктураХраненияБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирТестированиеМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУдалениеОбъектовСКонтролемСсылок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеCOMКлассами1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеИтогамиРегистров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирУправлениеСлужбамиСерверов1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирРазработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирАдминистрирование</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
