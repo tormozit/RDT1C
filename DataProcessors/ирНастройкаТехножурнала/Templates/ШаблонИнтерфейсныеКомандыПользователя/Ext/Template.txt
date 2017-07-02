@@ -6,6 +6,9 @@
 		<event>
 			<eq property="name" value="SYSTEM"/>
 		</event>
+		<event>
+			<eq property="name" value="QERR"/>
+		</event>
 	</log>
 	<system level="trace" class="MsgLoop"/>
 </config>
