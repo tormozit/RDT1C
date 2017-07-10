@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.15</Version>
+			<Version>4.16</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,7 +211,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
-			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
 			<CommonPicture>ирАлгоритм</CommonPicture>
@@ -378,6 +377,8 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирРаскомментировать</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
 			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирWMI</CommonPicture>
+			<CommonPicture>ирПоискДанных</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -408,9 +409,10 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommandGroup>ирАдминистрирование</CommandGroup>
 			<CommonForm>ирАдаптацияРасширения</CommonForm>
 			<CommonForm>ирВыпускВариантаПортативный</CommonForm>
-			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
 			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
+			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
 			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
+			<CommonForm>ирОбновлениеОписанияПлатформы</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
@@ -435,6 +437,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
 			<DataProcessor>ирПодготовкаКИзменениюСтруктурыБД</DataProcessor>
 			<DataProcessor>ирПоискБитыхСсылок</DataProcessor>
+			<DataProcessor>ирПоискДанных</DataProcessor>
 			<DataProcessor>ирПоискДублейИЗаменаСсылок</DataProcessor>
 			<DataProcessor>ирПортативный</DataProcessor>
 			<DataProcessor>ирПортативныйСервер</DataProcessor>

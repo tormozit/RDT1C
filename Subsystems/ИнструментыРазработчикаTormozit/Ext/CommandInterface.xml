@@ -131,6 +131,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирПоискДублейИЗаменаСсылок.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -279,6 +284,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DataProcessor.ирПоискБитыхСсылок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
