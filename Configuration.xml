@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.17</Version>
+			<Version>4.18</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,7 +211,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
@@ -279,8 +278,9 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирКопировать</CommonPicture>
 			<CommonPicture>ирКопировать2</CommonPicture>
 			<CommonPicture>ирКотекстныйСинтаксПомощник</CommonPicture>
-			<CommonPicture>ирЛоготипБольшой</CommonPicture>
-			<CommonPicture>ирЛоготипМаленький</CommonPicture>
+			<CommonPicture>ирЛоготип16х16</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирЛоготип48х48</CommonPicture>
 			<CommonPicture>ирМенеджерТабличногоПоля</CommonPicture>
 			<CommonPicture>ирНаборыДанныхСхемыКомпоновки</CommonPicture>
 			<CommonPicture>ирНадпись</CommonPicture>
@@ -380,6 +380,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирЛоготип24х24</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -418,6 +419,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирКонсольКомпоновокДанных</Report>
+			<DataProcessor>ирАлгоритмОбъект</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
@@ -453,6 +455,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
 			<DataProcessor>ирСлужебный</DataProcessor>
+			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>

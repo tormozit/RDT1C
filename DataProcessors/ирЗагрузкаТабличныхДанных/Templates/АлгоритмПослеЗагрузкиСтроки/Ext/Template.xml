@@ -20,7 +20,7 @@
 		<columnsItem>
 			<index>1</index>
 			<column>
-				<formatIndex>2</formatIndex>
+				<formatIndex>1</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
@@ -38,7 +38,7 @@
 		<columnsItem>
 			<index>4</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>2</formatIndex>
 			</column>
 		</columnsItem>
 	</columns>
@@ -47,7 +47,7 @@
 		<row>
 			<c>
 				<c>
-					<f>4</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -62,7 +62,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОписаниеТипов</v8:content>
+							<v8:content>ТипЗначения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -159,7 +159,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Результат</v8:content>
+							<v8:content>ОбъектБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -178,13 +178,7 @@
 			</c>
 			<c>
 				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Истина</v8:content>
-						</v8:item>
-					</tl>
+					<f>0</f>
 				</c>
 			</c>
 			<c>
@@ -193,7 +187,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>результат вычисления (на входе - значение по умолчанию)</v8:content>
+							<v8:content>Записываемый объект</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -209,7 +203,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТекстЯчейки</v8:content>
+							<v8:content>СтрокаОбъектаБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -217,12 +211,6 @@
 			<c>
 				<c>
 					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Строка</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -247,7 +235,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>текст текущей ячейки</v8:content>
+							<v8:content>Добавленная/найденная строка записываемого объекта</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -263,18 +251,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТекстыЯчеек</v8:content>
+							<v8:content>СтрокаТаблицыЗначений</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>7</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Массив</v8:content>
+							<v8:content>СтрокаТаблицыЗначений</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -301,7 +289,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>массив текстов ячеек строки</v8:content>
+							<v8:content>Строка таблицы значений источника</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -317,18 +305,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТекущиеДанные</v8:content>
+							<v8:content>СтрокаНайдена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>1</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Струкутура</v8:content>
+							<v8:content>Булево</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -355,7 +343,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>структура преобразованных значений</v8:content>
+							<v8:content>Строка была обновлена, а не добавлена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -371,18 +359,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОписаниеОшибки</v8:content>
+							<v8:content>Отказ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>2</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Строка</v8:content>
+							<v8:content>Булево</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -394,7 +382,7 @@
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>6</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -409,7 +397,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>описание ошибки, выводимое в примечание ячейки и в окно сообщений</v8:content>
+							<v8:content>Изменяемый признак отказа от записи объекта</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -422,16 +410,18 @@
 	<vgRows>7</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
-		<width>112</width>
-	</format>
-	<format>
-		<width>113</width>
+		<width>158</width>
 	</format>
 	<format>
 		<width>434</width>
 	</format>
 	<format>
 		<font>0</font>
+		<width>112</width>
+	</format>
+	<format>
+		<font>0</font>
+		<width>158</width>
 	</format>
 	<format>
 		<font>0</font>
@@ -439,5 +429,8 @@
 	</format>
 	<format>
 		<width>72</width>
+	</format>
+	<format>
+		<width>127</width>
 	</format>
 </document>
