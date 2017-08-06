@@ -172,6 +172,84 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="99ea2747-df48-4fe2-9eaf-00797cb110e0">
+				<Properties>
+					<Name>КоличествоНеуникальныхКлючей1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество неуникальных ключей1</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вычисляемое</Comment>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="fc639746-5a7d-4618-ba7b-4c23fcbf0c2f">
+				<Properties>
+					<Name>КоличествоНеуникальныхКлючей2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество неуникальных ключей2</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вычисляемое</Comment>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="3dcd350b-2833-4d1a-8130-5968043a6af2">
 				<Properties>
 					<Name>КоличествоСтрок1</Name>
@@ -416,13 +494,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="4625d0de-7d1b-4a4f-82e5-ab22bf4174ea">
+			<Attribute uuid="faefb258-5a45-47b0-96d5-823df2aed66f">
 				<Properties>
-					<Name>ОтличаютсяЦветФона</Name>
+					<Name>ОтличаютсяЦветТекста</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отличаются цвет фона</v8:content>
+							<v8:content>Отличаются цвет текста</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -450,13 +528,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="faefb258-5a45-47b0-96d5-823df2aed66f">
+			<Attribute uuid="4625d0de-7d1b-4a4f-82e5-ab22bf4174ea">
 				<Properties>
-					<Name>ОтличаютсяЦветТекста</Name>
+					<Name>ОтличаютсяЦветФона</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отличаются цвет текста</v8:content>
+							<v8:content>Отличаются цвет фона</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -586,40 +664,6 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="6808cffc-e175-480b-a6fe-89cf95980d91">
-				<Properties>
-					<Name>ТолькоВТаблице1ЦветФона</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Только в таблице1 цвет фона</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>v8ui:Color</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="71dedf29-34f1-4625-bdc2-c32be1c0234a">
 				<Properties>
 					<Name>ТолькоВТаблице1ЦветТекста</Name>
@@ -654,13 +698,13 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b4868de4-2a29-4529-b2ac-f77a70eecb9e">
+			<Attribute uuid="6808cffc-e175-480b-a6fe-89cf95980d91">
 				<Properties>
-					<Name>ТолькоВТаблице2ЦветФона</Name>
+					<Name>ТолькоВТаблице1ЦветФона</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Только в таблице 2 цвет фона</v8:content>
+							<v8:content>Только в таблице1 цвет фона</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -695,6 +739,40 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Только в таблице 2 цвет текста</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>v8ui:Color</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b4868de4-2a29-4529-b2ac-f77a70eecb9e">
+				<Properties>
+					<Name>ТолькоВТаблице2ЦветФона</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только в таблице 2 цвет фона</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

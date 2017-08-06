@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.19</Version>
+			<Version>4.20</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,7 +211,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
@@ -382,13 +381,18 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
 			<Role>ирПравоАдминистрирование</Role>
 			<Role>ирРазработчик</Role>
 			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
+			<CommonTemplate>ирШаблонРасширенияСИнтерфейсом</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
+			<CommonModule>ирИнтерфейс</CommonModule>
+			<CommonModule>ирИнтерфейсОбъявление</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирПортативный</CommonModule>
@@ -413,7 +417,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonForm>ирАдаптацияРасширения</CommonForm>
 			<CommonForm>ирВыпускВариантаПортативный</CommonForm>
 			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
-			<CommonForm>ирНевозможноВТонкомКлиенте</CommonForm>
 			<CommonForm>ирОбновлениеОписанияПлатформы</CommonForm>
 			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
