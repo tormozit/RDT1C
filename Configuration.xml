@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.20</Version>
+			<Version>4.21</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -211,6 +211,9 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
@@ -374,15 +377,12 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирУдалитьСКонтролемСсылок</CommonPicture>
 			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
 			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
+			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
 			<CommonPicture>ирФлажок</CommonPicture>
 			<CommonPicture>ирФорма</CommonPicture>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
-			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
-			<CommonPicture>ирExcel</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -391,8 +391,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
 			<CommonTemplate>ирШаблонРасширенияСИнтерфейсом</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
-			<CommonModule>ирИнтерфейс</CommonModule>
-			<CommonModule>ирИнтерфейсОбъявление</CommonModule>
+			<CommonModule>ирИнтерфейсДляВстраивания</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
 			<CommonModule>ирПортативный</CommonModule>
