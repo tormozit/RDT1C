@@ -1,0 +1,14 @@
+﻿Диагностика блокировок СУБД (8.3.8+)
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<log history="24">
+		<property name="all"/>
+		<event>
+			<eq property="lkp" value="1"/>
+		</event>
+		<event>
+			<eq property="lka" value="1"/>
+		</event>
+	</log>
+	<dump create="false" type="0" prntscrn="false"/>
+</config>
