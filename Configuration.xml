@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.23</Version>
+			<Version>4.24</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -169,7 +169,7 @@
 			<StandaloneConfigurationRestrictionRoles/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
-			<DefaultStyle>Style.ирОсновной</DefaultStyle>
+			<DefaultStyle/>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -203,11 +203,6 @@ http://infostart.ru/projects/1274</v8:content>
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>ИнструментыРазработчикаTormozit</Subsystem>
-			<StyleItem>ирТекстИнформационнойНадписи</StyleItem>
-			<StyleItem>ирЦветФонаВычисляемогоЗначения</StyleItem>
-			<StyleItem>ирЦветФонаОшибки</StyleItem>
-			<StyleItem>ирЦветФонаРасширенногоПредставленияЗначения</StyleItem>
-			<StyleItem>ирЦветФонаЧередованияСтрок</StyleItem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
@@ -389,7 +384,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Role>ирПравоАдминистрирование</Role>
 			<Role>ирРазработчик</Role>
 			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
-			<CommonTemplate>ирШаблонРасширенияСИнтерфейсом</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
 			<CommonModule>ирИнтерфейсДляВстраивания</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
