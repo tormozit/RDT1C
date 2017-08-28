@@ -103,7 +103,7 @@
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
 			<ChildItems>
 				<InputField name="ОбъектМетаданных" id="14">
-					<DataPath>ОсновнойОбъект.ОбъектМетаданных</DataPath>
+					<DataPath>фОбъект.ОбъектМетаданных</DataPath>
 					<DropListButton>true</DropListButton>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="ОбъектМетаданныхКонтекстноеМеню" id="15"/>
@@ -111,19 +111,18 @@
 					<Events>
 						<Event name="OnChange">ОбъектОбъектМетаданныхПриИзменении</Event>
 						<Event name="StartChoice">ОбъектОбъектМетаданныхНачалоВыбора</Event>
-						<Event name="StartListChoice">ОбъектОбъектМетаданныхНачалоВыбораИзСписка</Event>
 						<Event name="Clearing">ОбъектОбъектМетаданныхОчистка</Event>
 						<Event name="ChoiceProcessing">ОбъектОбъектМетаданныхОбработкаВыбора</Event>
 					</Events>
 				</InputField>
 				<CheckBoxField name="ОбъектВместоОсновной" id="17">
-					<DataPath>ОсновнойОбъект.ВместоОсновной</DataPath>
+					<DataPath>фОбъект.ВместоОсновной</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ОбъектВместоОсновнойКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ОбъектВместоОсновнойРасширеннаяПодсказка" id="19"/>
 				</CheckBoxField>
 				<CheckBoxField name="ОбъектРежимИмяСиноним" id="34">
-					<DataPath>ОсновнойОбъект.РежимИмяСиноним</DataPath>
+					<DataPath>фОбъект.РежимИмяСиноним</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -254,11 +253,11 @@
 		</Table>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="ОсновнойОбъект" id="1">
+		<Attribute name="фОбъект" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Основной объект</v8:content>
+					<v8:content>Ф объект</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
