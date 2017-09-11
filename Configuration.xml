@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.25</Version>
+			<Version>4.26</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,8 +205,10 @@ http://infostart.ru/projects/1274</v8:content>
 			<Subsystem>ИнструментыРазработчикаTormozit</Subsystem>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
-			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
 			<CommonPicture>ирАвтоКонтекстнаяПомощь</CommonPicture>
@@ -376,8 +378,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирСтрокаТаблицы</CommonPicture>
 			<CommonPicture>ирПоследниеВыбранные</CommonPicture>
 			<Interface>ирРазработчик</Interface>
@@ -418,13 +418,16 @@ http://infostart.ru/projects/1274</v8:content>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирКонсольКомпоновокДанных</Report>
-			<DataProcessor>ирАлгоритмОбъект</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
+			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
+			<DataProcessor>ирИмитаторНаборЗаписей</DataProcessor>
+			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
+			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
