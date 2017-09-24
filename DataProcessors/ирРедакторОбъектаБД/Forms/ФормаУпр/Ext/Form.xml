@@ -403,6 +403,9 @@
 			</ToolTip>
 			<Height>15</Height>
 			<ExtendedTooltip name="ПанельОсновнаяРасширеннаяПодсказка" id="97"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ПанельОсновнаяПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="СтраницаСвойстваОбъекта" id="98">
 					<Title>
@@ -498,6 +501,27 @@
 												<Event name="OnStartEdit">РеквизитыТаблицаПриНачалеРедактирования</Event>
 											</Events>
 											<ChildItems>
+												<PictureField name="РеквизитыТаблицаИндексКартинки" id="687">
+													<DataPath>РеквизитыТаблица.ИндексКартинки</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content> </v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>1</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>1</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.ирТипыСловПодсказки</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ValuesPicture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="РеквизитыТаблицаИндексКартинкиКонтекстноеМеню" id="688"/>
+													<ExtendedTooltip name="РеквизитыТаблицаИндексКартинкиРасширеннаяПодсказка" id="689"/>
+												</PictureField>
 												<InputField name="РеквизитыТаблицаИмяРеквизита" id="134">
 													<DataPath>РеквизитыТаблица.ИмяРеквизита</DataPath>
 													<ReadOnly>true</ReadOnly>
@@ -514,7 +538,7 @@
 													<ContextMenu name="РеквизитыТаблицаПредставлениеПоляКонтекстноеМеню" id="132"/>
 													<ExtendedTooltip name="РеквизитыТаблицаПредставлениеПоляРасширеннаяПодсказка" id="133"/>
 												</InputField>
-												<InputField name="РеквизитыТаблицаЗначение" id="116">
+												<InputField name="РеквизитыТаблицаЗначениеРеквизита" id="116">
 													<DataPath>РеквизитыТаблица.ЗначениеРеквизита</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>30</Width>
@@ -522,8 +546,8 @@
 														<xr:DataPath>Items.РеквизитыТаблица.CurrentData.ОписаниеТипов</xr:DataPath>
 														<xr:LinkItem>0</xr:LinkItem>
 													</TypeLink>
-													<ContextMenu name="РеквизитыТаблицаЗначениеКонтекстноеМеню" id="117"/>
-													<ExtendedTooltip name="РеквизитыТаблицаЗначениеРасширеннаяПодсказка" id="118"/>
+													<ContextMenu name="РеквизитыТаблицаЗначениеРеквизитаКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="РеквизитыТаблицаЗначениеРеквизитаРасширеннаяПодсказка" id="118"/>
 													<Events>
 														<Event name="OnChange">РеквизитыТаблицаЗначениеРеквизитаПриИзмененииНаКлиенте</Event>
 														<Event name="StartChoice">РеквизитыТаблицаЗначениеРеквизитаНачалоВыбора</Event>
@@ -1229,6 +1253,8 @@
 							</ChildItems>
 						</UsualGroup>
 						<Table name="ПоискВОбъекте" id="260">
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -1268,24 +1294,28 @@
 							<ChildItems>
 								<InputField name="ПоискВОбъектеТипТаблицы" id="276">
 									<DataPath>фОбъект.ПоискВОбъекте.ТипТаблицы</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоискВОбъектеТипТаблицыКонтекстноеМеню" id="277"/>
 									<ExtendedTooltip name="ПоискВОбъектеТипТаблицыРасширеннаяПодсказка" id="278"/>
 								</InputField>
 								<InputField name="ПоискВОбъектеТаблицаОбъекта" id="279">
 									<DataPath>фОбъект.ПоискВОбъекте.ТаблицаОбъекта</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоискВОбъектеТаблицаОбъектаКонтекстноеМеню" id="280"/>
 									<ExtendedTooltip name="ПоискВОбъектеТаблицаОбъектаРасширеннаяПодсказка" id="281"/>
 								</InputField>
 								<InputField name="ПоискВОбъектеНомерСтроки" id="282">
 									<DataPath>фОбъект.ПоискВОбъекте.НомерСтрокиТаблицы</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоискВОбъектеНомерСтрокиКонтекстноеМеню" id="283"/>
 									<ExtendedTooltip name="ПоискВОбъектеНомерСтрокиРасширеннаяПодсказка" id="284"/>
 								</InputField>
 								<InputField name="ПоискВОбъектеРеквизит" id="285">
 									<DataPath>фОбъект.ПоискВОбъекте.Реквизит</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПоискВОбъектеРеквизитКонтекстноеМеню" id="286"/>
 									<ExtendedTooltip name="ПоискВОбъектеРеквизитРасширеннаяПодсказка" id="287"/>
@@ -1315,13 +1345,34 @@
 					<ChildItems>
 						<Table name="ИзмененияНаУзлах" id="333">
 							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ИзмененияНаУзлах</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменения регистрации вступают в силу сразу и не читаются по движениям документа!</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
 							<ContextMenu name="ИзмененияНаУзлахКонтекстноеМеню" id="334"/>
-							<AutoCommandBar name="ИзмененияНаУзлахКоманднаяПанель" id="335"/>
+							<AutoCommandBar name="ИзмененияНаУзлахКоманднаяПанель" id="335">
+								<ChildItems>
+									<Button name="ИзмененияНаУзлахИзмененияНаУзлахОбновить" id="693">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзмененияНаУзлахОбновить</CommandName>
+										<ExtendedTooltip name="ИзмененияНаУзлахИзмененияНаУзлахОбновитьРасширеннаяПодсказка" id="694"/>
+									</Button>
+									<Button name="ИзмененияНаУзлахРедакторИзмененийНаУзле" id="695">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РедакторИзмененийНаУзле</CommandName>
+										<ExtendedTooltip name="ИзмененияНаУзлахРедакторИзмененийНаУзлеРасширеннаяПодсказка" id="696"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ИзмененияНаУзлахРасширеннаяПодсказка" id="336"/>
 							<SearchStringAddition name="ИзмененияНаУзлахСтрокаПоиска" id="337">
 								<AdditionSource>
@@ -1347,9 +1398,29 @@
 								<ContextMenu name="ИзмененияНаУзлахУправлениеПоискомКонтекстноеМеню" id="344"/>
 								<ExtendedTooltip name="ИзмененияНаУзлахУправлениеПоискомРасширеннаяПодсказка" id="345"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоУзловВыбор</Event>
+							</Events>
 							<ChildItems>
+								<CheckBoxField name="ИзмененияНаУзлахПолеПометка" id="704">
+									<DataPath>ИзмененияНаУзлах.Пометка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ThreeState>true</ThreeState>
+									<ContextMenu name="ИзмененияНаУзлахПолеПометкаКонтекстноеМеню" id="705"/>
+									<ExtendedTooltip name="ИзмененияНаУзлахПолеПометкаРасширеннаяПодсказка" id="706"/>
+									<Events>
+										<Event name="OnChange">ДеревоУзловПриИзмененииФлажка</Event>
+									</Events>
+								</CheckBoxField>
 								<InputField name="ИзмененияНаУзлахУзелОбмена" id="346">
 									<DataPath>ИзмененияНаУзлах.УзелОбмена</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ИзмененияНаУзлахУзелОбменаКонтекстноеМеню" id="347"/>
 									<ExtendedTooltip name="ИзмененияНаУзлахУзелОбменаРасширеннаяПодсказка" id="348"/>
@@ -1372,6 +1443,7 @@
 								<InputField name="ИзмененияНаУзлахИмяПланаОбмена" id="355">
 									<DataPath>ИзмененияНаУзлах.ИмяПланаОбмена</DataPath>
 									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ИзмененияНаУзлахИмяПланаОбменаКонтекстноеМеню" id="356"/>
 									<ExtendedTooltip name="ИзмененияНаУзлахИмяПланаОбменаРасширеннаяПодсказка" id="357"/>
@@ -1429,7 +1501,55 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаНайденныеСсылкиРасширеннаяПодсказка" id="418"/>
 									<ChildItems>
+										<UsualGroup name="Группа10" id="697">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="698"/>
+											<ChildItems>
+												<CommandBar name="Группа16" id="699">
+													<CommandSource>Item.НайденныеСсылки</CommandSource>
+													<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="700"/>
+													<ChildItems>
+														<Button name="НайденныеСсылкиНайтиСсылкиНаОбъект" id="675">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.НайтиСсылкиНаОбъект</CommandName>
+															<ExtendedTooltip name="НайденныеСсылкиНайтиСсылкиНаОбъектРасширеннаяПодсказка" id="676"/>
+														</Button>
+														<Button name="НайденныеСсылкиОтобратьПоТипам" id="677">
+															<Type>CommandBarButton</Type>
+															<Enabled>false</Enabled>
+															<CommandName>Form.Command.СсылкиОтобратьПоТипам</CommandName>
+															<ExtendedTooltip name="НайденныеСсылкиОтобратьПоТипамРасширеннаяПодсказка" id="678"/>
+														</Button>
+														<Button name="НайденныеСсылкиСсылкиРедакторОбъектаБД" id="679">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.СсылкиРедакторОбъектаБД</CommandName>
+															<ExtendedTooltip name="НайденныеСсылкиСсылкиРедакторОбъектаБДРасширеннаяПодсказка" id="680"/>
+														</Button>
+														<Button name="НайденныеСсылкиСсылкиКонсольОбработки" id="681">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.СсылкиКонсольОбработки</CommandName>
+															<ExtendedTooltip name="НайденныеСсылкиСсылкиКонсольОбработкиРасширеннаяПодсказка" id="682"/>
+														</Button>
+														<Button name="НайденныеСсылкиСсылкиКонсольКомпоновки" id="683">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.СсылкиКонсольКомпоновки</CommandName>
+															<ExtendedTooltip name="НайденныеСсылкиСсылкиКонсольКомпоновкиРасширеннаяПодсказка" id="684"/>
+														</Button>
+													</ChildItems>
+												</CommandBar>
+												<InputField name="СсылкиНаОбъектКоличествоСтрок" id="701">
+													<DataPath>фОбъект.СсылкиНаОбъект.RowsCount</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<ContextMenu name="СсылкиНаОбъектКоличествоСтрокКонтекстноеМеню" id="702"/>
+													<ExtendedTooltip name="СсылкиНаОбъектКоличествоСтрокРасширеннаяПодсказка" id="703"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<Table name="НайденныеСсылки" id="360">
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
@@ -1464,79 +1584,105 @@
 												<ExtendedTooltip name="НайденныеСсылкиУправлениеПоискомРасширеннаяПодсказка" id="372"/>
 											</SearchControlAddition>
 											<ChildItems>
-												<LabelField name="СсылкиНаОбъектНомерСтроки" id="373">
-													<DataPath>фОбъект.СсылкиНаОбъект.LineNumber</DataPath>
+												<PictureField name="НайденныеСсылкиИндексКартинки" id="690">
+													<DataPath>фОбъект.СсылкиНаОбъект.ИндексКартинки</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content> </v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектНомерСтрокиКонтекстноеМеню" id="374"/>
-													<ExtendedTooltip name="СсылкиНаОбъектНомерСтрокиРасширеннаяПодсказка" id="375"/>
-												</LabelField>
-												<InputField name="СсылкиНаОбъектДанные" id="376">
+													<Width>1</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>1</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.ирСостоянияОбъекта</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ValuesPicture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="НайденныеСсылкиИндексКартинкиКонтекстноеМеню" id="691"/>
+													<ExtendedTooltip name="НайденныеСсылкиИндексКартинкиРасширеннаяПодсказка" id="692"/>
+												</PictureField>
+												<InputField name="НайденныеСсылкиДанные" id="376">
 													<DataPath>фОбъект.СсылкиНаОбъект.Данные</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектДанныеКонтекстноеМеню" id="377"/>
-													<ExtendedTooltip name="СсылкиНаОбъектДанныеРасширеннаяПодсказка" id="378"/>
+													<ContextMenu name="НайденныеСсылкиДанныеКонтекстноеМеню" id="377"/>
+													<ExtendedTooltip name="НайденныеСсылкиДанныеРасширеннаяПодсказка" id="378"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектМетаданные" id="382">
+												<InputField name="НайденныеСсылкиМетаданные" id="382">
 													<DataPath>фОбъект.СсылкиНаОбъект.Метаданные</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>20</Width>
-													<ContextMenu name="СсылкиНаОбъектМетаданныеКонтекстноеМеню" id="383"/>
-													<ExtendedTooltip name="СсылкиНаОбъектМетаданныеРасширеннаяПодсказка" id="384"/>
+													<ContextMenu name="НайденныеСсылкиМетаданныеКонтекстноеМеню" id="383"/>
+													<ExtendedTooltip name="НайденныеСсылкиМетаданныеРасширеннаяПодсказка" id="384"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектТипМетаданных" id="397">
+												<InputField name="НайденныеСсылкиТипМетаданных" id="397">
 													<DataPath>фОбъект.СсылкиНаОбъект.ТипМетаданных</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>20</Width>
-													<ContextMenu name="СсылкиНаОбъектТипМетаданныхКонтекстноеМеню" id="398"/>
-													<ExtendedTooltip name="СсылкиНаОбъектТипМетаданныхРасширеннаяПодсказка" id="399"/>
+													<ContextMenu name="НайденныеСсылкиТипМетаданныхКонтекстноеМеню" id="398"/>
+													<ExtendedTooltip name="НайденныеСсылкиТипМетаданныхРасширеннаяПодсказка" id="399"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектТипДанных" id="385">
+												<InputField name="НайденныеСсылкиТипДанных" id="385">
 													<DataPath>фОбъект.СсылкиНаОбъект.ТипДанных</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>20</Width>
-													<ContextMenu name="СсылкиНаОбъектТипДанныхКонтекстноеМеню" id="386"/>
-													<ExtendedTooltip name="СсылкиНаОбъектТипДанныхРасширеннаяПодсказка" id="387"/>
+													<ContextMenu name="НайденныеСсылкиТипДанныхКонтекстноеМеню" id="386"/>
+													<ExtendedTooltip name="НайденныеСсылкиТипДанныхРасширеннаяПодсказка" id="387"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектДата" id="388">
+												<InputField name="НайденныеСсылкиДата" id="388">
 													<DataPath>фОбъект.СсылкиНаОбъект.Дата</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектДатаКонтекстноеМеню" id="389"/>
-													<ExtendedTooltip name="СсылкиНаОбъектДатаРасширеннаяПодсказка" id="390"/>
+													<ContextMenu name="НайденныеСсылкиДатаКонтекстноеМеню" id="389"/>
+													<ExtendedTooltip name="НайденныеСсылкиДатаРасширеннаяПодсказка" id="390"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектРеквизит1" id="400">
+												<InputField name="НайденныеСсылкиРеквизит1" id="400">
 													<DataPath>фОбъект.СсылкиНаОбъект.Реквизит1</DataPath>
 													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектРеквизит1КонтекстноеМеню" id="401"/>
-													<ExtendedTooltip name="СсылкиНаОбъектРеквизит1РасширеннаяПодсказка" id="402"/>
+													<ContextMenu name="НайденныеСсылкиРеквизит1КонтекстноеМеню" id="401"/>
+													<ExtendedTooltip name="НайденныеСсылкиРеквизит1РасширеннаяПодсказка" id="402"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектРеквизит2" id="403">
+												<InputField name="НайденныеСсылкиРеквизит2" id="403">
 													<DataPath>фОбъект.СсылкиНаОбъект.Реквизит2</DataPath>
 													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектРеквизит2КонтекстноеМеню" id="404"/>
-													<ExtendedTooltip name="СсылкиНаОбъектРеквизит2РасширеннаяПодсказка" id="405"/>
+													<ContextMenu name="НайденныеСсылкиРеквизит2КонтекстноеМеню" id="404"/>
+													<ExtendedTooltip name="НайденныеСсылкиРеквизит2РасширеннаяПодсказка" id="405"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектРеквизит3" id="406">
+												<InputField name="НайденныеСсылкиРеквизит3" id="406">
 													<DataPath>фОбъект.СсылкиНаОбъект.Реквизит3</DataPath>
 													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектРеквизит3КонтекстноеМеню" id="407"/>
-													<ExtendedTooltip name="СсылкиНаОбъектРеквизит3РасширеннаяПодсказка" id="408"/>
+													<ContextMenu name="НайденныеСсылкиРеквизит3КонтекстноеМеню" id="407"/>
+													<ExtendedTooltip name="НайденныеСсылкиРеквизит3РасширеннаяПодсказка" id="408"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектРеквизит4" id="409">
+												<InputField name="НайденныеСсылкиРеквизит4" id="409">
 													<DataPath>фОбъект.СсылкиНаОбъект.Реквизит4</DataPath>
 													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектРеквизит4КонтекстноеМеню" id="410"/>
-													<ExtendedTooltip name="СсылкиНаОбъектРеквизит4РасширеннаяПодсказка" id="411"/>
+													<ContextMenu name="НайденныеСсылкиРеквизит4КонтекстноеМеню" id="410"/>
+													<ExtendedTooltip name="НайденныеСсылкиРеквизит4РасширеннаяПодсказка" id="411"/>
 												</InputField>
-												<InputField name="СсылкиНаОбъектРеквизит5" id="412">
+												<InputField name="НайденныеСсылкиРеквизит5" id="412">
 													<DataPath>фОбъект.СсылкиНаОбъект.Реквизит5</DataPath>
 													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СсылкиНаОбъектРеквизит5КонтекстноеМеню" id="413"/>
-													<ExtendedTooltip name="СсылкиНаОбъектРеквизит5РасширеннаяПодсказка" id="414"/>
+													<ContextMenu name="НайденныеСсылкиРеквизит5КонтекстноеМеню" id="413"/>
+													<ExtendedTooltip name="НайденныеСсылкиРеквизит5РасширеннаяПодсказка" id="414"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -1606,10 +1752,10 @@
 											<ContextMenu name="КомпоновщикДопПолейНастройкиПорядокКонтекстноеМеню" id="422"/>
 											<AutoCommandBar name="КомпоновщикДопПолейНастройкиПорядокКоманднаяПанель" id="423">
 												<ChildItems>
-													<Button name="КомпоновщикДопПолейНастройкиПорядокПрочитатьДопПоля" id="447">
+													<Button name="КомпоновщикДопПолейНастройкиПорядокСсылкиПрочитатьДопПоля" id="685">
 														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПрочитатьДопПоля</CommandName>
-														<ExtendedTooltip name="КомпоновщикДопПолейНастройкиПорядокПрочитатьДопПоляРасширеннаяПодсказка" id="448"/>
+														<CommandName>Form.Command.СсылкиПрочитатьДопПоля</CommandName>
+														<ExtendedTooltip name="КомпоновщикДопПолейНастройкиПорядокСсылкиПрочитатьДопПоляРасширеннаяПодсказка" id="686"/>
 													</Button>
 												</ChildItems>
 											</AutoCommandBar>
@@ -1691,6 +1837,9 @@
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="УчитыватьВсеКолонкиТаблицИзмененийКонтекстноеМеню" id="497"/>
 											<ExtendedTooltip name="УчитыватьВсеКолонкиТаблицИзмененийРасширеннаяПодсказка" id="498"/>
+											<Events>
+												<Event name="OnChange">ЛиТаблицыИзмененийПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<CheckBoxField name="УчитыватьВиртуальныеТаблицы" id="493">
 											<DataPath>фОбъект.УчитыватьВиртуальныеТаблицы</DataPath>
@@ -1727,15 +1876,22 @@
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИмяПредставлениеКонтекстноеМеню" id="514"/>
 											<ExtendedTooltip name="ИмяПредставлениеРасширеннаяПодсказка" id="515"/>
+											<Events>
+												<Event name="OnChange">ИмяПредставлениеПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<CheckBoxField name="ТолькоНепустые" id="508">
 											<DataPath>фОбъект.ТолькоНепустые</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ТолькоНепустыеКонтекстноеМеню" id="509"/>
 											<ExtendedTooltip name="ТолькоНепустыеРасширеннаяПодсказка" id="510"/>
+											<Events>
+												<Event name="OnChange">СвязанныеДанныеТолькоНепустыеПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<CheckBoxField name="ТолькоПростойТип" id="505">
 											<DataPath>фОбъект.ТолькоПростойТип</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ТолькоПростойТипКонтекстноеМеню" id="506"/>
 											<ExtendedTooltip name="ТолькоПростойТипРасширеннаяПодсказка" id="507"/>
@@ -1753,6 +1909,10 @@
 											<ClearButton>true</ClearButton>
 											<ContextMenu name="ФильтрИменТаблицКонтекстноеМеню" id="503"/>
 											<ExtendedTooltip name="ФильтрИменТаблицРасширеннаяПодсказка" id="504"/>
+											<Events>
+												<Event name="OnChange">ФильтрИменТаблицПриИзменении</Event>
+												<Event name="AutoComplete">ФильтрИменТаблицАвтоПодборТекста</Event>
+											</Events>
 										</InputField>
 										<InputField name="ФильтрИменКолонок" id="499">
 											<DataPath>фОбъект.ФильтрИменКолонок</DataPath>
@@ -1767,6 +1927,10 @@
 											<ClearButton>true</ClearButton>
 											<ContextMenu name="ФильтрИменКолонокКонтекстноеМеню" id="500"/>
 											<ExtendedTooltip name="ФильтрИменКолонокРасширеннаяПодсказка" id="501"/>
+											<Events>
+												<Event name="OnChange">ФильтрИменКолонокПриИзменении</Event>
+												<Event name="AutoComplete">ФильтрИменКолонокАвтоПодборТекста</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1778,6 +1942,10 @@
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>фОбъект.СвязанныеДанные</DataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ирТаблицыЗапроса</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="СвязанныеДанныеКонтекстноеМеню" id="452"/>
 							<AutoCommandBar name="СвязанныеДанныеКоманднаяПанель" id="453"/>
@@ -1807,23 +1975,38 @@
 								<ExtendedTooltip name="СвязанныеДанныеУправлениеПоискомРасширеннаяПодсказка" id="463"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="СвязанныеДанныеНомерСтроки" id="464">
-									<DataPath>фОбъект.СвязанныеДанные.LineNumber</DataPath>
+								<InputField name="СвязанныеДанныеТипТаблицы" id="488">
+									<DataPath>фОбъект.СвязанныеДанные.ТипТаблицы</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеНомерСтрокиКонтекстноеМеню" id="465"/>
-									<ExtendedTooltip name="СвязанныеДанныеНомерСтрокиРасширеннаяПодсказка" id="466"/>
-								</LabelField>
+									<Width>20</Width>
+									<ContextMenu name="СвязанныеДанныеТипТаблицыКонтекстноеМеню" id="489"/>
+									<ExtendedTooltip name="СвязанныеДанныеТипТаблицыРасширеннаяПодсказка" id="490"/>
+								</InputField>
+								<InputField name="СвязанныеДанныеИмяТаблицы" id="470">
+									<DataPath>фОбъект.СвязанныеДанные.ИмяТаблицы</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвязанныеДанныеИмяТаблицыКонтекстноеМеню" id="471"/>
+									<ExtendedTooltip name="СвязанныеДанныеИмяТаблицыРасширеннаяПодсказка" id="472"/>
+								</InputField>
+								<InputField name="СвязанныеДанныеПредставлениеТаблицы" id="485">
+									<DataPath>фОбъект.СвязанныеДанные.ПредставлениеТаблицы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СвязанныеДанныеПредставлениеТаблицыКонтекстноеМеню" id="486"/>
+									<ExtendedTooltip name="СвязанныеДанныеПредставлениеТаблицыРасширеннаяПодсказка" id="487"/>
+								</InputField>
 								<InputField name="СвязанныеДанныеИмяКолонки" id="467">
 									<DataPath>фОбъект.СвязанныеДанные.ИмяКолонки</DataPath>
+									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="СвязанныеДанныеИмяКолонкиКонтекстноеМеню" id="468"/>
 									<ExtendedTooltip name="СвязанныеДанныеИмяКолонкиРасширеннаяПодсказка" id="469"/>
 								</InputField>
-								<InputField name="СвязанныеДанныеИмяТаблицы" id="470">
-									<DataPath>фОбъект.СвязанныеДанные.ИмяТаблицы</DataPath>
+								<InputField name="СвязанныеДанныеПредставлениеКолонки" id="482">
+									<DataPath>фОбъект.СвязанныеДанные.ПредставлениеКолонки</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеИмяТаблицыКонтекстноеМеню" id="471"/>
-									<ExtendedTooltip name="СвязанныеДанныеИмяТаблицыРасширеннаяПодсказка" id="472"/>
+									<ContextMenu name="СвязанныеДанныеПредставлениеКолонкиКонтекстноеМеню" id="483"/>
+									<ExtendedTooltip name="СвязанныеДанныеПредставлениеКолонкиРасширеннаяПодсказка" id="484"/>
 								</InputField>
 								<InputField name="СвязанныеДанныеКоличествоСсылающихся" id="473">
 									<DataPath>фОбъект.СвязанныеДанные.КоличествоСсылающихся</DataPath>
@@ -1837,31 +2020,43 @@
 									<ContextMenu name="СвязанныеДанныеКоличествоТиповКонтекстноеМеню" id="477"/>
 									<ExtendedTooltip name="СвязанныеДанныеКоличествоТиповРасширеннаяПодсказка" id="478"/>
 								</InputField>
-								<InputField name="СвязанныеДанныеПолноеИмяТаблицы" id="479">
-									<DataPath>фОбъект.СвязанныеДанные.ПолноеИмяТаблицы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеПолноеИмяТаблицыКонтекстноеМеню" id="480"/>
-									<ExtendedTooltip name="СвязанныеДанныеПолноеИмяТаблицыРасширеннаяПодсказка" id="481"/>
-								</InputField>
-								<InputField name="СвязанныеДанныеПредставлениеКолонки" id="482">
-									<DataPath>фОбъект.СвязанныеДанные.ПредставлениеКолонки</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеПредставлениеКолонкиКонтекстноеМеню" id="483"/>
-									<ExtendedTooltip name="СвязанныеДанныеПредставлениеКолонкиРасширеннаяПодсказка" id="484"/>
-								</InputField>
-								<InputField name="СвязанныеДанныеПредставлениеТаблицы" id="485">
-									<DataPath>фОбъект.СвязанныеДанные.ПредставлениеТаблицы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеПредставлениеТаблицыКонтекстноеМеню" id="486"/>
-									<ExtendedTooltip name="СвязанныеДанныеПредставлениеТаблицыРасширеннаяПодсказка" id="487"/>
-								</InputField>
-								<InputField name="СвязанныеДанныеТипТаблицы" id="488">
-									<DataPath>фОбъект.СвязанныеДанные.ТипТаблицы</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СвязанныеДанныеТипТаблицыКонтекстноеМеню" id="489"/>
-									<ExtendedTooltip name="СвязанныеДанныеТипТаблицыРасширеннаяПодсказка" id="490"/>
-								</InputField>
 							</ChildItems>
+						</Table>
+						<Table name="СтрокиТаблицыБД" id="707">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СтрокиТаблицыБД</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтрокиТаблицыБДКонтекстноеМеню" id="708"/>
+							<AutoCommandBar name="СтрокиТаблицыБДКоманднаяПанель" id="709"/>
+							<ExtendedTooltip name="СтрокиТаблицыБДРасширеннаяПодсказка" id="710"/>
+							<SearchStringAddition name="СтрокиТаблицыБДСтрокаПоиска" id="711">
+								<AdditionSource>
+									<Item>СтрокиТаблицыБД</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтрокиТаблицыБДСтрокаПоискаКонтекстноеМеню" id="712"/>
+								<ExtendedTooltip name="СтрокиТаблицыБДСтрокаПоискаРасширеннаяПодсказка" id="713"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтрокиТаблицыБДСостояниеПросмотра" id="714">
+								<AdditionSource>
+									<Item>СтрокиТаблицыБД</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтрокиТаблицыБДСостояниеПросмотраКонтекстноеМеню" id="715"/>
+								<ExtendedTooltip name="СтрокиТаблицыБДСостояниеПросмотраРасширеннаяПодсказка" id="716"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтрокиТаблицыБДУправлениеПоиском" id="717">
+								<AdditionSource>
+									<Item>СтрокиТаблицыБД</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтрокиТаблицыБДУправлениеПоискомКонтекстноеМеню" id="718"/>
+								<ExtendedTooltip name="СтрокиТаблицыБДУправлениеПоискомРасширеннаяПодсказка" id="719"/>
+							</SearchControlAddition>
 						</Table>
 					</ChildItems>
 				</Page>
@@ -1883,6 +2078,11 @@
 			<HorizontalLocation>Right</HorizontalLocation>
 			<ExtendedTooltip name="ОсновныеДействияФормыРасширеннаяПодсказка" id="542"/>
 			<ChildItems>
+				<Button name="ОПодсистеме" id="720">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОПодсистеме</CommandName>
+					<ExtendedTooltip name="ОПодсистемеРасширеннаяПодсказка" id="721"/>
+				</Button>
 				<Button name="СтруктураФормы" id="617">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.СтруктураФормы</CommandName>
@@ -1986,6 +2186,7 @@
 						</Button>
 						<Button name="Идентификаторы" id="591">
 							<Type>CommandBarButton</Type>
+							<Enabled>false</Enabled>
 							<CommandName>Form.Command.Идентификаторы</CommandName>
 							<Title>
 								<v8:item>
@@ -2341,26 +2542,7 @@
 							<v8:content>Значение</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:Type>v8:UUID</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-						<v8:NumberQualifiers>
-							<v8:Digits>20</v8:Digits>
-							<v8:FractionDigits>9</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-						<v8:StringQualifiers>
-							<v8:Length>255</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="Подсказка" id="3">
 					<Title>
@@ -2504,26 +2686,7 @@
 							<v8:content>РасширенноеЗначение</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:Type>v8:UUID</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-						<v8:NumberQualifiers>
-							<v8:Digits>20</v8:Digits>
-							<v8:FractionDigits>9</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-						<v8:StringQualifiers>
-							<v8:Length>255</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="ИндексКартинки" id="14">
 					<Title>
@@ -2694,6 +2857,22 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
+				<Column name="Пометка" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="СтрокиТаблицыБД" id="8">
@@ -2801,21 +2980,7 @@
 					<v8:content>Найти в объекте</v8:content>
 				</v8:item>
 			</ToolTip>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ПрочитатьДопПоля" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать доп. поля</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать доп поля</v8:content>
-				</v8:item>
-			</ToolTip>
+			<Action>НайтиВОбъектеНажатие</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ТабличныеЧастиСкрыватьПустые" id="4">
@@ -3021,7 +3186,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Новая группа</v8:content>
+					<v8:content>Создать новую группу</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -3041,7 +3206,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Новый</v8:content>
+					<v8:content>Создать новый объект</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -3385,6 +3550,7 @@
 				<xr:Ref>CommonPicture.ирИнтерфейснаяПанель</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыОткрытьОбъектМетаданных</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СправкаМетаданного" id="33">
@@ -3404,6 +3570,7 @@
 				<xr:Ref>CommonPicture.ирСправкаМетаданного</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыСправкаМетаданного</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КонсольОбработки" id="34">
@@ -3416,13 +3583,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Консоль обработки</v8:content>
+					<v8:content>Передать в инструмент "Подбор и обработка объектов"</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирОбработкаОбъектов</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыКонсольОбработки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УдалитьСКонтролемСсылок" id="35">
@@ -3442,6 +3610,7 @@
 				<xr:Ref>CommonPicture.ирУдалитьСКонтролемСсылок</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыУдалитьСКонтролемСсылок</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ИзменитьИдентификатор" id="36">
@@ -3454,13 +3623,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Изменить идентификатор</v8:content>
+					<v8:content>Для объекта сразу будет создана копия, которая будет назначена правильным элементом его группы дублей. Крайне желательно сразу провести замену ссылок.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирПоискИЗаменаДублей</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыИзменитьИдентификатор</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="Исследовать" id="37">
@@ -3473,13 +3643,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Исследовать</v8:content>
+					<v8:content>Исследовать копию измененного объекта или набора записей</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирИсследовать</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыИсследовать</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЖурналРегистрации" id="38">
@@ -3492,13 +3663,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Журнал регистрации</v8:content>
+					<v8:content>Анализ журнала регистрации по объекту</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.EventLog</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыЖурналРегистрации</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="КопироватьСсылку" id="39">
@@ -3511,7 +3683,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Копировать ссылку</v8:content>
+					<v8:content>Копировать ссылку в буфер обмена</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Shortcut>Alt+R</Shortcut>
@@ -3519,6 +3691,7 @@
 				<xr:Ref>CommonPicture.ирКопировать</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыКопироватьСсылку</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НовоеОкно" id="40">
@@ -3571,13 +3744,14 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить в избранное</v8:content>
+					<v8:content>Добавить в стандартное избранное и интерфейсной панели</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирДобавитьВИзбранное</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>ОсновныеДействияФормыДобавитьВИзбранное</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВыгрузитьВXML" id="43">
@@ -3765,6 +3939,183 @@
 			</Picture>
 			<Action>КоманднаяПанельНабораДвиженийРедакторОбъектаБДНабораДвижений</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НайтиСсылкиНаОбъект" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти ссылки на объект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СсылкиНаОбъектОбновить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СсылкиОтобратьПоТипам" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать по типам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылки отобрать по типам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FilterByType</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СсылкиНаОбъектОтобратьПоТипам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СсылкиРедакторОбъектаБД" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор объекта БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ссылающийся объект в редакторе объекта БД и найти в нем ссылку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СсылкиНаОбъектРедакторОбъектаБД</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СсылкиКонсольОбработки" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль обработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать значения выделенных ячеек в инструмент "Подбор и обработка объектов"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирОбработкаОбъектов</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СсылкиНаОбъектКонсольОбработки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СсылкиКонсольКомпоновки" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль компоновки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть таблицу в консоли компоновки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКонсольКомпоновокДанных</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СсылкиНаОбъектКонсольКомпоновки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СсылкиПрочитатьДопПоля" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать доп. поля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать значения выбранных дополнительных полей и отсортировать объекты в пределах типов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДополнительныеПоляПрочитатьПоля</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИзмененияНаУзлахОбновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения на узлах обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения на узлах обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанельДеревоУзловОбновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РедакторИзмененийНаУзле" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор изменений на узле</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор изменений на узле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирИзмененияНаУзле</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанельДеревоУзловРедакторИзмененийНаУзле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОПодсистеме" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирВопрос</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОсновныеДействияФормыОПодсистеме</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
