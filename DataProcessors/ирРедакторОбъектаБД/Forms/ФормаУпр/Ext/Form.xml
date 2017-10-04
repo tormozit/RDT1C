@@ -1368,7 +1368,7 @@
 									</Button>
 									<Button name="ИзмененияНаУзлахРедакторИзмененийНаУзле" id="695">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.РедакторИзмененийНаУзле</CommandName>
+										<CommandName>Form.Command.РедакторИзмененийНаУзлеПоОбъекту</CommandName>
 										<ExtendedTooltip name="ИзмененияНаУзлахРедакторИзмененийНаУзлеРасширеннаяПодсказка" id="696"/>
 									</Button>
 								</ChildItems>
@@ -2297,6 +2297,11 @@
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.Удалить</CommandName>
 					<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="550"/>
+				</Button>
+				<Button name="РедакторИзмененийНаУзле" id="722">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.РедакторИзмененийНаУзле</CommandName>
+					<ExtendedTooltip name="РедакторИзмененийНаУзлеРасширеннаяПодсказка" id="723"/>
 				</Button>
 				<Button name="Провести" id="547">
 					<Type>CommandBarButton</Type>
@@ -4078,24 +4083,24 @@
 			<Action>КоманднаяПанельДеревоУзловОбновить</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="РедакторИзмененийНаУзле" id="59">
+		<Command name="РедакторИзмененийНаУзлеПоОбъекту" id="59">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактор изменений на узле</v8:content>
+					<v8:content>Редактор изменений на узле по объекту</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактор изменений на узле</v8:content>
+					<v8:content>Редактор изменений на узле по объекту</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирИзмененияНаУзле</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>КоманднаяПанельДеревоУзловРедакторИзмененийНаУзле</Action>
+			<Action>КоманднаяПанельДеревоУзловРедакторИзмененийНаУзлеПоОбъекту</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОПодсистеме" id="60">
@@ -4116,6 +4121,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОсновныеДействияФормыОПодсистеме</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РедакторИзмененийНаУзле" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор изменений на узле</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор изменений на узле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирИзмененияНаУзле</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОсновныеДействияФормыРедакторИзмененийНаУзле</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
