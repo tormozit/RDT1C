@@ -102,16 +102,20 @@
 			</Attribute>
 			<Attribute uuid="c0d9592b-1df8-4f66-8a4d-8e545bb249b0">
 				<Properties>
-					<Name>ИспользоватьОбщийКаталогНастроек</Name>
+					<Name>ВариантРасположенияФайлаНастроек</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Использовать общий каталог настроек</v8:content>
+							<v8:content>Вариант расположения файла настроек</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
