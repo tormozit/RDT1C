@@ -4,9 +4,21 @@
 		<ChildItems>
 			<Button name="ФормаВыполнить" id="1">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Выполнить</CommandName>
 				<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="31">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Пропустить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="32"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -16,91 +28,199 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="Декорация1" id="3">
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<HorizontalStretch>true</HorizontalStretch>
-			<TextColor>style:FieldSelectionBackColor</TextColor>
-			<Title formatted="false">
+		<UsualGroup name="Группа2" id="66">
+			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подключение команд расширения "Инструменты разработчика" позволит передавать ссылки на объекты БД прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. При выполнении операции используется конфигуратор текущей базы. После этого при обновлении на новую версию подсистемы адаптация будет выполняться автоматически. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
-</v8:content>
+					<v8:content>Подключаемые команды</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
-		</LabelDecoration>
-		<Table name="СписокКоманд" id="6">
-			<Representation>List</Representation>
-			<ChangeRowSet>false</ChangeRowSet>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<FileDragMode>AsFile</FileDragMode>
-			<DataPath>СписокКоманд</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="СписокКомандКонтекстноеМеню" id="7"/>
-			<AutoCommandBar name="СписокКомандКоманднаяПанель" id="8"/>
-			<ExtendedTooltip name="СписокКомандРасширеннаяПодсказка" id="9"/>
-			<SearchStringAddition name="СписокКомандСтрокаПоиска" id="10">
-				<AdditionSource>
-					<Item>СписокКоманд</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокКомандСтрокаПоискаКонтекстноеМеню" id="11"/>
-				<ExtendedTooltip name="СписокКомандСтрокаПоискаРасширеннаяПодсказка" id="12"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="СписокКомандСостояниеПросмотра" id="13">
-				<AdditionSource>
-					<Item>СписокКоманд</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокКомандСостояниеПросмотраКонтекстноеМеню" id="14"/>
-				<ExtendedTooltip name="СписокКомандСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="СписокКомандУправлениеПоиском" id="16">
-				<AdditionSource>
-					<Item>СписокКоманд</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="СписокКомандУправлениеПоискомКонтекстноеМеню" id="17"/>
-				<ExtendedTooltip name="СписокКомандУправлениеПоискомРасширеннаяПодсказка" id="18"/>
-			</SearchControlAddition>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="67"/>
 			<ChildItems>
-				<CheckBoxField name="СписокКомандПодключить" id="22">
-					<DataPath>СписокКоманд.Подключить</DataPath>
-					<Title>
+				<LabelDecoration name="Декорация1" id="3">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подключить</v8:content>
+							<v8:content>Подключение этих команд позволит передавать ссылки на объекты БД прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. При выполнении операции используется конфигуратор текущей базы. После этого при обновлении на новую версию подсистемы адаптация будет выполняться автоматически. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
+</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СписокКомандПодключитьКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="СписокКомандПодключитьРасширеннаяПодсказка" id="24"/>
-				</CheckBoxField>
-				<InputField name="СписокКомандИмяКоманды" id="25">
-					<DataPath>СписокКоманд.СинонимКоманды</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Команда</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокКомандИмяКомандыКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="СписокКомандИмяКомандыРасширеннаяПодсказка" id="27"/>
-				</InputField>
-				<InputField name="СписокКомандПодсказка" id="28">
-					<DataPath>СписокКоманд.Подсказка</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокКомандПодсказкаКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="СписокКомандПодсказкаРасширеннаяПодсказка" id="30"/>
-				</InputField>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
+				</LabelDecoration>
+				<Table name="СписокКоманд" id="6">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>СписокКоманд</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокКомандКонтекстноеМеню" id="7"/>
+					<AutoCommandBar name="СписокКомандКоманднаяПанель" id="8"/>
+					<ExtendedTooltip name="СписокКомандРасширеннаяПодсказка" id="9"/>
+					<SearchStringAddition name="СписокКомандСтрокаПоиска" id="10">
+						<AdditionSource>
+							<Item>СписокКоманд</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКомандСтрокаПоискаКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="СписокКомандСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокКомандСостояниеПросмотра" id="13">
+						<AdditionSource>
+							<Item>СписокКоманд</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКомандСостояниеПросмотраКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="СписокКомандСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокКомандУправлениеПоиском" id="16">
+						<AdditionSource>
+							<Item>СписокКоманд</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКомандУправлениеПоискомКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="СписокКомандУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="СписокКомандПодключить" id="22">
+							<DataPath>СписокКоманд.Подключить</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подключить</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокКомандПодключитьКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СписокКомандПодключитьРасширеннаяПодсказка" id="24"/>
+						</CheckBoxField>
+						<InputField name="СписокКомандИмяКоманды" id="25">
+							<DataPath>СписокКоманд.СинонимКоманды</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокКомандИмяКомандыКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СписокКомандИмяКомандыРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="СписокКомандПодсказка" id="28">
+							<DataPath>СписокКоманд.Подсказка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокКомандПодсказкаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СписокКомандПодсказкаРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальные команды</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="52">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Они не требуют адаптации расширения и работают в любой активной форме, открытой не в режиме "Блокировать владельца". Поддерживается извлечение ссылок из основного реквизита формы по пути "Объект.Ссылка" и из выделенных строк текущей таблицы.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="54"/>
+				</LabelDecoration>
+				<Table name="ГлобальныеГорячиеКлавиши" id="33">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<Height>3</Height>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ГлобальныеСочетанияКлавиш</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ГлобальныеГорячиеКлавишиКонтекстноеМеню" id="34"/>
+					<AutoCommandBar name="ГлобальныеГорячиеКлавишиКоманднаяПанель" id="35"/>
+					<ExtendedTooltip name="ГлобальныеГорячиеКлавишиРасширеннаяПодсказка" id="36"/>
+					<SearchStringAddition name="ГлобальныеГорячиеКлавишиСтрокаПоиска" id="37">
+						<AdditionSource>
+							<Item>ГлобальныеГорячиеКлавиши</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГлобальныеГорячиеКлавишиСтрокаПоискаКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ГлобальныеГорячиеКлавишиСостояниеПросмотра" id="40">
+						<AdditionSource>
+							<Item>ГлобальныеГорячиеКлавиши</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГлобальныеГорячиеКлавишиСостояниеПросмотраКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ГлобальныеГорячиеКлавишиУправлениеПоиском" id="43">
+						<AdditionSource>
+							<Item>ГлобальныеГорячиеКлавиши</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ГлобальныеГорячиеКлавишиУправлениеПоискомКонтекстноеМеню" id="44"/>
+						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиУправлениеПоискомРасширеннаяПодсказка" id="45"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ГлобальныеГорячиеКлавишиСинонимКоманды" id="55">
+							<DataPath>ГлобальныеСочетанияКлавиш.СинонимКоманды</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команда</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГлобальныеГорячиеКлавишиСинонимКомандыКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСинонимКомандыРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="ГлобальныеГорячиеКлавишиПодсказка" id="58">
+							<DataPath>ГлобальныеСочетанияКлавиш.Подсказка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГлобальныеГорячиеКлавишиПодсказкаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиПодсказкаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="ГлобальныеГорячиеКлавишиСочетаниеКлавиш" id="61">
+							<DataPath>ГлобальныеСочетанияКлавиш.СочетаниеКлавиш</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сочетание клавиш</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГлобальныеГорячиеКлавишиСочетаниеКлавишКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСочетаниеКлавишРасширеннаяПодсказка" id="63"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="СписокКоманд" id="1">
@@ -172,6 +292,79 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ГлобальныеСочетанияКлавиш" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальные сочетания клавиш</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СочетаниеКлавиш" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сочетание клавиш</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКоманды" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя команды</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СинонимКоманды" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синооним команды</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подсказка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выполнить" id="1">
@@ -184,7 +377,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
+					<v8:content>Выполнить адаптацию расширения конфигурации</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьОперацию</Action>

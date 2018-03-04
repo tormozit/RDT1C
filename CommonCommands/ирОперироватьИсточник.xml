@@ -9,7 +9,7 @@
 					<v8:content>Оперировать источник (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Для любых ссылочных объектов</Comment>
+			<Comment/>
 			<Group>CommandGroup.ирКоманднаяПанельФормы</Group>
 			<Representation>Auto</Representation>
 			<ToolTip>
@@ -24,11 +24,7 @@
 			</Picture>
 			<Shortcut/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<CommandParameterType>
-				<v8:Type>cfg:CatalogRef.ирКомандаРедактироватьОбъект</v8:Type>
-				<v8:Type>cfg:CatalogRef.ирОбъектыДляОтладки</v8:Type>
-				<v8:Type>cfg:CatalogRef.ирАлгоритмы</v8:Type>
-			</CommandParameterType>
+			<CommandParameterType/>
 			<ParameterUseMode>Single</ParameterUseMode>
 			<ModifiesData>false</ModifiesData>
 			<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
