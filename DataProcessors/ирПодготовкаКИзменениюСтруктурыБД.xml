@@ -135,18 +135,18 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b60f6aa1-7599-4c2e-8450-3f55e7133ab6">
+			<Attribute uuid="eaeb3298-851a-4aed-b472-35ad855cd88d">
 				<Properties>
-					<Name>ЗаписьНаСервере</Name>
+					<Name>ЗатрагиваемыеЭлементыТекущегоПланаВидовХарактеристик</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запись на сервере</v8:content>
+							<v8:content>Затрагиваемые элементы текущего плана видов характеристик</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>v8:ValueTable</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -169,18 +169,18 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="eaeb3298-851a-4aed-b472-35ad855cd88d">
+			<Attribute uuid="b60f6aa1-7599-4c2e-8450-3f55e7133ab6">
 				<Properties>
-					<Name>ЗатрагиваемыеЭлементыТекущегоПланаВидовХарактеристик</Name>
+					<Name>ОбъектыНаСервере</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Затрагиваемые элементы текущего плана видов характеристик</v8:content>
+							<v8:content>Запись на сервере</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>v8:ValueTable</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

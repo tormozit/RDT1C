@@ -62,18 +62,18 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="51cddc61-d763-43a9-ac17-40b02f7718f3">
+			<Attribute uuid="cef3ad69-08cd-4c57-9019-8c39fcbb9f70">
 				<Properties>
-					<Name>ЗаписьНаСервере</Name>
+					<Name>КомпоновщикДопПолей</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запись на сервере</v8:content>
+							<v8:content>Компоновщик доп полей</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings">dcsset:SettingsComposer</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -96,18 +96,18 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="cef3ad69-08cd-4c57-9019-8c39fcbb9f70">
+			<Attribute uuid="51cddc61-d763-43a9-ac17-40b02f7718f3">
 				<Properties>
-					<Name>КомпоновщикДопПолей</Name>
+					<Name>ОбъектыНаСервере</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Компоновщик доп полей</v8:content>
+							<v8:content>Запись на сервере</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings">dcsset:SettingsComposer</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
