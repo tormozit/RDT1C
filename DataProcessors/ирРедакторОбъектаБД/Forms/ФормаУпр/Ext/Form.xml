@@ -216,6 +216,9 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТаблицаОтбораИспользованиеКонтекстноеМеню" id="526"/>
 									<ExtendedTooltip name="ТаблицаОтбораИспользованиеРасширеннаяПодсказка" id="527"/>
+									<Events>
+										<Event name="OnChange">ТаблицаОтбораПриИзмененииФлажка</Event>
+									</Events>
 								</CheckBoxField>
 								<CheckBoxField name="ТаблицаОтбораРегистрацияИзменений" id="528">
 									<DataPath>ТаблицаОтбора.РегистрацияИзменений</DataPath>
@@ -1147,6 +1150,11 @@
 													<CommandName>Form.Command.ДвиженияСкрыватьПустые</CommandName>
 													<ExtendedTooltip name="ДвиженияСкрыватьПустыеРасширеннаяПодсказка" id="534"/>
 												</Button>
+												<Button name="СтраницыПанельДвиженияДвиженияДинамическойСписок" id="853">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ДвиженияДинамическойСписок</CommandName>
+													<ExtendedTooltip name="СтраницыПанельДвиженияДвиженияДинамическойСписокРасширеннаяПодсказка" id="854"/>
+												</Button>
 											</ChildItems>
 										</CommandBar>
 										<Table name="СтраницыПанельДвижения" id="211">
@@ -2035,6 +2043,15 @@
 											<Group>Horizontal</Group>
 											<ExtendedTooltip name="ГруппаПараметрыПросмотраСвязанныхРасширеннаяПодсказка" id="512"/>
 											<ChildItems>
+												<CheckBoxField name="ТолькоИзбранное" id="781">
+													<DataPath>фОбъект.ТолькоИзбранное</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ТолькоИзбранноеКонтекстноеМеню" id="782"/>
+													<ExtendedTooltip name="ТолькоИзбранноеРасширеннаяПодсказка" id="783"/>
+													<Events>
+														<Event name="OnChange">ТолькоИзбранноеПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
 												<CheckBoxField name="ИмяПредставление" id="513">
 													<DataPath>фОбъект.ИмяПредставление</DataPath>
 													<CheckBoxType>Auto</CheckBoxType>
@@ -2134,6 +2151,16 @@
 												<CommandName>Form.Command.СвязанныеДанныеОбновитьКоличество</CommandName>
 												<ExtendedTooltip name="СвязанныеДанныеОбновитьКоличествоРасширеннаяПодсказка" id="773"/>
 											</Button>
+											<Button name="СвязанныеДанныеСвязанныеДанныеФормаСписка" id="849">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СвязанныеДанныеФормаСписка</CommandName>
+												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеФормаСпискаРасширеннаяПодсказка" id="850"/>
+											</Button>
+											<Button name="СвязанныеДанныеСвязанныеДанныеДинамическойСписок" id="851">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СвязанныеДанныеДинамическойСписок</CommandName>
+												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеДинамическойСписокРасширеннаяПодсказка" id="852"/>
+											</Button>
 										</ChildItems>
 									</AutoCommandBar>
 									<ExtendedTooltip name="СвязанныеДанныеРасширеннаяПодсказка" id="454"/>
@@ -2161,9 +2188,40 @@
 										<ContextMenu name="СвязанныеДанныеУправлениеПоискомКонтекстноеМеню" id="462"/>
 										<ExtendedTooltip name="СвязанныеДанныеУправлениеПоискомРасширеннаяПодсказка" id="463"/>
 									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">СвязанныеДанныеВыбор</Event>
+										<Event name="OnActivateRow">СвязанныеДанныеПриАктивизацииСтроки</Event>
+									</Events>
 									<ChildItems>
+										<CheckBoxField name="СвязанныеДанныеИзбранное" id="778">
+											<DataPath>фОбъект.СвязанныеДанные.Избранное</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Избранная колонка. Такие колонки становятся видны сразу при выборе таблицы и без долгого анализа колонок БД.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderPicture>
+												<xr:Ref>StdPicture.AddToFavorites</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</HeaderPicture>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СвязанныеДанныеИзбранноеКонтекстноеМеню" id="779"/>
+											<ExtendedTooltip name="СвязанныеДанныеИзбранноеРасширеннаяПодсказка" id="780"/>
+											<Events>
+												<Event name="OnChange">СвязанныеДанныеИзбранноеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 										<InputField name="СвязанныеДанныеТипТаблицы" id="488">
 											<DataPath>фОбъект.СвязанныеДанные.ТипТаблицы</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>20</Width>
 											<ContextMenu name="СвязанныеДанныеТипТаблицыКонтекстноеМеню" id="489"/>
@@ -2178,6 +2236,7 @@
 										</InputField>
 										<InputField name="СвязанныеДанныеПредставлениеТаблицы" id="485">
 											<DataPath>фОбъект.СвязанныеДанные.ПредставлениеТаблицы</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СвязанныеДанныеПредставлениеТаблицыКонтекстноеМеню" id="486"/>
 											<ExtendedTooltip name="СвязанныеДанныеПредставлениеТаблицыРасширеннаяПодсказка" id="487"/>
@@ -2191,18 +2250,21 @@
 										</InputField>
 										<InputField name="СвязанныеДанныеПредставлениеКолонки" id="482">
 											<DataPath>фОбъект.СвязанныеДанные.ПредставлениеКолонки</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СвязанныеДанныеПредставлениеКолонкиКонтекстноеМеню" id="483"/>
 											<ExtendedTooltip name="СвязанныеДанныеПредставлениеКолонкиРасширеннаяПодсказка" id="484"/>
 										</InputField>
 										<InputField name="СвязанныеДанныеКоличествоСсылающихся" id="473">
 											<DataPath>фОбъект.СвязанныеДанные.КоличествоСсылающихся</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СвязанныеДанныеКоличествоСсылающихсяКонтекстноеМеню" id="474"/>
 											<ExtendedTooltip name="СвязанныеДанныеКоличествоСсылающихсяРасширеннаяПодсказка" id="475"/>
 										</InputField>
 										<InputField name="СвязанныеДанныеКоличествоТипов" id="476">
 											<DataPath>фОбъект.СвязанныеДанные.КоличествоТипов</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СвязанныеДанныеКоличествоТиповКонтекстноеМеню" id="477"/>
 											<ExtendedTooltip name="СвязанныеДанныеКоличествоТиповРасширеннаяПодсказка" id="478"/>
@@ -2244,6 +2306,203 @@
 										<ContextMenu name="СтрокиТаблицыБДУправлениеПоискомКонтекстноеМеню" id="718"/>
 										<ExtendedTooltip name="СтрокиТаблицыБДУправлениеПоискомРасширеннаяПодсказка" id="719"/>
 									</SearchControlAddition>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаВерсииОбъекта" id="784">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Версии объекта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница версии объекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>StdPicture.DataHistory</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СтраницаВерсииОбъектаРасширеннаяПодсказка" id="785"/>
+							<ChildItems>
+								<CommandBar name="КоманднаяПанельВерсии" id="857">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель версии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель версии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CommandSource>Item.ВерсииОбъекта</CommandSource>
+									<ExtendedTooltip name="КоманднаяПанельВерсииРасширеннаяПодсказка" id="858"/>
+									<ChildItems>
+										<Button name="ПереключательВеденияИстории" id="855">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПереключательВеденияИстории</CommandName>
+											<ExtendedTooltip name="ПереключательВеденияИсторииРасширеннаяПодсказка" id="856"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииОбновитьСписок" id="829">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииОбновитьСписок</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииОбновитьСписокРасширеннаяПодсказка" id="830"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииОбновитьИсторию" id="831">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииОбновитьИсторию</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииОбновитьИсториюРасширеннаяПодсказка" id="832"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииНайтиВФормеСпискаВерсий" id="833">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииНайтиВФормеСпискаВерсий</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииНайтиВФормеСпискаВерсийРасширеннаяПодсказка" id="834"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсиОткрытьОтчетПоВерсии" id="835">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсиОткрытьОтчетПоВерсии</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсиОткрытьОтчетПоВерсииРасширеннаяПодсказка" id="836"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииРедакторОбъектаБД" id="847">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииРедакторОбъектаБД</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииРедакторОбъектаБДРасширеннаяПодсказка" id="848"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииОткрытьВФормеОбъекта" id="837">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииОткрытьВФормеОбъекта</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииОткрытьВФормеОбъектаРасширеннаяПодсказка" id="838"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииСравнитьСПредыдущей" id="839">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииСравнитьСПредыдущей</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииСравнитьСПредыдущейРасширеннаяПодсказка" id="840"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииСравнитьСПоследней" id="841">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииСравнитьСПоследней</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииСравнитьСПоследнейРасширеннаяПодсказка" id="842"/>
+										</Button>
+										<Button name="ВерсииОбъектаВерсииСравнить2" id="843">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВерсииСравнить2</CommandName>
+											<ExtendedTooltip name="ВерсииОбъектаВерсииСравнить2РасширеннаяПодсказка" id="844"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<Table name="ВерсииОбъекта" id="786">
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>фОбъект.ВерсииОбъекта</DataPath>
+									<CommandSet>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ВерсииОбъектаКонтекстноеМеню" id="787"/>
+									<AutoCommandBar name="ВерсииОбъектаКоманднаяПанель" id="788"/>
+									<ExtendedTooltip name="ВерсииОбъектаРасширеннаяПодсказка" id="789"/>
+									<SearchStringAddition name="ВерсииОбъектаСтрокаПоиска" id="790">
+										<AdditionSource>
+											<Item>ВерсииОбъекта</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВерсииОбъектаСтрокаПоискаКонтекстноеМеню" id="791"/>
+										<ExtendedTooltip name="ВерсииОбъектаСтрокаПоискаРасширеннаяПодсказка" id="792"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВерсииОбъектаСостояниеПросмотра" id="793">
+										<AdditionSource>
+											<Item>ВерсииОбъекта</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВерсииОбъектаСостояниеПросмотраКонтекстноеМеню" id="794"/>
+										<ExtendedTooltip name="ВерсииОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="795"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВерсииОбъектаУправлениеПоиском" id="796">
+										<AdditionSource>
+											<Item>ВерсииОбъекта</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВерсииОбъектаУправлениеПоискомКонтекстноеМеню" id="797"/>
+										<ExtendedTooltip name="ВерсииОбъектаУправлениеПоискомРасширеннаяПодсказка" id="798"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ВерсииОбъектаВыбор</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ВерсииОбъектаНомерВерсии" id="814">
+											<DataPath>фОбъект.ВерсииОбъекта.НомерВерсии</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВерсииОбъектаНомерВерсииКонтекстноеМеню" id="815"/>
+											<ExtendedTooltip name="ВерсииОбъектаНомерВерсииРасширеннаяПодсказка" id="816"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаДата" id="805">
+											<DataPath>фОбъект.ВерсииОбъекта.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВерсииОбъектаДатаКонтекстноеМеню" id="806"/>
+											<ExtendedTooltip name="ВерсииОбъектаДатаРасширеннаяПодсказка" id="807"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаИмяПользователя" id="808">
+											<DataPath>фОбъект.ВерсииОбъекта.ИмяПользователя</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="ВерсииОбъектаИмяПользователяКонтекстноеМеню" id="809"/>
+											<ExtendedTooltip name="ВерсииОбъектаИмяПользователяРасширеннаяПодсказка" id="810"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаПолноеИмяПользователя" id="817">
+											<DataPath>фОбъект.ВерсииОбъекта.ПолноеИмяПользователя</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="ВерсииОбъектаПолноеИмяПользователяКонтекстноеМеню" id="818"/>
+											<ExtendedTooltip name="ВерсииОбъектаПолноеИмяПользователяРасширеннаяПодсказка" id="819"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаПользователь" id="820">
+											<DataPath>фОбъект.ВерсииОбъекта.Пользователь</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<ContextMenu name="ВерсииОбъектаПользовательКонтекстноеМеню" id="821"/>
+											<ExtendedTooltip name="ВерсииОбъектаПользовательРасширеннаяПодсказка" id="822"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаВидИзмененияДанных" id="802">
+											<DataPath>фОбъект.ВерсииОбъекта.ВидИзмененияДанных</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="ВерсииОбъектаВидИзмененияДанныхКонтекстноеМеню" id="803"/>
+											<ExtendedTooltip name="ВерсииОбъектаВидИзмененияДанныхРасширеннаяПодсказка" id="804"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаТранзакция" id="823">
+											<DataPath>фОбъект.ВерсииОбъекта.Транзакция</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ContextMenu name="ВерсииОбъектаТранзакцияКонтекстноеМеню" id="824"/>
+											<ExtendedTooltip name="ВерсииОбъектаТранзакцияРасширеннаяПодсказка" id="825"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаУзел" id="826">
+											<DataPath>фОбъект.ВерсииОбъекта.Узел</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВерсииОбъектаУзелКонтекстноеМеню" id="827"/>
+											<ExtendedTooltip name="ВерсииОбъектаУзелРасширеннаяПодсказка" id="828"/>
+										</InputField>
+										<InputField name="ВерсииОбъектаКомментарий" id="811">
+											<DataPath>фОбъект.ВерсииОбъекта.Комментарий</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВерсииОбъектаКомментарийКонтекстноеМеню" id="812"/>
+											<ExtendedTooltip name="ВерсииОбъектаКомментарийРасширеннаяПодсказка" id="813"/>
+										</InputField>
+									</ChildItems>
 								</Table>
 							</ChildItems>
 						</Page>
@@ -4510,7 +4769,7 @@
 				<xr:Ref>StdPicture.Refresh</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СвязанныеДанныеОбновитьКоличество</Action>
+			<Action>СвязанныеДанныеОбновитьКоличествоКоманда</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СвязанныеДанныеОтборБезЗначения" id="64">
@@ -4551,6 +4810,243 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КП_СвязанныеКолонкиМенеджерТабличногоПоля</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииОбновитьСписок" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список. Имеет смысл, если в другом сеансе обновляется история данных базы.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанель_ВерсииОбновитьСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииОбновитьИсторию" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю данных в базе. Может выполняться долго. Требуются административные права.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанель_ВерсииОбновитьИсторию</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииНайтиВФормеСпискаВерсий" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти в форме списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти в форме списка версий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирНайтиВСписке</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанель_НайтиВФормеСпискаВерсий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсиОткрытьОтчетПоВерсии" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по версии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет по версии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанель_ОткрытьОтчетПоВерсии</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииРедакторОбъектаБД" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор объекта БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версию в редакторе объекта БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КоманднаяПанель_ВерсииРедакторОбъектаБД</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииОткрытьВФормеОбъекта" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версию в основной форме объекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоманднаяПанель_ВерсииОткрытьВФормеОбъекта</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииСравнитьСПредыдущей" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с предыдущей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить версию с предыдущей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоманднаяПанель_ВерсииСравнитьСПредыдущей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииСравнитьСПоследней" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с последней</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить версию с последней</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоманднаяПанель_ВерсииСравнитьСПоследней</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВерсииСравнить2" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить 2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить 2 выделенные версии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоманднаяПанель_ВерсииСравнить2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвязанныеДанныеФормаСписка" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму списка для связанной таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КП_СвязанныеКолонкиФормаСписка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвязанныеДанныеДинамическойСписок" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамической список (ИР)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть динамической список (ИР) для связанной таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСписокЗначений</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СвязанныеКолонкиДинамическойСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДвиженияДинамическойСписок" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамической список (ИР)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть динамической список (ИР) для текущей таблицы движений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСписокЗначений</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СтраницыДвиженияДинамическойСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереключательВеденияИстории" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вести историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вести историю для этого типа данных (переключатель)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КоманднаяПанельВерсииПереключательВеденияИстории</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
