@@ -1,0 +1,56 @@
+﻿select top 1111
+  creation_time
+, last_execution_time
+, plan_generation_num as PlanRecompiles
+, total_logical_reads as LogicalReads
+, total_logical_writes as LogicalWrites
+, execution_count as Count
+, total_elapsed_time/1000 as TotExecTime
+, total_elapsed_time/execution_count/1000 AS AvgExecTime
+, total_worker_time/1000 as TotCPUTime
+, total_worker_time/execution_count/1000 as AvgCPUTime
+, CASE WHEN total_elapsed_time > total_worker_time OR total_elapsed_time = 0 THEN 1.0
+    ELSE CAST(total_worker_time*1.0/ total_elapsed_time AS NUMERIC(5,1))
+ END as ParallelRatio
+, CASE WHEN total_elapsed_time - total_worker_time < 0 THEN 0
+	ELSE (total_elapsed_time - total_worker_time)/1000
+  END as TotWaitTime
+, CASE WHEN total_elapsed_time - total_worker_time < 0 THEN 0
+ ELSE (total_elapsed_time - total_worker_time)/execution_count/1000
+ END as AvgWaitTime
+, total_logical_reads+total_logical_writes as TotIO
+, CAST((total_logical_reads+total_logical_writes+0.0)/execution_count AS NUMERIC(15,2)) as AvgIO
+, DATEDIFF(minute, creation_time, last_execution_time) as PeriodMinute
+, CASE WHEN DATEDIFF(minute, creation_time, last_execution_time) = 0 THEN 0
+ ELSE CAST(execution_count *1.0/ DATEDIFF(minute, creation_time, last_execution_time) AS NUMERIC(15,2)) 
+ END AS CountPerMinute
+, CASE WHEN DATEDIFF(minute, creation_time, last_execution_time) = 0 THEN 0
+ ELSE (total_logical_reads+total_logical_writes) / DATEDIFF(minute, creation_time, last_execution_time)
+ END AS IOPerMinute
+, CASE WHEN DATEDIFF(minute, creation_time, last_execution_time) = 0 THEN 0
+ ELSE CAST(total_worker_time*1.0/ DATEDIFF(minute, creation_time, last_execution_time)/1000  AS NUMERIC(15,2))
+ END AS CPUPerMinute
+, CASE WHEN DATEDIFF(minute, creation_time, last_execution_time) = 0 THEN 0
+ ELSE CAST(total_elapsed_time*1.0 / DATEDIFF(minute, creation_time, last_execution_time)/1000 AS NUMERIC(15,2))
+ END AS ExecPerMinute
+, case when sql_handle IS NULL
+then ' '
+else substring(st.text, (qs.statement_start_offset+2)/2, 
+	(case 
+		when qs.statement_end_offset = -1 then 
+			100000 
+		else 
+			qs.statement_end_offset  
+	end - qs.statement_start_offset)
+	/2 + 1) 
+end as query_text
+, st.objectid as object_id
+, qp.query_plan  as query_plan
+, ISNULL(st.dbid,CONVERT(SMALLINT,att.value)) AS my_dbid
+FROM sys.dm_exec_query_stats AS qs
+CROSS APPLY sys.dm_exec_sql_text(sql_handle) AS st 
+CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) AS qp 
+CROSS APPLY sys.dm_exec_plan_attributes(qs.plan_handle) att
+WHERE att.attribute='dbid' AND total_logical_reads+total_logical_writes > 0
+and DATEDIFF(minute, last_execution_time, CURRENT_TIMESTAMP) < 2222
+and att.value = DB_ID()
