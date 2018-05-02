@@ -585,8 +585,23 @@
 															<ContextMenu name="РеквизитыТаблицаПодсказкаКонтекстноеМеню" id="120"/>
 															<ExtendedTooltip name="РеквизитыТаблицаПодсказкаРасширеннаяПодсказка" id="121"/>
 														</InputField>
+														<InputField name="РеквизитыТаблицаСвязиПараметровВыбора" id="863">
+															<DataPath>РеквизитыТаблица.СвязиПараметровВыбора</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<FooterText>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Связи параметров выбора</v8:content>
+																</v8:item>
+															</FooterText>
+															<ContextMenu name="РеквизитыТаблицаСвязиПараметровВыбораКонтекстноеМеню" id="864"/>
+															<ExtendedTooltip name="РеквизитыТаблицаСвязиПараметровВыбораРасширеннаяПодсказка" id="865"/>
+														</InputField>
 														<InputField name="РеквизитыТаблицаОписаниеТипов" id="113">
 															<DataPath>РеквизитыТаблица.ОписаниеТипов</DataPath>
+															<UserVisible>
+																<xr:Common>false</xr:Common>
+															</UserVisible>
 															<ReadOnly>true</ReadOnly>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="РеквизитыТаблицаОписаниеТиповКонтекстноеМеню" id="114"/>
@@ -2145,6 +2160,16 @@
 												<CommandName>Form.Command.СвязанныеДанныеМенеджерТабличногоПоля</CommandName>
 												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеМенеджерТабличногоПоляРасширеннаяПодсказка" id="777"/>
 											</Button>
+											<Button name="СвязанныеДанныеСвязанныеДанныеУстановитьПометки" id="859">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СвязанныеДанныеУстановитьПометки</CommandName>
+												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеУстановитьПометкиРасширеннаяПодсказка" id="860"/>
+											</Button>
+											<Button name="СвязанныеДанныеСвязанныеДанныеСнятьПометки" id="861">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СвязанныеДанныеСнятьПометки</CommandName>
+												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеСнятьПометкиРасширеннаяПодсказка" id="862"/>
+											</Button>
 											<Button name="СвязанныеДанныеОбновитьКоличество" id="772">
 												<Type>CommandBarButton</Type>
 												<Representation>PictureAndText</Representation>
@@ -2160,6 +2185,11 @@
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.СвязанныеДанныеДинамическойСписок</CommandName>
 												<ExtendedTooltip name="СвязанныеДанныеСвязанныеДанныеДинамическойСписокРасширеннаяПодсказка" id="852"/>
+											</Button>
+											<Button name="СвязанныеДанныеСвязанныеКолонкиВыгрузитьВФайл" id="866">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СвязанныеКолонкиВыгрузитьВФайл</CommandName>
+												<ExtendedTooltip name="СвязанныеДанныеСвязанныеКолонкиВыгрузитьВФайлРасширеннаяПодсказка" id="867"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
@@ -3187,6 +3217,21 @@
 						</v8:item>
 					</Title>
 					<Type/>
+				</Column>
+				<Column name="СвязиПараметровВыбора" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зависит от</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
 				</Column>
 			</Columns>
 		</Attribute>
@@ -5048,6 +5093,63 @@
 			</ToolTip>
 			<Action>КоманднаяПанельВерсииПереключательВеденияИстории</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвязанныеДанныеУстановитьПометки" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные данные установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные данные установить пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СвязанныеКолонкиУстановитьПометки</Action>
+		</Command>
+		<Command name="СвязанныеДанныеСнятьПометки" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные данные снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные данные снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СвязанныеКолонкиСнятьПометки</Action>
+		</Command>
+		<Command name="СвязанныеКолонкиВыгрузитьВФайл" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные колонки выгрузить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные колонки выгрузить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирВыходящий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КП_СвязанныеКолонкиВыгрузитьВФайл</Action>
 		</Command>
 	</Commands>
 	<Parameters>

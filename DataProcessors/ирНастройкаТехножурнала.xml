@@ -928,21 +928,21 @@
 			</Attribute>
 			<TabularSection uuid="7fd2ec75-353f-48a3-93e7-8488f7c4b2af">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирНастройкаТехножурнала.События" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирНастройкаТехножурнала.ТипыСобытий" category="TabularSection">
 						<xr:TypeId>5906a856-ecce-4d5e-a495-317d355fa86a</xr:TypeId>
 						<xr:ValueId>2480453b-45f7-4f2d-8b81-1bfa27322549</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирНастройкаТехножурнала.События" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирНастройкаТехножурнала.ТипыСобытий" category="TabularSectionRow">
 						<xr:TypeId>80cf9405-3f27-4815-9803-e74dcb12bfce</xr:TypeId>
 						<xr:ValueId>a2c38021-b382-44fd-9ec9-8767853cdbfb</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>События</Name>
+					<Name>ТипыСобытий</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>События</v8:content>
+							<v8:content>Типы событий</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1744,10 +1744,11 @@
 			<Form>НастройкаКаталога</Form>
 			<Form>НастройкаТехножурнала</Form>
 			<Form>СохранениеШаблона</Form>
+			<Form>ТипыСобытий</Form>
 			<Form>УсловияЗаписиСвойства</Form>
 			<Template>ЗначенияСвойств</Template>
 			<Template>Свойства</Template>
-			<Template>События</Template>
+			<Template>ТипыСобытий</Template>
 			<Template>СоставСвойствСобытий</Template>
 			<Template>УровниСистемныхСобытий</Template>
 			<Template>ШаблонБлокировкиСУБД</Template>

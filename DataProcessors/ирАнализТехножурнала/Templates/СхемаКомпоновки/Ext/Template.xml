@@ -577,7 +577,12 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Событие</dataPath>
 			<field>Событие</field>
-			<title xsi:type="xs:string">Событие</title>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип события</v8:content>
+				</v8:item>
+			</title>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>

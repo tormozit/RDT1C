@@ -1,4 +1,4 @@
-﻿select top 1111
+﻿select top 111
   creation_time
 , last_execution_time
 , plan_generation_num as PlanRecompiles
@@ -51,6 +51,9 @@ FROM sys.dm_exec_query_stats AS qs
 CROSS APPLY sys.dm_exec_sql_text(sql_handle) AS st 
 CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) AS qp 
 CROSS APPLY sys.dm_exec_plan_attributes(qs.plan_handle) att
-WHERE att.attribute='dbid' AND total_logical_reads+total_logical_writes > 0
-and DATEDIFF(minute, last_execution_time, CURRENT_TIMESTAMP) < 2222
+WHERE att.attribute='dbid' 
+and (total_logical_reads > 0 or total_logical_writes > 0)
+and DATEDIFF(minute, last_execution_time, CURRENT_TIMESTAMP) < 333
+and last_execution_time >= CAST('1111-11-11 11:11:11' AS datetime)
+and last_execution_time <= CAST('2222-22-22 22:22:22' AS datetime)
 and att.value = DB_ID()
