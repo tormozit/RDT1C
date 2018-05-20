@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<CommandsVisibility>
+		<Command name="Report.ирАнализЗамераПроизводительности.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирАнализТехножурнала.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -32,6 +37,11 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ирКонсольПостроителейОтчетов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирКонструкторРегулярногоВыражения.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -188,6 +198,10 @@
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
+		<Command name="Report.ирАнализЗамераПроизводительности.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирАнализТехножурнала.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
@@ -213,6 +227,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DataProcessor.ирКонсольПостроителейОтчетов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирКонструкторРегулярногоВыражения.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
