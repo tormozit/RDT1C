@@ -270,6 +270,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ДинамическийСписокВыбор</Event>
+				<Event name="BeforeAddRow">ДинамическийСписокПередНачаломДобавления</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>

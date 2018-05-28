@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Инструменты разработчика. Перезапуск сеанса</v8:content>
+		</v8:item>
+	</Title>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -58,6 +65,21 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="8024"/>
 					<ChildItems>
+						<CheckBoxField name="ЗавершитьСеанс" id="8036">
+							<DataPath>ЗавершитьСеанс</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Завершить текущий сеанс после запуска нового</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗавершитьСеансКонтекстноеМеню" id="8037"/>
+							<ExtendedTooltip name="ЗавершитьСеансРасширеннаяПодсказка" id="8038"/>
+							<Events>
+								<Event name="OnChange">ЗавершитьСеансПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 						<CheckBoxField name="ЗакрытьФорму" id="8013">
 							<DataPath>ЗакрытьФорму</DataPath>
 							<ToolTip>
@@ -82,33 +104,75 @@
 							<ContextMenu name="ПодключитьОтладчикКонтекстноеМеню" id="8011"/>
 							<ExtendedTooltip name="ПодключитьОтладчикРасширеннаяПодсказка" id="8012"/>
 						</CheckBoxField>
-						<UsualGroup name="Группа4" id="8028">
-							<Group>Horizontal</Group>
+						<InputField name="КодРазрешения" id="8001">
+							<DataPath>КодРазрешения</DataPath>
+							<Width>15</Width>
+							<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="8002"/>
+							<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="8008"/>
+						</InputField>
+						<CheckBoxField name="ТекущийПользователь" id="8016">
+							<DataPath>ТекущийПользователь</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запустить от имени текущего пользователя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТекущийПользовательКонтекстноеМеню" id="8017"/>
+							<ExtendedTooltip name="ТекущийПользовательРасширеннаяПодсказка" id="8018"/>
+							<Events>
+								<Event name="OnChange">ТекущийПользовательПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаПараметрыПользователя" id="8028">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры пользователя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="8029"/>
+							<ExtendedTooltip name="ГруппаПараметрыПользователяРасширеннаяПодсказка" id="8029"/>
 							<ChildItems>
-								<CheckBoxField name="ТекущийПользователь" id="8016">
-									<DataPath>ТекущийПользователь</DataPath>
+								<CheckBoxField name="ОтключитьЗащитуОтОпасныхДействий" id="8030">
+									<DataPath>ОтключитьЗащитуОтОпасныхДействий</DataPath>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Запустить от имени текущего пользователя</v8:content>
+											<v8:content>Отключить защиту от опасных действий для текущего пользователя. Это необходимо для корректной работы инструментов.</v8:content>
 										</v8:item>
 									</ToolTip>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТекущийПользовательКонтекстноеМеню" id="8017"/>
-									<ExtendedTooltip name="ТекущийПользовательРасширеннаяПодсказка" id="8018"/>
-									<Events>
-										<Event name="OnChange">ТекущийПользовательПриИзменении</Event>
-									</Events>
+									<ContextMenu name="ОтключитьЗащитуОтОпасныхДействийКонтекстноеМеню" id="8031"/>
+									<ExtendedTooltip name="ОтключитьЗащитуОтОпасныхДействийРасширеннаяПодсказка" id="8032"/>
+								</CheckBoxField>
+								<CheckBoxField name="ВключитьКомпактныйВариантФорм" id="8033">
+									<DataPath>ВключитьКомпактныйВариантФорм</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Включить компактный вариант масштаба управляемых форм. Вернуть обычный вариант можно в инструменте "Редактор пользователей".</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВключитьКомпактныйВариантФормКонтекстноеМеню" id="8034"/>
+									<ExtendedTooltip name="ВключитьКомпактныйВариантФормРасширеннаяПодсказка" id="8035"/>
 								</CheckBoxField>
 								<InputField name="ПарольТекущегоПользователя" id="8025">
 									<DataPath>ПарольТекущегоПользователя</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>пароль</v8:content>
+											<v8:content>Пароль</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
@@ -123,12 +187,6 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="КодРазрешения" id="8001">
-							<DataPath>КодРазрешения</DataPath>
-							<Width>15</Width>
-							<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="8002"/>
-							<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="8008"/>
-						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -220,8 +278,47 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьЗащитуОтОпасныхДействий" id="8005">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить защиту от опасных действий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 			<Save>
-				<Field>ПарольТекущегоПользователя</Field>
+				<Field>ОтключитьЗащитуОтОпасныхДействий</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВключитьКомпактныйВариантФорм" id="8006">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить компактный вариант форм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВключитьКомпактныйВариантФорм</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗавершитьСеанс" id="8007">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить сеанс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗавершитьСеанс</Field>
 			</Save>
 		</Attribute>
 	</Attributes>
