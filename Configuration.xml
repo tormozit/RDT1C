@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.57</Version>
+			<Version>4.58</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -399,7 +399,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
-			<CommonCommand>ирЗапуститьОбычноеПриложение</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОбработатьОбъектыИзАктивнойФормы</CommonCommand>
@@ -410,6 +409,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonCommand>ирОткрытьОтладчик</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
 			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
+			<CommonCommand>ирПерезапуститьСеанс</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъектИзАктивнойФормы</CommonCommand>
@@ -451,7 +451,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>
 			<DataProcessor>ирНастройкаЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
-			<DataProcessor>ирТаблицыДляКонтекстнойПодсказки</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
 			<DataProcessor>ирПодготовкаКИзменениюСтруктурыБД</DataProcessor>
@@ -472,6 +471,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирСлужебный</DataProcessor>
 			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
+			<DataProcessor>ирТаблицыДляКонтекстнойПодсказки</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
