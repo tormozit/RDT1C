@@ -32,12 +32,6 @@
 				<CommandName>Form.Command.ОсновнаяФорма</CommandName>
 				<ExtendedTooltip name="ФормаОсновнаяФормаРасширеннаяПодсказка" id="38"/>
 			</Button>
-			<Button name="ДинамическийСписокРедакторОбъектаБД" id="29">
-				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<CommandName>Form.Command.РедакторОбъектаБДСтроки</CommandName>
-				<ExtendedTooltip name="ДинамическийСписокРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
-			</Button>
 			<Popup name="ПоследниеВыбранные" id="77">
 				<Title>
 					<v8:item>
@@ -58,6 +52,12 @@
 				<Representation>Picture</Representation>
 				<ExtendedTooltip name="ПоследниеВыбранныеРасширеннаяПодсказка" id="78"/>
 			</Popup>
+			<Button name="ДинамическийСписокРедакторОбъектаБД" id="29">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.РедакторОбъектаБДСтроки</CommandName>
+				<ExtendedTooltip name="ДинамическийСписокРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
+			</Button>
 			<Button name="ФормаРедакторОбъектаБДЯчейки" id="46">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
@@ -84,9 +84,14 @@
 				<CommandName>Form.Command.СколькоСтрок</CommandName>
 				<ExtendedTooltip name="ФормаСколькоСтрокРасширеннаяПодсказка" id="45"/>
 			</Button>
+			<Button name="ФормаНастроитьКолонки" id="84">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.НастройкаКолонок</CommandName>
+				<ExtendedTooltip name="ФормаНастроитьКолонкиРасширеннаяПодсказка" id="85"/>
+			</Button>
 			<Button name="ФормаСброситьНастройкиКолонок" id="42">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СброситьНастройкиКолонок</CommandName>
+				<CommandName>Form.Command.СброситьНастройкиСписка</CommandName>
 				<ExtendedTooltip name="ФормаСброситьНастройкиКолонокРасширеннаяПодсказка" id="43"/>
 			</Button>
 			<Button name="ФормаОтображениеИдентификаторов" id="75">
@@ -198,7 +203,7 @@
 			<Autofill>true</Autofill>
 			<Height>2</Height>
 			<AutoMaxHeight>false</AutoMaxHeight>
-			<MaxHeight>4</MaxHeight>
+			<MaxHeight>6</MaxHeight>
 			<MaxRowsCount>4</MaxRowsCount>
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ДинамическийСписок.SettingsComposer.UserSettings</DataPath>
@@ -440,17 +445,17 @@
 			<Action>ОсновнаяФорма</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="СброситьНастройкиКолонок" id="5">
+		<Command name="СброситьНастройкиСписка" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сбросить колонки</v8:content>
+					<v8:content>Сбросить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сбросить настройки колонок</v8:content>
+					<v8:content>Сбросить настройки списка</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>СброситьНастройкиКолонок</Action>
@@ -688,6 +693,21 @@
 			</Picture>
 			<Action>СтруктураФормы</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкаКолонок" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка колонок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаКолонок</Action>
 		</Command>
 	</Commands>
 	<Parameters>

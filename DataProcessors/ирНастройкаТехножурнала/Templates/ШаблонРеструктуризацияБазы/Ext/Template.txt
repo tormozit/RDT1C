@@ -1,0 +1,20 @@
+﻿Шаблон создает технологический журнал, фиксирующий информацию о процессе реструктуризации базы
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+    <system level="trace"/>
+    <log history="48">
+        <event>
+            <eq property="EventType" value="Workflow"/>
+        </event>
+        <event>
+            <eq property="EventType" value="Analysis"/>
+        </event>
+        <event>
+            <eq property="EventType" value="Restructuring"/>
+        </event>
+        <property name="RestructMode"/>
+        <property name="Description"/>
+        <property name="Duration"/>
+    </log>
+    <dump create="false"/>
+</config>
