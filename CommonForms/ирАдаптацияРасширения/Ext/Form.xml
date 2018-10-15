@@ -28,6 +28,60 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="Декорация3" id="74">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При выполнении адаптации используется конфигуратор текущей базы. После этого при обновлении на новую версию подсистемы адаптация будет выполняться автоматически. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="75"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="76"/>
+		</LabelDecoration>
+		<CheckBoxField name="ДобавитьРольВсеПрава" id="68">
+			<DataPath>СгенерироватьРольВсеПрава</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать роль ирВсеПрава</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечит доступ на чтение ко всем данным в базе. Эта роль будет добавляться пользователю при автоматическом добавлении роли ирРазработчик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДобавитьРольВсеПраваКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="ДобавитьРольВсеПраваРасширеннаяПодсказка" id="70">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<TextColor>style:FieldSelectionBackColor</TextColor>
+			</ExtendedTooltip>
+		</CheckBoxField>
+		<CheckBoxField name="ПодключитьОтладкуВнешнихОбработокБСП" id="71">
+			<DataPath>ПодключитьОтладкуВнешнихОбработокБСП</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо для работы инструмента "Отладка внешних обработок БСП" в БСП 2.4+</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПодключитьОтладкуВнешнихОбработокБСПКонтекстноеМеню" id="72"/>
+			<ExtendedTooltip name="ПодключитьОтладкуВнешнихОбработокБСПРасширеннаяПодсказка" id="73">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<TextColor>style:FieldSelectionBackColor</TextColor>
+			</ExtendedTooltip>
+		</CheckBoxField>
 		<UsualGroup name="Группа2" id="66">
 			<Title>
 				<v8:item>
@@ -45,8 +99,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подключение этих команд позволит передавать ссылки на объекты БД прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. При выполнении операции используется конфигуратор текущей базы. После этого при обновлении на новую версию подсистемы адаптация будет выполняться автоматически. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
-</v8:content>
+							<v8:content>Подключение этих команд позволит передавать ссылки на объекты БД прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды.</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
@@ -55,6 +108,7 @@
 				<Table name="СписокКоманд" id="6">
 					<Representation>List</Representation>
 					<ChangeRowSet>false</ChangeRowSet>
+					<Height>3</Height>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -152,7 +206,7 @@
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
 					<ChangeRowSet>false</ChangeRowSet>
-					<Height>3</Height>
+					<Height>2</Height>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -365,6 +419,28 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="СгенерироватьРольВсеПрава" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать роль все права</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодключитьОтладкуВнешнихОбработокБСП" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить отладку внешних обработок БСП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выполнить" id="1">
@@ -377,7 +453,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить адаптацию расширения конфигурации</v8:content>
+					<v8:content>Выполнить адаптацию расширения конфигурации и сохранить настройки</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьОперацию</Action>

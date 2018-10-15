@@ -3,10 +3,10 @@
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаОбновитьОбщиеНастройки" id="43">
+			<Button name="ФормаПрочитатьАктуальныеНастройки" id="43">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПрочитатьАктуальныеНастройки</CommandName>
-				<ExtendedTooltip name="ФормаОбновитьОбщиеНастройкиРасширеннаяПодсказка" id="55"/>
+				<ExtendedTooltip name="ФормаПрочитатьАктуальныеНастройкиРасширеннаяПодсказка" id="55"/>
 			</Button>
 			<Button name="ФормаОбщаяКомандаирОткрытьОтладчик" id="49">
 				<Type>CommandBarButton</Type>
@@ -384,7 +384,6 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПрочитатьАктуальныеНастройки</Action>
-			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗагрузитьИзФайла" id="4">
