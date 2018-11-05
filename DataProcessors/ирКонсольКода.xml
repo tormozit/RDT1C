@@ -30,16 +30,20 @@
 		<ChildObjects>
 			<Attribute uuid="29c5df62-faa9-4199-aa14-27b05d845ea8">
 				<Properties>
-					<Name>НаСервере</Name>
+					<Name>СпособВыполнения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>На сервере</v8:content>
+							<v8:content>Способ выполнения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -63,6 +67,7 @@
 				</Properties>
 			</Attribute>
 			<Form>Форма</Form>
+			<Form>РезультатФоновогоЗадания</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
