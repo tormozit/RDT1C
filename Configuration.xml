@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.71</Version>
+			<Version>4.72</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -206,7 +206,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирRegexBuddy</CommonPicture>
@@ -263,6 +262,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирИсключение</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
 			<CommonPicture>ирИсследовать</CommonPicture>
+			<CommonPicture>ирИсторияДанных</CommonPicture>
 			<CommonPicture>ирКнопка</CommonPicture>
 			<CommonPicture>ирКнопкаКоманднойПанели</CommonPicture>
 			<CommonPicture>ирКолонкаТабличногоПоля</CommonPicture>
@@ -330,6 +330,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирПоследниеВыбранные</CommonPicture>
 			<CommonPicture>ирПоследовательность</CommonPicture>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирПредопределенный</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
 			<CommonPicture>ирПриходРасход</CommonPicture>
@@ -386,7 +387,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирИсторияДанных</CommonPicture>
+			<CommonPicture>ирПраваДоступа</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -428,9 +429,10 @@ http://infostart.ru/projects/1274</v8:content>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
-			<Report>ирАнализЗамераПроизводительности</Report>
 			<Report>ирКонсольКомпоновокДанных</Report>
+			<Report>ирАнализЗамераПроизводительности</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
+			<Report>ирАнализПравДоступа</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>

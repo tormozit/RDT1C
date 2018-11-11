@@ -101,6 +101,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Report.ирАнализПравДоступа.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирАнализЖурналаРегистрации.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -278,6 +283,10 @@
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="Report.ирАнализПравДоступа.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирАнализЖурналаРегистрации.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
@@ -355,7 +364,70 @@
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.ирАнализПравДоступа.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирАнализЖурналаРегистрации.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирДинамическийСписок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирИнтерфейснаяПанель.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольЗаданий.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирНастройкаЖурналаРегистрации.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПоискБитыхСсылок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПоискДанных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПоискДублейИЗаменаСсылок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторИзмененийНаУзлах.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторКонстант.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОбъектаБД.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПользователей.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПредопределенных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеИтогамиРегистров.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеСлужбамиСерверов1С.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>CommandGroup.ирАдминистрирование</Group>
 	</GroupsOrder>
 </CommandInterface>
