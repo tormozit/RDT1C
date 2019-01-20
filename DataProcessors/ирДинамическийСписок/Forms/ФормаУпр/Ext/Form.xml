@@ -52,15 +52,24 @@
 				<Representation>Picture</Representation>
 				<ExtendedTooltip name="ПоследниеВыбранныеРасширеннаяПодсказка" id="78"/>
 			</Popup>
+			<Button name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБД" id="89">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьСтрокуЧерезРедакторОбъектаБД</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБДРасширеннаяПодсказка" id="90"/>
+			</Button>
 			<Button name="ДинамическийСписокРедакторОбъектаБД" id="29">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
-				<CommandName>Form.Command.РедакторОбъектаБДСтроки</CommandName>
+				<CommandName>Form.Command.ИзменитьСтрокуЧерезРедакторОбъектаБД</CommandName>
 				<ExtendedTooltip name="ДинамическийСписокРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
+			</Button>
+			<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СвязанныйРедакторОбъектаБДСтроки</CommandName>
+				<ExtendedTooltip name="ФормаСвязанныйРедакторОбъектаБДСтрокиРасширеннаяПодсказка" id="92"/>
 			</Button>
 			<Button name="ФормаРедакторОбъектаБДЯчейки" id="46">
 				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.РедакторОбъектаБДЯчейки</CommandName>
 				<ExtendedTooltip name="ФормаРедакторОбъектаБДЯчейкиРасширеннаяПодсказка" id="47"/>
 			</Button>
@@ -135,7 +144,14 @@
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
 			<ChildItems>
 				<InputField name="ОбъектМетаданных" id="14">
-					<DataPath>фОбъект.ОбъектМетаданных</DataPath>
+					<DataPath>фОбъект.ПолноеИмяТаблицы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица</v8:content>
+						</v8:item>
+					</Title>
+					<Width>40</Width>
 					<DropListButton>true</DropListButton>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="ОбъектМетаданныхКонтекстноеМеню" id="15"/>
@@ -152,7 +168,7 @@
 					<DataPath>фОбъект.КоличествоСтрокВОбластиПоиска</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
-					<Width>5</Width>
+					<Width>6</Width>
 					<ChoiceButton>false</ChoiceButton>
 					<ContextMenu name="фОбъектКоличествоСтрокВОбластиПоискаКонтекстноеМеню" id="82"/>
 					<ExtendedTooltip name="фОбъектКоличествоСтрокВОбластиПоискаРасширеннаяПодсказка" id="83"/>
@@ -315,6 +331,7 @@
 			<Events>
 				<Event name="Selection">ДинамическийСписокВыбор</Event>
 				<Event name="BeforeAddRow">ДинамическийСписокПередНачаломДобавления</Event>
+				<Event name="OnActivateRow">ДинамическийСписокПриАктивизацииСтроки</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>
@@ -443,24 +460,24 @@
 			<Action>ОПодсистеме</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="РедакторОбъектаБДСтроки" id="3">
+		<Command name="ИзменитьСтрокуЧерезРедакторОбъектаБД" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Строка</v8:content>
+					<v8:content>Изменить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Независимый редактор объекта БД строки</v8:content>
+					<v8:content>Изменить через независимый редактор объекта БД строки</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>РедакторОбъектаБДСтроки</Action>
+			<Action>ИзменитьСтрокуЧерезРедакторОбъектаБД</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОсновнаяФорма" id="4">
@@ -742,6 +759,47 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкаКолонок</Action>
+		</Command>
+		<Command name="ДобавитьСтрокуЧерезРедакторОбъектаБД" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить через независимый редактор объекта БД строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьСтрокуЧерезРедакторОбъектаБД</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвязанныйРедакторОбъектаБДСтроки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанный редактор объекта БД строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвязанныйРедакторОбъектаБДСтроки</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>
