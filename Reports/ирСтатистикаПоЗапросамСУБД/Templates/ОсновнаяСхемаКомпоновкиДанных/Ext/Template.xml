@@ -464,6 +464,42 @@
 				</v8:NumberQualifiers>
 			</valueType>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>last_execution_time_ms</dataPath>
+			<field>last_execution_time_ms</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Last execution time ms</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>creation_time_ms</dataPath>
+			<field>creation_time_ms</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Creation time ms</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>Запросы</objectName>
 	</dataSet>
@@ -622,6 +658,14 @@
 	<totalField>
 		<dataPath>КоличествоПерекомпиляций</dataPath>
 		<expression>Сумма(КоличествоПерекомпиляций)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>last_execution_time_ms</dataPath>
+		<expression>Максимум(last_execution_time_ms)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>creation_time_ms</dataPath>
+		<expression>Максимум(creation_time_ms)</expression>
 	</totalField>
 	<parameter>
 		<name>КоличествоПервых</name>
@@ -1892,7 +1936,13 @@
 					<dcsset:field>creation_time</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>creation_time_ms</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>last_execution_time</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>last_execution_time_ms</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПерекомпиляций</dcsset:field>
@@ -1984,6 +2034,18 @@
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
 					<dcsset:field>last_execution_time</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>last_execution_time_ms</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>creation_time</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>creation_time_ms</dcsset:field>
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
 			</dcsset:order>
@@ -2101,6 +2163,12 @@
 						</dcsset:item>
 						<dcsset:item>
 							<dcsset:field>CountPerMinute</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>last_execution_time_ms</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>creation_time_ms</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>

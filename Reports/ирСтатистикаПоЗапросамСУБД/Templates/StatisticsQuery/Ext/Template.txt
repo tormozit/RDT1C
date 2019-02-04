@@ -1,6 +1,8 @@
 ﻿select top 111
   creation_time
+, DATEPART(millisecond, creation_time) AS creation_time_ms
 , last_execution_time
+, DATEPART(millisecond, last_execution_time) AS last_execution_time_ms
 , plan_generation_num as PlanRecompiles
 , total_logical_reads as LogicalReads
 , total_logical_writes as LogicalWrites
