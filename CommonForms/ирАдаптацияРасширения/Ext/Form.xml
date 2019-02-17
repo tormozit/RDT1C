@@ -43,6 +43,7 @@
 		</LabelDecoration>
 		<CheckBoxField name="ДобавитьРольВсеПрава" id="68">
 			<DataPath>СгенерироватьРольВсеПрава</DataPath>
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -53,7 +54,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Обеспечит доступ на чтение ко всем данным в базе. Эта роль будет добавляться пользователю при автоматическом добавлении роли ирРазработчик</v8:content>
+					<v8:content>Обеспечит доступ на чтение ко всем таблицам в базе. Эта роль будет добавляться пользователю при автоматическом добавлении роли ирРазработчик</v8:content>
 				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
