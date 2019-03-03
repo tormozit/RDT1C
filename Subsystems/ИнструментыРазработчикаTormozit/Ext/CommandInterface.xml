@@ -111,6 +111,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирЗагрузкаТабличныхДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -291,6 +296,10 @@
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="DataProcessor.ирЗагрузкаТабличныхДанных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
@@ -369,6 +378,9 @@
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ирАнализЖурналаРегистрации.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирЗагрузкаТабличныхДанных.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл.StandardCommand.Open">
