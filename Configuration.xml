@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.82</Version>
+			<Version>4.84</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -290,6 +290,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирНастройкаЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ирНастройкаТехножурнала</CommonPicture>
 			<CommonPicture>ирНастройкиАлгоритмов</CommonPicture>
+			<CommonPicture>ирНастройкиКлиента1С</CommonPicture>
 			<CommonPicture>ирНедоступноеПоле</CommonPicture>
 			<CommonPicture>ирНеКлючевыеСлова</CommonPicture>
 			<CommonPicture>ирНеМетоды</CommonPicture>
@@ -395,7 +396,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<Role>ирРазработчик</Role>
 			<CommonTemplate>ирШаблонРасширения</CommonTemplate>
 			<CommonModule>ирГлобальный</CommonModule>
-			<CommonModule>ирДополнительныеОтчетыИОбработки</CommonModule>
+			<CommonModule>ирДополнительныеОтчетыИОбработкиБСП</CommonModule>
 			<CommonModule>ирИнтерфейсДляВстраивания</CommonModule>
 			<CommonModule>ирКэш</CommonModule>
 			<CommonModule>ирОбщий</CommonModule>
@@ -426,6 +427,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
 			<CommonForm>ирОбновлениеОписанияПлатформы</CommonForm>
 			<CommonForm>ирОтладкаВнешнихОбработокБСП</CommonForm>
+			<CommonForm>ирФормаОтчетаБСП</CommonForm>
 			<Catalog>ирАлгоритмы</Catalog>
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
@@ -475,11 +477,11 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирСлужебный</DataProcessor>
 			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
-			<DataProcessor>ирТаблицыДляКонтекстнойПодсказки</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
+			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
 		</ChildObjects>
 	</Configuration>
