@@ -720,21 +720,21 @@
 			</TabularSection>
 			<TabularSection uuid="32c27e6d-aab0-4a52-b448-b9ad765378c2">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирПлатформа.СписокИнфобазПользователя" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирПлатформа.СписокБазПользователя" category="TabularSection">
 						<xr:TypeId>9fb370ae-045c-43d0-8270-8a55c042f3ce</xr:TypeId>
 						<xr:ValueId>bbd9352e-2f9f-4b46-ae41-8c5d3c4d8df9</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПлатформа.СписокИнфобазПользователя" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПлатформа.СписокБазПользователя" category="TabularSectionRow">
 						<xr:TypeId>abe4534d-fac5-4517-b6bc-1e0e194a94c1</xr:TypeId>
 						<xr:ValueId>d850134f-1ba0-4cd0-b28f-3afca8ebc512</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>СписокИнфобазПользователя</Name>
+					<Name>СписокБазПользователя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Список инфобаз пользователя</v8:content>
+							<v8:content>Список баз пользователя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1519,6 +1519,46 @@
 							<MaxValue xsi:nil="true"/>
 							<FillFromFillingValue>false</FillFromFillingValue>
 							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="b6f9b2a8-1ead-46be-80b3-e1a50cc34d18">
+						<Properties>
+							<Name>ФайлСписка</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл списка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
