@@ -1,14 +1,17 @@
-﻿Диагностика блокировок СУБД (8.3.8+)
+﻿Диагностика ожиданий на блокировках СУБД (8.3.8+)
+Собираем ожидания более 1с
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://v8.1c.ru/v8/tech-log">
-	<log history="24">
+	<log history="24" location="E:\1c_Log">
 		<property name="all"/>
 		<event>
 			<eq property="lkp" value="1"/>
+			<gt property="duration" value="10000"/>
 		</event>
 		<event>
 			<eq property="lka" value="1"/>
+			<gt property="duration" value="10000"/>
 		</event>
 	</log>
-	<dump create="false" type="0" prntscrn="false"/>
+	<dbmslocks/>
 </config>

@@ -118,6 +118,16 @@
 				<CommandName>Form.Command.ВывестиСтроки</CommandName>
 				<ExtendedTooltip name="ФормаВывестиСтрокиРасширеннаяПодсказка" id="72"/>
 			</Button>
+			<Button name="ФормаОткрытьОбъектМетаданных" id="95">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьОбъектМетаданных</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьОбъектМетаданныхРасширеннаяПодсказка" id="96"/>
+			</Button>
+			<Button name="ФормаСправкаМетаданного" id="97">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СправкаМетаданного</CommandName>
+				<ExtendedTooltip name="ФормаСправкаМетаданногоРасширеннаяПодсказка" id="98"/>
+			</Button>
 			<Button name="ФормаНовоеОкно" id="25">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НовоеОкно</CommandName>
@@ -825,6 +835,44 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>НайтиВыбратьПоID</Action>
+		</Command>
+		<Command name="ОткрытьОбъектМетаданных" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть объект метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть объект метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирИнтерфейснаяПанель</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьОбъектМетаданных</Action>
+		</Command>
+		<Command name="СправкаМетаданного" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справка метаданного</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справка метаданного</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСправкаМетаданного</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СправкаМетаданного</Action>
 		</Command>
 	</Commands>
 	<Parameters>
