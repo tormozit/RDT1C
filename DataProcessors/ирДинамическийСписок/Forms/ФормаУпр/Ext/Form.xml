@@ -52,6 +52,11 @@
 				<Representation>Picture</Representation>
 				<ExtendedTooltip name="ПоследниеВыбранныеРасширеннаяПодсказка" id="78"/>
 			</Popup>
+			<Button name="ФормаНайтиВыбратьПоID" id="93">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.НайтиВыбратьПоID</CommandName>
+				<ExtendedTooltip name="ФормаНайтиВыбратьПоIDРасширеннаяПодсказка" id="94"/>
+			</Button>
 			<Button name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБД" id="89">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ДобавитьСтрокуЧерезРедакторОбъектаБД</CommandName>
@@ -231,6 +236,7 @@
 							<v8:content>Фикс. отбор</v8:content>
 						</v8:item>
 					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<TextColor>style:FieldSelectionBackColor</TextColor>
 					<ContextMenu name="ФиксированныйОтборКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ФиксированныйОтборРасширеннаяПодсказка" id="24"/>
@@ -801,16 +807,29 @@
 			<Action>СвязанныйРедакторОбъектаБДСтроки</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
+		<Command name="НайтиВыбратьПоID" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти/Выбрать по ID</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти или выбрать ссылку по внутреннему идентификатору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирИдентификатор</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиВыбратьПоID</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ИмяТаблицы">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
+			<Type/>
 		</Parameter>
 	</Parameters>
 </Form>
