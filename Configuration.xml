@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>4.93</Version>
+			<Version>4.94</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -206,7 +206,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирJSON</CommonPicture>
@@ -390,6 +389,8 @@ http://infostart.ru/projects/1274</v8:content>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирСостоянияСсылки</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -438,7 +439,6 @@ http://infostart.ru/projects/1274</v8:content>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
@@ -448,6 +448,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирИмитаторСсылочныйОбъект</DataProcessor>
 			<DataProcessor>ирИнтерфейснаяПанель</DataProcessor>
 			<DataProcessor>ирИсследовательОбъектов</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
 			<DataProcessor>ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</DataProcessor>
 			<DataProcessor>ирКонсольЗаданий</DataProcessor>
@@ -484,6 +485,7 @@ http://infostart.ru/projects/1274</v8:content>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
+			<DataProcessor>ирИсторияДанных</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

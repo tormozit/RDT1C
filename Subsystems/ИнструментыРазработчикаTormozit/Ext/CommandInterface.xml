@@ -136,6 +136,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирИсторияДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирКонсольЗаданий.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -318,6 +323,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DataProcessor.ирИнтерфейснаяПанель.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирИсторияДанных.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>

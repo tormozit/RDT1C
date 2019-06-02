@@ -17,6 +17,11 @@
 				<CommandName>Form.Command.ОтключитьОтбор</CommandName>
 				<ExtendedTooltip name="ФормаОтключитьОтборРасширеннаяПодсказка" id="74"/>
 			</Button>
+			<Button name="ФормаОтборПоЗначенияВТекущейКолонке" id="99">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтборПоЗначенияВТекущейКолонке</CommandName>
+				<ExtendedTooltip name="ФормаОтборПоЗначенияВТекущейКолонкеРасширеннаяПодсказка" id="100"/>
+			</Button>
 			<Button name="ФормаОтборБезЗначенияВТекущейКолонке" id="56">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтборБезЗначенияВТекущейКолонке</CommandName>
@@ -873,6 +878,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>СправкаМетаданного</Action>
+		</Command>
+		<Command name="ОтборПоЗначенияВТекущейКолонке" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по значению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по значению в текущей колонке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирОтборПоЗначению</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтборПоЗначенияВТекущейКолонке</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<Parameters>
