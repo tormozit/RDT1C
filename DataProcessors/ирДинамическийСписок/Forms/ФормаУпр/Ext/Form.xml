@@ -258,49 +258,126 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
-			<CommandBarLocation>None</CommandBarLocation>
-			<Autofill>true</Autofill>
-			<Height>2</Height>
-			<AutoMaxHeight>false</AutoMaxHeight>
-			<MaxHeight>6</MaxHeight>
-			<MaxRowsCount>4</MaxRowsCount>
-			<FileDragMode>AsFile</FileDragMode>
-			<DataPath>ДинамическийСписок.SettingsComposer.UserSettings</DataPath>
-			<CommandSet>
-				<ExcludedCommand>HierarchicalList</ExcludedCommand>
-				<ExcludedCommand>List</ExcludedCommand>
-				<ExcludedCommand>Tree</ExcludedCommand>
-			</CommandSet>
-			<ViewMode>All</ViewMode>
-			<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиКонтекстноеМеню" id="59"/>
-			<AutoCommandBar name="КомпоновщикНастроекПользовательскиеНастройкиКоманднаяПанель" id="60"/>
-			<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="61"/>
-			<SearchStringAddition name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоиска" id="62">
-				<AdditionSource>
-					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаКонтекстноеМеню" id="63"/>
-				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаРасширеннаяПодсказка" id="64"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотра" id="65">
-				<AdditionSource>
-					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраКонтекстноеМеню" id="66"/>
-				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="67"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоиском" id="68">
-				<AdditionSource>
-					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомКонтекстноеМеню" id="69"/>
-				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="70"/>
-			</SearchControlAddition>
-		</Table>
+		<UsualGroup name="Группа2" id="114">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="115"/>
+			<ChildItems>
+				<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
+					<CommandBarLocation>None</CommandBarLocation>
+					<Autofill>true</Autofill>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>6</MaxHeight>
+					<MaxRowsCount>4</MaxRowsCount>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ДинамическийСписок.SettingsComposer.UserSettings</DataPath>
+					<CommandSet>
+						<ExcludedCommand>HierarchicalList</ExcludedCommand>
+						<ExcludedCommand>List</ExcludedCommand>
+						<ExcludedCommand>Tree</ExcludedCommand>
+					</CommandSet>
+					<ViewMode>All</ViewMode>
+					<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиКонтекстноеМеню" id="59"/>
+					<AutoCommandBar name="КомпоновщикНастроекПользовательскиеНастройкиКоманднаяПанель" id="60"/>
+					<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="61"/>
+					<SearchStringAddition name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоиска" id="62">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаРасширеннаяПодсказка" id="64"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотра" id="65">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраКонтекстноеМеню" id="66"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="67"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоиском" id="68">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомКонтекстноеМеню" id="69"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="70"/>
+					</SearchControlAddition>
+				</Table>
+				<Table name="СоединяемыеРегистры" id="101">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Width>30</Width>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>6</MaxHeight>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СоединяемыеРегистры</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СоединяемыеРегистрыКонтекстноеМеню" id="102"/>
+					<AutoCommandBar name="СоединяемыеРегистрыКоманднаяПанель" id="103"/>
+					<ExtendedTooltip name="СоединяемыеРегистрыРасширеннаяПодсказка" id="104"/>
+					<SearchStringAddition name="СоединяемыеРегистрыСтрокаПоиска" id="105">
+						<AdditionSource>
+							<Item>СоединяемыеРегистры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоединяемыеРегистрыСтрокаПоискаКонтекстноеМеню" id="106"/>
+						<ExtendedTooltip name="СоединяемыеРегистрыСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СоединяемыеРегистрыСостояниеПросмотра" id="108">
+						<AdditionSource>
+							<Item>СоединяемыеРегистры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоединяемыеРегистрыСостояниеПросмотраКонтекстноеМеню" id="109"/>
+						<ExtendedTooltip name="СоединяемыеРегистрыСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СоединяемыеРегистрыУправлениеПоиском" id="111">
+						<AdditionSource>
+							<Item>СоединяемыеРегистры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СоединяемыеРегистрыУправлениеПоискомКонтекстноеМеню" id="112"/>
+						<ExtendedTooltip name="СоединяемыеРегистрыУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnChange">СоединяемыеРегистрыПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="СоединяемыеРегистрыПометка" id="122">
+							<DataPath>СоединяемыеРегистры.Соединить</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СоединяемыеРегистрыПометкаКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="СоединяемыеРегистрыПометкаРасширеннаяПодсказка" id="124"/>
+						</CheckBoxField>
+						<InputField name="СоединяемыеРегистрыИмя" id="116">
+							<DataPath>СоединяемыеРегистры.Имя</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоединяемыеРегистрыИмяКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="СоединяемыеРегистрыИмяРасширеннаяПодсказка" id="118"/>
+						</InputField>
+						<InputField name="СоединяемыеРегистрыПредставление" id="119">
+							<DataPath>СоединяемыеРегистры.Представление</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоединяемыеРегистрыПредставлениеКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="СоединяемыеРегистрыПредставлениеРасширеннаяПодсказка" id="121"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="ДинамическийСписок" id="1">
 			<CommandBarLocation>None</CommandBarLocation>
 			<Height>8</Height>
@@ -438,6 +515,60 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="СоединяемыеРегистры" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соединяемые регистры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Соединить" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соединить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
