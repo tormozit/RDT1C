@@ -630,7 +630,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ИзменитьСтрокуЧерезРедакторОбъектаБД</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
+			<CurrentRowUse>Use</CurrentRowUse>
 		</Command>
 		<Command name="ОсновнаяФорма" id="4">
 			<Title>
@@ -702,7 +702,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>РедакторОбъектаБДЯчейки</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
+			<CurrentRowUse>Use</CurrentRowUse>
 		</Command>
 		<Command name="ВыделитьНужноеКоличество" id="8">
 			<Title>
@@ -799,7 +799,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОтборБезЗначенияВТекущейКолонке</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
+			<CurrentRowUse>Use</CurrentRowUse>
 		</Command>
 		<Command name="ВывестиСтроки" id="13">
 			<Title>
@@ -861,19 +861,13 @@
 			<Action>ОтображениеИдентификаторов</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ПоследниеВыбранныеНажатие" id="16">
+		<Command name="ПоследниеВыбранные1" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Последние выбранные нажатие</v8:content>
+					<v8:content>Последние выбранные1</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Последние выбранные нажатие</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Action>ПоследниеВыбранныеНажатие</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -1028,6 +1022,96 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОтборПоЗначенияВТекущейКолонке</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные2" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные3" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные4" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные5" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные6" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные7" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные8" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные9" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеВыбранные0" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеВыбранныеНажатие</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
