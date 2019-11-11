@@ -1,0 +1,28 @@
+﻿Шаблон регистрирует все выборки из журнала регистрации
+Взято здесь http://forum.infostart.ru/forum86/topic177966/message1849978/#message1849978
+<?xml version="1.0"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<log history="24">
+		<property name="all"/>
+		<event>
+		    <eq property="name" value="SYSTEM"/>
+		    <eq property="class" value="LogMngrSQLiteData"/>
+		    <eq property="func" value="fetchLogEntries"/>
+		    <eq property="level" value="INFO"/>
+		</event>
+		<event>
+		    <eq property="name" value="SYSTEM"/>
+		    <eq property="class" value="LogMngrData"/>
+		    <eq property="func" value="fetchLogEntriesDataBkwd"/>
+		    <eq property="level" value="DEBUG"/>
+		</event>
+		<event>
+		    <eq property="name" value="SYSTEM"/>
+		    <eq property="class" value="LogMngrData"/>
+		    <eq property="func" value="fetchLogEntriesDataFwd"/>
+		    <eq property="level" value="DEBUG"/>
+		</event>
+	</log>
+	<system level="info" component="backbas" class="LogMngrSQLiteData"/>
+	<system level="debug" component="backbas" class="LogMngrData"/>
+</config>
