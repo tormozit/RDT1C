@@ -253,9 +253,14 @@
 						</v8:item>
 					</Title>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<ClearButton>false</ClearButton>
+					<OpenButton>true</OpenButton>
 					<TextColor>style:FieldSelectionBackColor</TextColor>
 					<ContextMenu name="ФиксированныйОтборКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ФиксированныйОтборРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="Opening">ФиксированныйОтборОткрытие</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

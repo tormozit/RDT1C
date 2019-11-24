@@ -33,8 +33,20 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="Группа1" id="59">
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+		<Pages name="ГруппаПанель" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="60"/>
 			<ChildItems>
 				<Page name="Группа3" id="63">
 					<Title>
@@ -352,6 +364,9 @@
 								<ContextMenu name="КомпоновщикРезультатаНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="119"/>
 								<ExtendedTooltip name="КомпоновщикРезультатаНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="120"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">КомпоновщикРезультатаНастройкиОтборВыбор</Event>
+							</Events>
 						</Table>
 					</ChildItems>
 				</Page>
@@ -398,6 +413,11 @@
 	<Parameters>
 		<Parameter name="ИсполняемыеНастройки">
 			<Type/>
+		</Parameter>
+		<Parameter name="АктивироватьФиксированныйОтбор">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Parameter>
 	</Parameters>
 </Form>
