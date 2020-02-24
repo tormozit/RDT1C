@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.21</Version>
+			<Version>5.22</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,9 +205,9 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирJSON</CommonPicture>
 			<CommonPicture>ирRegexBuddy</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
@@ -352,6 +352,7 @@
 			<CommonPicture>ирСистемнаяСлужба</CommonPicture>
 			<CommonPicture>ирСоставнойТип</CommonPicture>
 			<CommonPicture>ирСостоянияОбъекта</CommonPicture>
+			<CommonPicture>ирСостоянияСсылки</CommonPicture>
 			<CommonPicture>ирСохранитьВариантНастроек</CommonPicture>
 			<CommonPicture>ирСохранитьКак</CommonPicture>
 			<CommonPicture>ирСохранитьНастройки</CommonPicture>
@@ -386,12 +387,12 @@
 			<CommonPicture>ирУстановитьФокус</CommonPicture>
 			<CommonPicture>ирФлажок</CommonPicture>
 			<CommonPicture>ирФорма</CommonPicture>
+			<CommonPicture>ирФорматировать</CommonPicture>
 			<CommonPicture>ирФункциональнаяОпция</CommonPicture>
+			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирСостоянияСсылки</CommonPicture>
-			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
-			<CommonPicture>ирФорматировать</CommonPicture>
+			<CommonPicture>ирHttp</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -488,6 +489,7 @@
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
+			<DataProcessor>ирКонсольHTTPЗапросов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
