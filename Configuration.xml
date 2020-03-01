@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.22</Version>
+			<Version>5.23</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,9 +205,10 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирHttp</CommonPicture>
 			<CommonPicture>ирJSON</CommonPicture>
 			<CommonPicture>ирRegexBuddy</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
@@ -392,7 +393,6 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирHttp</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -442,6 +442,7 @@
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
@@ -454,7 +455,7 @@
 			<DataProcessor>ирИсторияДанных</DataProcessor>
 			<DataProcessor>ирКлсПолеТабличногоДокументаСГруппировками</DataProcessor>
 			<DataProcessor>ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирКонсольHTTPЗапросов</DataProcessor>
 			<DataProcessor>ирКонсольЗаданий</DataProcessor>
 			<DataProcessor>ирКонсольЗапросов</DataProcessor>
 			<DataProcessor>ирКонсольКода</DataProcessor>
@@ -489,7 +490,6 @@
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСерверов1С</DataProcessor>
-			<DataProcessor>ирКонсольHTTPЗапросов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
