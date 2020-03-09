@@ -71,6 +71,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Report.ирПодпискиНаСобытия.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирРедакторПараметровСеанса.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -279,6 +284,10 @@
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="Report.ирПодпискиНаСобытия.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирРедакторПараметровСеанса.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
@@ -400,76 +409,7 @@
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
-	<CommandsOrder>
-		<Command name="Report.ирАнализЗамераПроизводительности.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирАнализТехножурнала.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирВводВыраженияВстроенногоЯзыка.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирИсследовательОбъектов.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольHTTPЗапросов.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольЗапросов.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольКода.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирКонсольКомпоновокДанных.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольПостроителейОтчетов.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонструкторРегулярногоВыражения.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирМенеджерИнтерфейсов.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирНастройкаТехножурнала.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="CommonForm.ирОтладкаВнешнихОбработокБСП.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="CommonCommand.ирОткрытьОтладчик">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирРедакторПараметровСеанса.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирРедакторХранилищНастроек.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирСинтаксПомощник.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирСтатистикаПоЗапросамСУБД.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирСтруктураХраненияБД.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирТестированиеМетаданных.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирУправлениеПрофайлами1С.StandardCommand.Open">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
-		<Group>CommandGroup.ирРазработка</Group>
 	</GroupsOrder>
 </CommandInterface>
