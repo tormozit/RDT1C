@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.24</Version>
+			<Version>5.25</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,10 +205,12 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
+			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
 			<CommonPicture>ирJSON</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирRegex101</CommonPicture>
 			<CommonPicture>ирRegexBuddy</CommonPicture>
 			<CommonPicture>ирWMI</CommonPicture>
 			<CommonPicture>ирXML</CommonPicture>
@@ -318,7 +320,7 @@
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
 			<CommonPicture>ирПерерасчет</CommonPicture>
 			<CommonPicture>ирПовторить</CommonPicture>
-			<CommonPicture>ирHtml</CommonPicture>
+			<CommonPicture>ирПодпискаНаСобытие</CommonPicture>
 			<CommonPicture>ирПоискДанных</CommonPicture>
 			<CommonPicture>ирПоискИЗаменаДублей</CommonPicture>
 			<CommonPicture>ирПоискСсылокНаОбъект</CommonPicture>
@@ -393,8 +395,6 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирRegex101</CommonPicture>
-			<CommonPicture>ирПодпискаНаСобытие</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -441,8 +441,8 @@
 			<Report>ирАнализЗамераПроизводительности</Report>
 			<Report>ирАнализПравДоступа</Report>
 			<Report>ирКонсольКомпоновокДанных</Report>
-			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<Report>ирПодпискиНаСобытия</Report>
+			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>

@@ -85,24 +85,6 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Подписка.Порядок</dataPath>
-			<field>ПодпискаПорядок</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Подписка.Порядок</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>0</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Обработчик.Модуль</dataPath>
 			<field>ОбработчикМодуль</field>
 			<title xsi:type="v8:LocalStringType">
@@ -362,6 +344,9 @@
 					<dcsset:field>ОбъектМетаданных.Представление</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подписка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Обработчик</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -482,10 +467,6 @@
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:field>Подписка.Порядок</dcsset:field>
-					<dcsset:orderType>Asc</dcsset:orderType>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
 					<dcsset:field>Подписка</dcsset:field>
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
@@ -596,7 +577,41 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">80</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.ВнешнееСоединение</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.ВызовСервера</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.КлиентОбычноеПриложение</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.КлиентУправляемоеПриложение</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.Привилегированный</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Обработчик.Модуль.Сервер</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">80</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
