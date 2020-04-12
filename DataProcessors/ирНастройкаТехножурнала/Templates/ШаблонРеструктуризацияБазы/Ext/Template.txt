@@ -3,7 +3,8 @@
 <config xmlns="http://v8.1c.ru/v8/tech-log">
     <system level="trace"/>
     <log history="48">
-        <event>
+ 		<property name="all"/>
+ 		<event>
             <eq property="EventType" value="Workflow"/>
         </event>
         <event>
@@ -12,9 +13,6 @@
         <event>
             <eq property="EventType" value="Restructuring"/>
         </event>
-        <property name="RestructMode"/>
-        <property name="Description"/>
-        <property name="Duration"/>
     </log>
     <dump create="false"/>
 </config>
