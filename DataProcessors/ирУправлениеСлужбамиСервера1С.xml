@@ -2,17 +2,17 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<DataProcessor uuid="3077e763-74cc-4b0b-8973-5ec56587b486">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.ирУправлениеСлужбамиСерверов1С" category="Object">
+			<xr:GeneratedType name="DataProcessorObject.ирУправлениеСлужбамиСервера1С" category="Object">
 				<xr:TypeId>d330ad8c-036b-4215-9728-7472908b4fc1</xr:TypeId>
 				<xr:ValueId>f51923f2-938e-44e4-aa3e-00fe038e6cdd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.ирУправлениеСлужбамиСерверов1С" category="Manager">
+			<xr:GeneratedType name="DataProcessorManager.ирУправлениеСлужбамиСервера1С" category="Manager">
 				<xr:TypeId>0d272758-273c-4061-8087-508a37787593</xr:TypeId>
 				<xr:ValueId>e78fff94-5275-43b4-9ed7-92e084f21c3f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ирУправлениеСлужбамиСерверов1С</Name>
+			<Name>ирУправлениеСлужбамиСервера1С</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -21,7 +21,7 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.ирУправлениеСлужбамиСерверов1С.Form.Форма</DefaultForm>
+			<DefaultForm>DataProcessor.ирУправлениеСлужбамиСервера1С.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
@@ -68,11 +68,11 @@
 			</Attribute>
 			<TabularSection uuid="ba364370-425d-4748-a65b-ddaefe1cf658">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСерверов1С.СборкиПлатформы" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСервера1С.СборкиПлатформы" category="TabularSection">
 						<xr:TypeId>e2d77af2-5713-4234-9891-e7bb4e542fbc</xr:TypeId>
 						<xr:ValueId>84b137ff-0831-4790-87be-2cf1827575cd</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСерверов1С.СборкиПлатформы" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСервера1С.СборкиПлатформы" category="TabularSectionRow">
 						<xr:TypeId>19aaabd7-5743-4ec0-bcf5-e63132b634a9</xr:TypeId>
 						<xr:ValueId>e3eeed97-6f47-4a7d-87b3-2b4df3cbcdcc</xr:ValueId>
 					</xr:GeneratedType>
@@ -763,11 +763,11 @@
 			</TabularSection>
 			<TabularSection uuid="49c51f49-cd9a-4233-a039-b2807fb144e2">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСерверов1С.СлужбыАгентовСерверов" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСервера1С.СлужбыАгентовСерверов" category="TabularSection">
 						<xr:TypeId>b7c95aad-3f6b-4ee4-b1f2-351182323d49</xr:TypeId>
 						<xr:ValueId>47b48ea8-20f2-47e1-b6c2-5ec63592167f</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСерверов1С.СлужбыАгентовСерверов" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСервера1С.СлужбыАгентовСерверов" category="TabularSectionRow">
 						<xr:TypeId>cca6fcae-3993-4258-820e-6105953dd87e</xr:TypeId>
 						<xr:ValueId>601bcfd0-b5ae-41af-872a-34869b6beaa3</xr:ValueId>
 					</xr:GeneratedType>
@@ -1817,11 +1817,11 @@
 			</TabularSection>
 			<TabularSection uuid="978ea158-0097-49b8-9b92-e039d5386e9c">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСерверов1С.СлужбыСерверовАдминистрирования" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСервера1С.СлужбыСерверовАдминистрирования" category="TabularSection">
 						<xr:TypeId>e0d4c8f3-fe33-426d-9280-870fdf5a756c</xr:TypeId>
 						<xr:ValueId>9455ea3f-16cb-4ec9-b2b2-cedc00b50f2f</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСерверов1С.СлужбыСерверовАдминистрирования" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСервера1С.СлужбыСерверовАдминистрирования" category="TabularSectionRow">
 						<xr:TypeId>a0b4efcc-3ce0-404d-a83b-0c4762f8eb55</xr:TypeId>
 						<xr:ValueId>9ed118b6-a5e2-49c4-b430-414fe3b47f18</xr:ValueId>
 					</xr:GeneratedType>
@@ -2654,11 +2654,11 @@
 			</TabularSection>
 			<TabularSection uuid="54c26527-fd38-47d2-9e89-07996a726501">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСерверов1С.СлужбыСерверовОтладки" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСервера1С.СлужбыСерверовОтладки" category="TabularSection">
 						<xr:TypeId>d1f00559-14ff-4028-b2c2-828951447ea5</xr:TypeId>
 						<xr:ValueId>dd8e0433-283f-4653-910d-d4fdf3312114</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСерверов1С.СлужбыСерверовОтладки" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСервера1С.СлужбыСерверовОтладки" category="TabularSectionRow">
 						<xr:TypeId>eaa8fca7-3d2d-43a2-839c-71252cb26e62</xr:TypeId>
 						<xr:ValueId>7533ef47-2780-49a4-b40a-a195c095f4e6</xr:ValueId>
 					</xr:GeneratedType>
@@ -3415,11 +3415,11 @@
 			</TabularSection>
 			<TabularSection uuid="9b0b5d5d-10cb-4156-acc8-cdd4bb4e5a57">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСерверов1С.СлужбыХранилищКонфигураций" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирУправлениеСлужбамиСервера1С.СлужбыХранилищКонфигураций" category="TabularSection">
 						<xr:TypeId>660efe76-594d-4287-93f8-f5079c0e59a6</xr:TypeId>
 						<xr:ValueId>bf7894ca-98a0-4652-83bf-3570495765de</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСерверов1С.СлужбыХранилищКонфигураций" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирУправлениеСлужбамиСервера1С.СлужбыХранилищКонфигураций" category="TabularSectionRow">
 						<xr:TypeId>acf595c9-78d8-41aa-8819-66b1daa6fc52</xr:TypeId>
 						<xr:ValueId>6fa930ac-d3f7-4969-ac11-7c9b03e129c3</xr:ValueId>
 					</xr:GeneratedType>
