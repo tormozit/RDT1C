@@ -1464,7 +1464,12 @@
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:parameter>Формат</dcscor:parameter>
-				<dcscor:value xsi:type="xs:string">ЧЦ=7; ЧДЦ=3</dcscor:value>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=10; ЧДЦ=3</v8:content>
+					</v8:item>
+				</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<valueType>
@@ -1581,10 +1586,10 @@
 	</totalField>
 	<totalField>
 		<dataPath>Частота</dataPath>
-		<expression>ВЫБОР КОГДА  РАЗНОСТЬДАТ(Минимум(Дата), Максимум(Дата), "МИНУТА") = 0 
+		<expression>ВЫБОР КОГДА  РАЗНОСТЬДАТ(Минимум(Дата), Максимум(Дата), "СЕКУНДА") = 0 
 	ТОГДА 0
-	ИНАЧЕ СУММА(1) / РАЗНОСТЬДАТ(Минимум(Дата), Максимум(Дата), "МИНУТА")
-КОНЕЦ
+	ИНАЧЕ СУММА(1) / РАЗНОСТЬДАТ(Минимум(Дата), Максимум(Дата), "СЕКУНДА")
+КОНЕЦ * 60
 </expression>
 	</totalField>
 	<totalField>

@@ -352,7 +352,8 @@
 	//RegExp.MultiLine = Истина;
 	RegExp.IgnoreCase = Истина;
 	RegExp.Pattern = ИмяСвойстваНомера + "=""(\d+)""";
-	Вхождения = RegExp.Execute(ЭлементыФормы.HTMLОтображение.Документ.selection.CreateRange().htmlText);
+	ВыделенныйТекстHtml = ирОбщий.ПолучитьHtmlТекстВыделенияЛкс(ЭлементыФормы.HTMLОтображение.Документ);
+	Вхождения = RegExp.Execute(ВыделенныйТекстHtml);
 	МассивСсылок = Новый Массив;
 	Для Каждого Вхождение Из Вхождения Цикл
 		НомерВСписке = Число(Вхождение.SubMatches(0));
@@ -373,6 +374,7 @@
 	
 	ирОбщий.ОткрытьСсылкуИТСЛкс("https://its.1c.ru/db/v?doc#bookmark:dev:TI000000799");
 	ирОбщий.ОткрытьСсылкуИТСЛкс("https://its.1c.ru/db/v?doc#bookmark:dev:TI000001240");
+	ирОбщий.ОткрытьСсылкуИТСЛкс("https://its.1c.ru/db/v?doc/bookmark/utx/TI000000308/%EF%EE%EB%ED%EE%F2%E5%EA%F1%F2%EE%E2%FB%E9%20%EF%EE%E8%F1%EA");
 	
 КонецПроцедуры
 
