@@ -73,6 +73,12 @@
 				<CommandName>Form.Command.ИзменитьСтрокуЧерезРедакторОбъектаБД</CommandName>
 				<ExtendedTooltip name="ДинамическийСписокРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
 			</Button>
+			<Button name="ФормаИзменитьФорму" id="125">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="126"/>
+			</Button>
 			<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СвязанныйРедакторОбъектаБДСтроки</CommandName>
@@ -97,12 +103,6 @@
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.РазличныеЗначенияКолонки</CommandName>
 				<ExtendedTooltip name="ФормаРазличныеЗначенияКолонкиРасширеннаяПодсказка" id="53"/>
-			</Button>
-			<Button name="ФормаИзменитьФорму" id="125">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="126"/>
 			</Button>
 			<Button name="ФормаСколькоСтрок" id="44">
 				<Type>CommandBarButton</Type>

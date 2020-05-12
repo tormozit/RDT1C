@@ -13,13 +13,6 @@
 				<CommandName>CommonCommand.ирОПодсистеме</CommandName>
 				<ExtendedTooltip name="ФормаОбщаяКомандаирОПодсистемеРасширеннаяПодсказка" id="8002"/>
 			</Button>
-			<Button name="ПоискВСправкеГлобальнаяИис" id="7999">
-				<Type>CommandBarButton</Type>
-				<CommandName>0</CommandName>
-				<DataPath>ПараметрГлобальныхКомандИис</DataPath>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ПоискВСправкеГлобальнаяИисРасширеннаяПодсказка" id="8000"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -135,15 +128,6 @@
 					</dcsset:conditionalAppearance>
 				</ListSettings>
 			</Settings>
-		</Attribute>
-		<Attribute name="ПараметрГлобальныхКомандИис" id="7999">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
