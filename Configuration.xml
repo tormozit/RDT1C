@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.31</Version>
+			<Version>5.32</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,7 +205,6 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -242,6 +241,7 @@
 			<CommonPicture>ирГенератор</CommonPicture>
 			<CommonPicture>ирГруппаФормы</CommonPicture>
 			<CommonPicture>ирДата</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирДеревоЗначений</CommonPicture>
 			<CommonPicture>ирДеревоМетаданных</CommonPicture>
 			<CommonPicture>ирДеревоФормы</CommonPicture>
@@ -331,6 +331,7 @@
 			<CommonPicture>ирПолеГрафическойСхемы</CommonPicture>
 			<CommonPicture>ирПолеТабличногоДокумента</CommonPicture>
 			<CommonPicture>ирПолеТекстовогоДокумента</CommonPicture>
+			<CommonPicture>ирПолеФормы</CommonPicture>
 			<CommonPicture>ирПользователи</CommonPicture>
 			<CommonPicture>ирПользователь</CommonPicture>
 			<CommonPicture>ирПоследниеВыбранные</CommonPicture>
@@ -397,7 +398,7 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирПолеФормы</CommonPicture>
+			<CommonPicture>ирДекорацияФормы</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -412,9 +413,9 @@
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
+			<CommonCommand>ирВыборГлобальнойКоманды</CommonCommand>
 			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
-			<CommonCommand>ирОбработатьОбъектыИзАктивнойФормы</CommonCommand>
 			<CommonCommand>ирОперироватьИсточник</CommonCommand>
 			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
@@ -423,11 +424,9 @@
 			<CommonCommand>ирОткрытьПанельИнструментов</CommonCommand>
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
 			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
-			<CommonCommand>ирОткрытьСтруктуруАктивнойФормы</CommonCommand>
 			<CommonCommand>ирПерезапуститьСеанс</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
-			<CommonCommand>ирРедактироватьОбъектИзАктивнойФормы</CommonCommand>
 			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>

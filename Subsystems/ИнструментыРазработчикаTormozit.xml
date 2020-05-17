@@ -6,10 +6,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 5.31</v8:content>
+					<v8:content>Инструменты разработчика 5.32</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>5.31</Comment>
+			<Comment>5.32</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation>
@@ -77,7 +77,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирУдалениеТипов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСвертка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьОбъект</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирИсследоватьИсточник</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирКоманднаяПанельФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОбработатьОбъекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОперироватьИсточник</xr:Item>
@@ -286,8 +285,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирИмитаторСсылочныйОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирИмитаторКонстантаМенеджер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьОбъектДляОтладки</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирРедактироватьОбъектИзАктивнойФормы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОбработатьОбъектыИзАктивнойФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирВыборГлобальнойКоманды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ирСтатистикаПоЗапросамСУБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирСтатистикаСУБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирНедоступноеПоле</xr:Item>
@@ -316,9 +314,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ирПодпискиНаСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПодпискаНаСобытие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирФлажокТолькоПросмотр</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ирОткрытьСтруктуруАктивнойФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирГруппаФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирДекорацияФормы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
