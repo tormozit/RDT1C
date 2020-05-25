@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.32</Version>
+			<Version>5.34</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,6 +205,7 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -241,7 +242,7 @@
 			<CommonPicture>ирГенератор</CommonPicture>
 			<CommonPicture>ирГруппаФормы</CommonPicture>
 			<CommonPicture>ирДата</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирДекорацияФормы</CommonPicture>
 			<CommonPicture>ирДеревоЗначений</CommonPicture>
 			<CommonPicture>ирДеревоМетаданных</CommonPicture>
 			<CommonPicture>ирДеревоФормы</CommonPicture>
@@ -301,6 +302,7 @@
 			<CommonPicture>ирНовоеОкно</CommonPicture>
 			<CommonPicture>ирНовыйФайл</CommonPicture>
 			<CommonPicture>ирОбработкаОбъектов</CommonPicture>
+			<CommonPicture>ирОграничениеДоступа</CommonPicture>
 			<CommonPicture>ирОписаниеТипов</CommonPicture>
 			<CommonPicture>ирОстановить</CommonPicture>
 			<CommonPicture>ирОсторожный</CommonPicture>
@@ -398,7 +400,6 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирДекорацияФормы</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -482,6 +483,7 @@
 			<DataProcessor>ирРедакторИзмененийНаУзлах</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
+			<DataProcessor>ирРедакторОграниченияДоступа</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>
 			<DataProcessor>ирРедакторПользователей</DataProcessor>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>

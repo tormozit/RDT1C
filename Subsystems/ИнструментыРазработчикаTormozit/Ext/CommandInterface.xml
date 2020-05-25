@@ -76,6 +76,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирРедакторОграниченияДоступа.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирРедакторПараметровСеанса.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -285,6 +290,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="Report.ирПодпискиНаСобытия.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОграниченияДоступа.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
