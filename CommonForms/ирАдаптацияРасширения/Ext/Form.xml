@@ -28,6 +28,42 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="Группа1" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальные команды</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<BackColor>#FFFF99</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация2" id="91">
+					<Picture>
+						<xr:Ref>0:4b54770b-d069-4c0e-9b17-5cc2a01134d9</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="93"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияГлобальныеКоманды" id="52">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контекстное меню выбора глобальной команды вызывается сочетанием CTRL+ALT+E. 
+Это не требует адаптации расширения и работает в любой управляемой форме, открытой не в режиме "Блокировать владельца"</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияГлобальныеКомандыКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ДекорацияГлобальныеКомандыРасширеннаяПодсказка" id="54"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<CheckBoxField name="Использование" id="77">
 			<DataPath>ОткрыватьАдаптациюПриОбновлении</DataPath>
 			<Title>
@@ -104,23 +140,6 @@
 				<TextColor>style:FieldSelectionBackColor</TextColor>
 			</ExtendedTooltip>
 		</CheckBoxField>
-		<CheckBoxField name="ПодключитьОтладкуОтчетов" id="88">
-			<DataPath>ПодключитьОтладкуОтчетов</DataPath>
-			<TitleLocation>Right</TitleLocation>
-			<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ПодключитьОтладкуОтчетовКонтекстноеМеню" id="89"/>
-			<ExtendedTooltip name="ПодключитьОтладкуОтчетовРасширеннаяПодсказка" id="90">
-				<AutoMaxWidth>false</AutoMaxWidth>
-				<TextColor>style:FieldSelectionBackColor</TextColor>
-				<Title formatted="false">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Добавляет кнопку передачи схемы и настроек компоновки отчета из основной формы отчета конфигурации в консоль компоновки</v8:content>
-					</v8:item>
-				</Title>
-			</ExtendedTooltip>
-		</CheckBoxField>
 		<CheckBoxField name="ПодключитьОтладкуВнешнихОбработокБСП" id="71">
 			<DataPath>ПодключитьОтладкуВнешнихОбработокБСП</DataPath>
 			<TitleLocation>Right</TitleLocation>
@@ -142,12 +161,29 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подключаемые команды</v8:content>
+					<v8:content>Подключаемые команды (устаревшее)</v8:content>
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="67"/>
 			<ChildItems>
+				<CheckBoxField name="ПодключитьОтладкуОтчетов" id="88">
+					<DataPath>ПодключитьОтладкуОтчетов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодключитьОтладкуОтчетовКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ПодключитьОтладкуОтчетовРасширеннаяПодсказка" id="90">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<TextColor>style:FieldSelectionBackColor</TextColor>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавляет кнопку передачи схемы и настроек компоновки отчета из основной формы отчета в консоль компоновки</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</CheckBoxField>
 				<LabelDecoration name="Декорация1" id="3">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
@@ -155,7 +191,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подключение этих команд позволит передавать ссылки на объекты БД прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды.</v8:content>
+							<v8:content>Подключение этих параметризуемых команд позволит передавать ссылки объектов прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. Подключение хотя бы одной команды влечет добавление в расширение всех ссылочных типов.</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
@@ -230,102 +266,6 @@
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СписокКомандПодсказкаКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="СписокКомандПодсказкаРасширеннаяПодсказка" id="30"/>
-						</InputField>
-					</ChildItems>
-				</Table>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа1" id="64">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Глобальные команды</v8:content>
-				</v8:item>
-			</Title>
-			<Group>Vertical</Group>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
-			<ChildItems>
-				<LabelDecoration name="Декорация2" id="52">
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<TextColor>style:FieldSelectionBackColor</TextColor>
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Они не требуют адаптации расширения и работают в любой активной форме, открытой не в режиме "Блокировать владельца". Поддерживается извлечение ссылок из основного реквизита формы по пути "Объект.Ссылка" и из выделенных строк текущей таблицы.</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="Декорация2КонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="54"/>
-				</LabelDecoration>
-				<Table name="ГлобальныеГорячиеКлавиши" id="33">
-					<Representation>List</Representation>
-					<CommandBarLocation>None</CommandBarLocation>
-					<ChangeRowSet>false</ChangeRowSet>
-					<Height>3</Height>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<FileDragMode>AsFile</FileDragMode>
-					<DataPath>ГлобальныеСочетанияКлавиш</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ГлобальныеГорячиеКлавишиКонтекстноеМеню" id="34"/>
-					<AutoCommandBar name="ГлобальныеГорячиеКлавишиКоманднаяПанель" id="35"/>
-					<ExtendedTooltip name="ГлобальныеГорячиеКлавишиРасширеннаяПодсказка" id="36"/>
-					<SearchStringAddition name="ГлобальныеГорячиеКлавишиСтрокаПоиска" id="37">
-						<AdditionSource>
-							<Item>ГлобальныеГорячиеКлавиши</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ГлобальныеГорячиеКлавишиСтрокаПоискаКонтекстноеМеню" id="38"/>
-						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСтрокаПоискаРасширеннаяПодсказка" id="39"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ГлобальныеГорячиеКлавишиСостояниеПросмотра" id="40">
-						<AdditionSource>
-							<Item>ГлобальныеГорячиеКлавиши</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ГлобальныеГорячиеКлавишиСостояниеПросмотраКонтекстноеМеню" id="41"/>
-						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСостояниеПросмотраРасширеннаяПодсказка" id="42"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ГлобальныеГорячиеКлавишиУправлениеПоиском" id="43">
-						<AdditionSource>
-							<Item>ГлобальныеГорячиеКлавиши</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ГлобальныеГорячиеКлавишиУправлениеПоискомКонтекстноеМеню" id="44"/>
-						<ExtendedTooltip name="ГлобальныеГорячиеКлавишиУправлениеПоискомРасширеннаяПодсказка" id="45"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<InputField name="ГлобальныеГорячиеКлавишиСинонимКоманды" id="55">
-							<DataPath>ГлобальныеСочетанияКлавиш.СинонимКоманды</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Команда</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ГлобальныеГорячиеКлавишиСинонимКомандыКонтекстноеМеню" id="56"/>
-							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСинонимКомандыРасширеннаяПодсказка" id="57"/>
-						</InputField>
-						<InputField name="ГлобальныеГорячиеКлавишиПодсказка" id="58">
-							<DataPath>ГлобальныеСочетанияКлавиш.Подсказка</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ГлобальныеГорячиеКлавишиПодсказкаКонтекстноеМеню" id="59"/>
-							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиПодсказкаРасширеннаяПодсказка" id="60"/>
-						</InputField>
-						<InputField name="ГлобальныеГорячиеКлавишиСочетаниеКлавиш" id="61">
-							<DataPath>ГлобальныеСочетанияКлавиш.СочетаниеКлавиш</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Сочетание клавиш</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ГлобальныеГорячиеКлавишиСочетаниеКлавишКонтекстноеМеню" id="62"/>
-							<ExtendedTooltip name="ГлобальныеГорячиеКлавишиСочетаниеКлавишРасширеннаяПодсказка" id="63"/>
 						</InputField>
 					</ChildItems>
 				</Table>
@@ -542,7 +482,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подключить отладку отчетов</v8:content>
+					<v8:content>Команда отладки отчета</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

@@ -442,6 +442,7 @@
 				<Event name="Selection">ДинамическийСписокВыбор</Event>
 				<Event name="BeforeAddRow">ДинамическийСписокПередНачаломДобавления</Event>
 				<Event name="OnActivateRow">ДинамическийСписокПриАктивизацииСтроки</Event>
+				<Event name="ChoiceProcessing">ДинамическийСписокОбработкаВыбора</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>
@@ -736,15 +737,9 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Значения колонки</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
 					<v8:content>Различные значения колонки</v8:content>
 				</v8:item>
-			</ToolTip>
+			</Title>
 			<Picture>
 				<xr:Ref>CommonPicture.ирСписокСПометками</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>

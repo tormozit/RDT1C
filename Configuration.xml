@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.39</Version>
+			<Version>5.40</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,6 +205,7 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -389,7 +390,7 @@
 			<CommonPicture>ирТонкийКлиент</CommonPicture>
 			<CommonPicture>ирУдалениеТипов</CommonPicture>
 			<CommonPicture>ирУдалитьСКонтролемСсылок</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирУникальныеЗначения</CommonPicture>
 			<CommonPicture>ирУникальныйИдентификатор</CommonPicture>
 			<CommonPicture>ирУровниЖурналаРегистрации</CommonPicture>
 			<CommonPicture>ирУстановитьЗначениеВКолонке</CommonPicture>
@@ -402,7 +403,6 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
-			<CommonPicture>ирУникальныеЗначения</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -418,9 +418,7 @@
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
 			<CommonCommand>ирВыборГлобальнойКоманды</CommonCommand>
-			<CommonCommand>ирИсследоватьИсточник</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
-			<CommonCommand>ирОперироватьИсточник</CommonCommand>
 			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
 			<CommonCommand>ирОткрытьОбъектДляОтладки</CommonCommand>

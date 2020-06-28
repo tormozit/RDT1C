@@ -22,11 +22,17 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8006"/>
 			<ChildItems>
-				<UsualGroup name="Группа2" id="8021">
+				<UsualGroup name="ГруппаЛевая" id="8021">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая</v8:content>
+						</v8:item>
+					</Title>
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="8022"/>
+					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="8022"/>
 					<ChildItems>
 						<Button name="ЗапуститьОбычноеПриложение" id="4">
 							<Type>UsualButton</Type>
@@ -355,6 +361,17 @@
 			<Save>
 				<Field>ДополнительныеПараметры</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="ДобавленаРоль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавлена роль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
