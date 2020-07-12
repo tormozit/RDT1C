@@ -167,6 +167,82 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ПрофилиГруппДоступа</objectName>
 	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>Роли</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Роль</dataPath>
+			<field>Роль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Роль.УстанавливатьПраваДляНовыхОбъектов</dataPath>
+			<field>УстанавливатьПраваДляНовыхОбъектов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль.Устанавливать права для новых объектов</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Роль.НезависимыеПраваПодчиненныхОбъектов</dataPath>
+			<field>НезависимыеПраваПодчиненныхОбъектов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль.Независимые права подчиненных объектов</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Роль.УстанавливатьПраваДляРеквизитовИТабличныхЧастейПоУмолчанию</dataPath>
+			<field>УстанавливатьПраваДляРеквизитовИТабличныхЧастейПоУмолчанию</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роль.Устанавливать права для реквизитов и табличных частей по умолчанию</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>Роли</objectName>
+	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>РолиПользователей</destinationDataSet>
@@ -178,6 +254,12 @@
 		<destinationDataSet>ПрофилиГруппДоступа</destinationDataSet>
 		<sourceExpression>Роль</sourceExpression>
 		<destinationExpression>РольИмя</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>Роли</destinationDataSet>
+		<sourceExpression>Роль</sourceExpression>
+		<destinationExpression>Роль</destinationExpression>
 	</dataSetLink>
 	<totalField>
 		<dataPath>Доступ</dataPath>

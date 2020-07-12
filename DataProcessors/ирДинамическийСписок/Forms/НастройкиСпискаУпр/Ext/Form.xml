@@ -301,6 +301,16 @@
 					</ToolTip>
 					<ExtendedTooltip name="ИсполняемыеНастройкиРасширеннаяПодсказка" id="107"/>
 					<ChildItems>
+						<CommandBar name="Группа2" id="142">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="143"/>
+							<ChildItems>
+								<Button name="ОтладитьКомпоновку" id="144">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ОтладитьКомпоновку</CommandName>
+									<ExtendedTooltip name="ОтладитьКомпоновкуРасширеннаяПодсказка" id="145"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
 						<Table name="КомпоновщикРезультатаНастройкиПорядок" id="121">
 							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
@@ -406,6 +416,21 @@
 				<v8:Type>dcsset:SettingsComposer</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="АдресСхемы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес схемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Применить" id="1">
@@ -427,6 +452,26 @@
 			</Title>
 			<Action>ПрименитьИЗакрыть</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтладитьКомпоновку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладить компоновку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посмотреть исполняемую компоновку в консоли компоновки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКонсольКомпоновокДанных</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтладитьКомпоновку</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>
