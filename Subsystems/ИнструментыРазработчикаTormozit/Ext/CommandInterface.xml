@@ -216,6 +216,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.ирСравнениеТаблиц.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -402,6 +407,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DataProcessor.ирРедакторПредопределенных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТаблиц.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
