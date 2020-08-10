@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>Report.ирАнализПравДоступа.Form.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ирАнализПравДоступа.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
@@ -222,6 +222,27 @@
 			</Attribute>
 			<Form>ФормаОтчета</Form>
 			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+			<Command uuid="b4d44906-444e-423e-bb45-2a70664df76c">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ прав доступа (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирАдминистрирование</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

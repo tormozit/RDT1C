@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>DataProcessor.ирТестированиеМетаданных.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -28,7 +28,7 @@
 			<Explanation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Никакие изменения в БД не сохраняются, т.к. все выполняется в отменяемых транзакциях.</v8:content>
+					<v8:content>Все изменения в БД не сохраняются, т.к. все выполняется в отменяемых транзакциях.</v8:content>
 				</v8:item>
 			</Explanation>
 		</Properties>
@@ -625,6 +625,27 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>Форма</Form>
+			<Command uuid="795ddf83-6d22-41b2-b6a7-d052e1c8ffde">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестирование метаданных (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирРазработка</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

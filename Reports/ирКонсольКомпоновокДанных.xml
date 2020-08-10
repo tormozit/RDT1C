@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>Report.ирКонсольКомпоновокДанных.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema/>
@@ -107,6 +107,27 @@
 			<Form>ФормаСохраненияНастроек</Form>
 			<Form>КонструкторВыраженияКомпоновки</Form>
 			<Template>АлгоритмПередВыполнением</Template>
+			<Command uuid="12c6ea15-45d9-4f82-b11c-3a43f4ffea5c">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Консоль компоновок данных (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирРазработка</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

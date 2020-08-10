@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>Report.ирПодпискиНаСобытия.Form.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ирПодпискиНаСобытия.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
@@ -113,6 +113,27 @@
 			<Form>ФормаОтчета</Form>
 			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>События</Template>
+			<Command uuid="2ab3a7da-e662-4fb3-9d94-00512653fc14">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписки на события (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирРазработка</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

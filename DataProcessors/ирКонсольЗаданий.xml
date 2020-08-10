@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment> </Comment>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>DataProcessor.ирКонсольЗаданий.Form.ФормаКонсоли</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -34,6 +34,27 @@
 			<Form>ДиалогРегламентногоЗадания</Form>
 			<Form>ДиалогФоновогоЗадания</Form>
 			<Form>ФормаКонсоли</Form>
+			<Command uuid="07a810b6-3cd1-4054-80d6-3549f267f857">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Консоль заданий (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирРазработка</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

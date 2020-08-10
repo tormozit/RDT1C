@@ -60,6 +60,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКонсольЗаданий.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ирОбъектыДляОтладки.Command.Отладить</name>
 		<right>
 			<name>View</name>
@@ -85,6 +92,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКонсольHTTPЗапросов.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -146,6 +160,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирСравнениеТаблиц.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирРедакторОбъектаБД.TabularSection.СтраницыДвижения.Attribute.Представление</name>
 		<right>
 			<name>Edit</name>
@@ -188,6 +209,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ирКонсольКомпоновокДанных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирНастройкаТехножурнала.Attribute.УстанавливатьОсновныеКаталоги</name>
 		<right>
 			<name>Edit</name>
@@ -224,6 +252,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКонструкторРегулярногоВыражения.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -334,6 +369,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ирСтатистикаПоЗапросамСУБД.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализЖурналаРегистрации.TabularSection.ТаблицаЖурнала.Attribute.Комментарий</name>
 		<right>
 			<name>Edit</name>
@@ -376,6 +418,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирАнализЖурналаРегистрации.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.Attribute.КаталогЖурнала</name>
 		<right>
 			<name>Edit</name>
@@ -397,11 +446,25 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ирПодпискиНаСобытия.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПортативныйСервер</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторХранилищНастроек.Command.Команда1</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -454,6 +517,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПоискБитыхСсылок.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирТестированиеМетаданных</name>
 		<right>
 			<name>Use</name>
@@ -469,6 +539,20 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПараметровСеанса.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -501,6 +585,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПоискДанных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -603,10 +694,24 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.ЧислоСтрок</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторИзмененийНаУзлах.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -628,6 +733,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирИсследовательОбъектов.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -702,6 +814,20 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирСтруктураХраненияБД.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -951,6 +1077,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирУправлениеИтогамиРегистров.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализЖурналаРегистрации.TabularSection.ТаблицаЖурнала.Attribute.ПредставлениеПриложения</name>
 		<right>
 			<name>Edit</name>
@@ -1164,6 +1297,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирТестированиеМетаданных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирНастройкаТехножурнала.Attribute.СписокСтандартныхШаблонов</name>
 		<right>
 			<name>Edit</name>
@@ -1201,6 +1341,13 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторПредопределенных.Command.Команда1</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -1246,10 +1393,24 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирИнтерфейснаяПанель.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирРедакторПользователей.TabularSection.Пользователи.Attribute.ОтборПоРолям</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирУправлениеСлужбамиСервера1С.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1278,6 +1439,27 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирАнализТехножурнала.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирУправлениеПрофайлами1С.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКонсольЗапросов.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1360,6 +1542,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ирАнализЗамераПроизводительности.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1502,6 +1691,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирЗагрузкаТабличныхДанных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирРедакторИзмененийНаУзлах</name>
 		<right>
 			<name>Use</name>
@@ -1566,6 +1762,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторОбъектаБД.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.Рейтинг</name>
 		<right>
 			<name>Edit</name>
@@ -1577,6 +1780,20 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирВыгрузкаЗагрузкаДанныхЧерезФайл.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирДинамическийСписок.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1687,6 +1904,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирСинтаксПомощник.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.Действие</name>
 		<right>
 			<name>Edit</name>
@@ -1789,6 +2013,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ирАнализПравДоступа.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.Trans</name>
 		<right>
 			<name>Edit</name>
@@ -1842,10 +2073,24 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирУправлениеCOMКлассами1С.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ФормаВладелец</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторКонстант.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1896,6 +2141,13 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирНастройкаТехножурнала.Command.Команда1</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -2024,6 +2276,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКонсольКода.Command.Команда1</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2238,6 +2497,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКонсольПостроителейОтчетов.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.Параметры.Attribute.Настраиваемый</name>
 		<right>
 			<name>Edit</name>
@@ -2320,6 +2586,13 @@
 	</object>
 	<object>
 		<name>CommonCommand.ирСохранитьНастройкиПользователя</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирНастройкаЖурналаРегистрации.Command.Команда1</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -2436,6 +2709,20 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирИсторияДанных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирРедакторОграниченияДоступа.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.МоментВремени</name>
 		<right>
 			<name>Edit</name>
@@ -2515,6 +2802,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирРедакторПользователей.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирУдалениеОбъектовСКонтролемСсылок</name>
 		<right>
 			<name>Use</name>
@@ -2591,6 +2885,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 </Rights>

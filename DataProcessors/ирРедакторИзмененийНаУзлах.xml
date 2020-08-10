@@ -19,8 +19,8 @@
 					<v8:content>Редактор изменений на узлах (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Редактор изменений на узлах (ИР)</Comment>
-			<UseStandardCommands>true</UseStandardCommands>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>DataProcessor.ирРедакторИзмененийНаУзлах.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -71,6 +71,27 @@
 			<Form>УправлениеГлавнымУзлом</Form>
 			<Form>Форма</Form>
 			<Form>ФормаВыбораОбновленияРегистрации</Form>
+			<Command uuid="3b074b49-2ab3-4c49-bbc1-91e366158e58">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактор изменений на узлах (ИР)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирАдминистрирование</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
