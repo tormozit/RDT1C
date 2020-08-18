@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.48</Version>
+			<Version>5.50</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -417,7 +417,7 @@
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
-			<CommonCommand>ирВыборГлобальнойКоманды</CommonCommand>
+			<CommonCommand>ирГлобальноеМеню</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
@@ -445,7 +445,6 @@
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирАнализЗамераПроизводительности</Report>
 			<Report>ирАнализПравДоступа</Report>
-			<Report>ирКонсольКомпоновокДанных</Report>
 			<Report>ирПодпискиНаСобытия</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
@@ -467,6 +466,7 @@
 			<DataProcessor>ирКонсольЗаданий</DataProcessor>
 			<DataProcessor>ирКонсольЗапросов</DataProcessor>
 			<DataProcessor>ирКонсольКода</DataProcessor>
+			<DataProcessor>ирКонсольКомпоновокДанных</DataProcessor>
 			<DataProcessor>ирКонсольПостроителейОтчетов</DataProcessor>
 			<DataProcessor>ирКонструкторРегулярногоВыражения</DataProcessor>
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>

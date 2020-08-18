@@ -209,13 +209,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ирКонсольКомпоновокДанных.Command.Команда1</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирНастройкаТехножурнала.Attribute.УстанавливатьОсновныеКаталоги</name>
 		<right>
 			<name>Edit</name>
@@ -764,7 +757,7 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирВыборГлобальнойКоманды</name>
+		<name>CommonCommand.ирГлобальноеМеню</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -1258,6 +1251,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКонсольКомпоновокДанных.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.Параметры.Attribute.Выход</name>
 		<right>
 			<name>Edit</name>
@@ -1308,17 +1308,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ирКонсольКомпоновокДанных</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2291,6 +2280,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКонсольКомпоновокДанных</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

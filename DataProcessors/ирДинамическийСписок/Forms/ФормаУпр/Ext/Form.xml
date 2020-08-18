@@ -202,8 +202,12 @@
 					<TitleLocation>None</TitleLocation>
 					<Width>6</Width>
 					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
 					<ContextMenu name="фОбъектКоличествоСтрокВОбластиПоискаКонтекстноеМеню" id="82"/>
 					<ExtendedTooltip name="фОбъектКоличествоСтрокВОбластиПоискаРасширеннаяПодсказка" id="83"/>
+					<Events>
+						<Event name="Opening">фОбъектКоличествоСтрокВОбластиПоискаОткрытие</Event>
+					</Events>
 				</InputField>
 				<CheckBoxField name="ОбъектВместоОсновной" id="17">
 					<DataPath>фОбъект.ВместоОсновной</DataPath>
