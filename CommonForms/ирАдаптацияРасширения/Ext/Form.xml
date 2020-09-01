@@ -32,15 +32,17 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Глобальные команды</v8:content>
+					<v8:content>Глобальное меню</v8:content>
 				</v8:item>
 			</Title>
+			<Height>4</Height>
 			<Group>AlwaysHorizontal</Group>
 			<Representation>StrongSeparation</Representation>
 			<BackColor>#FFFF99</BackColor>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
 			<ChildItems>
 				<PictureDecoration name="Декорация2" id="91">
+					<Width>2</Width>
 					<Picture>
 						<xr:Ref>StdPicture.AppearanceExclamationMarkIcon</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -55,7 +57,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Контекстное меню выбора глобальной команды вызывается сочетанием CTRL+ALT+E в любой управляемой форме, открытой не в режиме "Блокировать владельца". Это не требует адаптации расширения.</v8:content>
+							<v8:content>Глобальное контекстное меню подсистемы вызывается сочетанием CTRL+ALT+E в любой управляемой форме, открытой не в режиме "Блокировать владельца". Это не требует адаптации расширения.</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="ДекорацияГлобальныеКомандыКонтекстноеМеню" id="53"/>
@@ -84,6 +86,7 @@
 		</CheckBoxField>
 		<LabelDecoration name="Декорация3" id="74">
 			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
 			<TextColor>style:FieldSelectionBackColor</TextColor>
 			<Title formatted="false">
 				<v8:item>
