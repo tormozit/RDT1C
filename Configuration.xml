@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.58</Version>
+			<Version>5.59</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -205,7 +205,6 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -374,7 +373,8 @@
 			<CommonPicture>ирСтраницаПанели</CommonPicture>
 			<CommonPicture>ирСтрока</CommonPicture>
 			<CommonPicture>ирСтрокаТаблицы</CommonPicture>
-			<CommonPicture>ирСумма</CommonPicture>
+			<CommonPicture>ирСуммаСообщить</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирСхемаКомпоновкиДанных</CommonPicture>
 			<CommonPicture>ирТаблицаЗначений</CommonPicture>
 			<CommonPicture>ирТаблицаИзменений</CommonPicture>
@@ -403,6 +403,7 @@
 			<CommonPicture>ирЦиклическиеСсылки</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирСуммаРежим</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -417,9 +418,9 @@
 			<CommonModule>ирПортативный</CommonModule>
 			<CommonModule>ирПривилегированный</CommonModule>
 			<CommonModule>ирСервер</CommonModule>
-			<CommonCommand>ирВставитьЗначение</CommonCommand>
+			<CommonCommand>ирВставитьСсылку</CommonCommand>
 			<CommonCommand>ирГлобальноеМеню</CommonCommand>
-			<CommonCommand>ирКопироватьЗначение</CommonCommand>
+			<CommonCommand>ирКопироватьСсылку</CommonCommand>
 			<CommonCommand>ирОбработатьОбъекты</CommonCommand>
 			<CommonCommand>ирОПодсистеме</CommonCommand>
 			<CommonCommand>ирОткрытьНастройкиАлгоритмов</CommonCommand>
