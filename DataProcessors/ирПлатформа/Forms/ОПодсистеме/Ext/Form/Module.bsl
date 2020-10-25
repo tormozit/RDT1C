@@ -467,13 +467,19 @@
 Процедура ОткрытьСписокОшибок(Знач СтрокаОписания = Неопределено, ТолькоНовые = Ложь)
 	
 	Если СтрокаОписания <> Неопределено Тогда
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-31&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
+		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
 		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "25716", СтрокаОписания.Код);
 	Иначе
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-31&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=category&t%5B%5D=";
+		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=category&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
 	КонецЕсли; 
 	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-30", Формат(ИспользуемаяВерсияДатаВыпуска, "ДФ=yyyy-ММ-dd"));
-	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-31", Формат(ИспользуемаяВерсияДатаВыпуска + 24*60*60, "ДФ=yyyy-ММ-dd"));
+	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-09-01", Формат(ИспользуемаяВерсияДатаВыпуска + 24*60*60, "ДФ=yyyy-ММ-dd"));
+	Если ТолькоНовые Тогда 
+		ДатаПодмены = ИспользуемаяВерсияДатаВыпуска;
+	Иначе
+		ДатаПодмены = Дата(1,1,2); // Пустую сайт не принимает
+	КонецЕсли; 
+	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-31", Формат(ДатаПодмены + 24*60*60, "ДФ=yyyy-ММ-dd"));
 	ЗапуститьПриложение(СтрокаЗапроса);
 
 КонецПроцедуры
@@ -550,6 +556,12 @@
 	
 	ирОбщий.ТабличноеПолеПриПолученииДанныхЛкс(ЭтаФорма, Элемент, ОформленияСтрок);
 
+КонецПроцедуры
+
+Процедура ГруппаТелеграмНажатие(Элемент)
+	
+	ЗапуститьПриложение("https://t.me/DevTool1C");
+	
 КонецПроцедуры
 
 ирОбщий.ИнициализироватьФормуЛкс(ЭтаФорма, "Обработка.ирПлатформа.Форма.ОПодсистеме");
