@@ -128,6 +128,11 @@
 						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
 						<ExtendedTooltip name="ВнешниеОбработкиЗагрузитьИзФайлаРасширеннаяПодсказка" id="66"/>
 					</Button>
+					<Button name="СписокУдалитьФайлы" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьФайлы</CommandName>
+						<ExtendedTooltip name="СписокУдалитьФайлыРасширеннаяПодсказка" id="82"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="67"/>
@@ -428,6 +433,21 @@
 			<Action>ОткрытьКонфигуратор</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьФайлы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить выделенные файлы для обновления их из справочника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьФайлы</Action>
 		</Command>
 	</Commands>
 </Form>
