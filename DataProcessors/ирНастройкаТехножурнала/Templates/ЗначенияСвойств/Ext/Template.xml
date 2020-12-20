@@ -13,6 +13,11 @@
 			<code>SYS</code>
 			<description>SYS</description>
 		</languageInfo>
+		<languageInfo>
+			<id>en</id>
+			<code>Английский</code>
+			<description>Английский</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>2</size>
@@ -40,6 +45,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
 					</tl>
 				</c>
 			</c>
@@ -49,6 +58,10 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Представление</v8:content>
 						</v8:item>
 					</tl>
@@ -80,7 +93,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Authenticate central server administrator</v8:content>
+							<v8:content>Аутентификация администратора центрального сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -115,7 +128,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Accept partial indexes</v8:content>
+							<v8:content>Принять частичные индексы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -150,7 +163,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Authentication infobase administrator</v8:content>
+							<v8:content>Аутентификация администратора информационной базы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -185,7 +198,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Authenticate cluster administrator in working process</v8:content>
+							<v8:content>Аутентификация администратора кластера в рабочем процессе</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -220,7 +233,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Begin transaction</v8:content>
+							<v8:content>Начало транзакции</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -255,7 +268,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Check the full-text search file index</v8:content>
+							<v8:content>Проверка индекса файла полнотекстового поиска</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -290,7 +303,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Change database locale </v8:content>
+							<v8:content>Изменение национальные настройки базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -325,7 +338,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Connect external data source</v8:content>
+							<v8:content>Соединение с внешним источником данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -360,7 +373,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Commit transaction</v8:content>
+							<v8:content>Фиксация транзакции</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -395,7 +408,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Copy/move configuration fragment between basedata table records</v8:content>
+							<v8:content>Копирование/перемещение фрагмента конфигурации между записями таблиц базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -430,7 +443,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Create file</v8:content>
+							<v8:content>Создание файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -465,7 +478,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Create infobase</v8:content>
+							<v8:content>Создание информационной базы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -500,7 +513,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Deletion file</v8:content>
+							<v8:content>Удаление файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -535,7 +548,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Deserialize basedata table from file</v8:content>
+							<v8:content>Восстановление данных таблицы базы данных из файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -570,7 +583,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Disconnect external data source</v8:content>
+							<v8:content>Разрыв соединения с внешним источником данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -605,7 +618,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete infobase</v8:content>
+							<v8:content>Удаление информационной базы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -640,7 +653,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete central server administrator</v8:content>
+							<v8:content>Удаление администратора центрального сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -675,7 +688,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete cluster</v8:content>
+							<v8:content>Удаление кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -710,7 +723,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete server</v8:content>
+							<v8:content>Удаление рабочего сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -745,7 +758,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete cluster administrator</v8:content>
+							<v8:content>Удаление администратора кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -780,7 +793,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Delete working process</v8:content>
+							<v8:content>Удаление рабочего процесса</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -815,7 +828,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Full-text search index update in the file mode</v8:content>
+							<v8:content>Обновление индекса полнотекстового поиска в файловом варианте</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -850,7 +863,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Full-text search index update in the client/server mode</v8:content>
+							<v8:content>Обновление индекса полнотекстового поиска в клиент-серверном варианте</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -885,7 +898,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Get a list of modified objects to be included in the full-text search index</v8:content>
+							<v8:content>Получить список измененных объектов для включения в индекс полнотекстового поиска</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -920,7 +933,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Get transaction splitter</v8:content>
+							<v8:content>Получение разделителя итогов</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -955,7 +968,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Keep connection</v8:content>
+							<v8:content>Удержание соединения</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -990,7 +1003,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index an object portion</v8:content>
+							<v8:content>Индексировать порцию объектов</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1025,7 +1038,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Add central server administrator</v8:content>
+							<v8:content>Добавление администратора центрального сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1060,7 +1073,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Create cluster</v8:content>
+							<v8:content>Создание кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1095,7 +1108,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Insert records to basedata table</v8:content>
+							<v8:content>Добавление записи в таблицу базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1130,7 +1143,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Add server</v8:content>
+							<v8:content>Добавление рабочего сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1165,7 +1178,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Add cluster administrator</v8:content>
+							<v8:content>Добавление администратора кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1200,7 +1213,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Add working process</v8:content>
+							<v8:content>Добавление рабочего процесса</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1235,7 +1248,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Verift database locale</v8:content>
+							<v8:content>Проверка национальных настроек, установленных для базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1270,7 +1283,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Disconnect client from 1C:Enterprise server cluster</v8:content>
+							<v8:content>Разрыв соединения клиента с кластером серверов 1С:Предприятия</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1305,7 +1318,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Lock record</v8:content>
+							<v8:content>Блокировка записи</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1340,7 +1353,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Get/create temporary basedata table</v8:content>
+							<v8:content>Получение/создание временной балицы базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1375,7 +1388,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Merge files with full-text search indexes</v8:content>
+							<v8:content>Объединить файлы с индексами полнотекстового поиска</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1410,7 +1423,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Modify file</v8:content>
+							<v8:content>Обновление файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1445,7 +1458,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Move file</v8:content>
+							<v8:content>Перемещение файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1480,7 +1493,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Bulk insert to basedata table</v8:content>
+							<v8:content>Быстрая вставка данных в таблицу базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1515,7 +1528,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Read file</v8:content>
+							<v8:content>Чтение файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1550,7 +1563,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Authentice cluster administrator</v8:content>
+							<v8:content>Аутентификация администратора кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1585,7 +1598,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Restorate object</v8:content>
+							<v8:content>Восстановление объект</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1620,7 +1633,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Reindex basedata tables</v8:content>
+							<v8:content>Восстановление индексирования таблиц базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1655,7 +1668,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Release temporary database table</v8:content>
+							<v8:content>Освобождение временной таблицы базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1690,7 +1703,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Rollback transaction</v8:content>
+							<v8:content>Отмена транзакции</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1725,7 +1738,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Save object</v8:content>
+							<v8:content>Сохранение объект</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1760,7 +1773,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Search file</v8:content>
+							<v8:content>Поиск файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1795,7 +1808,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Insert records with data access restrictions</v8:content>
+							<v8:content>Вставка записей с наложением ограничений доступа к данным</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1830,7 +1843,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Select file name</v8:content>
+							<v8:content>Выбор имени файла</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1865,7 +1878,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Save table data to file</v8:content>
+							<v8:content>Сохранение данных таблицы в файл</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1900,7 +1913,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Lock infobase</v8:content>
+							<v8:content>Установка режима блокировки установки соединений с информационной базой</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1935,7 +1948,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set infobase details</v8:content>
+							<v8:content>Установка описания информационной базы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1970,7 +1983,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set cluster details</v8:content>
+							<v8:content>Установка описания кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2005,7 +2018,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set flag flag that shows whether cluster supports several several processes</v8:content>
+							<v8:content>Установка значения флага поддержки кластером многих рабочих процессов</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2040,7 +2053,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set cluster security level</v8:content>
+							<v8:content>Установка уровня безопасности кластера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2075,7 +2088,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set flag that shows whether error occured duting transaction (transection is rollback only)</v8:content>
+							<v8:content>Установка флага наличия в транзакции ошибки (ее можно только откатить</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2110,7 +2123,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set worcing process capacity</v8:content>
+							<v8:content>Установка значения пропускной способности рабочего процесса</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2145,7 +2158,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set flag that shows whether working process can be started</v8:content>
+							<v8:content>Установка значениея флага разрешения запуска рабочего процесса</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2180,7 +2193,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set exclusive mode</v8:content>
+							<v8:content>Установка монопольного режима</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2215,7 +2228,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Suspend datebase table indexing</v8:content>
+							<v8:content>Отмена индексирования таблиц базы данных</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2250,7 +2263,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Get tabular section record key value</v8:content>
+							<v8:content>Получение значения ключа записи табличной части</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2285,7 +2298,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Change server parameters</v8:content>
+							<v8:content>Изменение параметров рабочего сервера</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2320,7 +2333,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set exclusive lock for table</v8:content>
+							<v8:content>Установка исключительной блокировки на таблицу</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2355,7 +2368,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Set shared lock for table</v8:content>
+							<v8:content>Установка разделяемой блокировки на таблицу</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

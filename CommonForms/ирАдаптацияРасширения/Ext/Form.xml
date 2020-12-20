@@ -12,6 +12,10 @@
 						<v8:lang>ru</v8:lang>
 						<v8:content>Пропустить</v8:content>
 					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Пропустить</v8:content>
+					</v8:item>
 				</Title>
 				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="32"/>
 			</Button>
@@ -32,6 +36,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальное меню</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Глобальное меню</v8:content>
 				</v8:item>
 			</Title>
@@ -59,6 +67,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Глобальное контекстное меню подсистемы вызывается сочетанием CTRL+ALT+E в любой управляемой форме. Это не требует адаптации расширения.</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Глобальное контекстное меню подсистемы вызывается сочетанием CTRL+ALT+E в любой управляемой форме. Это не требует адаптации расширения.</v8:content>
+						</v8:item>
 					</Title>
 					<ContextMenu name="ДекорацияГлобальныеКомандыКонтекстноеМеню" id="53"/>
 					<ExtendedTooltip name="ДекорацияГлобальныеКомандыРасширеннаяПодсказка" id="54"/>
@@ -72,11 +84,19 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Открывать это окно при следующем обновлении расширения</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Открывать это окно при следующем обновлении расширения</v8:content>
+				</v8:item>
 			</Title>
 			<TitleLocation>Right</TitleLocation>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Чтобы адапатация сохранялась при обновлении, ее нужно выполнять заново. Флажок устанавливается автоматически при выполнении адаптации.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Чтобы адапатация сохранялась при обновлении, ее нужно выполнять заново. Флажок устанавливается автоматически при выполнении адаптации.</v8:content>
 				</v8:item>
 			</ToolTip>
@@ -91,6 +111,11 @@
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>При выполнении адаптации используется конфигуратор текущей базы. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
+</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>При выполнении адаптации используется конфигуратор текущей базы. После завершения операции для вступления изменений в силу сеанс будет перезапущен.
 </v8:content>
 				</v8:item>
@@ -126,11 +151,19 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Сгенерировать роль ирВсеПрава</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сгенерировать роль ирВсеПрава</v8:content>
+				</v8:item>
 			</Title>
 			<TitleLocation>Right</TitleLocation>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Обеспечит доступ на чтение ко всем таблицам в базе. Эта роль будет добавляться пользователю при автоматическом добавлении роли ирРазработчик</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Обеспечит доступ на чтение ко всем таблицам в базе. Эта роль будет добавляться пользователю при автоматическом добавлении роли ирРазработчик</v8:content>
 				</v8:item>
 			</ToolTip>
@@ -150,6 +183,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Необходимо для работы инструмента "Отладка внешних обработок БСП" в БСП 2.4+</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Необходимо для работы инструмента "Отладка внешних обработок БСП" в БСП 2.4+</v8:content>
+				</v8:item>
 			</ToolTip>
 			<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
 			<CheckBoxType>Auto</CheckBoxType>
@@ -163,6 +200,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Подключаемые команды (устаревшее)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Подключаемые команды (устаревшее)</v8:content>
 				</v8:item>
 			</Title>
@@ -183,6 +224,10 @@
 								<v8:lang>ru</v8:lang>
 								<v8:content>Добавляет кнопку передачи схемы и настроек компоновки отчета из основной формы отчета в консоль компоновки</v8:content>
 							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Добавляет кнопку передачи схемы и настроек компоновки отчета из основной формы отчета в консоль компоновки</v8:content>
+							</v8:item>
 						</Title>
 					</ExtendedTooltip>
 				</CheckBoxField>
@@ -193,6 +238,10 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Подключение этих параметризуемых команд позволит передавать ссылки объектов прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. Подключение хотя бы одной команды влечет добавление в расширение всех ссылочных типов.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Подключение этих параметризуемых команд позволит передавать ссылки объектов прямо из их форм элементов и списков. Снятый флажок "Подключить" приведет к отключению команды. Подключение хотя бы одной команды влечет добавление в расширение всех ссылочных типов.</v8:content>
 						</v8:item>
 					</Title>
@@ -244,6 +293,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Подключить</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Подключить</v8:content>
+								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -256,6 +309,10 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Команда</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Команда</v8:content>
 								</v8:item>
 							</Title>
@@ -281,6 +338,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Список команд</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Список команд</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
@@ -290,6 +351,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Имя команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Имя команды</v8:content>
 						</v8:item>
 					</Title>
@@ -307,6 +372,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Подключить</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Подключить</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
@@ -316,6 +385,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Синооним команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Синооним команды</v8:content>
 						</v8:item>
 					</Title>
@@ -331,6 +404,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Подсказка</v8:content>
 						</v8:item>
 					</Title>
@@ -350,6 +427,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Глобальные сочетания клавиш</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Глобальные сочетания клавиш</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
@@ -359,6 +440,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Сочетание клавиш</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Сочетание клавиш</v8:content>
 						</v8:item>
 					</Title>
@@ -376,6 +461,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Имя команды</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя команды</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -391,6 +480,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Синооним команды</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Синооним команды</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -404,6 +497,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Подсказка</v8:content>
 						</v8:item>
 					</Title>
@@ -423,6 +520,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Сгенерировать роль все права</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сгенерировать роль все права</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -432,6 +533,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить отладку внешних обработок БСП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Подключить отладку внешних обработок БСП</v8:content>
 				</v8:item>
 			</Title>
@@ -445,6 +550,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Открывать адаптацию при обновлении</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Открывать адаптацию при обновлении</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -454,6 +563,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Имя пользователя</v8:content>
 				</v8:item>
 			</Title>
@@ -471,6 +584,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Пароль пользователя</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Пароль пользователя</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
@@ -486,6 +603,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Команда отладки отчета</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Команда отладки отчета</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -499,10 +620,18 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Выполнить</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить адаптацию расширения конфигурации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Выполнить адаптацию расширения конфигурации</v8:content>
 				</v8:item>
 			</ToolTip>

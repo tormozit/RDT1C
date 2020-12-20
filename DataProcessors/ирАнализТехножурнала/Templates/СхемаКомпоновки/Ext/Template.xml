@@ -582,6 +582,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Тип события</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Тип события</v8:content>
+				</v8:item>
 			</title>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
@@ -1265,6 +1269,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Текст СУБДШаблон</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Текст СУБДШаблон</v8:content>
+				</v8:item>
 			</title>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
@@ -1286,6 +1294,10 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Текст СУБДШаблон мета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Текст СУБДШаблон мета</v8:content>
 				</v8:item>
 			</title>
@@ -1311,6 +1323,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Regions</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Regions</v8:content>
+				</v8:item>
 			</title>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
@@ -1326,6 +1342,10 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Regions мета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Regions мета</v8:content>
 				</v8:item>
 			</title>
@@ -1345,6 +1365,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Locks</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Locks</v8:content>
+				</v8:item>
 			</title>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
@@ -1360,6 +1384,10 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Locks мета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Locks мета</v8:content>
 				</v8:item>
 			</title>
@@ -1382,6 +1410,10 @@
 				<v8:lang>ru</v8:lang>
 				<v8:content>Количество</v8:content>
 			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Количество</v8:content>
+			</v8:item>
 		</title>
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
@@ -1398,6 +1430,10 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
+				<v8:content>Сред. длительность, мс</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
 				<v8:content>Сред. длительность, мс</v8:content>
 			</v8:item>
 		</title>
@@ -1424,6 +1460,10 @@
 				<v8:lang>ru</v8:lang>
 				<v8:content>Макс. длительность, мс</v8:content>
 			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Макс. длительность, мс</v8:content>
+			</v8:item>
 		</title>
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
@@ -1440,6 +1480,10 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
+				<v8:content>Мин. длительность, мс</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
 				<v8:content>Мин. длительность, мс</v8:content>
 			</v8:item>
 		</title>
@@ -1460,6 +1504,10 @@
 				<v8:lang>ru</v8:lang>
 				<v8:content>Частота</v8:content>
 			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Частота</v8:content>
+			</v8:item>
 		</title>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -1467,6 +1515,10 @@
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=10; ЧДЦ=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
 						<v8:content>ЧЦ=10; ЧДЦ=3</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -1489,6 +1541,10 @@
 				<v8:lang>ru</v8:lang>
 				<v8:content>Интервал, м</v8:content>
 			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Интервал, м</v8:content>
+			</v8:item>
 		</title>
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
@@ -1505,6 +1561,10 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
+				<v8:content>Начало интервала</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
 				<v8:content>Начало интервала</v8:content>
 			</v8:item>
 		</title>
@@ -1529,6 +1589,10 @@
 				<v8:lang>ru</v8:lang>
 				<v8:content>Конец интервала</v8:content>
 			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Конец интервала</v8:content>
+			</v8:item>
 		</title>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -1549,6 +1613,10 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
+				<v8:content>Пример описания</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
 				<v8:content>Пример описания</v8:content>
 			</v8:item>
 		</title>

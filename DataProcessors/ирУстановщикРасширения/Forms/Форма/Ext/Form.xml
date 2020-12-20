@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Width>72</Width>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="21">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<UsualGroup name="Группа6" id="36">
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="18">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="20"/>
+						</PictureDecoration>
+						<CheckBoxField name="РасширениеУстановлено" id="13">
+							<DataPath>РасширениеУстановлено</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РасширениеУстановленоКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="РасширениеУстановленоРасширеннаяПодсказка" id="15"/>
+						</CheckBoxField>
+						<CheckBoxField name="РасширениеАктивно" id="45">
+							<DataPath>РасширениеАктивно</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РасширениеАктивноКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="РасширениеАктивноРасширеннаяПодсказка" id="47"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="23">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Установка</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
+							<ChildItems>
+								<UsualGroup name="Группа5" id="31">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<InputField name="АктуальнаяВерсия" id="25">
+											<DataPath>АктуальнаяВерсия</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Актуальная версия на сайте. Если пустая, значит нет доступа к сайту и не получится скачать файл автоматически.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Актуальная версия на сайте. Если пустая, значит нет доступа к сайту и не получится скачать файл автоматически.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="АктуальнаяВерсияКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="АктуальнаяВерсияРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияСкачатьВручную" id="28">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скачать вручную</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Скачать вручную</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДекорацияСкачатьВручнуюКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ДекорацияСкачатьВручнуюРасширеннаяПодсказка" id="30"/>
+											<Events>
+												<Event name="Click">ДекорацияСкачатьВручнуюНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Файл" id="3">
+									<DataPath>ФайлРасширения</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если файл указан, то устанавливаться будет он. Иначе будет скачиваться актуальная версия с сайта.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Если файл указан, то устанавливаться будет он. Иначе будет скачиваться актуальная версия с сайта.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ФайлКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="5"/>
+									<Events>
+										<Event name="OnChange">ФайлПриИзменении</Event>
+										<Event name="StartChoice">ФайлНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="Группа7" id="43">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<Button name="Установить" id="1">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Установить</CommandName>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ExtendedTooltip name="УстановитьРасширеннаяПодсказка" id="2"/>
+										</Button>
+										<Button name="Запустить" id="63">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ЗапуститьОднократно</CommandName>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ExtendedTooltip name="ЗапуститьРасширеннаяПодсказка" id="64"/>
+										</Button>
+										<Button name="Удалить" id="41">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Удалить</CommandName>
+											<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="42"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Видимость</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Видимость</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияНужноДобавитьПользователя" id="53">
+									<Width>50</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нужно добавить пользователя, чтобы сделать расширение видимым.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Нужно добавить пользователя, чтобы сделать расширение видимым.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНужноДобавитьПользователяКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ДекорацияНужноДобавитьПользователяРасширеннаяПодсказка" id="55"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаСпособыСделатьВидимыми" id="58">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа способы сделать видимыми</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Группа способы сделать видимыми</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСпособыСделатьВидимымиРасширеннаяПодсказка" id="59"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация2" id="33">
+											<Width>50</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>После первой установки расширения инструменты станут видимыми только у первого вошедшего администратора</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>После первой установки расширения инструменты станут видимыми только у первого вошедшего администратора</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="35"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа9" id="56">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="57"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация3" id="38">
+													<Width>45</Width>
+													<TextColor>style:FieldSelectionBackColor</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сделать инструменты видимыми текущему пользователю.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Сделать инструменты видимыми текущему пользователю.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="39"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="40"/>
+												</LabelDecoration>
+												<Button name="СделатьВидимым" id="9">
+													<Type>UsualButton</Type>
+													<Enabled>false</Enabled>
+													<CommandName>Form.Command.СделатьВидимыми</CommandName>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ExtendedTooltip name="СделатьВидимымРасширеннаяПодсказка" id="10"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа8" id="51">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="52"/>
+											<ChildItems>
+												<InputField name="ПараметрЗапуска" id="48">
+													<DataPath>ПараметрЗапуска</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сделать инструменты видимыми можно с помощью параметра запуска</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Сделать инструменты видимыми можно с помощью параметра запуска</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>10</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПараметрЗапускаКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ПараметрЗапускаРасширеннаяПодсказка" id="50"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="Декорация4" id="60">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если активное расширение не удается сделать видимым, то включите его видимость через настройку панели разделов.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Если активное расширение не удается сделать видимым, то включите его видимость через настройку панели разделов.
+</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="62"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ирУстановщикРасширения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ФайлРасширения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл расширения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Файл расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ФайлРасширения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НазваниеВарианта" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название варианта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Название варианта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаСтраницуСкачивания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на страницу скачивания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ссылка на страницу скачивания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасширениеУстановлено" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение установлено</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Расширение установлено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УстановкаВозможна" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка возможна</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Установка возможна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АктуальнаяВерсия" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуальная версия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Актуальная версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РасширениеАктивно" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение активно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Расширение активно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрЗапуска" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр запуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Параметр запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Установить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение, сделать видимым и запустить новый сеанс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Установить расширение, сделать видимым и запустить новый сеанс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Установить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СделатьВидимыми" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать видимыми</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сделать видимыми</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать инструменты видимыми текущему пользователю. Ему будет добавлена роль ирРазработчик. Свойство "Активно" расширения будет включено, а "Безопасный режим" - выключено. Далее будет запущен новый сеанс.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сделать инструменты видимыми текущему пользователю. Ему будет добавлена роль ирРазработчик. Свойство "Активно" расширения будет включено, а "Безопасный режим" - выключено. Далее будет запущен новый сеанс.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьВидимым</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Удалить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Удалить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьОднократно" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить в одном сеансе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Запустить в одном сеансе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить расширение, запустить новый сеанс, удалить расширение. 
+Таким образом расширение подключится только в одном сеансе. 
+Для ускорения установки указывайте файл.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Установить расширение, запустить новый сеанс, удалить расширение. 
+Таким образом расширение подключится только в одном сеансе. 
+Для ускорения установки указывайте файл.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьОднократно</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

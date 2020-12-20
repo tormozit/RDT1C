@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="abb74664-e307-45d7-99a6-ec21399add3b">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ирУстановщикРасширения" category="Object">
+				<xr:TypeId>0adab7ef-1f57-4eeb-b868-b1727ff3dfd4</xr:TypeId>
+				<xr:ValueId>79192443-f6d1-4b74-9c89-5ac53c69f050</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ирУстановщикРасширения" category="Manager">
+				<xr:TypeId>193f770d-c460-441e-8a5c-a982b7a873c3</xr:TypeId>
+				<xr:ValueId>233b115a-74cc-4e10-a546-562edcc2feb9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ирУстановщикРасширения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установщик расширения "Инструменты разработчика"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Установщик расширения "Инструменты разработчика"</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>5.72</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.ирУстановщикРасширения.Form.Форма</DefaultForm>
+			<AuxiliaryForm>DataProcessor.ирУстановщикРасширения.Form.ФормаОбычная</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешняя обработка, позволяющая установить/удалить расширение "Инструменты разработчика"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Внешняя обработка, позволяющая установить/удалить расширение "Инструменты разработчика"</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаОбычная</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

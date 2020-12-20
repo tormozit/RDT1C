@@ -18,6 +18,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Редактор хранилищ настроек (ИР)</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Редактор хранилищ настроек (ИР)</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -44,6 +48,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователи ИБ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Пользователи ИБ</v8:content>
 						</v8:item>
 					</Synonym>
@@ -88,6 +96,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Имя пользователя</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Имя пользователя</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -126,6 +138,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь ИБ</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Пользователь ИБ</v8:content>
 								</v8:item>
 							</Synonym>
@@ -180,6 +196,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Описание настроек</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Описание настроек</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -222,6 +242,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Имя объекта</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Имя объекта</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -260,6 +284,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Представление объекта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Представление объекта</v8:content>
 								</v8:item>
 							</Synonym>
@@ -302,6 +330,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Описание</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -342,6 +374,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Имя пользователя</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Имя пользователя</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -380,7 +416,11 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Наименование настройки</v8:content>
+									<v8:content>Ключ настройки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Ключ настройки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -420,6 +460,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Тип настройки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Тип настройки</v8:content>
 								</v8:item>
 							</Synonym>
@@ -462,14 +506,30 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Настройка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Настройка</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
+								<v8:Type>xs:boolean</v8:Type>
 								<v8:Type>xs:string</v8:Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
 								<v8:StringQualifiers>
-									<v8:Length>0</v8:Length>
+									<v8:Length>500</v8:Length>
 									<v8:AllowedLength>Variable</v8:AllowedLength>
 								</v8:StringQualifiers>
+								<v8:DateQualifiers>
+									<v8:DateFractions>DateTime</v8:DateFractions>
+								</v8:DateQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -500,6 +560,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Ключ</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Ключ</v8:content>
 								</v8:item>
 							</Synonym>
@@ -554,6 +618,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Формы ИБ</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Формы ИБ</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -596,6 +664,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Полное имя объекта</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Полное имя объекта</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -634,6 +706,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Имя объекта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Имя объекта</v8:content>
 								</v8:item>
 							</Synonym>
@@ -676,6 +752,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Представление объекта</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Представление объекта</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -716,6 +796,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Тип объекта</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Тип объекта</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -754,6 +838,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Вид объекта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Вид объекта</v8:content>
 								</v8:item>
 							</Synonym>
@@ -798,6 +886,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Редактор хранилищ настроек (ИР)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Редактор хранилищ настроек (ИР)</v8:content>
 						</v8:item>
 					</Synonym>
