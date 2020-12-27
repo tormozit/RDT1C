@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.72</Version>
+			<Version>5.73</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -262,6 +262,7 @@
 			<CommonPicture>ирЗамер</CommonPicture>
 			<CommonPicture>ирЗаполнить</CommonPicture>
 			<CommonPicture>ирЗаполнитьЗапросом</CommonPicture>
+			<CommonPicture>ирЗапретОжидания</CommonPicture>
 			<CommonPicture>ирЗапрос</CommonPicture>
 			<CommonPicture>ирИдентификатор</CommonPicture>
 			<CommonPicture>ирИзбранное</CommonPicture>
@@ -440,9 +441,10 @@
 			<CommonCommand>ирОткрытьРегистрациюCOMКомпонент</CommonCommand>
 			<CommonCommand>ирОткрытьСписокИнструментов</CommonCommand>
 			<CommonCommand>ирПерезапуститьСеанс</CommonCommand>
+			<CommonCommand>ирОбъединитьСсылки</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
-			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommonCommand>ирСохранитьНастройкиПользователя</CommonCommand>
+			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
 			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
 			<CommandGroup>ирНастройки</CommandGroup>
 			<CommandGroup>ирРазработка</CommandGroup>

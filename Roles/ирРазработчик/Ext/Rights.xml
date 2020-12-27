@@ -429,6 +429,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьСписокИнструментов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.ирАдаптацияРасширения</name>
 		<right>
 			<name>View</name>
@@ -592,13 +599,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирОткрытьОтладчик</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирАнализТехножурнала.TabularSection.ТаблицаЖурнала.Attribute.ПроцессСУБД</name>
 		<right>
 			<name>Edit</name>
@@ -646,6 +646,13 @@
 	</object>
 	<object>
 		<name>CommonForm.ирОтладкаВнешнихОбработокБСП</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.ирОбъединитьСсылки</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -706,6 +713,13 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирРедакторИзмененийНаУзлах.Command.Команда1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьРегистрациюCOMКомпонент</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -856,13 +870,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирОткрытьОбъектДляОтладки</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирРедакторПользователей.TabularSection.Пользователи.Attribute.ПользовательОС</name>
 		<right>
 			<name>Edit</name>
@@ -888,13 +895,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.ирОткрытьОбработкуМодулейМетаданных</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1039,13 +1039,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.ирОПодсистеме</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1248,6 +1241,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьОбъектДляОтладки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольКомпоновокДанных.Command.Команда1</name>
 		<right>
 			<name>View</name>
@@ -1361,6 +1361,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОтключитьГлобальныеОбработчикиОжидания</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольЗапросов</name>
 		<right>
 			<name>Use</name>
@@ -1418,13 +1425,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.ирОткрытьНастройкиАлгоритмов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1620,6 +1620,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьОтладчик</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПоискДублейИЗаменаСсылок</name>
 		<right>
 			<name>Use</name>
@@ -1670,13 +1677,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирОткрытьПанельИнструментов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирЗагрузкаТабличныхДанных.Command.Команда1</name>
 		<right>
 			<name>View</name>
@@ -1695,25 +1695,11 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирПерезапуститьСеанс</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.ирОткрытьСписокИнструментов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -1925,13 +1911,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирОткрытьРегистрациюCOMКомпонент</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonForm.ирФормаОтчетаРасширение</name>
 		<right>
 			<name>View</name>
@@ -2027,6 +2006,20 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ирАлгоритмы.Command.ОткрытьНастройкиАлгоритмов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьПанельИнструментов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирНастройкаТехножурнала.Attribute.ОсновнойКаталогЖурнала</name>
 		<right>
 			<name>Edit</name>
@@ -2080,6 +2073,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОПодсистеме</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.ДеревоЗапросов</name>
 		<right>
 			<name>Edit</name>
@@ -2088,6 +2088,13 @@
 	</object>
 	<object>
 		<name>CommonForm.ирВыпускВариантаПортативный</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПлатформа.Command.СохранитьНастройкиПользователя</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -2387,6 +2394,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьОбработкуМодулейМетаданных</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.Автозапуск</name>
 		<right>
 			<name>Edit</name>
@@ -2536,6 +2550,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирПлатформа.Command.ПерезапуститьСеанс</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирАнализЖурналаРегистрации.TabularSection.ТаблицаЖурнала.Attribute.ВспомогательныйIPПорт</name>
 		<right>
 			<name>Edit</name>
@@ -2589,13 +2610,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ирСохранитьНастройкиПользователя</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирНастройкаЖурналаРегистрации.Command.Команда1</name>
 		<right>
 			<name>View</name>
@@ -2629,13 +2643,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.ирОткрытьПодключениеВнешнихИсточниковДанных</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2889,6 +2896,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирПлатформа.Command.ОткрытьПодключениеВнешнихИсточниковДанных</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
