@@ -129,59 +129,34 @@
 			<c>
 				<c>
 					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Assert</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Assert</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Assert</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Assert</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Assert проверяет условие.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Assert проверяет условие.</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Assert.RelOp</v8:content>
+							<v8:content>Картинка</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Assert.RelOp</v8:content>
+							<v8:content>Картинка</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -198,11 +173,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Bitmap</v8:content>
+							<v8:content>Assert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Bitmap</v8:content>
+							<v8:content>Assert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -213,11 +188,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Bitmap</v8:content>
+							<v8:content>Assert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Bitmap</v8:content>
+							<v8:content>Assert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -228,11 +203,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>SQL Server внутренне использует оператор Bitmap для ускорения выполнения запроса, устраняя строки с ключевыми значениями, которые не могут привести к появлению каких-либо записей при соединении.</v8:content>
+							<v8:content>Оператор Assert проверяет условие.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>SQL Server внутренне использует оператор Bitmap для ускорения выполнения запроса, устраняя строки с ключевыми значениями, которые не могут привести к появлению каких-либо записей при соединении.</v8:content>
+							<v8:content>Оператор Assert проверяет условие.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -243,11 +218,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Bitmap.RelOp</v8:content>
+							<v8:content>Assert.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Bitmap.RelOp</v8:content>
+							<v8:content>Assert.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -264,11 +239,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Delete</v8:content>
+							<v8:content>Bitmap</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Delete</v8:content>
+							<v8:content>Bitmap</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -279,11 +254,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Delete</v8:content>
+							<v8:content>Bitmap</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Delete</v8:content>
+							<v8:content>Bitmap</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -294,11 +269,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Clustered Index Delete удаляет строки из кластеризованного индекса, заданного в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>SQL Server внутренне использует оператор Bitmap для ускорения выполнения запроса, устраняя строки с ключевыми значениями, которые не могут привести к появлению каких-либо записей при соединении.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Clustered Index Delete удаляет строки из кластеризованного индекса, заданного в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>SQL Server внутренне использует оператор Bitmap для ускорения выполнения запроса, устраняя строки с ключевыми значениями, которые не могут привести к появлению каких-либо записей при соединении.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Bitmap.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Bitmap.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -315,11 +305,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Insert</v8:content>
+							<v8:content>Clustered Index Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Insert</v8:content>
+							<v8:content>Clustered Index Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -330,11 +320,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Insert</v8:content>
+							<v8:content>Clustered Index Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Insert</v8:content>
+							<v8:content>Clustered Index Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -345,11 +335,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Clustered Index Insert инструкции Showplan вставляет строки со своего входа в кластеризованный индекс, указанный в столбце Аргумент.</v8:content>
+							<v8:content>Оператор Clustered Index Delete удаляет строки из кластеризованного индекса, заданного в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Clustered Index Insert инструкции Showplan вставляет строки со своего входа в кластеризованный индекс, указанный в столбце Аргумент.</v8:content>
+							<v8:content>Оператор Clustered Index Delete удаляет строки из кластеризованного индекса, заданного в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -366,11 +356,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Scan</v8:content>
+							<v8:content>Clustered Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Scan</v8:content>
+							<v8:content>Clustered Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -381,11 +371,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Просмотр кластеризованного индекса (Clustered Index Scan)</v8:content>
+							<v8:content>Clustered Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Просмотр кластеризованного индекса (Clustered Index Scan)</v8:content>
+							<v8:content>Clustered Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -396,11 +386,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Clustered Index Scan сканирует кластеризованный индекс, заданный в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Clustered Index Insert инструкции Showplan вставляет строки со своего входа в кластеризованный индекс, указанный в столбце Аргумент.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Clustered Index Scan сканирует кластеризованный индекс, заданный в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Clustered Index Insert инструкции Showplan вставляет строки со своего входа в кластеризованный индекс, указанный в столбце Аргумент.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -417,11 +407,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Seek</v8:content>
+							<v8:content>Clustered Index Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Seek</v8:content>
+							<v8:content>Clustered Index Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -432,11 +422,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поиск в кластеризованном индексе (Clustered Index Seek)</v8:content>
+							<v8:content>Просмотр кластеризованного индекса (Clustered Index Scan)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Поиск в кластеризованном индексе (Clustered Index Seek)</v8:content>
+							<v8:content>Просмотр кластеризованного индекса (Clustered Index Scan)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -447,11 +437,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Clustered Index Seek использует поисковые возможности индексов для получения строк из кластеризованного индекса.</v8:content>
+							<v8:content>Оператор Clustered Index Scan сканирует кластеризованный индекс, заданный в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Clustered Index Seek использует поисковые возможности индексов для получения строк из кластеризованного индекса.</v8:content>
+							<v8:content>Оператор Clustered Index Scan сканирует кластеризованный индекс, заданный в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -468,11 +458,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Update</v8:content>
+							<v8:content>Clustered Index Seek</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Update</v8:content>
+							<v8:content>Clustered Index Seek</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -483,11 +473,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Update</v8:content>
+							<v8:content>Поиск в кластеризованном индексе (Clustered Index Seek)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Update</v8:content>
+							<v8:content>Поиск в кластеризованном индексе (Clustered Index Seek)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -498,11 +488,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Clustered Index Update обновляет входные строки кластеризованного индекса, указанные в столбце Argument.</v8:content>
+							<v8:content>Оператор Clustered Index Seek использует поисковые возможности индексов для получения строк из кластеризованного индекса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Clustered Index Update обновляет входные строки кластеризованного индекса, указанные в столбце Argument.</v8:content>
+							<v8:content>Оператор Clustered Index Seek использует поисковые возможности индексов для получения строк из кластеризованного индекса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -519,11 +509,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Merge</v8:content>
+							<v8:content>Clustered Index Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Merge</v8:content>
+							<v8:content>Clustered Index Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -534,11 +524,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Index Merge</v8:content>
+							<v8:content>Clustered Index Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Index Merge</v8:content>
+							<v8:content>Clustered Index Update</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор Clustered Index Update обновляет входные строки кластеризованного индекса, указанные в столбце Argument.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Оператор Clustered Index Update обновляет входные строки кластеризованного индекса, указанные в столбце Argument.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -555,11 +560,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Update</v8:content>
+							<v8:content>Clustered Index Merge</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Update</v8:content>
+							<v8:content>Clustered Index Merge</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -570,11 +575,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Clustered Update</v8:content>
+							<v8:content>Clustered Index Merge</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Clustered Update</v8:content>
+							<v8:content>Clustered Index Merge</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -591,11 +596,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Collapse</v8:content>
+							<v8:content>Clustered Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Collapse</v8:content>
+							<v8:content>Clustered Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -606,41 +611,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Collapse</v8:content>
+							<v8:content>Clustered Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Collapse</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Collapse оптимизирует процедуру обновления.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Collapse оптимизирует процедуру обновления.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Collapse.RelOp</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Collapse.RelOp</v8:content>
+							<v8:content>Clustered Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -657,11 +632,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Compute Scalar</v8:content>
+							<v8:content>Collapse</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Compute Scalar</v8:content>
+							<v8:content>Collapse</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -672,11 +647,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вычисление выражения (Compute Scalar)</v8:content>
+							<v8:content>Collapse</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Вычисление выражения (Compute Scalar)</v8:content>
+							<v8:content>Collapse</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -687,11 +662,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Compute Scalar вычисляет выражение и выдает вычисленную скалярную величину.</v8:content>
+							<v8:content>Оператор Collapse оптимизирует процедуру обновления.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Compute Scalar вычисляет выражение и выдает вычисленную скалярную величину.</v8:content>
+							<v8:content>Оператор Collapse оптимизирует процедуру обновления.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -702,11 +677,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ComputeScalar.RelOp</v8:content>
+							<v8:content>Collapse.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ComputeScalar.RelOp</v8:content>
+							<v8:content>Collapse.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -723,11 +698,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Concatenation</v8:content>
+							<v8:content>Compute Scalar</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Concatenation</v8:content>
+							<v8:content>Compute Scalar</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -738,11 +713,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Concatenation</v8:content>
+							<v8:content>Вычисление выражения (Compute Scalar)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Concatenation</v8:content>
+							<v8:content>Вычисление выражения (Compute Scalar)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -753,11 +728,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Concatenation просматривает несколько входов, возвращая каждую просмотренную строку.</v8:content>
+							<v8:content>Оператор Compute Scalar вычисляет выражение и выдает вычисленную скалярную величину.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Concatenation просматривает несколько входов, возвращая каждую просмотренную строку.</v8:content>
+							<v8:content>Оператор Compute Scalar вычисляет выражение и выдает вычисленную скалярную величину.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -768,11 +743,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Concat.RelOp</v8:content>
+							<v8:content>ComputeScalar.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Concat.RelOp</v8:content>
+							<v8:content>ComputeScalar.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -789,11 +764,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Constant Scan</v8:content>
+							<v8:content>Concatenation</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Constant Scan</v8:content>
+							<v8:content>Concatenation</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -804,11 +779,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Constant Scan</v8:content>
+							<v8:content>Concatenation</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Constant Scan</v8:content>
+							<v8:content>Concatenation</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -819,11 +794,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Constant Scan вводит в запрос одну или несколько константных строк.</v8:content>
+							<v8:content>Оператор Concatenation просматривает несколько входов, возвращая каждую просмотренную строку.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Constant Scan вводит в запрос одну или несколько константных строк.</v8:content>
+							<v8:content>Оператор Concatenation просматривает несколько входов, возвращая каждую просмотренную строку.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Concat.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Concat.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -840,6 +830,57 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Constant Scan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Constant Scan</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Constant Scan</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Constant Scan</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор Constant Scan вводит в запрос одну или несколько константных строк.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Оператор Constant Scan вводит в запрос одну или несколько константных строк.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Deleted Scan</v8:content>
 						</v8:item>
 						<v8:item>
@@ -882,7 +923,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>15</index>
+		<index>16</index>
 		<row>
 			<formatIndex>8</formatIndex>
 			<c>
@@ -948,7 +989,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>16</index>
+		<index>17</index>
 		<row>
 			<formatIndex>8</formatIndex>
 			<c>
@@ -1000,72 +1041,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>17</index>
-		<row>
-			<formatIndex>8</formatIndex>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Hash Match</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Hash Match</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Hash Match</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Hash Match</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Hash Match строит хэш-таблицу при помощи вычисления хэш-значения для каждой строки из своих входных данных.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Hash Match строит хэш-таблицу при помощи вычисления хэш-значения для каждой строки из своих входных данных.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Hash.RelOp</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Hash.RelOp</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>18</index>
 		<row>
 			<formatIndex>8</formatIndex>
@@ -1075,11 +1050,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Delete</v8:content>
+							<v8:content>Hash Match</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Delete</v8:content>
+							<v8:content>Hash Match</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1090,11 +1065,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Delete</v8:content>
+							<v8:content>Hash Match</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Delete</v8:content>
+							<v8:content>Hash Match</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1105,11 +1080,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Index Delete удаляет входные строки из некластеризованного индекса, указанного в столбце Argument.</v8:content>
+							<v8:content>Оператор Hash Match строит хэш-таблицу при помощи вычисления хэш-значения для каждой строки из своих входных данных.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Index Delete удаляет входные строки из некластеризованного индекса, указанного в столбце Argument.</v8:content>
+							<v8:content>Оператор Hash Match строит хэш-таблицу при помощи вычисления хэш-значения для каждой строки из своих входных данных.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Hash.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Hash.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1126,11 +1116,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Insert</v8:content>
+							<v8:content>Index Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Insert</v8:content>
+							<v8:content>Index Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1141,11 +1131,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Insert</v8:content>
+							<v8:content>Index Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Insert</v8:content>
+							<v8:content>Index Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1156,11 +1146,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Index Insert вставляет строки из входного потока в некластеризованный индекс, заданный в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Delete удаляет входные строки из некластеризованного индекса, указанного в столбце Argument.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Index Insert вставляет строки из входного потока в некластеризованный индекс, заданный в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Delete удаляет входные строки из некластеризованного индекса, указанного в столбце Argument.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1177,11 +1167,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Scan</v8:content>
+							<v8:content>Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Scan</v8:content>
+							<v8:content>Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1192,11 +1182,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Просмотр индекса (Index Scan)</v8:content>
+							<v8:content>Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Просмотр индекса (Index Scan)</v8:content>
+							<v8:content>Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1207,11 +1197,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Index Scan получает все записи некластеризованного индекса, указанного в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Insert вставляет строки из входного потока в некластеризованный индекс, заданный в столбце Argument.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Index Scan получает все записи некластеризованного индекса, указанного в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Insert вставляет строки из входного потока в некластеризованный индекс, заданный в столбце Argument.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1228,11 +1218,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Seek</v8:content>
+							<v8:content>Index Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Seek</v8:content>
+							<v8:content>Index Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1243,11 +1233,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поиск в индексе (Index Seek)</v8:content>
+							<v8:content>Просмотр индекса (Index Scan)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Поиск в индексе (Index Seek)</v8:content>
+							<v8:content>Просмотр индекса (Index Scan)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1258,11 +1248,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Index Seek использует возможности поиска по индексам для получения строк из некластеризованного индекса.</v8:content>
+							<v8:content>Оператор Index Scan получает все записи некластеризованного индекса, указанного в столбце Argument.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Index Seek использует возможности поиска по индексам для получения строк из некластеризованного индекса.</v8:content>
+							<v8:content>Оператор Index Scan получает все записи некластеризованного индекса, указанного в столбце Argument.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1279,11 +1269,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Spool</v8:content>
+							<v8:content>Index Seek</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Spool</v8:content>
+							<v8:content>Index Seek</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1294,11 +1284,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Spool</v8:content>
+							<v8:content>Поиск в индексе (Index Seek)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Spool</v8:content>
+							<v8:content>Поиск в индексе (Index Seek)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1309,11 +1299,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Index Spool сканирует входные строки, помещая каждую строку в скрытый файл буфера (хранимый в базе данных tempdb и существующий только в течение выполнения запроса), и создает для строк некластеризованный индекс.</v8:content>
+							<v8:content>Оператор Index Seek использует возможности поиска по индексам для получения строк из некластеризованного индекса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Index Spool сканирует входные строки, помещая каждую строку в скрытый файл буфера (хранимый в базе данных tempdb и существующий только в течение выполнения запроса), и создает для строк некластеризованный индекс.</v8:content>
+							<v8:content>Оператор Index Seek использует возможности поиска по индексам для получения строк из некластеризованного индекса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1330,11 +1320,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Update</v8:content>
+							<v8:content>Index Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Update</v8:content>
+							<v8:content>Index Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1345,11 +1335,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Index Update</v8:content>
+							<v8:content>Index Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index Update</v8:content>
+							<v8:content>Index Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1360,11 +1350,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Физический оператор Index Update обновляет строки, указанные во входных параметрах, в некластеризованном индексе, заданном в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Spool сканирует входные строки, помещая каждую строку в скрытый файл буфера (хранимый в базе данных tempdb и существующий только в течение выполнения запроса), и создает для строк некластеризованный индекс.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Физический оператор Index Update обновляет строки, указанные во входных параметрах, в некластеризованном индексе, заданном в столбце Argument.</v8:content>
+							<v8:content>Оператор Index Spool сканирует входные строки, помещая каждую строку в скрытый файл буфера (хранимый в базе данных tempdb и существующий только в течение выполнения запроса), и создает для строк некластеризованный индекс.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1381,11 +1371,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Inserted Scan</v8:content>
+							<v8:content>Index Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Inserted Scan</v8:content>
+							<v8:content>Index Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1396,11 +1386,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Inserted Scan</v8:content>
+							<v8:content>Index Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Inserted Scan</v8:content>
+							<v8:content>Index Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1411,11 +1401,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Inserted Scan просматривает таблицу inserted внутри триггера.</v8:content>
+							<v8:content>Физический оператор Index Update обновляет строки, указанные во входных параметрах, в некластеризованном индексе, заданном в столбце Argument.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Inserted Scan просматривает таблицу inserted внутри триггера.</v8:content>
+							<v8:content>Физический оператор Index Update обновляет строки, указанные во входных параметрах, в некластеризованном индексе, заданном в столбце Argument.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1432,11 +1422,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Log Row Scan</v8:content>
+							<v8:content>Inserted Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Log Row Scan</v8:content>
+							<v8:content>Inserted Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1447,11 +1437,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Log Row Scan</v8:content>
+							<v8:content>Inserted Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Log Row Scan</v8:content>
+							<v8:content>Inserted Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1462,11 +1452,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Log Row Scan просматривает журнал транзакций.</v8:content>
+							<v8:content>Оператор Inserted Scan просматривает таблицу inserted внутри триггера.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Log Row Scan просматривает журнал транзакций.</v8:content>
+							<v8:content>Оператор Inserted Scan просматривает таблицу inserted внутри триггера.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1483,11 +1473,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Merge Interval</v8:content>
+							<v8:content>Log Row Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Merge Interval</v8:content>
+							<v8:content>Log Row Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1498,11 +1488,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Merge Interval</v8:content>
+							<v8:content>Log Row Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Merge Interval</v8:content>
+							<v8:content>Log Row Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1513,26 +1503,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Merge Interval проводит слияние нескольких (возможно, пересекающихся) интервалов и возвращает минимальный, непересекающийся интервал, который затем используется для поиска записей индекса.</v8:content>
+							<v8:content>Оператор Log Row Scan просматривает журнал транзакций.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Merge Interval проводит слияние нескольких (возможно, пересекающихся) интервалов и возвращает минимальный, непересекающийся интервал, который затем используется для поиска записей индекса.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>MergeInterval.RelOp</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>MergeInterval.RelOp</v8:content>
+							<v8:content>Оператор Log Row Scan просматривает журнал транзакций.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1549,11 +1524,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Merge Join</v8:content>
+							<v8:content>Merge Interval</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Merge Join</v8:content>
+							<v8:content>Merge Interval</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1564,11 +1539,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Соединение слиянием (Merge Join)</v8:content>
+							<v8:content>Merge Interval</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Соединение слиянием (Merge Join)</v8:content>
+							<v8:content>Merge Interval</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1579,11 +1554,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Merge Join выполняет внутреннее соединение, левое внешнее соединение, левое полусоединение, левое антиполусоединение, правое внешнее соединение, правое полусоединение, правое антиполусоединение, а также логические операции соединения.</v8:content>
+							<v8:content>Оператор Merge Interval проводит слияние нескольких (возможно, пересекающихся) интервалов и возвращает минимальный, непересекающийся интервал, который затем используется для поиска записей индекса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Merge Join выполняет внутреннее соединение, левое внешнее соединение, левое полусоединение, левое антиполусоединение, правое внешнее соединение, правое полусоединение, правое антиполусоединение, а также логические операции соединения.</v8:content>
+							<v8:content>Оператор Merge Interval проводит слияние нескольких (возможно, пересекающихся) интервалов и возвращает минимальный, непересекающийся интервал, который затем используется для поиска записей индекса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1594,11 +1569,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Merge.RelOp</v8:content>
+							<v8:content>MergeInterval.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Merge.RelOp</v8:content>
+							<v8:content>MergeInterval.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1615,11 +1590,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Nested Loops</v8:content>
+							<v8:content>Merge Join</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Nested Loops</v8:content>
+							<v8:content>Merge Join</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1630,11 +1605,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вложенные циклы (Nested Loops)</v8:content>
+							<v8:content>Соединение слиянием (Merge Join)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Вложенные циклы (Nested Loops)</v8:content>
+							<v8:content>Соединение слиянием (Merge Join)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1645,11 +1620,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Nested Loops выполняет логические операции внутреннего соединения, левого внешнего соединения, левого полусоединения и антилевого полусоединения.</v8:content>
+							<v8:content>Оператор Merge Join выполняет внутреннее соединение, левое внешнее соединение, левое полусоединение, левое антиполусоединение, правое внешнее соединение, правое полусоединение, правое антиполусоединение, а также логические операции соединения.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Nested Loops выполняет логические операции внутреннего соединения, левого внешнего соединения, левого полусоединения и антилевого полусоединения.</v8:content>
+							<v8:content>Оператор Merge Join выполняет внутреннее соединение, левое внешнее соединение, левое полусоединение, левое антиполусоединение, правое внешнее соединение, правое полусоединение, правое антиполусоединение, а также логические операции соединения.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1660,11 +1635,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>NestedLoops.RelOp</v8:content>
+							<v8:content>Merge.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>NestedLoops.RelOp</v8:content>
+							<v8:content>Merge.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1681,11 +1656,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Online Index Insert</v8:content>
+							<v8:content>Nested Loops</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Online Index Insert</v8:content>
+							<v8:content>Nested Loops</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1696,11 +1671,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Online Index Insert</v8:content>
+							<v8:content>Вложенные циклы (Nested Loops)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Online Index Insert</v8:content>
+							<v8:content>Вложенные циклы (Nested Loops)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1711,11 +1686,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>SQL Server 2005 позволяет выполнять операции с индексами CREATE, DROP и ALTER, в то время как данные базовой таблицы остаются доступными для пользователей. Оператор Online Index Insert реализует эти операции.</v8:content>
+							<v8:content>Оператор Nested Loops выполняет логические операции внутреннего соединения, левого внешнего соединения, левого полусоединения и антилевого полусоединения.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>SQL Server 2005 позволяет выполнять операции с индексами CREATE, DROP и ALTER, в то время как данные базовой таблицы остаются доступными для пользователей. Оператор Online Index Insert реализует эти операции.</v8:content>
+							<v8:content>Оператор Nested Loops выполняет логические операции внутреннего соединения, левого внешнего соединения, левого полусоединения и антилевого полусоединения.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1726,11 +1701,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>OnlineIndex.RelOp</v8:content>
+							<v8:content>NestedLoops.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>OnlineIndex.RelOp</v8:content>
+							<v8:content>NestedLoops.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1747,11 +1722,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Parallelism</v8:content>
+							<v8:content>Online Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Parallelism</v8:content>
+							<v8:content>Online Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1762,11 +1737,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Параллелизм (Parallelism)</v8:content>
+							<v8:content>Online Index Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Параллелизм (Parallelism)</v8:content>
+							<v8:content>Online Index Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1777,11 +1752,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Parallelism выполняет логические операции потоков распространения, сбора и повторного секционирования.</v8:content>
+							<v8:content>SQL Server 2005 позволяет выполнять операции с индексами CREATE, DROP и ALTER, в то время как данные базовой таблицы остаются доступными для пользователей. Оператор Online Index Insert реализует эти операции.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Parallelism выполняет логические операции потоков распространения, сбора и повторного секционирования.</v8:content>
+							<v8:content>SQL Server 2005 позволяет выполнять операции с индексами CREATE, DROP и ALTER, в то время как данные базовой таблицы остаются доступными для пользователей. Оператор Online Index Insert реализует эти операции.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1792,11 +1767,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Parallelism.RelOp</v8:content>
+							<v8:content>OnlineIndex.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Parallelism.RelOp</v8:content>
+							<v8:content>OnlineIndex.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1813,11 +1788,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Parameter Table Scan</v8:content>
+							<v8:content>Parallelism</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Parameter Table Scan</v8:content>
+							<v8:content>Parallelism</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1828,11 +1803,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Parameter Table Scan</v8:content>
+							<v8:content>Параллелизм (Parallelism)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Parameter Table Scan</v8:content>
+							<v8:content>Параллелизм (Parallelism)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1843,11 +1818,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Parameter Table Scan просматривает таблицу, переданную как параметр текущего запроса.</v8:content>
+							<v8:content>Оператор Parallelism выполняет логические операции потоков распространения, сбора и повторного секционирования.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Parameter Table Scan просматривает таблицу, переданную как параметр текущего запроса.</v8:content>
+							<v8:content>Оператор Parallelism выполняет логические операции потоков распространения, сбора и повторного секционирования.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Parallelism.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Parallelism.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1864,11 +1854,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Print</v8:content>
+							<v8:content>Parameter Table Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Print</v8:content>
+							<v8:content>Parameter Table Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1879,11 +1869,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Print</v8:content>
+							<v8:content>Parameter Table Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Print</v8:content>
+							<v8:content>Parameter Table Scan</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор Parameter Table Scan просматривает таблицу, переданную как параметр текущего запроса.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Оператор Parameter Table Scan просматривает таблицу, переданную как параметр текущего запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1900,11 +1905,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Delete</v8:content>
+							<v8:content>Print</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Delete</v8:content>
+							<v8:content>Print</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1915,26 +1920,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Delete</v8:content>
+							<v8:content>Print</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Delete</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Remote Delete удаляет входные строки удаленного объекта.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Remote Delete удаляет входные строки удаленного объекта.</v8:content>
+							<v8:content>Print</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1951,11 +1941,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Index Scan</v8:content>
+							<v8:content>Remote Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Index Scan</v8:content>
+							<v8:content>Remote Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1966,11 +1956,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Index Scan</v8:content>
+							<v8:content>Remote Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Index Scan</v8:content>
+							<v8:content>Remote Delete</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор Remote Delete удаляет входные строки удаленного объекта.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Оператор Remote Delete удаляет входные строки удаленного объекта.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1987,11 +1992,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Index Seek</v8:content>
+							<v8:content>Remote Index Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Index Seek</v8:content>
+							<v8:content>Remote Index Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2002,11 +2007,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Index Seek</v8:content>
+							<v8:content>Remote Index Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Index Seek</v8:content>
+							<v8:content>Remote Index Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2023,11 +2028,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Insert</v8:content>
+							<v8:content>Remote Index Seek</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Insert</v8:content>
+							<v8:content>Remote Index Seek</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2038,26 +2043,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Insert</v8:content>
+							<v8:content>Remote Index Seek</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Insert</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Remote Insert вставляет входные строки в удаленный объект.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Remote Insert вставляет входные строки в удаленный объект.</v8:content>
+							<v8:content>Remote Index Seek</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2074,11 +2064,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Query</v8:content>
+							<v8:content>Remote Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Query</v8:content>
+							<v8:content>Remote Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2089,11 +2079,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Query</v8:content>
+							<v8:content>Remote Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Query</v8:content>
+							<v8:content>Remote Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2104,11 +2094,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Remote Query отправляет запрос удаленному источнику.</v8:content>
+							<v8:content>Оператор Remote Insert вставляет входные строки в удаленный объект.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Remote Query отправляет запрос удаленному источнику.</v8:content>
+							<v8:content>Оператор Remote Insert вставляет входные строки в удаленный объект.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2125,11 +2115,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Scan</v8:content>
+							<v8:content>Remote Query</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Scan</v8:content>
+							<v8:content>Remote Query</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2140,11 +2130,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Scan</v8:content>
+							<v8:content>Remote Query</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Scan</v8:content>
+							<v8:content>Remote Query</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2155,11 +2145,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Remote Scan позволяет удаленно просматривать необходимые объекты.</v8:content>
+							<v8:content>Оператор Remote Query отправляет запрос удаленному источнику.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Remote Scan позволяет удаленно просматривать необходимые объекты.</v8:content>
+							<v8:content>Оператор Remote Query отправляет запрос удаленному источнику.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2176,11 +2166,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Update</v8:content>
+							<v8:content>Remote Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Update</v8:content>
+							<v8:content>Remote Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2191,11 +2181,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Remote Update</v8:content>
+							<v8:content>Remote Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Remote Update</v8:content>
+							<v8:content>Remote Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2206,11 +2196,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Remote Update обновляет входные строки удаленного объекта.</v8:content>
+							<v8:content>Оператор Remote Scan позволяет удаленно просматривать необходимые объекты.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Remote Update обновляет входные строки удаленного объекта.</v8:content>
+							<v8:content>Оператор Remote Scan позволяет удаленно просматривать необходимые объекты.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2227,11 +2217,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>RID Lookup</v8:content>
+							<v8:content>Remote Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>RID Lookup</v8:content>
+							<v8:content>Remote Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2242,11 +2232,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Уточняющий запрос (RID Lookup)</v8:content>
+							<v8:content>Remote Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Уточняющий запрос (RID Lookup)</v8:content>
+							<v8:content>Remote Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2257,11 +2247,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор RID Lookup осуществляет поиск закладки в куче при помощи заданного идентификатора строки.</v8:content>
+							<v8:content>Оператор Remote Update обновляет входные строки удаленного объекта.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор RID Lookup осуществляет поиск закладки в куче при помощи заданного идентификатора строки.</v8:content>
+							<v8:content>Оператор Remote Update обновляет входные строки удаленного объекта.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2278,11 +2268,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Row Count Spool</v8:content>
+							<v8:content>RID Lookup</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Row Count Spool</v8:content>
+							<v8:content>RID Lookup</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2293,11 +2283,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Row Count Spool</v8:content>
+							<v8:content>Уточняющий запрос (RID Lookup)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Row Count Spool</v8:content>
+							<v8:content>Уточняющий запрос (RID Lookup)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2308,26 +2298,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Row Count Spool просматривает входные данные, подсчитывая число представленных строк и возвращая такое же количество строк, очищенных от данных.</v8:content>
+							<v8:content>Оператор RID Lookup осуществляет поиск закладки в куче при помощи заданного идентификатора строки.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Row Count Spool просматривает входные данные, подсчитывая число представленных строк и возвращая такое же количество строк, очищенных от данных.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>RowCountSpool.RelOp</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>RowCountSpool.RelOp</v8:content>
+							<v8:content>Оператор RID Lookup осуществляет поиск закладки в куче при помощи заданного идентификатора строки.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2344,11 +2319,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Segment</v8:content>
+							<v8:content>Row Count Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Segment</v8:content>
+							<v8:content>Row Count Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2359,11 +2334,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сегмент (Segment)</v8:content>
+							<v8:content>Row Count Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Сегмент (Segment)</v8:content>
+							<v8:content>Row Count Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2374,11 +2349,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Segment является физическим и логическим оператором. Он делит входной набор на сегменты в соответствии со значением одного или нескольких столбцов.</v8:content>
+							<v8:content>Оператор Row Count Spool просматривает входные данные, подсчитывая число представленных строк и возвращая такое же количество строк, очищенных от данных.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Segment является физическим и логическим оператором. Он делит входной набор на сегменты в соответствии со значением одного или нескольких столбцов.</v8:content>
+							<v8:content>Оператор Row Count Spool просматривает входные данные, подсчитывая число представленных строк и возвращая такое же количество строк, очищенных от данных.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2389,11 +2364,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Segment.RelOp</v8:content>
+							<v8:content>RowCountSpool.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Segment.RelOp</v8:content>
+							<v8:content>RowCountSpool.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2410,11 +2385,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sequence</v8:content>
+							<v8:content>Segment</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sequence</v8:content>
+							<v8:content>Segment</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2425,11 +2400,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sequence</v8:content>
+							<v8:content>Сегмент (Segment)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sequence</v8:content>
+							<v8:content>Сегмент (Segment)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2440,11 +2415,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Sequence выполняет планы широкого обновления.</v8:content>
+							<v8:content>Segment является физическим и логическим оператором. Он делит входной набор на сегменты в соответствии со значением одного или нескольких столбцов.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Sequence выполняет планы широкого обновления.</v8:content>
+							<v8:content>Segment является физическим и логическим оператором. Он делит входной набор на сегменты в соответствии со значением одного или нескольких столбцов.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2455,11 +2430,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sequence.RelOp</v8:content>
+							<v8:content>Segment.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sequence.RelOp</v8:content>
+							<v8:content>Segment.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2476,11 +2451,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sequence Project</v8:content>
+							<v8:content>Sequence</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sequence Project</v8:content>
+							<v8:content>Sequence</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2491,11 +2466,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sequence Project</v8:content>
+							<v8:content>Sequence</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sequence Project</v8:content>
+							<v8:content>Sequence</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2506,11 +2481,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Sequence Project добавляет столбцы для выполнения вычислений над упорядоченным набором.</v8:content>
+							<v8:content>Оператор Sequence выполняет планы широкого обновления.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Sequence Project добавляет столбцы для выполнения вычислений над упорядоченным набором.</v8:content>
+							<v8:content>Оператор Sequence выполняет планы широкого обновления.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2521,11 +2496,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>SequenceProject.RelOp</v8:content>
+							<v8:content>Sequence.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>SequenceProject.RelOp</v8:content>
+							<v8:content>Sequence.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2542,11 +2517,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sort</v8:content>
+							<v8:content>Sequence Project</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sort</v8:content>
+							<v8:content>Sequence Project</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2557,11 +2532,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сортировка (Sort)</v8:content>
+							<v8:content>Sequence Project</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Сортировка (Sort)</v8:content>
+							<v8:content>Sequence Project</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2572,11 +2547,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Sort сортирует входящие строки.</v8:content>
+							<v8:content>Оператор Sequence Project добавляет столбцы для выполнения вычислений над упорядоченным набором.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Sort сортирует входящие строки.</v8:content>
+							<v8:content>Оператор Sequence Project добавляет столбцы для выполнения вычислений над упорядоченным набором.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2587,11 +2562,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Sort.RelOp</v8:content>
+							<v8:content>SequenceProject.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Sort.RelOp</v8:content>
+							<v8:content>SequenceProject.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2608,11 +2583,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Split</v8:content>
+							<v8:content>Sort</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Split</v8:content>
+							<v8:content>Sort</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2623,11 +2598,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Split</v8:content>
+							<v8:content>Сортировка (Sort)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Split</v8:content>
+							<v8:content>Сортировка (Sort)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2638,11 +2613,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Split используется для оптимизации процесса обновления.</v8:content>
+							<v8:content>Оператор Sort сортирует входящие строки.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Split используется для оптимизации процесса обновления.</v8:content>
+							<v8:content>Оператор Sort сортирует входящие строки.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2653,11 +2628,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Split.RelOp</v8:content>
+							<v8:content>Sort.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Split.RelOp</v8:content>
+							<v8:content>Sort.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2674,11 +2649,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Stream Aggregate</v8:content>
+							<v8:content>Split</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Stream Aggregate</v8:content>
+							<v8:content>Split</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2689,11 +2664,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статистическое выражение потока (Stream Aggregate)</v8:content>
+							<v8:content>Split</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Статистическое выражение потока (Stream Aggregate)</v8:content>
+							<v8:content>Split</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2704,11 +2679,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Stream Aggregate группирует строки в один или несколько столбцов и вычисляет одно или несколько статистических выражений, возвращенных запросом.</v8:content>
+							<v8:content>Оператор Split используется для оптимизации процесса обновления.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Stream Aggregate группирует строки в один или несколько столбцов и вычисляет одно или несколько статистических выражений, возвращенных запросом.</v8:content>
+							<v8:content>Оператор Split используется для оптимизации процесса обновления.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2719,11 +2694,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>StreamAggregate.RelOp</v8:content>
+							<v8:content>Split.RelOp</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>StreamAggregate.RelOp</v8:content>
+							<v8:content>Split.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2740,11 +2715,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Switch</v8:content>
+							<v8:content>Stream Aggregate</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Switch</v8:content>
+							<v8:content>Stream Aggregate</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2755,11 +2730,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Switch</v8:content>
+							<v8:content>Статистическое выражение потока (Stream Aggregate)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Switch</v8:content>
+							<v8:content>Статистическое выражение потока (Stream Aggregate)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2770,11 +2745,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Switch представляет собой особый тип итератора сцепления, который имеет n входов.</v8:content>
+							<v8:content>Оператор Stream Aggregate группирует строки в один или несколько столбцов и вычисляет одно или несколько статистических выражений, возвращенных запросом.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Switch представляет собой особый тип итератора сцепления, который имеет n входов.</v8:content>
+							<v8:content>Оператор Stream Aggregate группирует строки в один или несколько столбцов и вычисляет одно или несколько статистических выражений, возвращенных запросом.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>StreamAggregate.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>StreamAggregate.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2791,11 +2781,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table-valued function</v8:content>
+							<v8:content>Switch</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table-valued function</v8:content>
+							<v8:content>Switch</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2806,11 +2796,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table-valued function</v8:content>
+							<v8:content>Switch</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table-valued function</v8:content>
+							<v8:content>Switch</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2821,11 +2811,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Table-valued Function вычисляет возвращающую табличное значение функцию (языка Transact-SQL или среды CLR) и сохраняет строки результата в базу данных tempdb.</v8:content>
+							<v8:content>Оператор Switch представляет собой особый тип итератора сцепления, который имеет n входов.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Table-valued Function вычисляет возвращающую табличное значение функцию (языка Transact-SQL или среды CLR) и сохраняет строки результата в базу данных tempdb.</v8:content>
+							<v8:content>Оператор Switch представляет собой особый тип итератора сцепления, который имеет n входов.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2842,11 +2832,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Delete</v8:content>
+							<v8:content>Table-valued function</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Delete</v8:content>
+							<v8:content>Table-valued function</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2857,11 +2847,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Delete</v8:content>
+							<v8:content>Table-valued function</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Delete</v8:content>
+							<v8:content>Table-valued function</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2872,11 +2862,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Физический оператор Table Delete удаляет строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table-valued Function вычисляет возвращающую табличное значение функцию (языка Transact-SQL или среды CLR) и сохраняет строки результата в базу данных tempdb.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Физический оператор Table Delete удаляет строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table-valued Function вычисляет возвращающую табличное значение функцию (языка Transact-SQL или среды CLR) и сохраняет строки результата в базу данных tempdb.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2893,11 +2883,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Insert</v8:content>
+							<v8:content>Table Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Insert</v8:content>
+							<v8:content>Table Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2908,11 +2898,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Insert</v8:content>
+							<v8:content>Table Delete</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Insert</v8:content>
+							<v8:content>Table Delete</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2923,11 +2913,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Table Insert вставляет строки из своих входных данных в таблицу, указанную в столбце Argument плана выполнения запроса.</v8:content>
+							<v8:content>Физический оператор Table Delete удаляет строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Table Insert вставляет строки из своих входных данных в таблицу, указанную в столбце Argument плана выполнения запроса.</v8:content>
+							<v8:content>Физический оператор Table Delete удаляет строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2944,11 +2934,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Scan</v8:content>
+							<v8:content>Table Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Scan</v8:content>
+							<v8:content>Table Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2959,11 +2949,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Просмотр таблицы (Table Scan)</v8:content>
+							<v8:content>Table Insert</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Просмотр таблицы (Table Scan)</v8:content>
+							<v8:content>Table Insert</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2974,11 +2964,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Table Scan получает строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table Insert вставляет строки из своих входных данных в таблицу, указанную в столбце Argument плана выполнения запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Table Scan получает строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table Insert вставляет строки из своих входных данных в таблицу, указанную в столбце Argument плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -2995,11 +2985,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Spool</v8:content>
+							<v8:content>Table Scan</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Spool</v8:content>
+							<v8:content>Table Scan</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3010,11 +3000,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Spool</v8:content>
+							<v8:content>Просмотр таблицы (Table Scan)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Spool</v8:content>
+							<v8:content>Просмотр таблицы (Table Scan)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3025,11 +3015,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Table Spool просматривает входную таблицу и помещает копию каждой строки в скрытую буферную таблицу, которая находится в базе данных tempdb и существует только в течение времени жизни запроса.</v8:content>
+							<v8:content>Оператор Table Scan получает строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Table Spool просматривает входную таблицу и помещает копию каждой строки в скрытую буферную таблицу, которая находится в базе данных tempdb и существует только в течение времени жизни запроса.</v8:content>
+							<v8:content>Оператор Table Scan получает строки из таблицы, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3046,11 +3036,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Update</v8:content>
+							<v8:content>Table Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Update</v8:content>
+							<v8:content>Table Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3061,11 +3051,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Update</v8:content>
+							<v8:content>Table Spool</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Update</v8:content>
+							<v8:content>Table Spool</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3076,11 +3066,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Физический оператор Table Update обновляет входные строки в таблице, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table Spool просматривает входную таблицу и помещает копию каждой строки в скрытую буферную таблицу, которая находится в базе данных tempdb и существует только в течение времени жизни запроса.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Физический оператор Table Update обновляет входные строки в таблице, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+							<v8:content>Оператор Table Spool просматривает входную таблицу и помещает копию каждой строки в скрытую буферную таблицу, которая находится в базе данных tempdb и существует только в течение времени жизни запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3097,11 +3087,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Merge</v8:content>
+							<v8:content>Table Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Merge</v8:content>
+							<v8:content>Table Update</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3112,11 +3102,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Table Merge</v8:content>
+							<v8:content>Table Update</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Table Merge</v8:content>
+							<v8:content>Table Update</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физический оператор Table Update обновляет входные строки в таблице, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Физический оператор Table Update обновляет входные строки в таблице, указанной в столбце Аргумент плана выполнения запроса.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3133,11 +3138,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Top</v8:content>
+							<v8:content>Table Merge</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Top</v8:content>
+							<v8:content>Table Merge</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3148,41 +3153,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Верх (Top)</v8:content>
+							<v8:content>Table Merge</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Верх (Top)</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Оператор Top просматривает входные данные и возвращает только указанное число или процент строк, выбранных, возможно, на основе порядка сортировки.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Оператор Top просматривает входные данные и возвращает только указанное число или процент строк, выбранных, возможно, на основе порядка сортировки.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Top.RelOp</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Top.RelOp</v8:content>
+							<v8:content>Table Merge</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3199,11 +3174,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>UDX</v8:content>
+							<v8:content>Top</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>UDX</v8:content>
+							<v8:content>Top</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3214,11 +3189,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>UDX</v8:content>
+							<v8:content>Верх (Top)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>UDX</v8:content>
+							<v8:content>Верх (Top)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3229,11 +3204,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Расширенные операторы (UDX) реализуют часть операций XQuery и XPath в SQL Server.</v8:content>
+							<v8:content>Оператор Top просматривает входные данные и возвращает только указанное число или процент строк, выбранных, возможно, на основе порядка сортировки.</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Расширенные операторы (UDX) реализуют часть операций XQuery и XPath в SQL Server.</v8:content>
+							<v8:content>Оператор Top просматривает входные данные и возвращает только указанное число или процент строк, выбранных, возможно, на основе порядка сортировки.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Top.RelOp</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Top.RelOp</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3250,6 +3240,57 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>UDX</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>UDX</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>UDX</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>UDX</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенные операторы (UDX) реализуют часть операций XQuery и XPath в SQL Server.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Расширенные операторы (UDX) реализуют часть операций XQuery и XPath в SQL Server.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>59</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Distribute Streams</v8:content>
 						</v8:item>
 						<v8:item>
@@ -3292,7 +3333,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>59</index>
+		<index>60</index>
 		<row>
 			<formatIndex>8</formatIndex>
 			<c>
@@ -3343,7 +3384,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>60</index>
+		<index>61</index>
 		<row>
 			<formatIndex>8</formatIndex>
 			<c>
@@ -3397,9 +3438,9 @@
 		<drawingType>Picture</drawingType>
 		<id>31</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>1</beginRow>
+		<beginRow>2</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>1</endRow>
+		<endRow>2</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3414,9 +3455,9 @@
 		<drawingType>Picture</drawingType>
 		<id>32</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>2</beginRow>
+		<beginRow>3</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>2</endRow>
+		<endRow>3</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3431,9 +3472,9 @@
 		<drawingType>Picture</drawingType>
 		<id>33</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>3</beginRow>
+		<beginRow>4</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>3</endRow>
+		<endRow>4</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3448,9 +3489,9 @@
 		<drawingType>Picture</drawingType>
 		<id>34</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>4</beginRow>
+		<beginRow>5</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>4</endRow>
+		<endRow>5</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3465,9 +3506,9 @@
 		<drawingType>Picture</drawingType>
 		<id>35</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>5</beginRow>
+		<beginRow>6</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>5</endRow>
+		<endRow>6</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3482,9 +3523,9 @@
 		<drawingType>Picture</drawingType>
 		<id>36</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>6</beginRow>
+		<beginRow>7</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>6</endRow>
+		<endRow>7</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3499,9 +3540,9 @@
 		<drawingType>Picture</drawingType>
 		<id>37</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>7</beginRow>
+		<beginRow>8</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>7</endRow>
+		<endRow>8</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3516,9 +3557,9 @@
 		<drawingType>Picture</drawingType>
 		<id>38</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>10</beginRow>
+		<beginRow>11</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>10</endRow>
+		<endRow>11</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3533,9 +3574,9 @@
 		<drawingType>Picture</drawingType>
 		<id>39</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>11</beginRow>
+		<beginRow>12</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>11</endRow>
+		<endRow>12</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3550,9 +3591,9 @@
 		<drawingType>Picture</drawingType>
 		<id>40</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>12</beginRow>
+		<beginRow>13</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>12</endRow>
+		<endRow>13</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3567,9 +3608,9 @@
 		<drawingType>Picture</drawingType>
 		<id>41</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>13</beginRow>
+		<beginRow>14</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>13</endRow>
+		<endRow>14</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3584,9 +3625,9 @@
 		<drawingType>Picture</drawingType>
 		<id>42</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>14</beginRow>
+		<beginRow>15</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>14</endRow>
+		<endRow>15</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3601,9 +3642,9 @@
 		<drawingType>Picture</drawingType>
 		<id>43</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>15</beginRow>
+		<beginRow>16</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>15</endRow>
+		<endRow>16</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3618,9 +3659,9 @@
 		<drawingType>Picture</drawingType>
 		<id>44</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>17</beginRow>
+		<beginRow>18</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>17</endRow>
+		<endRow>18</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3635,9 +3676,9 @@
 		<drawingType>Picture</drawingType>
 		<id>45</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>18</beginRow>
+		<beginRow>19</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>18</endRow>
+		<endRow>19</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3652,9 +3693,9 @@
 		<drawingType>Picture</drawingType>
 		<id>46</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>19</beginRow>
+		<beginRow>20</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>19</endRow>
+		<endRow>20</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3669,9 +3710,9 @@
 		<drawingType>Picture</drawingType>
 		<id>47</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>20</beginRow>
+		<beginRow>21</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>20</endRow>
+		<endRow>21</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3686,9 +3727,9 @@
 		<drawingType>Picture</drawingType>
 		<id>48</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>21</beginRow>
+		<beginRow>22</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>21</endRow>
+		<endRow>22</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3703,9 +3744,9 @@
 		<drawingType>Picture</drawingType>
 		<id>49</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>22</beginRow>
+		<beginRow>23</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>22</endRow>
+		<endRow>23</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3720,9 +3761,9 @@
 		<drawingType>Picture</drawingType>
 		<id>50</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>23</beginRow>
+		<beginRow>24</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>23</endRow>
+		<endRow>24</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3737,9 +3778,9 @@
 		<drawingType>Picture</drawingType>
 		<id>51</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>24</beginRow>
+		<beginRow>25</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>24</endRow>
+		<endRow>25</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3754,9 +3795,9 @@
 		<drawingType>Picture</drawingType>
 		<id>52</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>25</beginRow>
+		<beginRow>26</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>25</endRow>
+		<endRow>26</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3771,9 +3812,9 @@
 		<drawingType>Picture</drawingType>
 		<id>53</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>26</beginRow>
+		<beginRow>27</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>26</endRow>
+		<endRow>27</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3788,9 +3829,9 @@
 		<drawingType>Picture</drawingType>
 		<id>54</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>27</beginRow>
+		<beginRow>28</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>27</endRow>
+		<endRow>28</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3805,9 +3846,9 @@
 		<drawingType>Picture</drawingType>
 		<id>55</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>28</beginRow>
+		<beginRow>29</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>28</endRow>
+		<endRow>29</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3822,9 +3863,9 @@
 		<drawingType>Picture</drawingType>
 		<id>56</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>29</beginRow>
+		<beginRow>30</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>29</endRow>
+		<endRow>30</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3839,9 +3880,9 @@
 		<drawingType>Picture</drawingType>
 		<id>57</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>31</beginRow>
+		<beginRow>32</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>31</endRow>
+		<endRow>32</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3856,9 +3897,9 @@
 		<drawingType>Picture</drawingType>
 		<id>58</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>33</beginRow>
+		<beginRow>34</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>33</endRow>
+		<endRow>34</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3873,9 +3914,9 @@
 		<drawingType>Picture</drawingType>
 		<id>59</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>36</beginRow>
+		<beginRow>37</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>36</endRow>
+		<endRow>37</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3890,9 +3931,9 @@
 		<drawingType>Picture</drawingType>
 		<id>60</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>37</beginRow>
+		<beginRow>38</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>37</endRow>
+		<endRow>38</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3907,9 +3948,9 @@
 		<drawingType>Picture</drawingType>
 		<id>61</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>38</beginRow>
+		<beginRow>39</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>38</endRow>
+		<endRow>39</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3924,9 +3965,9 @@
 		<drawingType>Picture</drawingType>
 		<id>62</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>39</beginRow>
+		<beginRow>40</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>39</endRow>
+		<endRow>40</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3941,9 +3982,9 @@
 		<drawingType>Picture</drawingType>
 		<id>63</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>40</beginRow>
+		<beginRow>41</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>40</endRow>
+		<endRow>41</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3958,9 +3999,9 @@
 		<drawingType>Picture</drawingType>
 		<id>64</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>41</beginRow>
+		<beginRow>42</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>41</endRow>
+		<endRow>42</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3975,9 +4016,9 @@
 		<drawingType>Picture</drawingType>
 		<id>65</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>42</beginRow>
+		<beginRow>43</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>42</endRow>
+		<endRow>43</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -3992,9 +4033,9 @@
 		<drawingType>Picture</drawingType>
 		<id>66</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>43</beginRow>
+		<beginRow>44</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>43</endRow>
+		<endRow>44</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4009,9 +4050,9 @@
 		<drawingType>Picture</drawingType>
 		<id>67</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>44</beginRow>
+		<beginRow>45</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>44</endRow>
+		<endRow>45</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4026,9 +4067,9 @@
 		<drawingType>Picture</drawingType>
 		<id>68</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>45</beginRow>
+		<beginRow>46</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>45</endRow>
+		<endRow>46</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4043,9 +4084,9 @@
 		<drawingType>Picture</drawingType>
 		<id>69</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>46</beginRow>
+		<beginRow>47</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>46</endRow>
+		<endRow>47</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4060,9 +4101,9 @@
 		<drawingType>Picture</drawingType>
 		<id>70</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>47</beginRow>
+		<beginRow>48</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>47</endRow>
+		<endRow>48</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4077,9 +4118,9 @@
 		<drawingType>Picture</drawingType>
 		<id>71</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>48</beginRow>
+		<beginRow>49</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>48</endRow>
+		<endRow>49</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4094,9 +4135,9 @@
 		<drawingType>Picture</drawingType>
 		<id>72</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>49</beginRow>
+		<beginRow>50</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>49</endRow>
+		<endRow>50</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4111,9 +4152,9 @@
 		<drawingType>Picture</drawingType>
 		<id>73</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>50</beginRow>
+		<beginRow>51</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>50</endRow>
+		<endRow>51</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4128,9 +4169,9 @@
 		<drawingType>Picture</drawingType>
 		<id>74</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>51</beginRow>
+		<beginRow>52</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>51</endRow>
+		<endRow>52</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4145,9 +4186,9 @@
 		<drawingType>Picture</drawingType>
 		<id>75</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>52</beginRow>
+		<beginRow>53</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>52</endRow>
+		<endRow>53</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4162,9 +4203,9 @@
 		<drawingType>Picture</drawingType>
 		<id>76</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>53</beginRow>
+		<beginRow>54</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>53</endRow>
+		<endRow>54</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4179,9 +4220,9 @@
 		<drawingType>Picture</drawingType>
 		<id>77</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>54</beginRow>
+		<beginRow>55</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>54</endRow>
+		<endRow>55</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4196,9 +4237,9 @@
 		<drawingType>Picture</drawingType>
 		<id>78</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>56</beginRow>
+		<beginRow>57</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>56</endRow>
+		<endRow>57</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4213,9 +4254,9 @@
 		<drawingType>Picture</drawingType>
 		<id>79</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>57</beginRow>
+		<beginRow>58</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>57</endRow>
+		<endRow>58</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4230,9 +4271,9 @@
 		<drawingType>Picture</drawingType>
 		<id>80</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>58</beginRow>
+		<beginRow>59</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>58</endRow>
+		<endRow>59</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4247,9 +4288,9 @@
 		<drawingType>Picture</drawingType>
 		<id>81</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>59</beginRow>
+		<beginRow>60</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>59</endRow>
+		<endRow>60</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4264,9 +4305,9 @@
 		<drawingType>Picture</drawingType>
 		<id>82</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>60</beginRow>
+		<beginRow>61</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>60</endRow>
+		<endRow>61</endRow>
 		<endRowOffset>96</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -4281,9 +4322,9 @@
 		<drawingType>Picture</drawingType>
 		<id>85</id>
 		<formatIndex>0</formatIndex>
-		<beginRow>30</beginRow>
+		<beginRow>31</beginRow>
 		<beginRowOffset>0</beginRowOffset>
-		<endRow>30</endRow>
+		<endRow>31</endRow>
 		<endRowOffset>48</endRowOffset>
 		<beginColumn>4</beginColumn>
 		<beginColumnOffset>0</beginColumnOffset>
@@ -6747,9 +6788,9 @@ WAtaa+fvQjTGvAVx+BXEVfM8k/eepJRHIK7KOVMp5SlExv8Xbmu0NWybFt8tAAAA
 AElFTkSuQmCC</picture>
 	</picture>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>9</defaultFormatIndex>
-	<height>61</height>
-	<vgRows>61</vgRows>
+	<defaultFormatIndex>10</defaultFormatIndex>
+	<height>62</height>
+	<vgRows>62</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
 		<width>138</width>
@@ -6782,6 +6823,12 @@ AElFTkSuQmCC</picture>
 	</format>
 	<format>
 		<height>138</height>
+	</format>
+	<format>
+		<font>0</font>
+		<height>138</height>
+		<width>72</width>
+		<verticalAlignment>Center</verticalAlignment>
 	</format>
 	<format>
 		<width>72</width>

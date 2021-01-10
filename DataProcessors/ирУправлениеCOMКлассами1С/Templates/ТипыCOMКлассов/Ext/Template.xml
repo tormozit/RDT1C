@@ -15,7 +15,7 @@
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>7</size>
+		<size>8</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -58,32 +58,38 @@
 				<formatIndex>5</formatIndex>
 			</column>
 		</columnsItem>
+		<columnsItem>
+			<index>7</index>
+			<column>
+				<formatIndex>7</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
-			<formatIndex>7</formatIndex>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПредопределенного</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>ИмяПредопределенного</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
+			<formatIndex>8</formatIndex>
 			<c>
 				<c>
 					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяПредопределенного</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>ИмяПредопределенного</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Имя</v8:content>
 						</v8:item>
 						<v8:item>
@@ -95,7 +101,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -110,7 +116,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -125,7 +131,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -140,7 +146,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -164,6 +170,17 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>КлючевойФайл</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -205,7 +222,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -220,7 +237,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -235,7 +252,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -250,7 +267,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -274,6 +291,19 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>comcntr.dll</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Com-соединитель / Менеджер COM-соединений
+    С помощью данного объекта выполняется установка внешнего соединения с информационной базой 1С:Предприятия 8 и администрирование кластера серверов. С помощью одного экземпляра объекта может быть установлено неограниченное число соединений.
+</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -315,7 +345,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -324,36 +354,6 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Консоль серверов</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>.ServerAdminScope</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>.ServerAdminScope</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>_1С8</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_1С8</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -361,6 +361,36 @@
 			<c>
 				<c>
 					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>.ServerAdminScope</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>.ServerAdminScope</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_1С8</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_1С8</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -384,6 +414,17 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>radmin.dll</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Консоль администрирования сервера 1С</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -425,7 +466,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -440,7 +481,7 @@
 			</c>
 			<c>
 				<c>
-					<f>10</f>
+					<f>11</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -455,7 +496,7 @@
 			</c>
 			<c>
 				<c>
-					<f>10</f>
+					<f>11</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -470,7 +511,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -494,6 +535,20 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>1cv8.exe</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Automation-сервер толстого клиента
+    Предоставляет доступ ко всем свойствам и методам глобального контекста клиентского приложения, а также включение и выключение пользовательского интерфейса (главного окна приложения).
+    Может запускать как обычное, так и управляемое приложение в зависимости от параметров конфигурации и пользователя базы, но явно задавать тип приложения нельзя.
+</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -535,7 +590,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -565,7 +620,7 @@
 			</c>
 			<c>
 				<c>
-					<f>10</f>
+					<f>11</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -580,7 +635,7 @@
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -608,10 +663,22 @@
 					</tl>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>13</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Automation-сервер тонкого клиента
+    Предоставляет доступ ко всем свойствам и методам глобального контекста клиентского приложения, а также включение и выключение пользовательского интерфейса (главного окна приложения).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>12</defaultFormatIndex>
+	<defaultFormatIndex>13</defaultFormatIndex>
 	<height>5</height>
 	<vgRows>5</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
@@ -633,6 +700,9 @@
 	<format>
 		<width>159</width>
 		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<width>73</width>
 	</format>
 	<format>
 		<font>0</font>
