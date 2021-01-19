@@ -2001,7 +2001,6 @@
 			<Form>ПараметрыЗаписиОбъектов</Form>
 			<Form>ПараметрыСоединенияСУБД</Form>
 			<Form>ПодключениеВнешнихИсточниковДанных</Form>
-			<Form>Прогресс</Form>
 			<Form>Пустышка</Form>
 			<Form>РазбивкаТекста</Form>
 			<Form>РегистрацияCOMКомпонент</Form>
@@ -2017,6 +2016,7 @@
 			<Form>Текст</Form>
 			<Form>УникальныйИдентификатор</Form>
 			<Form>ФиксированныйСписокЗначений</Form>
+			<Form>ФоновоеЗаданиеФормы</Form>
 			<Form>ФормаВыбораСправкиПоСлову</Form>
 			<Form>ХранилищеЗначения</Form>
 			<Template>_1CDLib</Template>
@@ -2091,6 +2091,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Отключить глобальные обработчики ожидания</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Отключить глобальные обработчики ожидания</v8:content>
 						</v8:item>
 					</Synonym>
@@ -2202,7 +2206,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Отладчик</v8:content>
+							<v8:content>Открыть отладчик</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2214,7 +2218,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Открыть отладчик</v8:content>
+							<v8:content>Подключить конфигуратор в режиме отладки к этому приложению</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
