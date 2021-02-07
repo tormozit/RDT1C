@@ -246,6 +246,9 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ОбъектВместоОсновнойКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ОбъектВместоОсновнойРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">ОбъектВместоОсновнойПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="ОбъектРежимИмяСиноним" id="34">
 					<DataPath>фОбъект.РежимИмяСиноним</DataPath>

@@ -1,0 +1,33 @@
+﻿# Create a new DataCollectorSet object.
+$dataCollectorSet = New-Object -COM Pla.DataCollectorSet
+ 
+# Define DataCollectorSet.
+$name= "<ИмяСборщика>";
+$dataCollectorSet.DisplayName = $name;
+$dataCollectorSet.RootPath    = "<КаталогФайлов>";
+ 
+# Define collector.
+$collector = $dataCollectorSet.DataCollectors.CreateDataCollector(0) 
+$collector.FileName              = $name + "_";
+$collector.FileNameFormat        = 0x1 ;
+# $collector.FileNameFormatPattern = "yyyy\-MM\-dd\_HHmmss";
+$collector.FileNameFormatPattern = "<ФорматИмениФайла>";
+$collector.SampleInterval        = <ПериодичностьСекунд>   # Collect data every X seconds.
+$collector.LogAppend             = $true;
+ 
+$counters = @(
+        <Счетчики>
+    );
+$collector.PerformanceCounters = $counters
+ 
+# Commit DataCollectorSet and start it.
+try
+{
+    $dataCollectorSet.DataCollectors.Add($collector) 
+    $dataCollectorSet.Commit("$name" , $null , 0x0003) | Out-Null
+}
+catch [Exception] 
+{ 
+    Write-Host "Exception Caught: " $_.Exception -ForegroundColor Red 
+    return 
+}

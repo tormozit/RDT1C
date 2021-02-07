@@ -1,0 +1,17 @@
+﻿SELECT
+	statement as [ИмяТаблицыСУБД]
+    ,equality_columns as [ПоляПоискаСУБД]
+	,inequality_columns as [ПоляСравненияСУБД]
+	,included_columns as [НаиболееЗатратныеПоляСУБД]
+	,CASE WHEN 
+		(last_user_seek > last_user_scan) OR (last_user_scan IS NULL)  
+	 THEN last_user_seek 
+ 	ELSE last_user_scan END as [ДатаПоследнегоИспользования]
+	,user_seeks + user_scans as [КоличествоВызовов]
+	,avg_user_impact as [СреднийПроцентВыигрыша]
+    ,avg_total_user_cost as [СредняяСтоимость]
+    ,ROUND(avg_total_user_cost * avg_user_impact / 100 * (user_seeks + user_scans),0) as [Стоимость]
+FROM		sys.dm_db_missing_index_groups g 
+INNER JOIN	sys.dm_db_missing_index_group_stats s ON s.group_handle = g.index_group_handle 
+INNER JOIN	sys.dm_db_missing_index_details d ON d.index_handle = g.index_handle
+WHERE d.database_id = DB_ID()

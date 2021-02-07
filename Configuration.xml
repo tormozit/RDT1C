@@ -34,6 +34,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Инструменты разработчика</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Инструменты разработчика</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
@@ -47,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.77.1</Version>
+			<Version>5.78</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -176,10 +180,18 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Подсистема "Инструменты разработчика"</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Подсистема "Инструменты разработчика"</v8:content>
+				</v8:item>
 			</BriefInformation>
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Интегрированный набор инструментов для разработчика 1С 8</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Интегрированный набор инструментов для разработчика 1С 8</v8:content>
 				</v8:item>
 			</DetailedInformation>
@@ -188,6 +200,10 @@
 			<ConfigurationInformationAddress>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>http://devtool1c.ucoz.ru/</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>http://devtool1c.ucoz.ru/</v8:content>
 				</v8:item>
 			</ConfigurationInformationAddress>
@@ -206,7 +222,6 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -268,6 +283,7 @@
 			<CommonPicture>ирИзбранное</CommonPicture>
 			<CommonPicture>ирИзмененияНаУзле</CommonPicture>
 			<CommonPicture>ирИндексы</CommonPicture>
+			<CommonPicture>ирИндексы2</CommonPicture>
 			<CommonPicture>ирИнтерфейснаяПанель</CommonPicture>
 			<CommonPicture>ирИсключение</CommonPicture>
 			<CommonPicture>ирИсполняемыйЗапрос</CommonPicture>
@@ -294,6 +310,7 @@
 			<CommonPicture>ирЛоготип48х48</CommonPicture>
 			<CommonPicture>ирМенеджерТабличногоПоля</CommonPicture>
 			<CommonPicture>ирМетаданные</CommonPicture>
+			<CommonPicture>ирМониторПроизводительности</CommonPicture>
 			<CommonPicture>ирНаборыДанныхСхемыКомпоновки</CommonPicture>
 			<CommonPicture>ирНадпись</CommonPicture>
 			<CommonPicture>ирНайтиВДереве</CommonPicture>
@@ -416,6 +433,8 @@
 			<CommonPicture>ирЧастое</CommonPicture>
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирВидео</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -459,8 +478,9 @@
 			<Catalog>ирКомандаРедактироватьОбъект</Catalog>
 			<Catalog>ирОбъектыДляОтладки</Catalog>
 			<Report>ирАнализЗамераПроизводительности</Report>
-			<Report>ирАнализПравДоступа</Report>
 			<Report>ирАнализМетаданных</Report>
+			<Report>ирАнализПравДоступа</Report>
+			<Report>ирОтсутствующиеИндексыСУБД</Report>
 			<Report>ирПодпискиНаСобытия</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
@@ -505,6 +525,7 @@
 			<DataProcessor>ирРедакторПользователей</DataProcessor>
 			<DataProcessor>ирРедакторПредопределенных</DataProcessor>
 			<DataProcessor>ирРедакторХранилищНастроек</DataProcessor>
+			<DataProcessor>ирСборщикиСчетчиковWindows</DataProcessor>
 			<DataProcessor>ирСинтаксПомощник</DataProcessor>
 			<DataProcessor>ирСлужебный</DataProcessor>
 			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
