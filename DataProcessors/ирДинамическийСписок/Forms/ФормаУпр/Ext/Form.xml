@@ -31,6 +31,34 @@
 				<CommandName>Form.Command.ОтборБезЗначенияВТекущейКолонке</CommandName>
 				<ExtendedTooltip name="ФормаОтборБезЗначенияВТекущейКолонкеРасширеннаяПодсказка" id="57"/>
 			</Button>
+			<Popup name="ПоследниеОтборы" id="131">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Последние отборы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Последние выбранные</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Список ранее выбранных элементов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Список ранее выбранных элементов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.FilterHistory</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПоследниеОтборыРасширеннаяПодсказка" id="132"/>
+			</Popup>
 			<Button name="ФормаНастройкаСписка" id="50">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НастройкаСписка</CommandName>
@@ -332,7 +360,6 @@
 			<ChildItems>
 				<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
 					<CommandBarLocation>None</CommandBarLocation>
-					<Autofill>true</Autofill>
 					<Height>2</Height>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<MaxHeight>6</MaxHeight>
@@ -372,6 +399,284 @@
 						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомКонтекстноеМеню" id="69"/>
 						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="70"/>
 					</SearchControlAddition>
+					<Events>
+						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="КомпоновщикНастроекПользовательскиеНастройкиИспользование" id="189">
+							<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.Use</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиИспользованиеКонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиИспользованиеРасширеннаяПодсказка" id="191"/>
+						</CheckBoxField>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиГруппаКолонокНастройки" id="192">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиГруппаКолонокНастройкиРасширеннаяПодсказка" id="193"/>
+							<ChildItems>
+								<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаНастройки" id="194">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.SettingPicture</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаНастройкиКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаНастройкиРасширеннаяПодсказка" id="196"/>
+								</PictureField>
+								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиНастройка" id="197">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.Setting</DataPath>
+									<Width>15</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиНастройкаКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиНастройкаРасширеннаяПодсказка" id="199"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="КомпоновщикНастроекПользовательскиеНастройкиВидСравнения" id="200">
+							<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.ComparisonType</DataPath>
+							<EditMode>Directly</EditMode>
+							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиВидСравненияКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиВидСравненияРасширеннаяПодсказка" id="202"/>
+						</InputField>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиГруппаКолонокЗначения" id="203">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиГруппаКолонокЗначенияРасширеннаяПодсказка" id="204"/>
+							<ChildItems>
+								<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаЗначения" id="205">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.ValuePicture</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаЗначенияКонтекстноеМеню" id="206"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиКартинкаЗначенияРасширеннаяПодсказка" id="207"/>
+								</PictureField>
+								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиЗначение" id="208">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.Value</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<EditMode>Directly</EditMode>
+									<Width>15</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиЗначениеКонтекстноеМеню" id="209"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиЗначениеРасширеннаяПодсказка" id="210"/>
+									<Events>
+										<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиЗначениеНачалоВыбораИзСписка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<CheckBoxField name="КомпоновщикНастроекПользовательскиеНастройкиРедактированиеВФормеОтчета" id="211">
+							<DataPath>ДинамическийСписок.SettingsComposer.UserSettings.EditInReportForm</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиРедактированиеВФормеОтчетаКонтекстноеМеню" id="212"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРедактированиеВФормеОтчетаРасширеннаяПодсказка" id="213"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+				<Table name="КомпоновщикНастроекПользовательскиеНастройкиОтбор" id="133">
+					<Representation>Tree</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<Width>60</Width>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>5</MaxHeight>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКонтекстноеМеню" id="134"/>
+					<AutoCommandBar name="КомпоновщикНастроекПользовательскиеНастройкиОтборКоманднаяПанель" id="135"/>
+					<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборРасширеннаяПодсказка" id="136"/>
+					<SearchStringAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоиска" id="137">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="138"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="139"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотра" id="140">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="141"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="142"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоиском" id="143">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="144"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="145"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnStartEdit">КомпоновщикНастроекПользовательскиеНастройкиОтборПриНачалеРедактирования</Event>
+						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиОтборПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользование" id="146">
+							<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Use</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользованиеКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользованиеРасширеннаяПодсказка" id="148"/>
+						</CheckBoxField>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОтбор" id="149">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОтборРасширеннаяПодсказка" id="150"/>
+							<ChildItems>
+								<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОсновныеЭлементыОтбора" id="156">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные элементы отбора</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОсновныеЭлементыОтбораРасширеннаяПодсказка" id="157"/>
+									<ChildItems>
+										<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокЛевоеЗначение" id="161">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Левое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокЛевоеЗначениеРасширеннаяПодсказка" id="162"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначения" id="163">
+													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.LeftValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначенияКонтекстноеМеню" id="164"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначенияРасширеннаяПодсказка" id="165"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначение" id="166">
+													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.LeftValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначениеКонтекстноеМеню" id="167"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначениеРасширеннаяПодсказка" id="168"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравнения" id="169">
+											<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.ComparisonType</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравненияКонтекстноеМеню" id="170"/>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравненияРасширеннаяПодсказка" id="171"/>
+										</InputField>
+										<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПравоеЗначение" id="172">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Правое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПравоеЗначениеРасширеннаяПодсказка" id="173"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначения" id="174">
+													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.RightValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначенияКонтекстноеМеню" id="175"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначенияРасширеннаяПодсказка" id="176"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначение" id="177">
+													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.RightValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеКонтекстноеМеню" id="178"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеРасширеннаяПодсказка" id="179"/>
+													<Events>
+														<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбораИзСписка</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборДата" id="180">
+											<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Date</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборДатаКонтекстноеМеню" id="181"/>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборДатаРасширеннаяПодсказка" id="182"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппы" id="158">
+									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.GroupType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппыКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппыРасширеннаяПодсказка" id="160"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПрименение" id="151">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Применение</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПрименениеРасширеннаяПодсказка" id="152"/>
+							<ChildItems>
+								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименение" id="183">
+									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Application</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименениеКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименениеРасширеннаяПодсказка" id="185"/>
+								</InputField>
+								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображения" id="186">
+									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.ViewMode</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображенияКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображенияРасширеннаяПодсказка" id="188"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставление" id="153">
+							<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Presentation</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставлениеКонтекстноеМеню" id="154"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставлениеРасширеннаяПодсказка" id="155"/>
+						</InputField>
+					</ChildItems>
 				</Table>
 				<Table name="СоединяемыеРегистры" id="101">
 					<Representation>List</Representation>
@@ -500,6 +805,7 @@
 				<Event name="ChoiceProcessing">ДинамическийСписокОбработкаВыбора</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 				<Event name="BeforeRowChange">ДинамическийСписокПередНачаломИзменения</Event>
+				<Event name="OnChange">ДинамическийСписокПриИзменении</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="ДинамическийСписокВременноеПоле" id="39">
@@ -692,6 +998,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтарыйКомпоновщик" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старый компоновщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -1506,6 +1823,188 @@
 			</Picture>
 			<Action>Сравнить2Строки</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоследниеОтборы0" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы1" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы2" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы3" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы4" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы5" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы6" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы7" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы8" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоследниеОтборы9" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы нажатие 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Последние выбранные нажатие1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последние отборы3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоследниеОтборыНажатие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<Parameters>

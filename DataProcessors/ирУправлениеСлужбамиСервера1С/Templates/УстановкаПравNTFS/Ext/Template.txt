@@ -1,0 +1,46 @@
+﻿param (
+[string]$FolderListFile = $(throw "Укажите файл со списком папок, аккаунтов и прав с помощью ключа -FolderListFile.")
+)
+
+$FolderList=Import-Csv $FolderListFile -Delimiter ";"
+
+$InheritanceFlag = [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor [System.Security.AccessControl.InheritanceFlags]::ObjectInherit
+$PropagationFlag = [System.Security.AccessControl.PropagationFlags]::None
+
+$FolderList | ForEach-Object {
+if (Test-Path $_.Folder)
+{
+if (Test-Path $_.Folder -pathtype container){
+$InheritanceFlag = [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor [System.Security.AccessControl.InheritanceFlags]::ObjectInherit
+} else {
+$InheritanceFlag = [System.Security.AccessControl.InheritanceFlags]::None
+}
+$acl = Get-Acl $_.Folder
+if ($_.BlockInherit -eq "Yes"){
+#Отключаем наследование прав от родителя с сохранением текущих прав.
+$acl.SetAccessRuleProtection($True, $True)
+Set-ACL $_.Folder $acl
+$acl = Get-ACL $_.Folder
+}
+if ($_.AccessRights -eq "Remove"){
+#Удаляем аккаунт/группу из ACL(Access Control List)
+$AccessRights = [System.Security.AccessControl.FileSystemRights]"Read"
+$AccessControlType =[System.Security.AccessControl.AccessControlType]::Allow
+if ($_.SecIdentity -eq $acl.Group){
+$objACL.SetGroup([System.Security.Principal.NTAccount]"BUILTIN\Administrators")
+}
+$ace = New-Object System.Security.AccessControl.FileSystemAccessRule `
+($_.SecIdentity, $AccessRights, $InheritanceFlag, $PropagationFlag, $AccessControlType)
+$acl.RemoveAccessRuleAll($ace)
+Set-ACL $_.Folder $acl
+}else{
+#Добавляем ACE(access control entry) в ACL(Access Control List)
+$ace = New-Object System.Security.AccessControl.FileSystemAccessRule `
+($_.SecIdentity, $_.AccessRights, $InheritanceFlag, $PropagationFlag, $_.AccessControlType)
+$acl.AddAccessRule($ace)
+Set-ACL $_.Folder $acl
+}
+} else {
+Write-Host "$_.Folder не существует!" -ForegroundColor Red
+}
+}
