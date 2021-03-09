@@ -470,6 +470,7 @@
 									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиЗначениеКонтекстноеМеню" id="209"/>
 									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиЗначениеРасширеннаяПодсказка" id="210"/>
 									<Events>
+										<Event name="StartChoice">КомпоновщикНастроекПользовательскиеНастройкиЗначениеНачалоВыбора</Event>
 										<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиЗначениеНачалоВыбораИзСписка</Event>
 									</Events>
 								</InputField>
@@ -620,6 +621,7 @@
 													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеКонтекстноеМеню" id="178"/>
 													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеРасширеннаяПодсказка" id="179"/>
 													<Events>
+														<Event name="StartChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбора</Event>
 														<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбораИзСписка</Event>
 													</Events>
 												</InputField>
@@ -1818,11 +1820,10 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ирСравнить</xr:Ref>
+				<xr:Ref>CommonPicture.ирСравнениеОбъектов</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Сравнить2Строки</Action>
-			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ПоследниеОтборы0" id="36">
 			<Title>
