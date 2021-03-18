@@ -1,0 +1,1 @@
+﻿Get-Process |where {$_.mainWindowTitle -and $_.Name -eq "1cv8"} | Select-Object id,mainwindowtitle | ConvertTo-Csv -NoTypeInformation

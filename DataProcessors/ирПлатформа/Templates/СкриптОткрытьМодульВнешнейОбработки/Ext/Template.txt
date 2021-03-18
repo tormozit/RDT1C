@@ -1,0 +1,158 @@
+﻿# Этот скрипт почему то очень долго работает при запуске из приложения 1С. При этом независимый запуск выполняется быстро.
+param (
+[int]$processID,
+[string]$file,
+[string]$line,
+[string]$internalName
+)
+#$processID = 31704
+#$file = "C:\1C\EPF\ИзменениеКонфиденциальнойИнформации.epf"
+#line = 5
+#$internalName = "ИзменениеКонфиденциальнойИнформации"
+#REQUIRES -Version 3.0
+[void][System.Reflection.Assembly]::LoadWithPartialName("UIAutomationClient")
+[void][System.Reflection.Assembly]::LoadWithPartialName("UIAutomationTypes")
+[void][System.Reflection.Assembly]::LoadWithPartialName("UIAutomationProvider")
+[void][System.Reflection.Assembly]::LoadWithPartialName("UIAutomationClientsideProviders")
+$client = [System.Reflection.Assembly]::LoadWithPartialName("UIAutomationClientsideProviders")
+try
+{
+    [Windows.Automation.ClientSettings]::RegisterClientSideProviderAssembly($client.GetName()) # WORKAROUND: There is a weird bug: first call fails ... https://gist.github.com/xiongjia/6749035
+}
+catch {}
+[Windows.Automation.ClientSettings]::RegisterClientSideProviderAssembly($client.GetName()) # second call succeeds
+$rootElement = [Windows.Automation.AutomationElement]::RootElement
+$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ClassNameProperty, "V8TopLevelFrame")
+$condID = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ProcessIdProperty, $processID)
+$condMain = New-Object Windows.Automation.AndCondition($condType, $condID)
+$mainWindow = $rootElement.FindFirst([Windows.Automation.TreeScope]::Children, $condMain)
+#$mainWindow.SetFocus() # not working if modal child window is opened
+Add-Type @"
+  using System;
+  using System.Runtime.InteropServices;
+  public class SFW {
+     [DllImport("user32.dll")]
+     [return: MarshalAs(UnmanagedType.Bool)]
+     public static extern bool SetForegroundWindow(IntPtr hWnd);
+  }
+"@
+#Add-Type -AssemblyName System.Windows.Forms
+$trash = [SFW]::SetForegroundWindow($mainWindow.Current.NativeWindowHandle)
+$mainWindow.SetFocus()
+$buffer = Get-Clipboard -Raw
+$wshell = New-Object -ComObject wscript.shell
+
+# CTRL+O Открыть файл
+$wshell.SendKeys("^")
+$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
+if($isRusLang)
+{    $wshell.SendKeys("^{щ}")
+}
+else
+{    $wshell.SendKeys("^{o}")
+}
+$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ClassNameProperty, "#32770")
+$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Открытие  ")
+$condОткрытие = New-Object Windows.Automation.AndCondition($condType, $nameType)
+$start = Get-Date
+$windowОткрытие = $null
+while($windowОткрытие -eq $null -and ((Get-Date) - $start).TotalMilliseconds -le 2000)
+{
+    Start-Sleep -Seconds 0.1
+    #$windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condОткрытие) #not working
+    $windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condType)
+    if($windowОткрытие -ne $null)
+    {
+        $windowОткрытие.SetFocus()
+        break
+    }
+}
+if($windowОткрытие -eq $null)
+{
+    "Окно 'Открытие' не найдено"
+    exit
+}
+
+# CTRL+V вставляем текст из буфера обмена
+Set-Clipboard $file
+$wshell.SendKeys("^")
+$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
+if($isRusLang)
+{   $wshell.SendKeys("^{м}")
+}
+else
+{   $wshell.SendKeys("^{v}")
+}
+$wshell.SendKeys("{ENTER}")
+
+#Ждем появления окна внешней обработки и нажимаем там Действия/МодульОбъекта
+$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Text)
+$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Комментарий:")
+$condField = New-Object Windows.Automation.AndCondition($condType, $nameType)
+$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Button)
+$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Действия")
+$condButton = New-Object Windows.Automation.AndCondition($condType, $nameType)
+$condTypeEdit = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Edit)
+$start = Get-Date
+$success = $false
+while(((Get-Date) - $start).TotalMilliseconds -le 2000)
+{
+    Start-Sleep -Seconds 0.1
+    $labelКомментарий = $mainWindow.FindAll([Windows.Automation.TreeScope]::Descendants, $condField)
+    $condTree = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Pane)
+    $tWalker = New-Object Windows.Automation.TreeWalker($condTree)
+    foreach($label in $labelКомментарий)
+    {
+        $parent = $tWalker.GetParent($label)
+        $buttonДействия = $parent.FindFirst([Windows.Automation.TreeScope]::Children, $condButton)
+        if($buttonДействия -ne $null)
+        {
+            $fieldsEdit = $parent.FindAll([Windows.Automation.TreeScope]::Children, $condTypeEdit)
+            foreach($field in $fieldsEdit)
+            {
+                $textPattern = $field.GetCurrentPattern([Windows.Automation.TextPattern]::Pattern)
+                $text = $textPattern.DocumentRange.GetText(-1)
+                if ($text -ne $internalName)
+                { continue 
+                }
+                $success = $true
+                break
+            }
+        }
+        if ($success)
+        {break}
+    }
+    if ($success)
+    {break}
+}
+Set-Clipboard $buffer
+if(-not $success)
+{
+    "Кнопка 'Действия' не найдена"
+    exit
+}
+$buttonДействия.SetFocus()
+$wshell.SendKeys("^")
+$wshell.SendKeys("{ENTER}")
+$wshell.SendKeys("{Down}")
+$wshell.SendKeys("{ENTER}")
+
+if($line -ne $null)
+{   
+    $start = Get-Date
+    while($buttonДействия.Current.HasKeyboardFocus -and ((Get-Date) - $start).TotalMilliseconds -le 1000)
+    {
+        Start-Sleep -Seconds 0.1
+    }
+    Start-Sleep -Seconds 0.1
+    $wshell.SendKeys("^")
+	$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
+	if($isRusLang)
+	{   $wshell.SendKeys("^{п}")
+	}
+	else
+	{   $wshell.SendKeys("^{g}")
+	}
+	$wshell.SendKeys($line)
+	$wshell.SendKeys("{ENTER}")
+}
