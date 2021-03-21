@@ -2412,7 +2412,6 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>HTML</Form>
-			<Form>ВременноеОкноСообщений</Form>
 			<Form>ВременноеОкноСообщенийУпр</Form>
 			<Form>ВыборНастройкиДляЗагрузки</Form>
 			<Form>ВыборНастройкиДляСохранения</Form>
@@ -2445,6 +2444,7 @@
 			<Form>РедакторДопустимыхТипов</Form>
 			<Form>РезультатФоновогоЗадания</Form>
 			<Form>Служебная</Form>
+			<Form>СообщенияМодальнойГруппы</Form>
 			<Form>СписокБазПользователяОС</Form>
 			<Form>СписокЗначений</Form>
 			<Form>СравнениеОбъектов</Form>
@@ -2821,6 +2821,40 @@
 						<xr:Ref>CommonPicture.ирCOMАдмин</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="da027350-0737-45a4-b0c0-72d40cbcd2ce">
+				<Properties>
+					<Name>ОткрытьОтладкаВнешнихОбработокБСП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отладка внешних обработок БСП (ИР)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Регистрация COM-компонент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ирРазработка</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть отладку внешних обработок БСП (ИР)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Открыть регистрацию COM-компонент (ИР)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>

@@ -32,6 +32,44 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="de3e294e-0fdb-433e-9c68-7b88aeead7a7">
+				<Properties>
+					<Name>АлгоритмПередВыгрузкой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алгоритм перед выгрузкой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="487c2520-c502-48d1-b063-ef247c19f1b7">
 				<Properties>
 					<Name>АнализироватьТранзакцииСУчастиемОбъекта</Name>
@@ -1971,6 +2009,7 @@
 			<Form>Форма</Form>
 			<Form>ФормаСобытия</Form>
 			<Form>РедакторСписка</Form>
+			<Template>АлгоритмПередВыгрузкой</Template>
 			<Command uuid="274d6b00-8d0d-421d-947b-c7fcf209361b">
 				<Properties>
 					<Name>Команда1</Name>
