@@ -41,6 +41,44 @@
 			</Explanation>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="3b538471-ec6f-442b-be4b-d9b193cc39c8">
+				<Properties>
+					<Name>ТаблицаКонтекстов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица контекстов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Таблица контекстов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="571c0691-6a6e-4500-b6f8-5e20f2fa9120">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.ирПлатформа.ВхожденияРегулярногоВыражения" category="TabularSection">
@@ -556,6 +594,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Только для выделенных</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Только для выделенных</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1548,6 +1590,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Список инструментов</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Список инструментов</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -1590,6 +1636,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Видимость</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Видимость</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1624,6 +1674,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Группа</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1666,6 +1720,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Имя картинки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Имя картинки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1704,6 +1762,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Код</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1746,6 +1808,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Описание</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1784,6 +1850,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Полное имя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Полное имя</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1826,6 +1896,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Портативный</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Портативный</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1862,6 +1936,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Расширение</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Расширение</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1896,6 +1974,10 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Синоним</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
 									<v8:content>Синоним</v8:content>
 								</v8:item>
 							</Synonym>
@@ -2483,13 +2565,14 @@
 			<Template>Unzip</Template>
 			<Template>V8unpack</Template>
 			<Template>Zlib1</Template>
+			<Template>ВидыПравДоступа</Template>
 			<Template>ВнешняяОбработка</Template>
 			<Template>ГрамматикаФайлаШаблоновТекста</Template>
 			<Template>ГрамматикаЯзыкаЗапросов</Template>
 			<Template>РусскийАнглийский</Template>
-			<Template>СкриптОткрытьМодульВнешнейОбработки</Template>
 			<Template>СкриптОткрытыеПриложения1С</Template>
 			<Template>СкриптОткрытыеПриложения1С1</Template>
+			<Template>СкриптОткрытьМодульВнешнейОбработки</Template>
 			<Template>СписокИнструментов</Template>
 			<Template>СтилиСинтаксПомощника</Template>
 			<Template>ТаблицаИменЭлементовКоллекций</Template>
@@ -2576,7 +2659,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Панель инструментов</v8:content>
+							<v8:content>Консоль сервера</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2592,7 +2675,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Открыть панель инструментов</v8:content>
+							<v8:content>Открыть консоль серверов 1С для управления сервером текущей базы и поместить имя текущего пользователя в буфер обмена</v8:content>
 						</v8:item>
 					</ToolTip>
 					<Picture>
@@ -2835,7 +2918,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Регистрация COM-компонент</v8:content>
+							<v8:content>Отладка внешних обработок БСП (ИР)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2851,7 +2934,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Открыть регистрацию COM-компонент (ИР)</v8:content>
+							<v8:content>Открыть отладку внешних обработок БСП (ИР)</v8:content>
 						</v8:item>
 					</ToolTip>
 					<Picture/>

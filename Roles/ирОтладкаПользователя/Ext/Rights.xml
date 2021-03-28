@@ -4,21 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.Частота</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Типы.Attribute.КоличествоЗадублированных</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ЯзыкПрограммы</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -122,13 +108,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.Определение</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКонсольЗаданий</name>
 		<right>
 			<name>Use</name>
@@ -169,14 +148,25 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.КонтекстВыполнения</name>
+		<name>DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Attribute.УдаляемыеТипы</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Attribute.УдаляемыеТипы</name>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.МетодВыполнения</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -191,6 +181,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.ТипЗначения</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -220,13 +217,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.Конфигурация</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -316,13 +306,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ТабличноеПоле</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКонсольЗапросов.Attribute.ДеревоЗапросов</name>
 		<right>
 			<name>Edit</name>
@@ -337,6 +320,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.Конфигурация</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольHTTPЗапросов</name>
 		<right>
 			<name>Use</name>
@@ -345,6 +335,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -377,6 +374,20 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаРедактируемыхТипов</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.Слово</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.Определение</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -475,6 +486,20 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.ЯзыкПрограммы</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.КоманднаяПанель</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонструкторРегулярногоВыражения</name>
 		<right>
 			<name>Use</name>
@@ -554,6 +579,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.Имя</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирПлатформа.TabularSection.ТаблицаРедактируемыхТипов.Attribute.Пометка</name>
 		<right>
 			<name>Edit</name>
@@ -594,13 +626,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.Имя</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.TabularSection.ИзмененныеПроведенныеДокументы.Attribute.Документ</name>
 		<right>
 			<name>Edit</name>
@@ -626,6 +651,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.ФормаВладелец</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКонсольЗапросов</name>
 		<right>
 			<name>Use</name>
@@ -644,14 +676,14 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.Идентификатор</name>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.ТипТекста</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.Слово</name>
+		<name>DataProcessor.ирРедакторПредопределенных.TabularSection.Данные.Attribute.Идентификатор</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -709,13 +741,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.МетодВыполнения</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКлсПолеТабличногоДокументаСГруппировками.Attribute.ПолеТабличногоДокумента</name>
 		<right>
 			<name>Edit</name>
@@ -741,6 +766,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.КонтекстВыполнения</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирКлсПолеТабличногоДокументаСГруппировками</name>
 		<right>
 			<name>Use</name>
@@ -752,13 +784,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ПолеТекстовогоДокумента</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.ОтображатьНастройки</name>
 		<right>
 			<name>Edit</name>
@@ -766,7 +791,14 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ТипТекста</name>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.Частота</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.ТабличноеПоле</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -806,32 +838,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.КоманднаяПанель</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.Attribute.ПолноеИмяОбъекта</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.Рейтинг</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -852,13 +859,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.ТипЗначения</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ирПоискДублейИЗаменаСсылок.Attribute.ДопустимоеРазличиеСлов</name>
 		<right>
 			<name>Edit</name>
@@ -867,6 +867,13 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.мНеВосстанавливатьНастройкиПриОткрытии</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.Рейтинг</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -888,13 +895,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.ВыбТипДиаграммы</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.РежимКомпоновкиДанных</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -930,14 +930,14 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.Attribute.ФормаВладелец</name>
+		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.ДеревоЗапросов</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКонсольПостроителейОтчетов.Attribute.ДеревоЗапросов</name>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.ТипСлова</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -989,13 +989,6 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.ТипСлова</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1239,6 +1232,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.ПолеТекстовогоДокумента</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирРазличныеЗначенияКолонки</name>
 		<right>
 			<name>Use</name>
@@ -1282,6 +1282,13 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.Attribute.РежимКомпоновкиДанных</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ирВводВыраженияВстроенногоЯзыка.Attribute.МетодВыполнения</name>
 		<right>
 			<name>Edit</name>
@@ -1308,13 +1315,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.TabularSection.ПроблемныеРегистры.Attribute.КоличествоГрупп</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1516,7 +1516,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ирКлсПолеТекстовогоДокументаСКонтекстнойПодсказкой.TabularSection.ТаблицаСлов.Attribute.НСлово</name>
+		<name>DataProcessor.ирКлсПолеТекстаПрограммы.TabularSection.ТаблицаСлов.Attribute.НСлово</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
