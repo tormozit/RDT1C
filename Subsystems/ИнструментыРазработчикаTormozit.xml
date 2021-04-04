@@ -6,14 +6,14 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструменты разработчика 5.85</v8:content>
+					<v8:content>Инструменты разработчика 5.86</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Инструменты разработчика 5.84.1</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>5.85</Comment>
+			<Comment>5.86</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation>
@@ -264,8 +264,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ирАдминистрирование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирАдаптацияРасширения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ирОбновлениеОписанияПлатформы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПоискДанных</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПоискДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирПолнотекстовыйПоискДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПолнотекстовыйПоискДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирЗагрузка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирЗагрузкаТабличныхДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирСравнениеТаблиц</xr:Item>
@@ -343,6 +343,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирРазделитьНаЧасти</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирВидыИзмененийДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирМассив</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирКолонкаТаблицы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ирКолонкиБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирТаблицаБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ирПодсистема</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

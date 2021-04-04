@@ -15,6 +15,9 @@
 			<eq property="name" value="admin"/>
 		</event>
 		<event>
+			<eq property="name" value="attn"/>
+		</event>
+		<event>
 			<eq property="name" value="proc"/>
 		</event>
 		<event>
@@ -35,7 +38,7 @@
 		</event>
 		<event>
 			<eq property="name" value="SDBL"/>
-			<eq property="func" value="setrollbackonly"/>
+			<eq property="func" value="setRollbackOnly"/>
 		</event>
 		<event>
 			<eq property="name" value="DBMSSQL"/>
