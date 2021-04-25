@@ -439,7 +439,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>(?&lt;=шаблон#)</v8:content>
+							<v8:content>(?&lt;=шаблон)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -469,7 +469,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Положительное "заглядывание назад". </v8:content>
+							<v8:content>Положительное "заглядывание назад". Не поддерживается в VBScript!</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -519,7 +519,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>(?&lt;!шаблон#)</v8:content>
+							<v8:content>(?&lt;!шаблон)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -549,7 +549,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отрицательное "заглядывание назад". </v8:content>
+							<v8:content>Отрицательное "заглядывание назад". Не поддерживается в VBScript!</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -3134,7 +3134,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>"(?:(?:"")|[^"\n$])*(?:&lt;Разделитель1С&gt;*\|(?:(?:"")|[^"\n$])*)*(?:"|$)</v8:content>
+							<v8:content>"(?:(?:"")|[^"\n])*(?:&lt;Разделитель1С&gt;*\|(?:(?:"")|[^"\n])*)*(?:"|$)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -3329,7 +3329,7 @@
 	<vgRows>46</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
-		<width>198</width>
+		<width>363</width>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
