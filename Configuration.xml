@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>5.89.2</Version>
+			<Version>5.90</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -482,7 +482,6 @@
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
@@ -506,6 +505,7 @@
 			<DataProcessor>ирМенеджерИнтерфейсов</DataProcessor>
 			<DataProcessor>ирНастройкаЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирНастройкаТехножурнала</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирПлатформа</DataProcessor>
 			<DataProcessor>ирПодборИОбработкаОбъектов</DataProcessor>
 			<DataProcessor>ирПодготовкаКИзменениюСтруктурыБД</DataProcessor>
@@ -535,6 +535,7 @@
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСервера1С</DataProcessor>
 			<DataProcessor>ирУстановщикРасширения</DataProcessor>
+			<DataProcessor>ирОболочкаПолеТекста</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
