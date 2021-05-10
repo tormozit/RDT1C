@@ -81,25 +81,25 @@
 			</Attribute>
 			<TabularSection uuid="571c0691-6a6e-4500-b6f8-5e20f2fa9120">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ирПлатформа.ВхожденияРегулярногоВыражения" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ирПлатформа.ВхожденияРегВыражения" category="TabularSection">
 						<xr:TypeId>ded9f85e-080b-4881-b24c-222c29173f05</xr:TypeId>
 						<xr:ValueId>874e58c6-4a85-476b-aa26-9e730da249da</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПлатформа.ВхожденияРегулярногоВыражения" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ирПлатформа.ВхожденияРегВыражения" category="TabularSectionRow">
 						<xr:TypeId>3214f44b-402b-40ed-859b-79b76abd4eee</xr:TypeId>
 						<xr:ValueId>99be78b9-1b40-4736-9a93-e1d2823a4b0c</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ВхожденияРегулярногоВыражения</Name>
+					<Name>ВхожденияРегВыражения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вхождения регулярного выражения</v8:content>
+							<v8:content>Вхождения рег выражения</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Вхождения регулярного выражения</v8:content>
+							<v8:content>Вхождения рег выражения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2540,28 +2540,34 @@
 			<Form>ФоновоеЗаданиеФормы</Form>
 			<Form>ФормаВыбораСправкиПоСлову</Form>
 			<Form>ХранилищеЗначения</Form>
-			<Template>_1CDLib</Template>
 			<Template>_1CDLib_readme</Template>
+			<Template>_1CDLibLin64</Template>
+			<Template>_1CDLibWin32</Template>
+			<Template>_1CDLibWin64</Template>
 			<Template>FM20</Template>
 			<Template>FM20ENU</Template>
-			<Template>FuzzySearch32</Template>
-			<Template>FuzzySearch64</Template>
+			<Template>FuzzySearchLin32</Template>
+			<Template>FuzzySearchLin64</Template>
+			<Template>FuzzySearchWin32</Template>
+			<Template>FuzzySearchWin64</Template>
 			<Template>GameWithFire</Template>
 			<Template>GameWithFire_Описание</Template>
 			<Template>GoldParser</Template>
 			<Template>GoldParserReg</Template>
 			<Template>HiddenStart</Template>
 			<Template>JSONEditor</Template>
-			<Template>KeyboardHook32</Template>
-			<Template>KeyboardHook64</Template>
+			<Template>KeyboardHookWin32</Template>
+			<Template>KeyboardHookWin64</Template>
 			<Template>KeyboardHookZip</Template>
 			<Template>MonacoEditor</Template>
 			<Template>OpenIn1Cv8</Template>
 			<Template>Regasm32</Template>
 			<Template>Regasm64</Template>
-			<Template>Regsvrex</Template>
+			<Template>RegExLin32</Template>
+			<Template>RegExLin64</Template>
+			<Template>RegExWin32</Template>
+			<Template>RegExWin64</Template>
 			<Template>RegsvrPower</Template>
-			<Template>StrMatchExtension</Template>
 			<Template>TLBINF32</Template>
 			<Template>Unzip</Template>
 			<Template>V8unpack</Template>
