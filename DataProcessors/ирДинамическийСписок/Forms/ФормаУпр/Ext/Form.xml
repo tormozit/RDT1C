@@ -116,7 +116,7 @@
 			<Button name="ФормаИзменитьФорму" id="125">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="126"/>
 			</Button>
 			<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
@@ -221,7 +221,7 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="21"/>
 			<ChildItems>
-				<InputField name="ОбъектМетаданных" id="14">
+				<InputField name="ПолноеИмяТаблицы" id="14">
 					<DataPath>фОбъект.ПолноеИмяТаблицы</DataPath>
 					<Title>
 						<v8:item>
@@ -236,8 +236,8 @@
 					<Width>40</Width>
 					<DropListButton>true</DropListButton>
 					<ChoiceButton>true</ChoiceButton>
-					<ContextMenu name="ОбъектМетаданныхКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ОбъектМетаданныхРасширеннаяПодсказка" id="16"/>
+					<ContextMenu name="ПолноеИмяТаблицыКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПолноеИмяТаблицыРасширеннаяПодсказка" id="16"/>
 					<Events>
 						<Event name="OnChange">ОбъектОбъектМетаданныхПриИзменении</Event>
 						<Event name="StartChoice">ОбъектОбъектМетаданныхНачалоВыбора</Event>

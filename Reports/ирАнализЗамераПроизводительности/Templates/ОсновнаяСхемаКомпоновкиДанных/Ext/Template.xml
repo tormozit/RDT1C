@@ -129,7 +129,7 @@
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
 					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>9</v8:FractionDigits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</valueType>
@@ -151,7 +151,7 @@
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
 					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>9</v8:FractionDigits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</valueType>
@@ -332,8 +332,8 @@
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
 					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>9</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</valueType>
 		</field>
@@ -354,7 +354,7 @@
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
 					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>9</v8:FractionDigits>
+					<v8:FractionDigits>2</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</valueType>
@@ -375,9 +375,9 @@
 			<valueType>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>0</v8:Digits>
+					<v8:Digits>8</v8:Digits>
 					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</valueType>
 		</field>
@@ -450,7 +450,7 @@
 			<v8:Type>xs:decimal</v8:Type>
 			<v8:NumberQualifiers>
 				<v8:Digits>15</v8:Digits>
-				<v8:FractionDigits>9</v8:FractionDigits>
+				<v8:FractionDigits>6</v8:FractionDigits>
 				<v8:AllowedSign>Any</v8:AllowedSign>
 			</v8:NumberQualifiers>
 		</valueType>
@@ -783,15 +783,6 @@
 				<dcsset:item>
 					<dcsset:selection>
 						<dcsset:item>
-							<dcsset:field>ВремяЧистое</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>ВремяЧистоеСВложенными</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>СреднееВремя</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
 							<dcsset:field>Клиент</dcsset:field>
 						</dcsset:item>
 						<dcsset:item>
@@ -808,7 +799,7 @@
 							<dcscor:value xsi:type="v8:LocalStringType">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ЧДЦ=6; БЛ=</v8:content>
+									<v8:content>БЛ=</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
@@ -838,32 +829,6 @@
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">9</dcscor:value>
-						</dcscor:item>
-					</dcsset:appearance>
-				</dcsset:item>
-				<dcsset:item>
-					<dcsset:selection>
-						<dcsset:item>
-							<dcsset:field>ВремяПроцент</dcsset:field>
-						</dcsset:item>
-						<dcsset:item>
-							<dcsset:field>ВремяПроцентСВложенными</dcsset:field>
-						</dcsset:item>
-					</dcsset:selection>
-					<dcsset:filter/>
-					<dcsset:appearance>
-						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ЧДЦ=2</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>ЧДЦ=2</v8:content>
-								</v8:item>
-							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
