@@ -58,38 +58,6 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ТипМетаданных</dataPath>
-			<field>ТипМетаданных</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Тип метаданных</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Тип метаданных</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>100</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ОбъектМетаданных.Представление</dataPath>
-			<field>ОбъектМетаданныхПредставление</field>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Поле</dataPath>
 			<field>Поле</field>
 			<title xsi:type="v8:LocalStringType">
@@ -111,27 +79,6 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Поле.ПолноеИмя</dataPath>
-			<field>ПолеПолноеИмя</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Поле.Полное имя</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Поле.Полное имя</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>100</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ТабличнаяЧасть</dataPath>
 			<field>ТабличнаяЧасть</field>
 			<title xsi:type="v8:LocalStringType">
@@ -142,48 +89,6 @@
 				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Табличная часть</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>100</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Поле.Представление</dataPath>
-			<field>ПолеПредставление</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Поле.Представление</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Поле.Представление</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>100</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТабличнаяЧасть.Представление</dataPath>
-			<field>ТабличнаяЧастьПредставление</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Табличная часть.Представление</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Табличная часть.Представление</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -497,6 +402,151 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ФункциональныеОпцииПолей</objectName>
 	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ОбъектыМетаданных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных.Представление</dataPath>
+			<field>Представление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных.Представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипМетаданных</dataPath>
+			<field>ТипМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ОбъектыМетаданных</objectName>
+	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ПоляМетаданных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поле.Представление</dataPath>
+			<field>Представление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле.Представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТабличнаяЧасть</dataPath>
+			<field>ТабличнаяЧасть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличная часть</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поле</dataPath>
+			<field>Поле</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ПоляМетаданных</objectName>
+	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ТабличныеЧасти</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТабличнаяЧасть.Представление</dataPath>
+			<field>Представление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличная часть.Представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТабличнаяЧасть</dataPath>
+			<field>ТабличнаяЧасть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличная часть</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ТабличныеЧасти</objectName>
+	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>Права</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Право</dataPath>
+			<field>Право</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Право</v8:content>
+				</v8:item>
+			</title>
+			<orderExpression>
+				<dcscom:expression>Право.Представление</dcscom:expression>
+				<dcscom:orderType>Asc</dcscom:orderType>
+				<dcscom:autoOrder>false</dcscom:autoOrder>
+			</orderExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Право.Представление</dataPath>
+			<field>ПравоПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Право.Представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>Права</objectName>
+	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>РолиПользователей</destinationDataSet>
@@ -518,7 +568,7 @@
 	<dataSetLink>
 		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>ФункциональныеОпцииПолей</destinationDataSet>
-		<sourceExpression>Поле.ПолноеИмя</sourceExpression>
+		<sourceExpression>ОбъектМетаданных + "." + ТабличнаяЧасть + "." + Поле</sourceExpression>
 		<destinationExpression>Поле.ПолноеИмя</destinationExpression>
 	</dataSetLink>
 	<dataSetLink>
@@ -526,6 +576,48 @@
 		<destinationDataSet>ФункциональныеОпции</destinationDataSet>
 		<sourceExpression>ФункциональнаяОпция</sourceExpression>
 		<destinationExpression>ФункциональнаяОпция</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ОбъектыМетаданных</destinationDataSet>
+		<sourceExpression>ОбъектМетаданных</sourceExpression>
+		<destinationExpression>ОбъектМетаданных</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ТабличныеЧасти</destinationDataSet>
+		<sourceExpression>ОбъектМетаданных</sourceExpression>
+		<destinationExpression>ОбъектМетаданных</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ТабличныеЧасти</destinationDataSet>
+		<sourceExpression>ТабличнаяЧасть</sourceExpression>
+		<destinationExpression>ТабличнаяЧасть</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ПоляМетаданных</destinationDataSet>
+		<sourceExpression>ОбъектМетаданных</sourceExpression>
+		<destinationExpression>ОбъектМетаданных</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ПоляМетаданных</destinationDataSet>
+		<sourceExpression>ТабличнаяЧасть</sourceExpression>
+		<destinationExpression>ТабличнаяЧасть</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>ПоляМетаданных</destinationDataSet>
+		<sourceExpression>Поле</sourceExpression>
+		<destinationExpression>Поле</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Основной</sourceDataSet>
+		<destinationDataSet>Права</destinationDataSet>
+		<sourceExpression>Право</sourceExpression>
+		<destinationExpression>Право</destinationExpression>
 	</dataSetLink>
 	<calculatedField>
 		<dataPath>ОбъектМетаданных.ПолеПроверки</dataPath>
@@ -658,6 +750,12 @@
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Доступ</dcsset:left>
 					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string">нет</dcsset:right>
@@ -701,12 +799,6 @@
 					<dcsset:left xsi:type="dcscor:Field">Роль</dcsset:left>
 					<dcsset:comparisonType>Contains</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string"/>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:order>
@@ -961,6 +1053,12 @@
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Доступ</dcsset:left>
 					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string">нет</dcsset:right>
@@ -986,12 +1084,6 @@
 					<dcsset:left xsi:type="dcscor:Field">Роль</dcsset:left>
 					<dcsset:comparisonType>Contains</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string"/>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:order>
@@ -1147,6 +1239,14 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:field>ОбъектМетаданных.Представление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ТабличнаяЧасть.Представление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>Поле.Представление</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -1420,6 +1520,12 @@
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Доступ</dcsset:left>
 					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string">нет</dcsset:right>
@@ -1463,12 +1569,6 @@
 					<dcsset:left xsi:type="dcscor:Field">Роль</dcsset:left>
 					<dcsset:comparisonType>Contains</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string"/>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:order>
@@ -1627,6 +1727,12 @@
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:left xsi:type="dcscor:Field">Доступ</dcsset:left>
 					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string">нет</dcsset:right>
@@ -1670,12 +1776,6 @@
 					<dcsset:left xsi:type="dcscor:Field">Роль</dcsset:left>
 					<dcsset:comparisonType>Contains</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string"/>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Право</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:string">Удаление</dcsset:right>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:order>

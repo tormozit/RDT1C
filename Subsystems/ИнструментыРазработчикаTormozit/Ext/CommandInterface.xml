@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<CommandsVisibility>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="CommonForm.ирАдаптацияРасширения.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -8,12 +13,100 @@
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="CommonForm.ирАдаптацияРасширения.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.ирАлгоритмы.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Report.ирАнализЗамераПроизводительности.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Report.ирАнализМетаданных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирАнализТехножурнала.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирИсследовательОбъектов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольHTTPЗапросов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольЗапросов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольКода.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольКомпоновокДанных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонсольПостроителейОтчетов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирКонструкторРегулярногоВыражения.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбработкуМодулейМетаданных">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Catalog.ирОбъектыДляОтладки.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОтключитьГлобальныеОбработчикиОжидания">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбъектДляОтладки">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладчик">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладкаВнешнихОбработокБСП">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Report.ирОтсутствующиеИндексыСУБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Report.ирПодпискиНаСобытия.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОграниченияДоступа.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПараметровСеанса.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторХранилищНастроек.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирСинтаксПомощник.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="Report.ирСтатистикаПоЗапросамСУБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирСтруктураХраненияБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирТестированиеМетаданных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
+			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+		</Command>
+	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>CommandGroup.ирРазработка</Group>
 	</GroupsOrder>
 </CommandInterface>
