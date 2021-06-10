@@ -94,7 +94,9 @@
 		Если Активировать Тогда
 			РедакторHTML.editor.focus();
 		КонецЕсли;
-		РедакторHTML.updateText(Текст);
+		// https://github.com/salexdv/bsl_console/issues/141#issuecomment-852355305
+		//РедакторHTML.updateText(Текст); // Так история редактирования не сбрасывается
+		РедакторHTML.editor.setValue(Текст);
 		Если ИсходныйТекст <> Неопределено Тогда
 			РедакторHTML.setOriginalText(ИсходныйТекст);
 		КонецЕсли; 
