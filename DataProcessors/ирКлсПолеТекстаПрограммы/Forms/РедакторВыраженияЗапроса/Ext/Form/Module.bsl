@@ -693,7 +693,7 @@
 			#КонецЕсли
 			ПолеТекстаВыражения.РедакторHTML_ПередПоказомПодсказкиУдержания("ВычислитьВыражение", Событие.params.column, Событие.params.line, Событие.params.word);
 		ИначеЕсли Событие.event = "EVENT_BEFORE_SIGNATURE" Тогда
-			ПолеТекстаВыражения.РедакторHTML_ПередПоказомСигнатуры(Событие.params.activeParameter, Событие.params.word, Событие.params.activeSignature);
+			ПолеТекстаВыражения.РедакторHTML_ПередПоказомСигнатуры(Событие.params.activeParameter, Событие.params.word, Событие.params.activeSignature, Событие.params.triggerCharacter);
 		ИначеЕсли Событие.event = "EVENT_BEFORE_SHOW_SUGGEST" Тогда
 			#Если Сервер И Не Сервер Тогда
 				ПолеТекстаВыражения = Обработки.ирКлсПолеТекстаПрограммы.Создать();
@@ -705,8 +705,6 @@
 		ИначеЕсли Событие.event = "EVENT_ON_ACTIVATE_SUGGEST_ROW" Тогда
 			ПолеТекстаВыражения.РедакторHTML_ПриАктивацииСтрокиАвтодополнения(Событие.params.trigger, Событие.params.focused, Событие.params.row_id);
 		КонецЕсли;
-	Иначе
-		ПолеТекстаВыражения.РедакторHTML_ПриКлике();
 	КонецЕсли;
 	
 КонецПроцедуры

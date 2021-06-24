@@ -19,6 +19,11 @@
 				<CommandName>0:60b48362-4a19-4a23-95da-9a9ce4ad14c5</CommandName>
 				<ExtendedTooltip name="ФормаОбщаяКомандаирОПодсистемеРасширеннаяПодсказка" id="57"/>
 			</Button>
+			<Button name="ФормаОПодсистеме" id="83">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОПодсистеме</CommandName>
+				<ExtendedTooltip name="ФормаОПодсистемеРасширеннаяПодсказка" id="84"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -58,6 +63,7 @@
 				</v8:item>
 			</ToolTip>
 			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
 			<OpenButton>true</OpenButton>
 			<ContextMenu name="КаталогФайловогоКэшаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="КаталогФайловогоКэшаРасширеннаяПодсказка" id="59"/>
@@ -450,7 +456,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полезно в случае их изменения настроек в другом сеансе</v8:content>
+					<v8:content>Полезно в случае изменения настроек в другом сеансе</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -544,6 +550,34 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаменитьФайлы</Action>
+		</Command>
+		<Command name="ОПодсистеме" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>О подсистеме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирВопрос</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОПодсистеме</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
