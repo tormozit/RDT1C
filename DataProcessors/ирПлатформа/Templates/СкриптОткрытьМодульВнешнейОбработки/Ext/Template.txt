@@ -7,7 +7,7 @@ param (
 )
 #$processID = 31704
 #$file = "C:\1C\EPF\ИзменениеКонфиденциальнойИнформации.epf"
-#line = 5
+#$line = 5
 #$internalName = "ИзменениеКонфиденциальнойИнформации"
 #REQUIRES -Version 3.0
 [void][System.Reflection.Assembly]::LoadWithPartialName("UIAutomationClient")
