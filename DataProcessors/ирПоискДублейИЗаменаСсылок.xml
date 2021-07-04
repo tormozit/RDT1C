@@ -22,6 +22,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Поиск дублей и замена ссылок (ИР)</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Поиск дублей и замена ссылок (ИР)</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -42,6 +46,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Автовидимость колонок состава группы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Автовидимость колонок состава группы</v8:content>
 						</v8:item>
 					</Synonym>
@@ -82,6 +90,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Автоматический выбор при замещении в регистре сведений</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автоматический выбор при замещении в регистре сведений</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -97,6 +109,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Пользователю не будет показываться форма настройки замещения в независимых регистрах сведений при склеивании записей по новым ключам. Это может привести к нежелательным изменениям данных.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Пользователю не будет показываться форма настройки замещения в независимых регистрах сведений при склеивании записей по новым ключам. Это может привести к нежелательным изменениям данных.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -129,6 +145,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Выполнять на сервере</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Выполнять на сервере</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -144,6 +164,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Выполнять замену ссылок на сервере (через фоновое задание)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Выполнять замену ссылок на сервере (через фоновое задание)</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -174,6 +198,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Допустимое различие слов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Допустимое различие слов</v8:content>
 						</v8:item>
 					</Synonym>
@@ -219,6 +247,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Изменять поля по связям параметров выбора</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Изменять поля по связям параметров выбора</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -234,6 +266,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>При выполнении замены изменять связанные поля. Влияющие поля будут автоматически изменяться. Зависимые поля будут собираться в таблицу "Правила зависимых", где пользователь укажет им новые значения. Изменение группы связанных полей выполняется только цели</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>При выполнении замены изменять связанные поля. Влияющие поля будут автоматически изменяться. Зависимые поля будут собираться в таблицу "Правила зависимых", где пользователь укажет им новые значения. Изменение группы связанных полей выполняется только цели</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -266,6 +302,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Количество объектов в порции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество объектов в порции</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -286,6 +326,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Количество объектов в порции для обработки на сервере в многопоточном режиме. Каждая порция обрабатывается в отдельном задании. Рекомендуется такое количество, чтобы оно обрабатывалось 1-5 секунд. При прерывании обработки - задания не прерываются.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Количество объектов в порции для обработки на сервере в многопоточном режиме. Каждая порция обрабатывается в отдельном задании. Рекомендуется такое количество, чтобы оно обрабатывалось 1-5 секунд. При прерывании обработки - задания не прерываются.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -318,6 +362,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Количество потоков</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество потоков</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -338,6 +386,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Количество одновременных потоков для обработки на сервере. Позволяет ускорить обработку за счет увеличения нагрузки на сервер.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Количество одновременных потоков для обработки на сервере. Позволяет ускорить обработку за счет увеличения нагрузки на сервер.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -368,6 +420,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Комментировать замену ссылок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Комментировать замену ссылок</v8:content>
 						</v8:item>
 					</Synonym>
@@ -408,6 +464,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Компоновка ссылающихся объектов</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Компоновка ссылающихся объектов</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type/>
@@ -421,6 +481,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Используется для сохранения и восстановления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Используется для сохранения и восстановления</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -451,6 +515,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Найденные группы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Найденные группы</v8:content>
 						</v8:item>
 					</Synonym>
@@ -491,6 +559,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Настройки поиска дублей</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Настройки поиска дублей</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type/>
@@ -525,6 +597,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Обработка замены данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Обработка замены данных</v8:content>
 						</v8:item>
 					</Synonym>
@@ -569,6 +645,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Общая транзакция</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Общая транзакция</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -584,6 +664,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Выполнять обработку всех ссылающихся данных в одной транзакции. Любая ошибка при записи объекта сделает невозможной фиксацию транзакции. Рекомендуется использовать в монопольном режиме. Не используется в многопоточном режиме.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Выполнять обработку всех ссылающихся данных в одной транзакции. Любая ошибка при записи объекта сделает невозможной фиксацию транзакции. Рекомендуется использовать в монопольном режиме. Не используется в многопоточном режиме.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -616,6 +700,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Определять связь по владельцу по данным</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Определять связь по владельцу по данным</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -631,6 +719,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Считать поля связанными по владельцу, если значение одного из них содержится в реквизите Владелец значения другого. Медленнее и опаснее. Полезно для старых конфигураций, где в метаданных связи параметров выбора не указаны.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Считать поля связанными по владельцу, если значение одного из них содержится в реквизите Владелец значения другого. Медленнее и опаснее. Полезно для старых конфигураций, где в метаданных связи параметров выбора не указаны.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -663,6 +755,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Перезаписывать правильные после замены</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Перезаписывать правильные после замены</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -678,6 +774,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Полезно для регистрации изменений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Полезно для регистрации изменений</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -708,6 +808,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Полное имя объекта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Полное имя объекта</v8:content>
 						</v8:item>
 					</Synonym>
@@ -752,6 +856,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Разрешить удаление с нарушением ссылочной целостности</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Разрешить удаление с нарушением ссылочной целостности</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -767,6 +875,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Если на объект есть ссылки, то его можно будет удалить, если включить эту опцию.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Если на объект есть ссылки, то его можно будет удалить, если включить эту опцию.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -797,6 +909,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Режим произвольного запроса</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Режим произвольного запроса</v8:content>
 						</v8:item>
 					</Synonym>
@@ -837,6 +953,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Снять пометки удаления правильных после замены</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Снять пометки удаления правильных после замены</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -852,6 +972,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Полезно для регистрации изменений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Полезно для регистрации изменений</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -882,6 +1006,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Учитывать правые пробелы строк</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Учитывать правые пробелы строк</v8:content>
 						</v8:item>
 					</Synonym>
@@ -932,6 +1060,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Измененные проведенные документы</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Измененные проведенные документы</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -978,6 +1110,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Тип документа</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Тип документа</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1022,6 +1158,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Дата документа</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата документа</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1063,6 +1203,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Документ</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Документ</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1117,6 +1261,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Найденные ссылки</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Найденные ссылки</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -1161,6 +1309,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Данные</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Данные</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1208,6 +1360,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Дата</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1249,6 +1405,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Индекс картинки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Индекс картинки</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1296,6 +1456,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Метаданные</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Метаданные</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1340,6 +1504,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Пометка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Пометка</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1378,6 +1546,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Реквизит1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Реквизит1</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1436,6 +1608,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Реквизит2</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Реквизит2</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1490,6 +1666,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Реквизит3</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Реквизит3</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1548,6 +1728,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Реквизит4</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Реквизит4</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1602,6 +1786,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Реквизит5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Реквизит5</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1660,6 +1848,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Ссылка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ссылка</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1698,6 +1890,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Тип данных</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Тип данных</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1742,6 +1938,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Тип метаданных</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Тип метаданных</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1791,6 +1991,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Поиск дублей и замена ссылок (ИР)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Поиск дублей и замена ссылок (ИР)</v8:content>
 						</v8:item>
 					</Synonym>

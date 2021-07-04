@@ -68,6 +68,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Установка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Установка</v8:content>
+								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
 							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
@@ -89,6 +93,10 @@
 													<v8:lang>en</v8:lang>
 													<v8:content>Актуальная версия на сайте. Если пустая, значит нет доступа к сайту и не получится скачать файл автоматически.</v8:content>
 												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Актуальная версия на сайте. Если пустая, значит нет доступа к сайту и не получится скачать файл автоматически.</v8:content>
+												</v8:item>
 											</ToolTip>
 											<ContextMenu name="АктуальнаяВерсияКонтекстноеМеню" id="26"/>
 											<ExtendedTooltip name="АктуальнаяВерсияРасширеннаяПодсказка" id="27"/>
@@ -101,6 +109,10 @@
 												</v8:item>
 												<v8:item>
 													<v8:lang>en</v8:lang>
+													<v8:content>Скачать вручную</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
 													<v8:content>Скачать вручную</v8:content>
 												</v8:item>
 											</Title>
@@ -122,6 +134,10 @@
 										</v8:item>
 										<v8:item>
 											<v8:lang>en</v8:lang>
+											<v8:content>Если файл указан, то устанавливаться будет он. Иначе будет скачиваться актуальная версия с сайта.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
 											<v8:content>Если файл указан, то устанавливаться будет он. Иначе будет скачиваться актуальная версия с сайта.</v8:content>
 										</v8:item>
 									</ToolTip>
@@ -171,6 +187,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Видимость</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Видимость</v8:content>
+								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="17"/>
@@ -187,6 +207,10 @@
 											<v8:lang>en</v8:lang>
 											<v8:content>Нужно добавить пользователя, чтобы сделать расширение видимым.</v8:content>
 										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Нужно добавить пользователя, чтобы сделать расширение видимым.</v8:content>
+										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияНужноДобавитьПользователяКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ДекорацияНужноДобавитьПользователяРасширеннаяПодсказка" id="55"/>
@@ -199,6 +223,10 @@
 										</v8:item>
 										<v8:item>
 											<v8:lang>en</v8:lang>
+											<v8:content>Группа способы сделать видимыми</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
 											<v8:content>Группа способы сделать видимыми</v8:content>
 										</v8:item>
 									</Title>
@@ -221,6 +249,10 @@
 													<v8:lang>en</v8:lang>
 													<v8:content>После первой установки расширения - инструменты станут видимыми только у первого вошедшего администратора</v8:content>
 												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>После первой установки расширения - инструменты станут видимыми только у первого вошедшего администратора</v8:content>
+												</v8:item>
 											</Title>
 											<ContextMenu name="Декорация2КонтекстноеМеню" id="34"/>
 											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="35"/>
@@ -241,6 +273,10 @@
 														</v8:item>
 														<v8:item>
 															<v8:lang>en</v8:lang>
+															<v8:content>Сделать инструменты видимыми текущему пользователю.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
 															<v8:content>Сделать инструменты видимыми текущему пользователю.</v8:content>
 														</v8:item>
 													</Title>
@@ -274,6 +310,10 @@
 															<v8:lang>en</v8:lang>
 															<v8:content>Сделать инструменты видимыми можно с помощью параметра запуска</v8:content>
 														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сделать инструменты видимыми можно с помощью параметра запуска</v8:content>
+														</v8:item>
 													</Title>
 													<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
 													<AutoMaxWidth>false</AutoMaxWidth>
@@ -295,6 +335,11 @@
 												</v8:item>
 												<v8:item>
 													<v8:lang>en</v8:lang>
+													<v8:content>Если активное расширение не удается сделать видимым, то включите его видимость через настройку панели разделов.
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
 													<v8:content>Если активное расширение не удается сделать видимым, то включите его видимость через настройку панели разделов.
 </v8:content>
 												</v8:item>
@@ -328,6 +373,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Файл расширения</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Файл расширения</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
@@ -350,6 +399,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Название варианта</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Название варианта</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
@@ -367,6 +420,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Ссылка на страницу скачивания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Ссылка на страницу скачивания</v8:content>
 				</v8:item>
 			</Title>
@@ -388,6 +445,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Расширение установлено</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расширение установлено</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -403,6 +464,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Установка возможна</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Установка возможна</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -416,6 +481,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Актуальная версия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Актуальная версия</v8:content>
 				</v8:item>
 			</Title>
@@ -437,6 +506,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Расширение активно</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расширение активно</v8:content>
+				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
@@ -450,6 +523,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Параметр запуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Параметр запуска</v8:content>
 				</v8:item>
 			</Title>
@@ -473,6 +550,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Установить расширение</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Установить расширение</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
@@ -481,6 +562,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Установить расширение, сделать видимым и запустить новый сеанс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Установить расширение, сделать видимым и запустить новый сеанс</v8:content>
 				</v8:item>
 			</ToolTip>
@@ -497,6 +582,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Сделать видимыми</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сделать видимыми</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
@@ -505,6 +594,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Сделать инструменты видимыми текущему пользователю. Ему будет добавлена роль ирРазработчик. Свойство "Активно" расширения будет включено, а "Безопасный режим" - выключено. Далее будет запущен новый сеанс.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Сделать инструменты видимыми текущему пользователю. Ему будет добавлена роль ирРазработчик. Свойство "Активно" расширения будет включено, а "Безопасный режим" - выключено. Далее будет запущен новый сеанс.</v8:content>
 				</v8:item>
 			</ToolTip>
@@ -521,6 +614,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Удалить расширение</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
@@ -529,6 +626,10 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Удалить расширение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Удалить расширение</v8:content>
 				</v8:item>
 			</ToolTip>
@@ -545,6 +646,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Запустить в одном сеансе</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Запустить в одном сеансе</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
@@ -556,6 +661,13 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>Установить расширение, запустить новый сеанс, удалить расширение. 
+Таким образом расширение подключится только в одном сеансе. 
+Для ускорения установки указывайте файл.
+Доступно только если расширение не установлено.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Установить расширение, запустить новый сеанс, удалить расширение. 
 Таким образом расширение подключится только в одном сеансе. 
 Для ускорения установки указывайте файл.

@@ -22,6 +22,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Поиск битых ссылок (ИР)</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Поиск битых ссылок (ИР)</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -44,6 +48,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Выполнять на сервере</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Выполнять на сервере</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -59,6 +67,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Выполнять обработку объектов на сервере (через фоновое задание). Отображение результатов до завершения поиска будет невозможно.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Выполнять обработку объектов на сервере (через фоновое задание). Отображение результатов до завершения поиска будет невозможно.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -91,6 +103,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Количество объектов в порции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество объектов в порции</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -111,6 +127,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Количество объектов в порции для обработки на сервере в многопоточном режиме. Каждая порция обрабатывается в отдельном задании. Рекомендуется такое количество, чтобы оно обрабатывалось 1-5 секунд. При прерывании обработки - задания не прерываются.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Количество объектов в порции для обработки на сервере в многопоточном режиме. Каждая порция обрабатывается в отдельном задании. Рекомендуется такое количество, чтобы оно обрабатывалось 1-5 секунд. При прерывании обработки - задания не прерываются.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -143,6 +163,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Количество потоков</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество потоков</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -163,6 +187,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Количество одновременных потоков для обработки на сервере. Позволяет ускорить обработку за счет увеличения нагрузки на сервер.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Количество одновременных потоков для обработки на сервере. Позволяет ускорить обработку за счет увеличения нагрузки на сервер.</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -193,6 +221,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Ли все типы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Ли все типы</v8:content>
 						</v8:item>
 					</Synonym>
@@ -233,6 +265,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Типы ссылок для поиска</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Типы ссылок для поиска</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -269,6 +305,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Только регистраторы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Только регистраторы</v8:content>
 						</v8:item>
 					</Synonym>
@@ -309,6 +349,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Учитывать виртуальные таблицы</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Учитывать виртуальные таблицы</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -345,6 +389,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Учитывать все колонки таблиц изменений</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Учитывать все колонки таблиц изменений</v8:content>
 						</v8:item>
 					</Synonym>
@@ -395,6 +443,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Битые ссылки</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Битые ссылки</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -441,6 +493,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Имена ссылающихся таблиц</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Имена ссылающихся таблиц</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -485,6 +541,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Имя типа ссылки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Имя типа ссылки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -527,6 +587,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Количество ссылающихся</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Количество ссылающихся</v8:content>
 								</v8:item>
 							</Synonym>
@@ -574,6 +638,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Представление типа ссылки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Представление типа ссылки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -618,6 +686,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Представления ссылающихся таблиц</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Представления ссылающихся таблиц</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -660,6 +732,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Ссылка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Ссылка</v8:content>
 								</v8:item>
 							</Synonym>
@@ -714,6 +790,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Связанные данные</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Связанные данные</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -760,6 +840,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Имя колонки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Имя колонки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -802,6 +886,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Имя таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Имя таблицы</v8:content>
 								</v8:item>
 							</Synonym>
@@ -848,6 +936,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Имя типа ссылки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Имя типа ссылки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -890,6 +982,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Количество ссылающихся</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Количество ссылающихся</v8:content>
 								</v8:item>
 							</Synonym>
@@ -942,6 +1038,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Количество типов</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Количество типов</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -985,6 +1085,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Полное имя таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Полное имя таблицы</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1031,6 +1135,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Представление колонки</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Представление колонки</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1073,6 +1181,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Представление таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Представление таблицы</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1119,6 +1231,10 @@
 									<v8:lang>en</v8:lang>
 									<v8:content>Ссылка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ссылка</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1157,6 +1273,10 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
+									<v8:content>Тип таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Тип таблицы</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1204,6 +1324,10 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Поиск битых ссылок (ИР)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Поиск битых ссылок (ИР)</v8:content>
 						</v8:item>
 					</Synonym>
