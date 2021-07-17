@@ -519,15 +519,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>СокрКол</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>СокрКол</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>СокрКол</v8:content>
+							<v8:content>Кол</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -538,15 +530,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
+							<v8:content>Подготовить [Кол]лекцию</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -600,15 +584,32 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+							<v8:content>Объект, АнализХранилищЗначений?</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функция создает таблицу значений из переданной коллекции, добавляя
+1. К колонкам, содержащим коллекции, колонку "&lt;ИмяКолонки&gt;_Инфо" с представлением вложенной коллекции, включающем количеством ее элементов.
+2. К колонкам, содержащим структуры или ссылки на строки таблицы/дерева, колонки "&lt;ИмяКолонки&gt;_&lt;ИмяВложенногоСвойства&gt;" со значениями свойств вложенных объектов
+Параметры:
+  Объект  - Произвольный - произвольная коллекция
+  АнализХранилищЗначений - Булево, *Ложь - нужно ли получать представления содержимого хранилищ значений, увеличивает длительность
+</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -619,31 +620,9 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
- Параметры:
-   Коллекция - - коллекция из которой надо удалить элементы
-   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
- Параметры:
-   Коллекция - - коллекция из которой надо удалить элементы
-   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
- Параметры:
-   Коллекция - - коллекция из которой надо удалить элементы
-   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
+							<v8:content>https://www.hostedredmine.com/issues/930678</v8:content>
 						</v8:item>
 					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
 				</c>
 			</c>
 		</row>
@@ -657,15 +636,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Файл</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Файл</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Файл</v8:content>
+							<v8:content>Стк</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -676,15 +647,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Файл</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Файл</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Файл</v8:content>
+							<v8:content>Подготовить [Ст]ру[к]туру</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -738,15 +701,26 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяФайла, Кодировка?</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ИмяФайла, Кодировка?</v8:content>
+							<v8:content>Объект</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>ИмяФайла, Кодировка?</v8:content>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функция создает структуру из переданного объекта, добавляя к свойствам, содержащим коллекции, свойство "&lt;ИмяКолонки&gt;_Инфо" с представлением вложенной коллекции, включающим количество ее элементов</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -754,6 +728,261 @@
 			<c>
 				<c>
 					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://www.hostedredmine.com/issues/930678</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СокрКол</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>СокрКол</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>СокрКол</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>[Сокр]атить [Кол]лекцию</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коллекция, ОставитьЭлементИлиКлюч?</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
+ Параметры:
+   Коллекция - - коллекция из которой надо удалить элементы
+   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
+ Параметры:
+   Коллекция - - коллекция из которой надо удалить элементы
+   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content> Удаляет все элементы коллекции с возможностью оставить один элемент.
+ Параметры:
+   Коллекция - - коллекция из которой надо удалить элементы
+   ОставитьЭлементИлиИндекс - Число, Строка, *Неопределено - при Число Или Строка оставляется элемент с таким ключом (0 - первый), иначе удаляется все</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИмяФайла, Кодировка?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>ИмяФайла, Кодировка?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ИмяФайла, Кодировка?</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -778,7 +1007,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>5</index>
+		<index>7</index>
 		<row>
 			<c>
 				<c>
@@ -888,8 +1117,7 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content> Проверяет что переданное значение отличается от предыдущего переданного с тем же именем.
  Полезно использовать в условных точках останова например для остановки в том проходе цикла, в котором изменяется значение выражения.
- https://www.hostedredmine.com/issues/892539
- Параметры:
+  Параметры:
    Значение - Произвольный - проверяемое значение. Все типы, кроме ссылок БД, преобразуются к строке через функцию РасширенноеПредставлениеЗначенияЛкс(), которая также используется при отображении значений в консоли кода.
    ИмяЗначения - Строка, Число, *"" - имя/идентификатор значения
    НужноеСтароеЗначение - Произвольный, * - игнорировать все старые значения кроме этого
@@ -932,12 +1160,18 @@
 			<c>
 				<c>
 					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://www.hostedredmine.com/issues/892539</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>6</index>
+		<index>8</index>
 		<row>
 			<c>
 				<c>
@@ -1038,7 +1272,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>7</index>
+		<index>9</index>
 		<row>
 			<c>
 				<c>
@@ -1139,265 +1373,6 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>8</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПолВТ</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>ПолВТ</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>ПолВТ</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>5</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>9</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ду</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Ду</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Ду</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ду (Do)</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Ду (Do)</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Ду (Do)</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>5</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>"П1.Записать()", Документ1</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>"П1.Записать()", Документ1</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>"П1.Записать()", Документ1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>10</index>
 		<row>
 			<c>
@@ -1406,15 +1381,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пр</v8:content>
+							<v8:content>ПолВТ</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Пр</v8:content>
+							<v8:content>ПолВТ</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Пр</v8:content>
+							<v8:content>ПолВТ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1425,15 +1400,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>[Пр]исвоение значения</v8:content>
+							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>[Пр]исвоение значения</v8:content>
+							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>[Пр]исвоение значения</v8:content>
+							<v8:content>[Пол]учить [В]ременные [Т]аблицы</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1483,15 +1458,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Переменная, Значение</v8:content>
+							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Переменная, Значение</v8:content>
+							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Переменная, Значение</v8:content>
+							<v8:content>ЗапросИлиМенеджерВременныхТаблиц</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1502,34 +1477,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
+							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
+							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пр(Сумма, 23)</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Пр(Сумма, 23)</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Пр(Сумма, 23)</v8:content>
+							<v8:content>Получает структуру (Имя временной таблицы - Таблица значений) из указанного запроса или менеджера временных таблиц</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1545,6 +1501,284 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Ду</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ду</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ду</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ду (Do)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ду (Do)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ду (Do)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>5</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТекстПрограммы, П[1-4]?</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Выполняет программный код, переданный в параметре, с использованием параметров П[1-4]. Вернуть результат можно через переменную Р.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>"П1.Записать()", Документ1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>"П1.Записать()", Документ1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>"П1.Записать()", Документ1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Пр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пр</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[Пр]исвоение значения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>[Пр]исвоение значения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>[Пр]исвоение значения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>5</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переменная, Значение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Переменная, Значение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Переменная, Значение</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Присвоение значения переменной. В 8.3 то же самое можно делать штатными возможностями в окне "Выражение" отладчика. https://www.youtube.com/watch?v=dHH9wMYF1YM , https://youtu.be/J8se2QQlYQE</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пр(Сумма, 23)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Пр(Сумма, 23)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пр(Сумма, 23)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Пер</v8:content>
 						</v8:item>
 						<v8:item>
@@ -1685,7 +1919,7 @@ https://youtu.be/ULO4Q9yU6Gc
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>12</index>
+		<index>14</index>
 		<row>
 			<c>
 				<c>
@@ -1789,7 +2023,7 @@ https://youtu.be/yAQTUmdzP_o</v8:content>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>13</index>
+		<index>15</index>
 		<row>
 			<c>
 				<c>
@@ -1919,8 +2153,8 @@ https://youtu.be/btGHeiUAWEY
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>10</defaultFormatIndex>
-	<height>14</height>
-	<vgRows>14</vgRows>
+	<height>16</height>
+	<vgRows>16</vgRows>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
 		<width>59</width>

@@ -39,100 +39,113 @@ Add-Type @"
 #Add-Type -AssemblyName System.Windows.Forms
 $trash = [SFW]::SetForegroundWindow($mainWindow.Current.NativeWindowHandle)
 $mainWindow.SetFocus()
-$buffer = Get-Clipboard -Raw
+$OldClipboard = Get-Clipboard -Raw
 $wshell = New-Object -ComObject wscript.shell
 
-# CTRL+O Открыть файл
-$wshell.SendKeys("^")
-$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
-if($isRusLang)
-{    $wshell.SendKeys("^{щ}")
-}
-else
-{    $wshell.SendKeys("^{o}")
-}
-$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ClassNameProperty, "#32770")
-$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Открытие  ")
-$condОткрытие = New-Object Windows.Automation.AndCondition($condType, $nameType)
-$start = Get-Date
-$windowОткрытие = $null
-while($windowОткрытие -eq $null -and ((Get-Date) - $start).TotalMilliseconds -le 2000)
+$Counter = 0;
+while ($counter -ne 2)
 {
-    Start-Sleep -Seconds 0.1
-    #$windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condОткрытие) #not working
-    $windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condType)
-    if($windowОткрытие -ne $null)
+    $Counter++;
+    if ($Counter -eq 2)
     {
-        $windowОткрытие.SetFocus()
-        break
-    }
-}
-if($windowОткрытие -eq $null)
-{
-    "Окно 'Открытие' не найдено"
-    exit
-}
-
-# CTRL+V вставляем текст из буфера обмена
-Set-Clipboard $file
-$wshell.SendKeys("^")
-$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
-if($isRusLang)
-{   $wshell.SendKeys("^{м}")
-}
-else
-{   $wshell.SendKeys("^{v}")
-}
-$wshell.SendKeys("{ENTER}")
-
-#Ждем появления окна внешней обработки и нажимаем там Действия/МодульОбъекта
-$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Text)
-$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Комментарий:")
-$condField = New-Object Windows.Automation.AndCondition($condType, $nameType)
-$condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Button)
-$nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Действия")
-$condButton = New-Object Windows.Automation.AndCondition($condType, $nameType)
-$condTypeEdit = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Edit)
-$start = Get-Date
-$success = $false
-while(((Get-Date) - $start).TotalMilliseconds -le 2000)
-{
-    Start-Sleep -Seconds 0.1
-    $labelКомментарий = $mainWindow.FindAll([Windows.Automation.TreeScope]::Descendants, $condField)
-    $condTree = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Pane)
-    $tWalker = New-Object Windows.Automation.TreeWalker($condTree)
-    foreach($label in $labelКомментарий)
-    {
-        $parent = $tWalker.GetParent($label)
-        $buttonДействия = $parent.FindFirst([Windows.Automation.TreeScope]::Children, $condButton)
-        if($buttonДействия -ne $null)
+        # CTRL+O Открыть файл
+        #$wshell.SendKeys("^")
+        $isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
+        if($isRusLang)
+        {    $wshell.SendKeys("^{щ}")
+        }
+        else
+        {    $wshell.SendKeys("^{o}")
+        }
+        $condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ClassNameProperty, "#32770")
+        $nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Открытие  ")
+        $condОткрытие = New-Object Windows.Automation.AndCondition($condType, $nameType)
+        $start = Get-Date
+        $windowОткрытие = $null
+        while($windowОткрытие -eq $null -and ((Get-Date) - $start).TotalMilliseconds -le 2000)
         {
-            $fieldsEdit = $parent.FindAll([Windows.Automation.TreeScope]::Children, $condTypeEdit)
-            foreach($field in $fieldsEdit)
+            Start-Sleep -Seconds 0.1
+            #$windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condОткрытие) #not working
+            $windowОткрытие = $mainWindow.FindFirst([Windows.Automation.TreeScope]::Children, $condType)
+            if($windowОткрытие -ne $null)
             {
-                $textPattern = $field.GetCurrentPattern([Windows.Automation.TextPattern]::Pattern)
-                $text = $textPattern.DocumentRange.GetText(-1)
-                if ($text -ne $internalName)
-                { continue 
-                }
-                $success = $true
+                $windowОткрытие.SetFocus()
                 break
             }
         }
-        if ($success)
-        {break}
+        if($windowОткрытие -eq $null)
+        {
+            "Окно 'Открытие' не найдено"
+            exit
+        }
+
+        # CTRL+V вставляем текст из буфера обмена
+        Set-Clipboard $file
+        #$wshell.SendKeys("^")
+        $isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
+        if($isRusLang)
+        {   $wshell.SendKeys("^{м}")
+        }
+        else
+        {   $wshell.SendKeys("^{v}")
+        }
+        $wshell.SendKeys("{ENTER}")
     }
-    if ($success)
-    {break}
+    #Ждем появления окна внешней обработки
+    $condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Text)
+    $nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Комментарий:")
+    $condField = New-Object Windows.Automation.AndCondition($condType, $nameType)
+    $condType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Button)
+    $nameType = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::NameProperty, "Действия")
+    $condButton = New-Object Windows.Automation.AndCondition($condType, $nameType)
+    $condTypeEdit = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Edit)
+    $start = Get-Date
+    $success = $false
+    while(((Get-Date) - $start).TotalMilliseconds -le 2000)
+    {
+        $labelКомментарий = $mainWindow.FindAll([Windows.Automation.TreeScope]::Descendants, $condField)
+        $condTree = New-Object Windows.Automation.PropertyCondition([Windows.Automation.AutomationElement]::ControlTypeProperty, [Windows.Automation.ControlType]::Pane)
+        $tWalker = New-Object Windows.Automation.TreeWalker($condTree)
+        foreach($label in $labelКомментарий)
+        {
+            $parent = $tWalker.GetParent($label)
+            $buttonДействия = $parent.FindFirst([Windows.Automation.TreeScope]::Children, $condButton)
+            if($buttonДействия -ne $null)
+            {
+                $fieldsEdit = $parent.FindAll([Windows.Automation.TreeScope]::Descendants, $condTypeEdit)
+                foreach($field in $fieldsEdit)
+                {
+                    $textPattern = $field.GetCurrentPattern([Windows.Automation.TextPattern]::Pattern)
+                    $text = $textPattern.DocumentRange.GetText(-1)
+                    if ($text -ne $internalName)
+                    { continue 
+                    }
+                    $success = $true
+                    break
+                }
+            }
+            if ($success)
+            {break}
+        }
+        if ($success -or $Counter -eq 1)
+        {break}
+        Start-Sleep -Seconds 0.1
+    }
+    if(-not $success -and $Counter -eq 2)
+    {
+        "Кнопка 'Действия' не найдена"
+        exit
+    }
+    if ($success -and $Counter -eq 1)
+    {
+        $field.SetFocus()
+        $wshell.SendKeys("^{F4}")
+    }
 }
-Set-Clipboard $buffer
-if(-not $success)
-{
-    "Кнопка 'Действия' не найдена"
-    exit
-}
+Set-Clipboard $OldClipboard
 $buttonДействия.SetFocus()
-$wshell.SendKeys("^")
+#$wshell.SendKeys("^")
+#Нажимаем там Действия/МодульОбъекта
 $wshell.SendKeys("{ENTER}")
 $wshell.SendKeys("{Down}")
 $wshell.SendKeys("{ENTER}")
@@ -145,7 +158,7 @@ if($line -ne $null)
         Start-Sleep -Seconds 0.1
     }
     Start-Sleep -Seconds 0.1
-    $wshell.SendKeys("^")
+    #$wshell.SendKeys("^")
 	$isRusLang = [System.Windows.Forms.InputLanguage]::CurrentInputLanguage.Culture.TwoLetterISOLanguageName.ToLower() -eq "ru"
 	if($isRusLang)
 	{   $wshell.SendKeys("^{п}")
