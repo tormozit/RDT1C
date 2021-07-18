@@ -5588,6 +5588,7 @@
 	РедакторHTML.setOption("skipInsertSuggestionAcceptor", Истина);
 	// Отключаем стандартную обработку вставки активного пункта подсказки. Практически 'СтандартнаяОбработка = Ложь'
 	РедакторHTML.setOption("skipAcceptionSelectedSuggestion", Истина);
+	РедакторHTML.disableContextMenu();
 	РедакторHTML.minimap(Ложь);
 	РедакторHTML.init(Инфо.ВерсияПриложения);
 	Если ЯзыкПрограммы = 1 Тогда
