@@ -1,0 +1,29 @@
+﻿SET NOCOUNT ON;  
+  
+DECLARE @session_name sysname,
+		@cmd nvarchar(max);
+
+DECLARE session_list CURSOR FOR
+SELECT 
+	[name]
+FROM sys.server_event_sessions
+where [name] LIKE 'RDT1C_%_%';
+
+OPEN session_list;
+
+FETCH NEXT FROM session_list   
+INTO @session_name  
+  
+WHILE @@FETCH_STATUS = 0  
+BEGIN
+
+	SET @cmd = 'DROP EVENT SESSION ' + @session_name + ' ON SERVER;';
+	EXECUTE sp_executesql @cmd
+
+	FETCH NEXT FROM session_list   
+	INTO @session_name
+
+END
+
+CLOSE session_list;  
+DEALLOCATE session_list;  

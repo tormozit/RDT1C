@@ -193,17 +193,21 @@
 			Вычислитель.ВызыватьИсключения = Истина;
 		КонецЕсли; 
 	КонецЕсли; 
-	Если Ложь 
-		// Ускорение
-		Или СтарыйGlobal <> Global
-		Или СтарыйIgnoreCase <> IgnoreCase
-		Или СтарыйMultiline <> Multiline
-		Или СтарыйPattern <> Pattern 
-	Тогда
-		ЗаполнитьЗначенияСвойств(Вычислитель, ЭтотОбъект, "Global, IgnoreCase, Multiline, Pattern");
+	// Ускорение
+	Если СтарыйGlobal <> Global Тогда
+		Вычислитель.Global = Global;
 		СтарыйGlobal = Global;
+	КонецЕсли; 
+	Если СтарыйIgnoreCase <> IgnoreCase Тогда 
+		Вычислитель.IgnoreCase = IgnoreCase;
 		СтарыйIgnoreCase = IgnoreCase;
+	КонецЕсли; 
+	Если СтарыйMultiline <> Multiline Тогда 
+		Вычислитель.Multiline = Multiline;
 		СтарыйMultiline = Multiline;
+	КонецЕсли; 
+	Если СтарыйPattern <> Pattern Тогда
+		Вычислитель.Pattern = Pattern;
 		СтарыйPattern = Pattern;
 	КонецЕсли;
 	Возврат Вычислитель;
