@@ -360,9 +360,10 @@
 	|	float: left;
 	|}";
 	РедакторHTML.document.head.appendChild(ЭлементСтиля);
-	РедакторHTML.showStatusBar(Ложь);
+	РедакторHTML.showStatusBar(Ложь); // параметр Ложь - отображаем снизу справа
 	РедакторHTML.renderWhitespace(Истина);
 	РедакторHTML.setFontSize(13);
+	РедакторHTML.disableContextMenu();
 	РедакторHTML.setOption("autoResizeEditorLayout", Истина); // https://github.com/salexdv/bsl_console/issues/185
 	//РедакторHTML.setOption("lineHeight", 15);  // Высота строки редактора https://github.com/salexdv/bsl_console/issues/195
 	//РедакторHTML.setOption("suggestFontSize", 13); // шрифт окна автодополнения https://github.com/salexdv/bsl_console/issues/194
