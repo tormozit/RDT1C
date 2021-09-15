@@ -825,7 +825,7 @@
 	</totalField>
 	<totalField>
 		<dataPath>ЕстьРазличияВДоступе</dataPath>
-		<expression>Количество(РАЗЛИЧНЫЕ Доступ) &gt; 1</expression>
+		<expression>МАКСИМУМ(ВычислитьВыражениеСГруппировкойМассив("Количество(РАЗЛИЧНЫЕ Доступ) &gt; 1", "Право"))</expression>
 	</totalField>
 	<parameter>
 		<name>ТолькоРазличия</name>
@@ -2424,6 +2424,7 @@
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.ТолькоРазличия</dcsset:right>
 							</dcsset:item>
+							<dcsset:application>Hierarchy</dcsset:application>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:order>
@@ -2461,6 +2462,7 @@
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.ТолькоРазличия</dcsset:right>
 								</dcsset:item>
+								<dcsset:application>Hierarchy</dcsset:application>
 							</dcsset:item>
 						</dcsset:filter>
 						<dcsset:order>
