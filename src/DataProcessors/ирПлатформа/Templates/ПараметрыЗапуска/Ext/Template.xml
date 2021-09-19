@@ -39,38 +39,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>АдаптироватьРасширениеИР</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>АдаптироватьРасширениеИР</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>АдаптироватьРасширениеИР</v8:content>
+							<v8:content>Параметр</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>3</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Для варианта "Расширение"</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Для варианта "Расширение"</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Для варианта "Расширение"</v8:content>
+							<v8:content>Описание</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -86,22 +70,22 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОткрытьАдаптациюИР</v8:content>
+							<v8:content>АдаптироватьРасширениеИР</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ОткрытьАдаптациюИР</v8:content>
+							<v8:content>АдаптироватьРасширениеИР</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>ОткрытьАдаптациюИР</v8:content>
+							<v8:content>АдаптироватьРасширениеИР</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>3</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -129,6 +113,49 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>ОткрытьАдаптациюИР</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>ОткрытьАдаптациюИР</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ОткрытьАдаптациюИР</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для варианта "Расширение"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Для варианта "Расширение"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Для варианта "Расширение"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>ОткрытьФормуИР</v8:content>
 						</v8:item>
 						<v8:item>
@@ -164,7 +191,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>3</index>
+		<index>4</index>
 		<row>
 			<c>
 				<c>
@@ -187,15 +214,46 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимОтладкиИР</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отключает использование однострочных сверток кода. Снижает скорость, но облегчает отладку.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>3</defaultFormatIndex>
-	<height>4</height>
-	<vgRows>4</vgRows>
+	<defaultFormatIndex>4</defaultFormatIndex>
+	<height>6</height>
+	<vgRows>6</vgRows>
+	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
 		<width>222</width>
 	</format>
 	<format>
-		<width>181</width>
+		<width>231</width>
+	</format>
+	<format>
+		<font>0</font>
 	</format>
 	<format>
 		<width>72</width>
