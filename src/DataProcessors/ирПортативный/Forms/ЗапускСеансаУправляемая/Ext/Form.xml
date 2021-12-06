@@ -70,6 +70,12 @@
 							</Picture>
 							<ExtendedTooltip name="ЗапуститьТолстыйКлиентРасширеннаяПодсказка" id="8020"/>
 						</Button>
+						<Button name="ПерейтиНаРасширение" id="8042">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПерейтиНаРасширение</CommandName>
+							<TextColor>#0000FF</TextColor>
+							<ExtendedTooltip name="ПерейтиНаРасширениеРасширеннаяПодсказка" id="8043"/>
+						</Button>
 						<LabelDecoration name="Текст" id="1">
 							<TextColor>style:SpecialTextColor</TextColor>
 							<Title formatted="false">
@@ -703,6 +709,21 @@
 			<Action>ЗапуститьТолстыйКлиент</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПерейтиНаРасширение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на расширение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить установщик инструментов в варианте "Расширение". Он работает быстрее, удобнее, дает больше возможностей, имеет меньше проблем совместимости.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиНаРасширение</Action>
 		</Command>
 	</Commands>
 	<Parameters>
