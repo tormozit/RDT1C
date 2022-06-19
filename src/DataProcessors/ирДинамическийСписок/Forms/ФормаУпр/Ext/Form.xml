@@ -159,15 +159,20 @@
 				<CommandName>Form.Command.ОбработатьОбъекты</CommandName>
 				<ExtendedTooltip name="ФормаОбработатьОбъектыРасширеннаяПодсказка" id="55"/>
 			</Button>
-			<Button name="ФормаСравнить2Строки" id="129">
+			<Button name="ФормаСравнитьСтроки" id="129">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Сравнить2Строки</CommandName>
-				<ExtendedTooltip name="ФормаСравнить2СтрокиРасширеннаяПодсказка" id="130"/>
+				<CommandName>Form.Command.СравнитьСтроки</CommandName>
+				<ExtendedTooltip name="ФормаСравнитьСтрокиРасширеннаяПодсказка" id="130"/>
 			</Button>
 			<Button name="ФормаРазличныеЗначенияКолонки" id="52">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.РазличныеЗначенияКолонки</CommandName>
 				<ExtendedTooltip name="ФормаРазличныеЗначенияКолонкиРасширеннаяПодсказка" id="53"/>
+			</Button>
+			<Button name="ФормаГруппировкаТаблицы" id="214">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ГруппировкаТаблицы</CommandName>
+				<ExtendedTooltip name="ФормаГруппировкаТаблицыРасширеннаяПодсказка" id="215"/>
 			</Button>
 			<Button name="ФормаСколькоСтрок" id="44">
 				<Type>CommandBarButton</Type>
@@ -2206,11 +2211,11 @@
 			<Action>СтруктураКоманднойПанели</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="Сравнить2Строки" id="35">
+		<Command name="СравнитьСтроки" id="35">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>2</v8:content>
+					<v8:content>Сравнить строки</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -2224,7 +2229,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сравнить 2 строки между собой</v8:content>
+					<v8:content>Сравнить выделенные строки между собой</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -2239,7 +2244,7 @@
 				<xr:Ref>CommonPicture.ирСравнениеОбъектов</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>Сравнить2Строки</Action>
+			<Action>СравнитьСтроки</Action>
 		</Command>
 		<Command name="ПоследниеОтборы0" id="36">
 			<Title>
@@ -2518,6 +2523,25 @@
 			</ToolTip>
 			<Action>ПоследниеОтборыНажатие</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ГруппировкаТаблицы" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировка таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировка таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирУникальныеЗначения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ГруппировкаТаблицы</Action>
 		</Command>
 	</Commands>
 	<Parameters>
