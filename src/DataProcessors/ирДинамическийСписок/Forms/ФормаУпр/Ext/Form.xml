@@ -833,6 +833,18 @@
 					<ChildItems>
 						<CheckBoxField name="СоединяемыеРегистрыПометка" id="122">
 							<DataPath>СоединяемыеРегистры.Соединить</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Соединить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+								</v8:item>
+							</ToolTip>
 							<EditMode>EnterOnInput</EditMode>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="СоединяемыеРегистрыПометкаКонтекстноеМеню" id="123"/>
@@ -859,6 +871,7 @@
 		</UsualGroup>
 		<Table name="ДинамическийСписок" id="1">
 			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
 			<Height>8</Height>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<FileDragMode>AsFile</FileDragMode>

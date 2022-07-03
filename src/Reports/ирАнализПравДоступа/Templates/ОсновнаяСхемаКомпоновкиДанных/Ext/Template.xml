@@ -596,6 +596,26 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поле.ОписаниеТипов</dataPath>
+			<field>ОписаниеТипов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле.Первый тип</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поле.ПросмотрТипов</dataPath>
+			<field>ПросмотрТипов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле.Просмотр типов</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ПоляМетаданных</objectName>
 	</dataSet>
@@ -928,6 +948,35 @@
 			<dcsat:expression>ФункциональнаяОпция.Включена</dcsat:expression>
 		</parameter>
 	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ОписаниеТипов</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Расшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ОписаниеТипов</dcsat:name>
+			<dcsat:expression>Поле.ОписаниеТипов</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>Расшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Поле.ОписаниеТипов</dcsat:field>
+				<dcsat:expression>Поле.ОписаниеТипов</dcsat:expression>
+			</dcsat:fieldExpression>
+		</parameter>
+	</template>
 	<fieldTemplate>
 		<field>Доступ</field>
 		<template>Макет2</template>
@@ -935,6 +984,10 @@
 	<fieldTemplate>
 		<field>ФункциональнаяОпция.Включена</field>
 		<template>Макет3</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Поле.ОписаниеТипов</field>
+		<template>Макет4</template>
 	</fieldTemplate>
 	<settingsVariant>
 		<dcsset:name>ПоМетаданным</dcsset:name>
@@ -1488,6 +1541,12 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:field>Поле.Представление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поле.ОписаниеТипов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поле.ПросмотрТипов</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
