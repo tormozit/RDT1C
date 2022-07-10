@@ -838,10 +838,26 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Соединить</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Соединить</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Соединить</v8:content>
+								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
 								</v8:item>
 							</ToolTip>
@@ -874,6 +890,7 @@
 			<DefaultItem>true</DefaultItem>
 			<Height>8</Height>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ДинамическийСписок</DataPath>
 			<RowPictureDataPath>ДинамическийСписок.DefaultPicture</RowPictureDataPath>
@@ -1137,12 +1154,6 @@
 					</Type>
 				</Column>
 				<Column name="ПолноеИмя" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Имя регистра</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -2236,7 +2247,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>2</v8:content>
+					<v8:content>Сравнить строки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2250,7 +2261,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Сравнить 2 строки между собой</v8:content>
+					<v8:content>Сравнить выделенные строки между собой</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
