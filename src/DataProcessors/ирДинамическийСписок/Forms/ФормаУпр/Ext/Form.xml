@@ -800,7 +800,15 @@
 					<EnableDrag>true</EnableDrag>
 					<DataPath>СоединяемыеРегистры</DataPath>
 					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="СоединяемыеРегистрыКонтекстноеМеню" id="102"/>
+					<ContextMenu name="СоединяемыеРегистрыКонтекстноеМеню" id="102">
+						<ChildItems>
+							<Button name="СоединяемыеРегистрыКонтекстноеМенюОтключитьРегистры" id="216">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОтключитьВсеРегистры</CommandName>
+								<ExtendedTooltip name="СоединяемыеРегистрыКонтекстноеМенюОтключитьРегистрыРасширеннаяПодсказка" id="217"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
 					<AutoCommandBar name="СоединяемыеРегистрыКоманднаяПанель" id="103"/>
 					<ExtendedTooltip name="СоединяемыеРегистрыРасширеннаяПодсказка" id="104"/>
 					<SearchStringAddition name="СоединяемыеРегистрыСтрокаПоиска" id="105">
@@ -2582,6 +2590,25 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ГруппировкаТаблицы</Action>
+		</Command>
+		<Command name="ОтключитьВсеРегистры" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить все регистры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтключитьВсеРегистры</Action>
 		</Command>
 	</Commands>
 	<Parameters>
