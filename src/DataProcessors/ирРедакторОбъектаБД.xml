@@ -36,25 +36,27 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="e5d30529-d9c0-42a1-ae9d-1c8c71170519">
+			<Attribute uuid="9348df45-cb8f-44a6-a3c0-3d98ead14ecc">
 				<Properties>
-					<Name>ВыбОбъект</Name>
+					<Name>АвтозапускПоискаСсылок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выб объект</v8:content>
+							<v8:content>Автозапуск поиска ссылок</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Выб объект</v8:content>
+							<v8:content>Имя/Представление</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Выб объект</v8:content>
+							<v8:content>Имя/Представление</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Type/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
@@ -97,6 +99,88 @@
 					<Type>
 						<v8:Type>v8:UUID</v8:Type>
 					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b3b9e79b-0da7-4360-be4b-bebe91942902">
+				<Properties>
+					<Name>АвтозапускПодсчетаСсылок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автозапуск подсчета ссылок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя/Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Имя/Представление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e5d30529-d9c0-42a1-ae9d-1c8c71170519">
+				<Properties>
+					<Name>ВыбОбъект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выб объект</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Выб объект</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Выб объект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
@@ -635,21 +719,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e20cca4d-bd06-40fd-b5d8-c0b228700ae8">
+			<Attribute uuid="c7bcafc8-efbf-4333-a424-6ed659691660">
 				<Properties>
-					<Name>мПрефиксИмениТабличногоПоляТЧ</Name>
+					<Name>мПрефиксИмениТабличногоПоляДвижения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
+							<v8:content>М префикс имени табличного поля движения</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
+							<v8:content>М префикс имени табличного поля движения</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
+							<v8:content>М префикс имени табличного поля движения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -681,21 +765,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c7bcafc8-efbf-4333-a424-6ed659691660">
+			<Attribute uuid="e20cca4d-bd06-40fd-b5d8-c0b228700ae8">
 				<Properties>
-					<Name>мПрефиксИмениТабличногоПоляДвижения</Name>
+					<Name>мПрефиксИмениТабличногоПоляТЧ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>М префикс имени табличного поля движения</v8:content>
+							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>М префикс имени табличного поля движения</v8:content>
+							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>М префикс имени табличного поля движения</v8:content>
+							<v8:content>М префикс имени табличного поля ТЧ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
