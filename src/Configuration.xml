@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>6.37.1</Version>
+			<Version>6.38.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -223,6 +223,7 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -386,6 +387,7 @@
 			<CommonPicture>ирРазличия</CommonPicture>
 			<CommonPicture>ирРаскомментировать</CommonPicture>
 			<CommonPicture>ирРедактироватьОбъектБД</CommonPicture>
+			<CommonPicture>ирРедакторОстатков</CommonPicture>
 			<CommonPicture>ирРедакторСтроковогоЛитерала</CommonPicture>
 			<CommonPicture>ирРеквизит</CommonPicture>
 			<CommonPicture>ирСвернутьВсе</CommonPicture>
@@ -449,7 +451,6 @@
 			<CommonPicture>ирЧасы</CommonPicture>
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирШрифт</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирЯчейкаТаблицы</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
@@ -530,6 +531,7 @@
 			<DataProcessor>ирРедакторИзмененийНаУзлах</DataProcessor>
 			<DataProcessor>ирРедакторКонстант</DataProcessor>
 			<DataProcessor>ирРедакторОбъектаБД</DataProcessor>
+			<DataProcessor>ирРедакторОстатков</DataProcessor>
 			<DataProcessor>ирРедакторОграниченияДоступа</DataProcessor>
 			<DataProcessor>ирРедакторПараметровСеанса</DataProcessor>
 			<DataProcessor>ирРедакторПользователей</DataProcessor>
