@@ -897,6 +897,7 @@
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
 			<Height>8</Height>
+			<HeaderHeight>2</HeaderHeight>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<FileDragMode>AsFile</FileDragMode>
@@ -954,11 +955,11 @@
 				<Event name="OnChange">ДинамическийСписокПриИзменении</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="ДинамическийСписокВременноеПоле" id="39">
+				<PictureField name="ДинамическийСписокВременноеПоле" id="39">
 					<DataPath>ДинамическийСписок.ВременноеПоле</DataPath>
 					<ContextMenu name="ДинамическийСписокВременноеПолеКонтекстноеМеню" id="40"/>
 					<ExtendedTooltip name="ДинамическийСписокВременноеПолеРасширеннаяПодсказка" id="41"/>
-				</LabelField>
+				</PictureField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>6.39.1</Version>
+			<Version>6.40.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -223,8 +223,6 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
-			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
 			<CommonPicture>ирJSON</CommonPicture>
@@ -378,6 +376,7 @@
 			<CommonPicture>ирПоследовательность</CommonPicture>
 			<CommonPicture>ирПостроительЗапроса</CommonPicture>
 			<CommonPicture>ирПраваДоступа</CommonPicture>
+			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирПредопределенный</CommonPicture>
 			<CommonPicture>ирПредприятие1С8</CommonPicture>
 			<CommonPicture>ирПриходРасход</CommonPicture>
@@ -400,6 +399,7 @@
 			<CommonPicture>ирСоставнойТип</CommonPicture>
 			<CommonPicture>ирСостоянияОбъекта</CommonPicture>
 			<CommonPicture>ирСостоянияСсылки</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирСохранитьВариантНастроек</CommonPicture>
 			<CommonPicture>ирСохранитьКак</CommonPicture>
 			<CommonPicture>ирСохранитьНастройки</CommonPicture>
@@ -452,6 +452,8 @@
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирШрифт</CommonPicture>
 			<CommonPicture>ирЯчейкаТаблицы</CommonPicture>
+			<CommonPicture>ирПраваНаБазу</CommonPicture>
+			<CommonPicture>ирСостоянияФлажка</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -489,6 +491,7 @@
 			<Report>ирОтсутствующиеИндексыСУБД</Report>
 			<Report>ирПодпискиНаСобытия</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
+			<Report>ирАнализПравНаБазу</Report>
 			<DataProcessor>ирАнализДанных</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
 			<DataProcessor>ирАнализТехножурнала</DataProcessor>
