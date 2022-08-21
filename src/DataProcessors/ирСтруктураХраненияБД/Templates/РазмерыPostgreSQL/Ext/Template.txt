@@ -1,0 +1,27 @@
+﻿SELECT
+	pretty_sizes.table_name AS fullTableName,
+	pretty_sizes.tabname AS TableName,
+	pretty_sizes.tabschema AS tabschema,
+	pretty_sizes.table_size/1024 AS DataKB,
+	pretty_sizes.indexes_size/1024 AS IndexKB,
+	pretty_sizes.total_size/1024 AS ReservedKB,
+	c.reltuples::integer AS Rows,
+	'' as IndexType
+FROM
+	(SELECT
+		all_tables.table_name AS table_name,
+		all_tables.tabname AS tabname,
+		all_tables.tabschema AS tabschema,
+		pg_table_size(table_name) AS table_size,
+		pg_indexes_size(table_name) AS indexes_size,
+		pg_total_relation_size(table_name) AS total_size
+	FROM
+		(SELECT
+			('"'||table_schema||'"."'||table_name||'"') AS table_name,
+			table_name AS tabname,
+			table_schema AS tabschema
+		FROM
+			information_schema.tables AS tables
+		WHERE table_schema LIKE 'public') AS all_tables) AS pretty_sizes
+	LEFT JOIN pg_class AS c
+	ON c.oid = tabname::regclass::oid
