@@ -179,6 +179,11 @@
 				<CommandName>Form.Command.СколькоСтрок</CommandName>
 				<ExtendedTooltip name="ФормаСколькоСтрокРасширеннаяПодсказка" id="45"/>
 			</Button>
+			<Button name="ФормаВывестиСтроки" id="71">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВывестиСтроки</CommandName>
+				<ExtendedTooltip name="ФормаВывестиСтрокиРасширеннаяПодсказка" id="72"/>
+			</Button>
 			<Button name="ФормаНастроитьКолонки" id="84">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НастройкаКолонок</CommandName>
@@ -193,11 +198,6 @@
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтображениеИдентификаторов</CommandName>
 				<ExtendedTooltip name="ФормаОтображениеИдентификаторовРасширеннаяПодсказка" id="76"/>
-			</Button>
-			<Button name="ФормаВывестиСтроки" id="71">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВывестиСтроки</CommandName>
-				<ExtendedTooltip name="ФормаВывестиСтрокиРасширеннаяПодсказка" id="72"/>
 			</Button>
 			<Button name="ФормаОткрытьОбъектМетаданных" id="95">
 				<Type>CommandBarButton</Type>
@@ -1804,7 +1804,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Колонки...</v8:content>
+					<v8:content>Колонки</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -1829,7 +1829,12 @@
 					<v8:content>Настройка колонок</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ListSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>НастройкаКолонок</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ДобавитьСтрокуЧерезРедакторОбъектаБД" id="19">
 			<Title>
@@ -2598,10 +2603,26 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Отключить все</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Отключить все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отключить все</v8:content>
+				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить все регистры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Отключить все регистры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
 					<v8:content>Отключить все регистры</v8:content>
 				</v8:item>
 			</ToolTip>
