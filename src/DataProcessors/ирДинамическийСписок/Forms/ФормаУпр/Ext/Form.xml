@@ -23,16 +23,19 @@
 			<Button name="ФормаОтключитьОтбор" id="73">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтключитьОтбор</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОтключитьОтборРасширеннаяПодсказка" id="74"/>
 			</Button>
 			<Button name="ФормаОтборПоЗначенияВТекущейКолонке" id="99">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтборПоЗначенияВТекущейКолонке</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОтборПоЗначенияВТекущейКолонкеРасширеннаяПодсказка" id="100"/>
 			</Button>
 			<Button name="ФормаОтборБезЗначенияВТекущейКолонке" id="56">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтборБезЗначенияВТекущейКолонке</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОтборБезЗначенияВТекущейКолонкеРасширеннаяПодсказка" id="57"/>
 			</Button>
 			<Popup name="ПоследниеОтборы" id="131">
@@ -69,16 +72,19 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
 				<Representation>Picture</Representation>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ПоследниеОтборыРасширеннаяПодсказка" id="132"/>
 			</Popup>
 			<Button name="ФормаНастройкаСписка" id="50">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НастройкаСписка</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="51"/>
 			</Button>
 			<Button name="ФормаОсновнаяФорма" id="37">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОсновнаяФорма</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОсновнаяФормаРасширеннаяПодсказка" id="38"/>
 			</Button>
 			<Popup name="ПоследниеВыбранные" id="77">
@@ -115,118 +121,164 @@
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
 				<Representation>Picture</Representation>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ПоследниеВыбранныеРасширеннаяПодсказка" id="78"/>
 			</Popup>
 			<Button name="ФормаНайтиВыбратьПоID" id="93">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НайтиВыбратьПоID</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНайтиВыбратьПоIDРасширеннаяПодсказка" id="94"/>
-			</Button>
-			<Button name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБД" id="89">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ДобавитьСтрокуЧерезРедакторОбъектаБД</CommandName>
-				<ExtendedTooltip name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБДРасширеннаяПодсказка" id="90"/>
 			</Button>
 			<Button name="ФормаРедакторОбъектаБД" id="29">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.ИзменитьСтрокуЧерезРедакторОбъектаБД</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
-			</Button>
-			<Button name="ФормаИзменитьФорму" id="125">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="126"/>
 			</Button>
 			<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СвязанныйРедакторОбъектаБДСтроки</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСвязанныйРедакторОбъектаБДСтрокиРасширеннаяПодсказка" id="92"/>
 			</Button>
-			<Button name="ФормаРедакторОбъектаБДЯчейки" id="46">
+			<Popup name="ГруппаРедакторОбъектаБД" id="218">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю редактора</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю редактора объекта БД</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<ExtendedTooltip name="ГруппаРедакторОбъектаБДРасширеннаяПодсказка" id="219"/>
+				<ChildItems>
+					<Button name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБД" id="89">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьСтрокуЧерезРедакторОбъектаБД</CommandName>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ExtendedTooltip name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБДРасширеннаяПодсказка" id="90"/>
+					</Button>
+					<Button name="ФормаРедакторОбъектаБДЯчейки" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РедакторОбъектаБДЯчейки</CommandName>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ExtendedTooltip name="ФормаРедакторОбъектаБДЯчейкиРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаИзменитьФорму" id="125">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.РедакторОбъектаБДЯчейки</CommandName>
-				<ExtendedTooltip name="ФормаРедакторОбъектаБДЯчейкиРасширеннаяПодсказка" id="47"/>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="126"/>
 			</Button>
 			<Button name="ФормаВыделитьНужноеКоличество" id="48">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыделитьНужноеКоличество</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаВыделитьНужноеКоличествоРасширеннаяПодсказка" id="49"/>
 			</Button>
 			<Button name="ФормаОбработатьОбъекты" id="54">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОбработатьОбъекты</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОбработатьОбъектыРасширеннаяПодсказка" id="55"/>
 			</Button>
 			<Button name="ФормаСравнитьСтроки" id="129">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СравнитьСтроки</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСравнитьСтрокиРасширеннаяПодсказка" id="130"/>
 			</Button>
 			<Button name="ФормаРазличныеЗначенияКолонки" id="52">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.РазличныеЗначенияКолонки</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаРазличныеЗначенияКолонкиРасширеннаяПодсказка" id="53"/>
 			</Button>
 			<Button name="ФормаГруппировкаТаблицы" id="214">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ГруппировкаТаблицы</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаГруппировкаТаблицыРасширеннаяПодсказка" id="215"/>
 			</Button>
 			<Button name="ФормаСколькоСтрок" id="44">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СколькоСтрок</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСколькоСтрокРасширеннаяПодсказка" id="45"/>
 			</Button>
 			<Button name="ФормаВывестиСтроки" id="71">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВывестиСтроки</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаВывестиСтрокиРасширеннаяПодсказка" id="72"/>
 			</Button>
 			<Button name="ФормаНастроитьКолонки" id="84">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НастройкаКолонок</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНастроитьКолонкиРасширеннаяПодсказка" id="85"/>
 			</Button>
 			<Button name="ФормаСброситьНастройкиКолонок" id="42">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СброситьНастройкиСписка</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСброситьНастройкиКолонокРасширеннаяПодсказка" id="43"/>
 			</Button>
 			<Button name="ФормаОтображениеИдентификаторов" id="75">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтображениеИдентификаторов</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОтображениеИдентификаторовРасширеннаяПодсказка" id="76"/>
 			</Button>
 			<Button name="ФормаОткрытьОбъектМетаданных" id="95">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОткрытьОбъектМетаданных</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОткрытьОбъектМетаданныхРасширеннаяПодсказка" id="96"/>
 			</Button>
 			<Button name="ФормаСправкаМетаданного" id="97">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СправкаМетаданного</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСправкаМетаданногоРасширеннаяПодсказка" id="98"/>
 			</Button>
 			<Button name="ФормаНовоеОкно" id="25">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НовоеОкно</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНовоеОкноРасширеннаяПодсказка" id="26"/>
 			</Button>
 			<Button name="ФормаСтруктураКоманднойПанели" id="127">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СтруктураКоманднойПанели</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСтруктураКоманднойПанелиРасширеннаяПодсказка" id="128"/>
 			</Button>
 			<Button name="ФормаСтруктураФормы" id="79">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.СтруктураФормы</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаСтруктураФормыРасширеннаяПодсказка" id="80"/>
 			</Button>
 			<Button name="ФормаОПодсистеме" id="27">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОПодсистеме</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОПодсистемеРасширеннаяПодсказка" id="28"/>
 			</Button>
 		</ChildItems>
@@ -903,7 +955,7 @@
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ДинамическийСписок</DataPath>
 			<RowPictureDataPath>ДинамическийСписок.DefaultPicture</RowPictureDataPath>
-			<SearchStringLocation>None</SearchStringLocation>
+			<SearchStringLocation>PullFromTop</SearchStringLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -1338,7 +1390,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Основная форма</v8:content>
+					<v8:content>Основная</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -1363,7 +1415,12 @@
 					<v8:content>Открыть основную форму списка с передачей текущей строки, отбора и владельца. Закрыть текущую форму, если она в режиме выбора.</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирФорма</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОсновнаяФорма</Action>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СброситьНастройкиСписка" id="5">

@@ -36,21 +36,21 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="9348df45-cb8f-44a6-a3c0-3d98ead14ecc">
+			<Attribute uuid="b3b9e79b-0da7-4360-be4b-bebe91942902">
 				<Properties>
-					<Name>АвтозапускПоискаСсылок</Name>
+					<Name>АвтозапускПодсчетаСсылок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Автозапуск поиска ссылок</v8:content>
+							<v8:content>Автозапуск подсчета ссылок</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Автозапуск поиска ссылок</v8:content>
+							<v8:content>Автозапуск подсчета ссылок</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Автозапуск поиска ссылок</v8:content>
+							<v8:content>Автозапуск подсчета ссылок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -120,21 +120,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b3b9e79b-0da7-4360-be4b-bebe91942902">
+			<Attribute uuid="9348df45-cb8f-44a6-a3c0-3d98ead14ecc">
 				<Properties>
-					<Name>АвтозапускПодсчетаСсылок</Name>
+					<Name>АвтозапускПоискаСсылок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Автозапуск подсчета ссылок</v8:content>
+							<v8:content>Автозапуск поиска ссылок</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Автозапуск подсчета ссылок</v8:content>
+							<v8:content>Автозапуск поиска ссылок</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Автозапуск подсчета ссылок</v8:content>
+							<v8:content>Автозапуск поиска ссылок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1138,6 +1138,38 @@
 						<v8:item>
 							<v8:lang>uk</v8:lang>
 							<v8:content>Параметр прочитать объект</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="43533360-777c-4b7d-a762-c1f2c42efbdd">
+				<Properties>
+					<Name>ПараметрСтрокиПоиска</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметр строки поиска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
