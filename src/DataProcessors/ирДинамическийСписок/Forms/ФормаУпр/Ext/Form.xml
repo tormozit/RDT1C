@@ -132,7 +132,6 @@
 			</Button>
 			<Button name="ФормаРедакторОбъектаБД" id="29">
 				<Type>CommandBarButton</Type>
-				<Representation>Text</Representation>
 				<CommandName>Form.Command.ИзменитьСтрокуЧерезРедакторОбъектаБД</CommandName>
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
@@ -470,11 +469,23 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа2" id="114">
+		<UsualGroup name="ГруппаНастройки" id="114">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="115"/>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="115"/>
 			<ChildItems>
 				<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
 					<CommandBarLocation>None</CommandBarLocation>
@@ -1410,6 +1421,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ИзменитьСтрокуЧерезРедакторОбъектаБД</Action>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>Use</CurrentRowUse>
 		</Command>
 		<Command name="ОсновнаяФорма" id="4">
