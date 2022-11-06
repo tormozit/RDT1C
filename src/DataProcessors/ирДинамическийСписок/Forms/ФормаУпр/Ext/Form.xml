@@ -20,6 +20,22 @@
 	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Popup name="ФормаПодменюПодключаемые" id="220">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>БСП</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подключаемые команды через механизм БСП</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<ExtendedTooltip name="ФормаПодменюПодключаемыеРасширеннаяПодсказка" id="221"/>
+			</Popup>
 			<Button name="ФормаОтключитьОтбор" id="73">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтключитьОтбор</CommandName>
@@ -136,12 +152,6 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаРедакторОбъектаБДРасширеннаяПодсказка" id="30"/>
 			</Button>
-			<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СвязанныйРедакторОбъектаБДСтроки</CommandName>
-				<ShapeRepresentation>None</ShapeRepresentation>
-				<ExtendedTooltip name="ФормаСвязанныйРедакторОбъектаБДСтрокиРасширеннаяПодсказка" id="92"/>
-			</Button>
 			<Popup name="ПодменюРедакторОбъектаБД" id="218">
 				<Title>
 					<v8:item>
@@ -184,6 +194,12 @@
 						<CommandName>Form.Command.ДобавитьСтрокуЧерезРедакторОбъектаБД</CommandName>
 						<ShapeRepresentation>None</ShapeRepresentation>
 						<ExtendedTooltip name="ФормаДобавитьСтрокуЧерезРедакторОбъектаБДРасширеннаяПодсказка" id="90"/>
+					</Button>
+					<Button name="ФормаСвязанныйРедакторОбъектаБДСтроки" id="91">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СвязанныйРедакторОбъектаБДСтроки</CommandName>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ExtendedTooltip name="ФормаСвязанныйРедакторОбъектаБДСтрокиРасширеннаяПодсказка" id="92"/>
 					</Button>
 					<Button name="ФормаРедакторОбъектаБДЯчейки" id="46">
 						<Type>CommandBarButton</Type>
@@ -1995,7 +2011,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Связанный редактор объекта БД строки</v8:content>
+					<v8:content>Связанный редактор объекта БД строки. При активизации строки в списке - в редакторе объекта БД будет загружаться ее объект.</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>

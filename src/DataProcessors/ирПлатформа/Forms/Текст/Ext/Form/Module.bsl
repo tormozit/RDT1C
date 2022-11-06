@@ -553,8 +553,9 @@
 	РедакторHTML = ПолеТекстаHTML.РедакторHTML();
 	РедакторHTML.init("1");
 	РедакторHTML.minimap(Ложь);
-	РедакторHTML.switchXMLMode();
-	РедакторHTML.enableModificationEvent(Истина);
+	РедакторHTML.setLanguageMode("xml");
+	//РедакторHTML.enableModificationEvent(Истина);
+	РедакторHTML.setOption("generateModificationEvent", Истина);
 	ЭлементыФормы.ПанельОсновная.ТекущаяСтраница = ЭлементыФормы.ПанельОсновная.ТекущаяСтраница; // Вызовет ПриСменеСтраницы
 	//РедакторHTML.updateText(ПолучитьТекст());
 	

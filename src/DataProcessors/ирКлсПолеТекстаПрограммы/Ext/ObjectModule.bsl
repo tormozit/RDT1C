@@ -5215,20 +5215,25 @@
 
 КонецПроцедуры
 
-Процедура ОкружитьВыделенныеСтроки(Знач НачалоОкружения, Знач КонецОкружения) Экспорт 
+Процедура ОкружитьВыделенныеСтроки(Знач НачалоОкружения, Знач КонецОкружения, Знач СмещатьВправо = Истина) Экспорт 
 	
 	#Если Сервер И Не Сервер Тогда
 		ПолеТекста = Обработки.ирОболочкаПолеТекста.Создать();
 	#КонецЕсли
 	НомерНачальнойСтроки = ПолучитьНомерТекущейСтроки(Истина);
 	ВыделенныйТекст = ПолеТекста.ВыделенныйТекст();
+	Смещение = "";
+	Если СмещатьВправо Тогда
+		Смещение = Символы.Таб;
+	КонецЕсли;
 	СмещениеПервойСтроки = Лев(ВыделенныйТекст, СтрДлина(ВыделенныйТекст) - СтрДлина(СокрЛ(ВыделенныйТекст)));
 	ПолеТекста.ВставитьТекст(
 	"" + СмещениеПервойСтроки + НачалоОкружения + "
-	|" + Символы.Таб + ирОбщий.ДобавитьМногострочнуюСтрокуВТекстЛкс("", ВыделенныйТекст, Символы.Таб) + "
+	|" + Смещение + ирОбщий.ДобавитьМногострочнуюСтрокуВТекстЛкс("", ВыделенныйТекст, Смещение) + "
 	|" + СмещениеПервойСтроки + КонецОкружения);
 	НомерНачальнойКолонки = СтрДлина(СмещениеПервойСтроки) + 1;
 	ПолеТекста.УстановитьГраницыВыделения(НомерНачальнойСтроки, НомерНачальнойКолонки, НомерНачальнойСтроки, НомерНачальнойКолонки,, ФормаВладелец);
+	УстановитьПризнакМодифицированностиФормы();
 
 КонецПроцедуры
 
@@ -5375,9 +5380,9 @@
 	РедакторHTML.minimap(Ложь);
 	РедакторHTML.init(Инфо.ВерсияПриложения);
 	Если ЯзыкПрограммы = 1 Тогда
-		РедакторHTML.switchQueryMode();
+		РедакторHTML.setLanguageMode("bsl_query");
 	ИначеЕсли ЯзыкПрограммы = 2 Тогда
-		РедакторHTML.switchDCSMode();
+		РедакторHTML.setLanguageMode("dcs_query");
 	КонецЕсли; 
 	РедакторHTML.setOption("disableContextQueryConstructor", Истина);
 	РедакторHTML.setOption("disableNativeSuggestions", Истина); // События не перестают вызываться
@@ -5386,11 +5391,16 @@
 	РедакторHTML.setOption("skipInsertSuggestionAcceptor", Истина); // Отключаем вставку точки при выборе слова из списка https://github.com/salexdv/bsl_console/issues/120#issuecomment-844372676
 	РедакторHTML.setOption("skipAcceptionSelectedSuggestion", Истина); // Отключаем стандартную обработку вставки активного пункта подсказки. Практически 'СтандартнаяОбработка = Ложь'
 	РедакторHTML.setOption("renderQueryDelimiters", Истина); // Разделители запросов пакета https://github.com/salexdv/bsl_console/issues/218
-	РедакторHTML.enableBeforeSignatureEvent(Истина);
-	РедакторHTML.enableBeforeShowSuggestEvent(Истина);
-	РедакторHTML.enableSelectSuggestEvent(Истина);
-	РедакторHTML.enableModificationEvent(Истина);
-	РедакторHTML.enableBeforeHoverEvent(Истина);
+	//РедакторHTML.enableBeforeSignatureEvent(Истина);    
+	РедакторHTML.setOption("generateBeforeSignatureEvent", Истина);
+	//РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+	РедакторHTML.setOption("generateBeforeShowSuggestEvent", Истина);
+	//РедакторHTML.enableSelectSuggestEvent(Истина);
+	РедакторHTML.setOption("generateSelectSuggestEvent", Истина);
+	//РедакторHTML.enableBeforeHoverEvent(Истина);
+	РедакторHTML.setOption("generateBeforeHoverEvent", Истина);
+	//РедакторHTML.enableModificationEvent(Истина);
+	РедакторHTML.setOption("generateModificationEvent", Истина);
 	РедакторHTML.disableKeyBinding(2082); // CTRL(2048)+D(34) - CTRL+D
 	РедакторHTML.disableKeyBinding(2118); // CTRL(2048)+D(70) - F12
 	РедакторHTML.setActiveSuggestionAcceptors("."); // По нажатию точки выполняется вставка активного слова и ввод точки // Много нежелательных срабатываний
@@ -5593,10 +5603,12 @@
 		ВариантыСинтаксиса = Новый Соответствие;
 		ВариантыСинтаксиса.Вставить(ирОбщий.ПоследнийФрагментЛкс(ИмяМетодаОтРедактора, " "), СтруктураПодсказки);
 		РедакторHTML.setCustomSignatures(ирОбщий.ОбъектВСтрокуJSONЛкс(ВариантыСинтаксиса));
-		РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+		//РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+		РедакторHTML.setOption("generateBeforeShowSuggestEvent", Ложь);
 		РазрешеноСобытиеПередПоказомАвтодополнения = Ложь;
 		РедакторHTML.triggerSigHelp();
-		РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+		//РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+		РедакторHTML.setOption("generateBeforeShowSuggestEvent", Истина);
 		//ИмяМетодаОтРедактора = ФормаВызовМетода.ИмяМетода;
 		//НомерПараметра = мНомерПараметра - 1;
 	КонецЕсли;
@@ -5692,9 +5704,11 @@
 				Или ЯзыкПрограммы = 0 И ирОбщий.СтрокиРавныЛкс(ПоследнееСлово, "new")))
 	Тогда 
 		Если Триггер = "backspace" Тогда
-			РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+			//РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+			РедакторHTML.setOption("generateBeforeShowSuggestEvent", Ложь);
 			РедакторHTML.showPreviousCustomSuggestions();
-			РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+			//РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+			РедакторHTML.setOption("generateBeforeShowSuggestEvent", Истина);
 		Иначе
 			ФормаВызовМетода = ФормаВызовМетода();
 			Если ФормаВызовМетода.Открыта() Тогда
@@ -5715,7 +5729,10 @@
 				ПоказатьСписок = Не (мКонтекст = "" И Триггер = ".");
 			КонецЕсли; 
 			Если ПоказатьСписок Тогда
-				РедакторHTML.enableSuggestActivationEvent(Истина, Истина);  // Второй параметр включает отображение типов для всех слов списка автодополнения https://github.com/salexdv/bsl_console/issues/119
+				//РедакторHTML.enableSuggestActivationEvent(Истина, Истина);  // Второй параметр включает отображение типов для всех слов списка автодополнения https://github.com/salexdv/bsl_console/issues/119
+				РедакторHTML.setOption("generateSuggestActivationEvent", Истина);
+				РедакторHTML.setOption("alwaysDisplaySuggestDetails", Истина);
+				
 				УспехЗаполнения = ЗаполнитьТаблицуСлов(, мКонкретныйТипКонтекста, мСтруктураТипаКонтекста, Триггер = "space");
 				Если Истина
 					И УспехЗаполнения
@@ -5745,9 +5762,11 @@
 					СтрокаСпискаАвтодополненияHTML = ирОбщий.ОбъектВСтрокуJSONЛкс(СтруктураПодсказки);
 					Если СтрокаСпискаАвтодополненияHTML <> Неопределено Тогда
 						РедакторHTML.setOption("showSnippetsOnCustomSuggestions", мСтруктураТипаКонтекста.ИмяОбщегоТипа = "Локальный"); // Штатные сниппеты https://github.com/salexdv/bsl_console/issues/200
-						РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+						//РедакторHTML.enableBeforeShowSuggestEvent(Ложь);
+						РедакторHTML.setOption("generateBeforeShowSuggestEvent", Ложь);
 						РедакторHTML.showCustomSuggestions(СтрокаСпискаАвтодополненияHTML);
-						РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+						//РедакторHTML.enableBeforeShowSuggestEvent(Истина);
+						РедакторHTML.setOption("generateBeforeShowSuggestEvent", Истина);
 					КонецЕсли; 
 				КонецЕсли;
 			КонецЕсли;
