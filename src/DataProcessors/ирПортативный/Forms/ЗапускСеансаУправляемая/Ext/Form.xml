@@ -211,19 +211,33 @@
 						</InputField>
 						<CheckBoxField name="ТекущийПользователь" id="8016">
 							<DataPath>ТекущийПользователь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущий пользователь (не ОС)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Текущий пользователь (не ОС)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Текущий пользователь (не ОС)</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Запустить от имени текущего пользователя</v8:content>
+									<v8:content>Запустить от имени текущего пользователя 1С. Отключает аутентификацию ОС.</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Запустить от имени текущего пользователя</v8:content>
+									<v8:content>Запустить от имени текущего пользователя 1С. Отключает аутентификацию ОС.</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>uk</v8:lang>
-									<v8:content>Запустить от имени текущего пользователя</v8:content>
+									<v8:content>Запустить от имени текущего пользователя 1С. Отключает аутентификацию ОС.</v8:content>
 								</v8:item>
 							</ToolTip>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -263,7 +277,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<Representation>None</Representation>
+							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПараметрыПользователяРасширеннаяПодсказка" id="8029"/>
 							<ChildItems>
