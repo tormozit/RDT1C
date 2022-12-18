@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<CommandsVisibility>
+		<Command name="0:ba0235d3-b064-4c4e-b15a-6ef7c0be3f54">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -23,6 +28,24 @@
 		</Command>
 	</CommandsPlacement>
 	<CommandsOrder>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьСписокИнструментов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОПодсистеме">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьЗапускСеанса">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:ba0235d3-b064-4c4e-b15a-6ef7c0be3f54">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.СохранитьНастройкиПользователя">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Catalog.ирАлгоритмы.Command.ОткрытьНастройкиАлгоритмов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
 		<Command name="Catalog.ирАлгоритмы.Command.Команда1">
 			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
 		</Command>
@@ -107,6 +130,7 @@
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>ActionsPanelTools</Group>
 		<Group>CommandGroup.ирРазработка</Group>
 	</GroupsOrder>
 </CommandInterface>
