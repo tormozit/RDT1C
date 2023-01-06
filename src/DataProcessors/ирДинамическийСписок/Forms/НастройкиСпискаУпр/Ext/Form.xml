@@ -18,7 +18,7 @@
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<ScalingMode>Compact</ScalingMode>
-	<CustomSettingsFolder>КомпоновщикНастроекПользовательскиеНастройки</CustomSettingsFolder>
+	<CustomSettingsFolder>ПользовательскиеНастройки</CustomSettingsFolder>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<HorizontalAlign>Right</HorizontalAlign>
 		<Autofill>false</Autofill>
@@ -43,7 +43,6 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="ExternalEvent">ВнешнееСобытие</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
@@ -106,7 +105,7 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="60"/>
 					<ChildItems>
-						<Page name="Группа3" id="63">
+						<Page name="СтраницаПользовательские" id="63">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -121,9 +120,23 @@
 									<v8:content>Пользовательские</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="64"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница пользовательские</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Страница пользовательские</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Страница пользовательские</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаПользовательскиеРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
-								<UsualGroup name="КомпоновщикНастроекПользовательскиеНастройки" id="1">
+								<UsualGroup name="ПользовательскиеНастройки" id="1">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -138,8 +151,22 @@
 											<v8:content>Пользовательские настройки</v8:content>
 										</v8:item>
 									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользовательские настройки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Пользовательские настройки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Пользовательские настройки</v8:content>
+										</v8:item>
+									</ToolTip>
 									<Group>Vertical</Group>
-									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+									<ExtendedTooltip name="ПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 								</UsualGroup>
 							</ChildItems>
 						</Page>
@@ -559,6 +586,46 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПараметрАктивироватьГруппу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр активировать группу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Параметр активировать группу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметр активировать группу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрАктивироватьЭлемент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр активировать элемент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Параметр активировать элемент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметр активировать элемент</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Применить" id="1">
@@ -638,10 +705,17 @@
 		<Parameter name="ИсполняемыеНастройки">
 			<Type/>
 		</Parameter>
-		<Parameter name="АктивироватьФиксированныйОтбор">
+		<Parameter name="АктивироватьГруппу">
 			<Type>
-				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
+		</Parameter>
+		<Parameter name="АктивироватьЭлемент">
+			<Type/>
 		</Parameter>
 	</Parameters>
 </Form>

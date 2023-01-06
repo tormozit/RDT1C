@@ -113,12 +113,56 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="51"/>
 			</Button>
-			<Button name="ФормаОсновнаяФорма" id="37">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОсновнаяФорма</CommandName>
+			<Popup name="ФормаДругиеФормыСписка" id="224">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Другие формы списка</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.ирФорма</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
 				<ShapeRepresentation>None</ShapeRepresentation>
-				<ExtendedTooltip name="ФормаОсновнаяФормаРасширеннаяПодсказка" id="38"/>
-			</Button>
+				<ExtendedTooltip name="ФормаДругиеФормыСпискаРасширеннаяПодсказка" id="225"/>
+				<ChildItems>
+					<Button name="ФормаОсновнаяФорма" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОсновнаяФорма</CommandName>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ExtendedTooltip name="ФормаОсновнаяФормаРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="ФормаОбычнаяФорма" id="222">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбычнаяФорма</CommandName>
+						<ExtendedTooltip name="ФормаОбычнаяФормаРасширеннаяПодсказка" id="223"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 			<Popup name="ПоследниеВыбранные" id="77">
 				<Title>
 					<v8:item>
@@ -223,6 +267,12 @@
 						<ShapeRepresentation>None</ShapeRepresentation>
 						<ExtendedTooltip name="ФормаРедакторОбъектаБДЯчейкиРасширеннаяПодсказка" id="47"/>
 					</Button>
+					<Button name="ФормаСвязанныеКолонкиБД" id="330">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СвязанныеКолонкиБД</CommandName>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ExtendedTooltip name="ФормаСвязанныеКолонкиБДРасширеннаяПодсказка" id="331"/>
+					</Button>
 				</ChildItems>
 			</Popup>
 			<Button name="ФормаИзменитьФорму" id="125">
@@ -261,6 +311,18 @@
 				<CommandName>Form.Command.ГруппировкаТаблицы</CommandName>
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаГруппировкаТаблицыРасширеннаяПодсказка" id="215"/>
+			</Button>
+			<Button name="ФормаСжатьКолонки" id="228">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СжатьКолонки</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<ExtendedTooltip name="ФормаСжатьКолонкиРасширеннаяПодсказка" id="229"/>
+			</Button>
+			<Button name="ФормаШиринаКолонок" id="226">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ШиринаКолонок</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<ExtendedTooltip name="ФормаШиринаКолонокРасширеннаяПодсказка" id="227"/>
 			</Button>
 			<Button name="ФормаСколькоСтрок" id="44">
 				<Type>CommandBarButton</Type>
@@ -328,13 +390,30 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОПодсистемеРасширеннаяПодсказка" id="28"/>
 			</Button>
+			<Button name="ФормаСправка" id="230">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="231"/>
+			</Button>
+			<Button name="ФормаНайти" id="232">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Find</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаНайтиРасширеннаяПодсказка" id="233"/>
+			</Button>
+			<Button name="ФормаОтменитьПоиск" id="234">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CancelSearch</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОтменитьПоискРасширеннаяПодсказка" id="235"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="ExternalEvent">ВнешнееСобытие</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
@@ -536,12 +615,516 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="115"/>
 			<ChildItems>
-				<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
+				<Table name="КомпоновщикНастроекОтбор82" id="332">
+					<Representation>Tree</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
+					<Width>60</Width>
+					<Height>4</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>5</MaxHeight>
+					<Header>false</Header>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДинамическийСписок.Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпоновщикНастроекОтбор82КонтекстноеМеню" id="333"/>
+					<AutoCommandBar name="КомпоновщикНастроекОтбор82КоманднаяПанель" id="334"/>
+					<ExtendedTooltip name="КомпоновщикНастроекОтбор82РасширеннаяПодсказка" id="335"/>
+					<SearchStringAddition name="КомпоновщикНастроекОтбор82СтрокаПоиска" id="336">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекОтбор82</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекОтбор82СтрокаПоискаКонтекстноеМеню" id="337"/>
+						<ExtendedTooltip name="КомпоновщикНастроекОтбор82СтрокаПоискаРасширеннаяПодсказка" id="338"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекОтбор82СостояниеПросмотра" id="339">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекОтбор82</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекОтбор82СостояниеПросмотраКонтекстноеМеню" id="340"/>
+						<ExtendedTooltip name="КомпоновщикНастроекОтбор82СостояниеПросмотраРасширеннаяПодсказка" id="341"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекОтбор82УправлениеПоиском" id="342">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекОтбор82</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекОтбор82УправлениеПоискомКонтекстноеМеню" id="343"/>
+						<ExtendedTooltip name="КомпоновщикНастроекОтбор82УправлениеПоискомРасширеннаяПодсказка" id="344"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="DragCheck">КомпоновщикНастроекПользовательскиеНастройкиОтборПроверкаПеретаскивания</Event>
+						<Event name="BeforeAddRow">КомпоновщикНастроекПользовательскийОтборПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">КомпоновщикНастроекПользовательскиеНастройкиОтборПриАктивизацииСтроки</Event>
+						<Event name="Drag">КомпоновщикНастроекПользовательскиеНастройкиОтборПеретаскивание</Event>
+						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиОтборПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="КомпоновщикНастроекОтборИспользование" id="345">
+							<DataPath>ДинамическийСписок.Filter.Use</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпоновщикНастроекОтборИспользованиеКонтекстноеМеню" id="346"/>
+							<ExtendedTooltip name="КомпоновщикНастроекОтборИспользованиеРасширеннаяПодсказка" id="347"/>
+						</CheckBoxField>
+						<ColumnGroup name="КомпоновщикНастроекОтборГруппаКолонокОтбор" id="348">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекОтборГруппаКолонокОтборРасширеннаяПодсказка" id="349"/>
+							<ChildItems>
+								<ColumnGroup name="КомпоновщикНастроекОтборГруппаКолонокОсновныеЭлементыОтбора" id="355">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные элементы отбора</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="КомпоновщикНастроекОтборГруппаКолонокОсновныеЭлементыОтбораРасширеннаяПодсказка" id="356"/>
+									<ChildItems>
+										<ColumnGroup name="КомпоновщикНастроекОтборГруппаКолонокЛевоеЗначение" id="360">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Левое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекОтборГруппаКолонокЛевоеЗначениеРасширеннаяПодсказка" id="361"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекОтборКартинкаЛевогоЗначения" id="362">
+													<DataPath>ДинамическийСписок.Filter.LeftValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекОтборКартинкаЛевогоЗначенияКонтекстноеМеню" id="363"/>
+													<ExtendedTooltip name="КомпоновщикНастроекОтборКартинкаЛевогоЗначенияРасширеннаяПодсказка" id="364"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекОтборЛевоеЗначение" id="365">
+													<DataPath>ДинамическийСписок.Filter.LeftValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="КомпоновщикНастроекОтборЛевоеЗначениеКонтекстноеМеню" id="366"/>
+													<ExtendedTooltip name="КомпоновщикНастроекОтборЛевоеЗначениеРасширеннаяПодсказка" id="367"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекОтборВидСравнения" id="368">
+											<DataPath>ДинамическийСписок.Filter.ComparisonType</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекОтборВидСравненияКонтекстноеМеню" id="369"/>
+											<ExtendedTooltip name="КомпоновщикНастроекОтборВидСравненияРасширеннаяПодсказка" id="370"/>
+										</InputField>
+										<ColumnGroup name="КомпоновщикНастроекОтборГруппаКолонокПравоеЗначение" id="371">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Правое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекОтборГруппаКолонокПравоеЗначениеРасширеннаяПодсказка" id="372"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекОтборКартинкаПравогоЗначения" id="373">
+													<DataPath>ДинамическийСписок.Filter.RightValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекОтборКартинкаПравогоЗначенияКонтекстноеМеню" id="374"/>
+													<ExtendedTooltip name="КомпоновщикНастроекОтборКартинкаПравогоЗначенияРасширеннаяПодсказка" id="375"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекОтборПравоеЗначение" id="376">
+													<DataPath>ДинамическийСписок.Filter.RightValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+													<ContextMenu name="КомпоновщикНастроекОтборПравоеЗначениеКонтекстноеМеню" id="377"/>
+													<ExtendedTooltip name="КомпоновщикНастроекОтборПравоеЗначениеРасширеннаяПодсказка" id="378"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекОтборДата" id="379">
+											<DataPath>ДинамическийСписок.Filter.Date</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекОтборДатаКонтекстноеМеню" id="380"/>
+											<ExtendedTooltip name="КомпоновщикНастроекОтборДатаРасширеннаяПодсказка" id="381"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="КомпоновщикНастроекОтборТипГруппы" id="357">
+									<DataPath>ДинамическийСписок.Filter.GroupType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпоновщикНастроекОтборТипГруппыКонтекстноеМеню" id="358"/>
+									<ExtendedTooltip name="КомпоновщикНастроекОтборТипГруппыРасширеннаяПодсказка" id="359"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="КомпоновщикНастроекОтборГруппаКолонокПрименение" id="350">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Применение</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекОтборГруппаКолонокПрименениеРасширеннаяПодсказка" id="351"/>
+							<ChildItems>
+								<InputField name="КомпоновщикНастроекОтборПрименение" id="382">
+									<DataPath>ДинамическийСписок.Filter.Application</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекОтборПрименениеКонтекстноеМеню" id="383"/>
+									<ExtendedTooltip name="КомпоновщикНастроекОтборПрименениеРасширеннаяПодсказка" id="384"/>
+								</InputField>
+								<InputField name="КомпоновщикНастроекОтборРежимОтображения" id="385">
+									<DataPath>ДинамическийСписок.Filter.ViewMode</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекОтборРежимОтображенияКонтекстноеМеню" id="386"/>
+									<ExtendedTooltip name="КомпоновщикНастроекОтборРежимОтображенияРасширеннаяПодсказка" id="387"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="КомпоновщикНастроекОтборПредставление" id="352">
+							<DataPath>ДинамическийСписок.Filter.Presentation</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомпоновщикНастроекОтборПредставлениеКонтекстноеМеню" id="353"/>
+							<ExtendedTooltip name="КомпоновщикНастроекОтборПредставлениеРасширеннаяПодсказка" id="354"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="КомпоновщикНастроекПользовательскийОтбор" id="238">
+					<Representation>Tree</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<Width>50</Width>
 					<Height>2</Height>
 					<AutoMaxHeight>false</AutoMaxHeight>
-					<MaxHeight>6</MaxHeight>
+					<MaxHeight>5</MaxHeight>
+					<Header>false</Header>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпоновщикНастроекПользовательскийОтборКонтекстноеМеню" id="239"/>
+					<AutoCommandBar name="КомпоновщикНастроекПользовательскийОтборКоманднаяПанель" id="240"/>
+					<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборРасширеннаяПодсказка" id="241"/>
+					<SearchStringAddition name="КомпоновщикНастроекПользовательскийОтборСтрокаПоиска" id="242">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскийОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскийОтборСтрокаПоискаКонтекстноеМеню" id="243"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборСтрокаПоискаРасширеннаяПодсказка" id="244"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекПользовательскийОтборСостояниеПросмотра" id="245">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскийОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскийОтборСостояниеПросмотраКонтекстноеМеню" id="246"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборСостояниеПросмотраРасширеннаяПодсказка" id="247"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекПользовательскийОтборУправлениеПоиском" id="248">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекПользовательскийОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекПользовательскийОтборУправлениеПоискомКонтекстноеМеню" id="249"/>
+						<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборУправлениеПоискомРасширеннаяПодсказка" id="250"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="DragCheck">КомпоновщикНастроекПользовательскиеНастройкиОтборПроверкаПеретаскивания</Event>
+						<Event name="BeforeAddRow">КомпоновщикНастроекПользовательскийОтборПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">КомпоновщикНастроекПользовательскиеНастройкиОтборПриАктивизацииСтроки</Event>
+						<Event name="Drag">КомпоновщикНастроекПользовательскиеНастройкиОтборПеретаскивание</Event>
+						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиОтборПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="КомпоновщикНастроекПользовательскийОтборИспользование" id="251">
+							<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.Use</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>Directly</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КомпоновщикНастроекПользовательскийОтборИспользованиеКонтекстноеМеню" id="252"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборИспользованиеРасширеннаяПодсказка" id="253"/>
+						</CheckBoxField>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокОтбор" id="254">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Отбор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Отбор</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокОтборРасширеннаяПодсказка" id="255"/>
+							<ChildItems>
+								<ColumnGroup name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокОсновныеЭлементыОтбора" id="261">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные элементы отбора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Основные элементы отбора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Основные элементы отбора</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокОсновныеЭлементыОтбораРасширеннаяПодсказка" id="262"/>
+									<ChildItems>
+										<ColumnGroup name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокЛевоеЗначение" id="266">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Левое значение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Левое значение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Левое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокЛевоеЗначениеРасширеннаяПодсказка" id="267"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекПользовательскийОтборКартинкаЛевогоЗначения" id="268">
+													<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.LeftValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекПользовательскийОтборКартинкаЛевогоЗначенияКонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборКартинкаЛевогоЗначенияРасширеннаяПодсказка" id="270"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекПользовательскийОтборЛевоеЗначение" id="271">
+													<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.LeftValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеКонтекстноеМеню" id="272"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеРасширеннаяПодсказка" id="273"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекПользовательскийОтборВидСравнения" id="274">
+											<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.ComparisonType</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекПользовательскийОтборВидСравненияКонтекстноеМеню" id="275"/>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборВидСравненияРасширеннаяПодсказка" id="276"/>
+										</InputField>
+										<ColumnGroup name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокПравоеЗначение" id="277">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Правое значение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Правое значение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Правое значение</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокПравоеЗначениеРасширеннаяПодсказка" id="278"/>
+											<ChildItems>
+												<PictureField name="КомпоновщикНастроекПользовательскийОтборКартинкаПравогоЗначения" id="279">
+													<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.RightValuePicture</DataPath>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="КомпоновщикНастроекПользовательскийОтборКартинкаПравогоЗначенияКонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборКартинкаПравогоЗначенияРасширеннаяПодсказка" id="281"/>
+												</PictureField>
+												<InputField name="КомпоновщикНастроекПользовательскийОтборПравоеЗначение" id="282">
+													<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.RightValue</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+													<ContextMenu name="КомпоновщикНастроекПользовательскийОтборПравоеЗначениеКонтекстноеМеню" id="283"/>
+													<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборПравоеЗначениеРасширеннаяПодсказка" id="284"/>
+													<Events>
+														<Event name="StartChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбора</Event>
+														<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбораИзСписка</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="КомпоновщикНастроекПользовательскийОтборДата" id="285">
+											<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.Date</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КомпоновщикНастроекПользовательскийОтборДатаКонтекстноеМеню" id="286"/>
+											<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборДатаРасширеннаяПодсказка" id="287"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="КомпоновщикНастроекПользовательскийОтборТипГруппы" id="263">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.GroupType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомпоновщикНастроекПользовательскийОтборТипГруппыКонтекстноеМеню" id="264"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборТипГруппыРасширеннаяПодсказка" id="265"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокПрименение" id="256">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Применение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Применение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Применение</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборГруппаКолонокПрименениеРасширеннаяПодсказка" id="257"/>
+							<ChildItems>
+								<InputField name="КомпоновщикНастроекПользовательскийОтборПрименение" id="288">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.Application</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекПользовательскийОтборПрименениеКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборПрименениеРасширеннаяПодсказка" id="290"/>
+								</InputField>
+								<InputField name="КомпоновщикНастроекПользовательскийОтборРежимОтображения" id="291">
+									<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.ViewMode</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КомпоновщикНастроекПользовательскийОтборРежимОтображенияКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборРежимОтображенияРасширеннаяПодсказка" id="293"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="КомпоновщикНастроекПользовательскийОтборПредставление" id="258">
+							<DataPath>ДинамическийСписок.SettingsComposer.UserSettings[0].Filter.Presentation</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомпоновщикНастроекПользовательскийОтборПредставлениеКонтекстноеМеню" id="259"/>
+							<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборПредставлениеРасширеннаяПодсказка" id="260"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Pages name="ПанельБыстрыеОтборы" id="296">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель быстрые отборы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Панель быстрые отборы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Панель быстрые отборы</v8:content>
+						</v8:item>
+					</Title>
+					<Width>50</Width>
+					<Height>5</Height>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ПанельБыстрыеОтборыРасширеннаяПодсказка" id="297"/>
+					<ChildItems>
+						<Page name="Группа2" id="298">
+							<ShowTitle>false</ShowTitle>
+							<ScrollOnCompress>true</ScrollOnCompress>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="299"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаБыстрыеОтборы" id="236">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Быстрые отборы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<InputField name="мКлючУникальности" id="327">
+											<DataPath>мКлючУникальности</DataPath>
+											<Width>10</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="мКлючУникальностиКонтекстноеМеню" id="328"/>
+											<ExtendedTooltip name="мКлючУникальностиРасширеннаяПодсказка" id="329"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="58">
+					<CommandBarLocation>None</CommandBarLocation>
+					<Width>50</Width>
+					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>5</MaxHeight>
 					<MaxRowsCount>4</MaxRowsCount>
+					<Header>false</Header>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>ДинамическийСписок.SettingsComposer.UserSettings</DataPath>
 					<CommandSet>
@@ -578,6 +1161,7 @@
 						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="70"/>
 					</SearchControlAddition>
 					<Events>
+						<Event name="Selection">КомпоновщикНастроекПользовательскиеНастройкиВыбор</Event>
 						<Event name="OnActivateRow">КомпоновщикНастроекПользовательскиеНастройкиПриАктивизацииСтроки</Event>
 						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиПриИзменении</Event>
 					</Events>
@@ -683,239 +1267,6 @@
 						</CheckBoxField>
 					</ChildItems>
 				</Table>
-				<Table name="КомпоновщикНастроекПользовательскиеНастройкиОтбор" id="133">
-					<Representation>Tree</Representation>
-					<CommandBarLocation>None</CommandBarLocation>
-					<Width>60</Width>
-					<Height>2</Height>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<MaxHeight>5</MaxHeight>
-					<InitialTreeView>ExpandAllLevels</InitialTreeView>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter</DataPath>
-					<ViewMode>All</ViewMode>
-					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
-					<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКонтекстноеМеню" id="134"/>
-					<AutoCommandBar name="КомпоновщикНастроекПользовательскиеНастройкиОтборКоманднаяПанель" id="135"/>
-					<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборРасширеннаяПодсказка" id="136"/>
-					<SearchStringAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоиска" id="137">
-						<AdditionSource>
-							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="138"/>
-						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="139"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотра" id="140">
-						<AdditionSource>
-							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="141"/>
-						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="142"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоиском" id="143">
-						<AdditionSource>
-							<Item>КомпоновщикНастроекПользовательскиеНастройкиОтбор</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="144"/>
-						<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="145"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="OnActivateRow">КомпоновщикНастроекПользовательскиеНастройкиОтборПриАктивизацииСтроки</Event>
-						<Event name="OnStartEdit">КомпоновщикНастроекПользовательскиеНастройкиОтборПриНачалеРедактирования</Event>
-						<Event name="OnChange">КомпоновщикНастроекПользовательскиеНастройкиОтборПриИзменении</Event>
-					</Events>
-					<ChildItems>
-						<CheckBoxField name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользование" id="146">
-							<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Use</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<EditMode>Directly</EditMode>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользованиеКонтекстноеМеню" id="147"/>
-							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборИспользованиеРасширеннаяПодсказка" id="148"/>
-						</CheckBoxField>
-						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОтбор" id="149">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Отбор</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>Отбор</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Отбор</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОтборРасширеннаяПодсказка" id="150"/>
-							<ChildItems>
-								<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОсновныеЭлементыОтбора" id="156">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Основные элементы отбора</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>en</v8:lang>
-											<v8:content>Основные элементы отбора</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Основные элементы отбора</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Horizontal</Group>
-									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокОсновныеЭлементыОтбораРасширеннаяПодсказка" id="157"/>
-									<ChildItems>
-										<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокЛевоеЗначение" id="161">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Левое значение</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Левое значение</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>uk</v8:lang>
-													<v8:content>Левое значение</v8:content>
-												</v8:item>
-											</Title>
-											<Group>InCell</Group>
-											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокЛевоеЗначениеРасширеннаяПодсказка" id="162"/>
-											<ChildItems>
-												<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначения" id="163">
-													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.LeftValuePicture</DataPath>
-													<ShowInHeader>false</ShowInHeader>
-													<ShowInFooter>false</ShowInFooter>
-													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначенияКонтекстноеМеню" id="164"/>
-													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаЛевогоЗначенияРасширеннаяПодсказка" id="165"/>
-												</PictureField>
-												<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначение" id="166">
-													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.LeftValue</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>10</Width>
-													<HorizontalStretch>true</HorizontalStretch>
-													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначениеКонтекстноеМеню" id="167"/>
-													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборЛевоеЗначениеРасширеннаяПодсказка" id="168"/>
-												</InputField>
-											</ChildItems>
-										</ColumnGroup>
-										<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравнения" id="169">
-											<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.ComparisonType</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<Width>5</Width>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравненияКонтекстноеМеню" id="170"/>
-											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборВидСравненияРасширеннаяПодсказка" id="171"/>
-										</InputField>
-										<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПравоеЗначение" id="172">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Правое значение</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>en</v8:lang>
-													<v8:content>Правое значение</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>uk</v8:lang>
-													<v8:content>Правое значение</v8:content>
-												</v8:item>
-											</Title>
-											<Group>InCell</Group>
-											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПравоеЗначениеРасширеннаяПодсказка" id="173"/>
-											<ChildItems>
-												<PictureField name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначения" id="174">
-													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.RightValuePicture</DataPath>
-													<ShowInHeader>false</ShowInHeader>
-													<ShowInFooter>false</ShowInFooter>
-													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначенияКонтекстноеМеню" id="175"/>
-													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборКартинкаПравогоЗначенияРасширеннаяПодсказка" id="176"/>
-												</PictureField>
-												<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначение" id="177">
-													<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.RightValue</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>10</Width>
-													<HorizontalStretch>true</HorizontalStretch>
-													<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
-													<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеКонтекстноеМеню" id="178"/>
-													<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеРасширеннаяПодсказка" id="179"/>
-													<Events>
-														<Event name="StartChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбора</Event>
-														<Event name="StartListChoice">КомпоновщикНастроекПользовательскиеНастройкиОтборПравоеЗначениеНачалоВыбораИзСписка</Event>
-													</Events>
-												</InputField>
-											</ChildItems>
-										</ColumnGroup>
-										<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборДата" id="180">
-											<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Date</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<Width>10</Width>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборДатаКонтекстноеМеню" id="181"/>
-											<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборДатаРасширеннаяПодсказка" id="182"/>
-										</InputField>
-									</ChildItems>
-								</ColumnGroup>
-								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппы" id="158">
-									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.GroupType</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппыКонтекстноеМеню" id="159"/>
-									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборТипГруппыРасширеннаяПодсказка" id="160"/>
-								</InputField>
-							</ChildItems>
-						</ColumnGroup>
-						<ColumnGroup name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПрименение" id="151">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Применение</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>Применение</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Применение</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборГруппаКолонокПрименениеРасширеннаяПодсказка" id="152"/>
-							<ChildItems>
-								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименение" id="183">
-									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Application</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Width>5</Width>
-									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименениеКонтекстноеМеню" id="184"/>
-									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПрименениеРасширеннаяПодсказка" id="185"/>
-								</InputField>
-								<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображения" id="186">
-									<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.ViewMode</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Width>5</Width>
-									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображенияКонтекстноеМеню" id="187"/>
-									<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборРежимОтображенияРасширеннаяПодсказка" id="188"/>
-								</InputField>
-							</ChildItems>
-						</ColumnGroup>
-						<InputField name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставление" id="153">
-							<DataPath>Items.КомпоновщикНастроекПользовательскиеНастройки.CurrentData.Filter.Presentation</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставлениеКонтекстноеМеню" id="154"/>
-							<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиОтборПредставлениеРасширеннаяПодсказка" id="155"/>
-						</InputField>
-					</ChildItems>
-				</Table>
 				<Table name="СоединяемыеРегистры" id="101">
 					<Representation>List</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
@@ -924,7 +1275,7 @@
 					<Width>30</Width>
 					<Height>2</Height>
 					<AutoMaxHeight>false</AutoMaxHeight>
-					<MaxHeight>6</MaxHeight>
+					<MaxHeight>5</MaxHeight>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -988,15 +1339,15 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+									<v8:content>Соединить основную таблицу с регистром по полному набору измерений. В списке появится группа колонок с именем регистра.</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+									<v8:content>Соединить основную таблицу с регистром по полному набору измерений. В списке появится группа колонок с именем регистра.</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>uk</v8:lang>
-									<v8:content>Соединить основную таблицу с регистром, имеющим единственное измерение</v8:content>
+									<v8:content>Соединить основную таблицу с регистром по полному набору измерений. В списке появится группа колонок с именем регистра.</v8:content>
 								</v8:item>
 							</ToolTip>
 							<EditMode>EnterOnInput</EditMode>
@@ -1028,6 +1379,7 @@
 			<DefaultItem>true</DefaultItem>
 			<Height>8</Height>
 			<HeaderHeight>2</HeaderHeight>
+			<Footer>true</Footer>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<FileDragMode>AsFile</FileDragMode>
@@ -1082,6 +1434,7 @@
 				<Event name="ChoiceProcessing">ДинамическийСписокОбработкаВыбора</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 				<Event name="BeforeRowChange">ДинамическийСписокПередНачаломИзменения</Event>
+				<Event name="OnUpdateUserSettingSetAtServer">ДинамическийСписокПриОбновленииСоставаПользовательскихНастроекНаСервере</Event>
 				<Event name="OnChange">ДинамическийСписокПриИзменении</Event>
 			</Events>
 			<ChildItems>
@@ -1362,6 +1715,1006 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="АдресПараметровВывода" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес параметров вывода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Адрес параметров вывода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Адрес параметров вывода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрукураЗапроса" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Струкура запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Струкура запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Струкура запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Итог0" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог1" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог2" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог3" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог4" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог5" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог6" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог7" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог8" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог9" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог10" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог11" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог12" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог13" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог14" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог15" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог16" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог17" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог18" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог19" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог20" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СхемаПодвала" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СхемаПодвала</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>СхемаПодвала</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>СхемаПодвала</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Итог21" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог22" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог23" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог24" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог25" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог26" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог27" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог28" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог29" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог30" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог31" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог32" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог33" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог34" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог35" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог36" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог37" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог38" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог39" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог50" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итог0</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="НовоеОкно" id="1">
@@ -1382,15 +2735,15 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Новое окно</v8:content>
+					<v8:content>Открыть новое окно с установкой той же таблицы и отбора</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Новое окно</v8:content>
+					<v8:content>Открыть новое окно с установкой той же таблицы и отбора</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Новое окно</v8:content>
+					<v8:content>Открыть новое окно с установкой той же таблицы и отбора</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1465,6 +2818,7 @@
 					<v8:content>Изменить через независимый редактор объекта БД строки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Alt+F2</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1607,6 +2961,7 @@
 					<v8:content>Редактор объекта БД ячейки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Ctrl+Q</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ирРедактироватьОбъектБД</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1716,7 +3071,7 @@
 				<xr:Ref>StdPicture.CustomizeList</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>НастройкаСписка</Action>
+			<Action>ОткрытьНастройкаСписка</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбработатьОбъекты" id="11">
@@ -2785,12 +4140,212 @@
 			</Picture>
 			<Action>ОтключитьВсеРегистры</Action>
 		</Command>
+		<Command name="ОбычнаяФорма" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обычная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Обычная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обычная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть обычную форму списка ИР с передачей текущей строки, отбора и владельца. Закрыть текущую форму, если она в режиме выбора. Также есть общая настройка "Не использовать управляемые формы инструментов в обычном приложении".</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Открыть обычную форму списка ИР с передачей текущей строки, отбора и владельца. Закрыть текущую форму, если она в режиме выбора. Также есть общая настройка "Не использовать управляемые формы инструментов в обычном приложении".</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть обычную форму списка ИР с передачей текущей строки, отбора и владельца. Закрыть текущую форму, если она в режиме выбора. Также есть общая настройка "Не использовать управляемые формы инструментов в обычном приложении".</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирФорма</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбычнаяФорма</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ШиринаКолонок" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ширина колонок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ширина колонок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ширина колонок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширить колонки на 5 символов.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Расширить колонки на 5 символов.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Расширить колонки на 5 символов.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКолонкаТабличногоПоля</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ШиринаКолонок</Action>
+		</Command>
+		<Command name="СжатьКолонки" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сжать колонки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сжать колонки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сжать колонки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сжать колонки в 2 раза.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Сжать колонки в 2 раза.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сжать колонки в 2 раза.
+Если ширина колонок не меняется, выполни команду ""Установить стандартные настройки"" в окне ""Настроить форму"" чтобы удалить пользовательскую ширину. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСжатьКолонку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СжатьКолонки</Action>
+		</Command>
+		<Command name="СвязанныеКолонкиБД" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Связанные колонки БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСвязаннаяТаблица</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвязанныеКолонкиБД</Action>
+		</Command>
+		<Command name="ПоказыватьИтоги" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показывать итоги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирСуммаРежим</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ИмяТаблицы">
 			<Type/>
 		</Parameter>
 		<Parameter name="ТекущаяКолонка">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="КлючСохраненияПоложенияОкна">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="КлючУникальности">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>

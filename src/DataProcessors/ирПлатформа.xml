@@ -2074,7 +2074,7 @@
 									<v8:content>Данные поиска</v8:content>
 								</v8:item>
 							</Synonym>
-							<Comment/>
+							<Comment>Служебная колонка для упрощения отбора по подстроке</Comment>
 							<Type>
 								<v8:Type>xs:string</v8:Type>
 								<v8:StringQualifiers>
@@ -3998,6 +3998,54 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="9f4e37f6-6787-43dd-8eac-a835f05fed06">
+						<Properties>
+							<Name>ДанныеПоиска</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные поиска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Данные поиска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Данные поиска</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Служебная колонка для упрощения отбора по подстроке</Comment>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="65b3659b-b83a-4d4c-bc2b-7e2d429dc0f0">
 						<Properties>
 							<Name>Имя</Name>
@@ -4186,6 +4234,54 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="40a8eff3-2c98-4983-b38b-93837958d106">
+						<Properties>
+							<Name>ОсновныеПараметры</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные параметры</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Основные параметры</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Основные параметры</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="731c28df-a716-4ccd-b88f-18d5feee1182">
 						<Properties>
 							<Name>ОтложеннаяОтладка</Name>
@@ -4322,54 +4418,6 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="40a8eff3-2c98-4983-b38b-93837958d106">
-						<Properties>
-							<Name>ОсновныеПараметры</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Основные параметры</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>Основные параметры</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Основные параметры</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>0</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
 				</ChildObjects>
 			</TabularSection>
 			<Form>HTML</Form>
@@ -4388,7 +4436,6 @@
 			<Form>ДеревоJSON</Form>
 			<Form>ЗначенияФункциональныхОпций</Form>
 			<Form>Картинка</Form>
-			<Form>КорректировкаОстатков</Form>
 			<Form>Массив</Form>
 			<Form>МенеджерТабличногоПоля</Form>
 			<Form>МоментВремени</Form>
@@ -4476,6 +4523,7 @@
 			<Template>СочетанияКлавиш_ПолеТекстовогоДокумента</Template>
 			<Template>СочетанияКлавиш_ТабличноеПоле</Template>
 			<Template>СочетанияКлавиш_Форма</Template>
+			<Template>СочетанияКлавишПодсистемыГлобальные</Template>
 			<Template>СписокИнструментов</Template>
 			<Template>ТаблицаИменЭлементовКоллекций</Template>
 			<Template>ТаблицаМетодовИСвойств</Template>
@@ -4904,11 +4952,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Открыть список инструментов и общие настройки</v8:content>
+							<v8:content>Открыть список инструментов с фильтром и общие настройки</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Открыть список инструментов и общие настройки</v8:content>
+							<v8:content>Открыть список инструментов с фильтром и общие настройки</v8:content>
 						</v8:item>
 					</ToolTip>
 					<Picture>

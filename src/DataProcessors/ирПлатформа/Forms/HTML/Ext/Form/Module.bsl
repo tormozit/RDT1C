@@ -1,7 +1,9 @@
 ﻿
 Процедура ПолеHTMLДокументаonclick(Элемент, pEvtObj)
 	
-	ирОбщий.ОткрытьГиперссылкуПоКликуВHTMLЛкс(pEvtObj);
+	Если ирОбщий.ОткрытьГиперссылкуИзПоляHTMLЛкс(pEvtObj.srcElement, pEvtObj.ctrlKey) Тогда 
+		pEvtObj.returnValue = Ложь;
+	КонецЕсли;
 	
 КонецПроцедуры
 
