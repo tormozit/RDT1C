@@ -354,6 +354,12 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаОтображениеИдентификаторовРасширеннаяПодсказка" id="76"/>
 			</Button>
+			<Button name="ФормаПриемОбъекта" id="388">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПриемОбъекта</CommandName>
+				<ShapeRepresentation>None</ShapeRepresentation>
+				<ExtendedTooltip name="ФормаПриемОбъектаРасширеннаяПодсказка" id="389"/>
+			</Button>
 			<Button name="ФормаОткрытьОбъектМетаданных" id="95">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОткрытьОбъектМетаданных</CommandName>
@@ -448,11 +454,11 @@
 					<ExtendedTooltip name="ПолноеИмяТаблицыРасширеннаяПодсказка" id="16"/>
 					<Events>
 						<Event name="OnChange">ОбъектОбъектМетаданныхПриИзменении</Event>
+						<Event name="AutoComplete">ПолноеИмяТаблицыАвтоПодбор</Event>
 						<Event name="StartChoice">ОбъектОбъектМетаданныхНачалоВыбора</Event>
 						<Event name="StartListChoice">ОбъектМетаданныхНачалоВыбораИзСписка</Event>
 						<Event name="Clearing">ОбъектОбъектМетаданныхОчистка</Event>
 						<Event name="TextEditEnd">ОбъектМетаданныхОкончаниеВводаТекста</Event>
-						<Event name="ChoiceProcessing">ОбъектОбъектМетаданныхОбработкаВыбора</Event>
 					</Events>
 				</InputField>
 				<InputField name="фОбъектКоличествоСтрокВОбластиПоиска" id="81">
@@ -617,6 +623,7 @@
 			<ChildItems>
 				<Table name="КомпоновщикНастроекОтбор82" id="332">
 					<Representation>Tree</Representation>
+					<Visible>false</Visible>
 					<CommandBarLocation>None</CommandBarLocation>
 					<Width>60</Width>
 					<Height>4</Height>
@@ -1434,6 +1441,7 @@
 				<Event name="ChoiceProcessing">ДинамическийСписокОбработкаВыбора</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 				<Event name="BeforeRowChange">ДинамическийСписокПередНачаломИзменения</Event>
+				<Event name="NewWriteProcessing">ДинамическийСписокОбработкаЗаписиНового</Event>
 				<Event name="OnUpdateUserSettingSetAtServer">ДинамическийСписокПриОбновленииСоставаПользовательскихНастроекНаСервере</Event>
 				<Event name="OnChange">ДинамическийСписокПриИзменении</Event>
 			</Events>
@@ -3761,7 +3769,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сравнить строки</v8:content>
+					<v8:content>Сравнить объекты</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -3775,7 +3783,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сравнить выделенные строки между собой</v8:content>
+					<v8:content>Сравнить выделенные объекты между собой или запомнить один объект для сравнения</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -4322,21 +4330,31 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 		</Command>
+		<Command name="ПриемОбъекта" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прием объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель приема таблицы при активации строки владельца</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирПриемОбъекта</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПриемОбъекта</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ИмяТаблицы">
 			<Type/>
 		</Parameter>
 		<Parameter name="ТекущаяКолонка">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Parameter>
-		<Parameter name="КлючСохраненияПоложенияОкна">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
