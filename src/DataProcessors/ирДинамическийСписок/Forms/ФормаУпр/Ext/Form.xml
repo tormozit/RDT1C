@@ -52,11 +52,11 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаПодменюПодключаемыеРасширеннаяПодсказка" id="221"/>
 			</Popup>
-			<Button name="ФормаОтключитьОтбор" id="73">
+			<Button name="ФормаНастройкаСписка" id="50">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОтключитьОтбор</CommandName>
+				<CommandName>Form.Command.НастройкаСписка</CommandName>
 				<ShapeRepresentation>None</ShapeRepresentation>
-				<ExtendedTooltip name="ФормаОтключитьОтборРасширеннаяПодсказка" id="74"/>
+				<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="51"/>
 			</Button>
 			<Button name="ФормаОтборПоЗначенияВТекущейКолонке" id="99">
 				<Type>CommandBarButton</Type>
@@ -107,11 +107,11 @@
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ПоследниеОтборыРасширеннаяПодсказка" id="132"/>
 			</Popup>
-			<Button name="ФормаНастройкаСписка" id="50">
+			<Button name="ФормаОтключитьОтбор" id="73">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.НастройкаСписка</CommandName>
+				<CommandName>Form.Command.ОтключитьОтбор</CommandName>
 				<ShapeRepresentation>None</ShapeRepresentation>
-				<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="51"/>
+				<ExtendedTooltip name="ФормаОтключитьОтборРасширеннаяПодсказка" id="74"/>
 			</Button>
 			<Popup name="ФормаДругиеФормыСписка" id="224">
 				<Title>
@@ -1324,6 +1324,8 @@
 						<ExtendedTooltip name="СоединяемыеРегистрыУправлениеПоискомРасширеннаяПодсказка" id="113"/>
 					</SearchControlAddition>
 					<Events>
+						<Event name="DragCheck">СоединяемыеРегистрыПроверкаПеретаскивания</Event>
+						<Event name="Selection">СоединяемыеРегистрыВыбор</Event>
 						<Event name="OnChange">СоединяемыеРегистрыПриИзменении</Event>
 					</Events>
 					<ChildItems>
@@ -1384,7 +1386,7 @@
 		<Table name="ДинамическийСписок" id="1">
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
-			<Height>8</Height>
+			<Height>10</Height>
 			<HeaderHeight>2</HeaderHeight>
 			<Footer>true</Footer>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -3147,6 +3149,7 @@
 					<v8:content>Отбор без значения в текущей колонке</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Alt+E</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ирОтборБезЗначения</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3219,6 +3222,7 @@
 					<v8:content>Отключить пользовательский отбор</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Alt+R</Shortcut>
 			<Picture>
 				<xr:Ref>StdPicture.ClearFilter</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
