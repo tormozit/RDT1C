@@ -215,6 +215,29 @@
 									<ContextMenu name="ДекорацияНужноДобавитьПользователяКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ДекорацияНужноДобавитьПользователяРасширеннаяПодсказка" id="55"/>
 								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЗапретСинхронныхВызовов" id="65">
+									<Width>50</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В тонком клиенте будет недоступен запуск глобального меню, т.к. в конфигурации запрещены синхронные вызовы.
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>В тонком клиенте будет недоступен запуск глобального меню, т.к. в конфигурации запрещены синхронные вызовы.
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>В тонком клиенте будет недоступен запуск глобального меню, т.к. в конфигурации запрещены синхронные вызовы.
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗапретСинхронныхВызововКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ДекорацияЗапретСинхронныхВызововРасширеннаяПодсказка" id="67"/>
+								</LabelDecoration>
 								<UsualGroup name="ГруппаСпособыСделатьВидимыми" id="58">
 									<Title>
 										<v8:item>

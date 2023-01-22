@@ -1,9 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<CommandsVisibility>
-		<Command name="0:ba0235d3-b064-4c4e-b15a-6ef7c0be3f54">
+		<Command name="Catalog.ирОбъектыДляОтладки.Command.Команда1">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОтключитьГлобальныеОбработчикиОжидания">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбъектДляОтладки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладчик">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладкаВнешнихОбработокБСП">
+			<Visibility>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
@@ -12,125 +32,219 @@
 			</Visibility>
 		</Command>
 		<Command name="CommonForm.ирАдаптацияРасширения.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьПодключениеВнешнихИсточниковДанных">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПоискБитыхСсылок.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПоискДублейИЗаменаСсылок.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПолнотекстовыйПоискДанных.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьРегистрациюCOMКомпонент">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторИзмененийНаУзлах.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторКонстант.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОбъектаБД.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОстатков.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПользователей.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПредопределенных.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирСборщикиСчетчиковWindows.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТаблиц.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеИтогамиРегистров.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеПрофайлами1С.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеСлужбамиСервера1С.Command.Команда1">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
+		<Command name="Catalog.ирОбъектыДляОтладки.Command.Команда1">
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОтключитьГлобальныеОбработчикиОжидания">
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбъектДляОтладки">
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладчик">
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладкаВнешнихОбработокБСП">
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
+			<CommandGroup>CommandGroup.ирОтладка</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="CommonForm.ирАдаптацияРасширения.StandardCommand.Open">
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьПодключениеВнешнихИсточниковДанных">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПоискБитыхСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПоискДублейИЗаменаСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПолнотекстовыйПоискДанных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьРегистрациюCOMКомпонент">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторИзмененийНаУзлах.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторКонстант.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОбъектаБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОстатков.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПользователей.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПредопределенных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирСборщикиСчетчиковWindows.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТаблиц.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеИтогамиРегистров.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеПрофайлами1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеСлужбамиСервера1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 	</CommandsPlacement>
-	<CommandsOrder>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьСписокИнструментов">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОПодсистеме">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьЗапускСеанса">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="0:ba0235d3-b064-4c4e-b15a-6ef7c0be3f54">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.СохранитьНастройкиПользователя">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="Catalog.ирАлгоритмы.Command.ОткрытьНастройкиАлгоритмов">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
-		</Command>
-		<Command name="Catalog.ирАлгоритмы.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирАнализЗамераПроизводительности.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирАнализМетаданных.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирАнализТехножурнала.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирИсследовательОбъектов.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольHTTPЗапросов.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольЗапросов.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольКода.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольКомпоновокДанных.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонсольПостроителейОтчетов.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирКонструкторРегулярногоВыражения.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбработкуМодулейМетаданных">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Catalog.ирОбъектыДляОтладки.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОтключитьГлобальныеОбработчикиОжидания">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОбъектДляОтладки">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладчик">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьОтладкаВнешнихОбработокБСП">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирОтсутствующиеИндексыСУБД.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирПодпискиНаСобытия.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирРедакторОграниченияДоступа.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирРедакторПараметровСеанса.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирРедакторХранилищНастроек.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирСинтаксПомощник.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="Report.ирСтатистикаПоЗапросамСУБД.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирСтруктураХраненияБД.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирТестированиеМетаданных.Command.Команда1">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьФункцииРежимаОтладки">
-			<CommandGroup>CommandGroup.ирРазработка</CommandGroup>
-		</Command>
-	</CommandsOrder>
-	<GroupsOrder>
-		<Group>NavigationPanelImportant</Group>
-		<Group>ActionsPanelTools</Group>
-		<Group>CommandGroup.ирРазработка</Group>
-	</GroupsOrder>
 </CommandInterface>

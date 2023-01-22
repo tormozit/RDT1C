@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>6.60.2</Version>
+			<Version>6.61.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -223,6 +223,7 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирHtml</CommonPicture>
 			<CommonPicture>ирHttp</CommonPicture>
@@ -355,7 +356,7 @@
 			<CommonPicture>ирПапка</CommonPicture>
 			<CommonPicture>ирПараметрыМетода</CommonPicture>
 			<CommonPicture>ирПерезапустить</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
+			<CommonPicture>ирПереименовать</CommonPicture>
 			<CommonPicture>ирПерейтиКОпределению</CommonPicture>
 			<CommonPicture>ирПереключитьИнтерфейс</CommonPicture>
 			<CommonPicture>ирПереместитьВКонец</CommonPicture>
@@ -459,7 +460,6 @@
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирШрифт</CommonPicture>
 			<CommonPicture>ирЯчейкаТаблицы</CommonPicture>
-			<CommonPicture>ирПереименовать</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
 			<Role>ирПользователь</Role>
@@ -478,10 +478,11 @@
 			<CommonCommand>ирОбъединитьСсылки</CommonCommand>
 			<CommonCommand>ирРедактироватьИзмененияНаУзле</CommonCommand>
 			<CommonCommand>ирРедактироватьОбъект</CommonCommand>
-			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
-			<CommandGroup>ирНастройки</CommandGroup>
-			<CommandGroup>ирРазработка</CommandGroup>
 			<CommandGroup>ирАдминистрирование</CommandGroup>
+			<CommandGroup>ирАдминистрирование2</CommandGroup>
+			<CommandGroup>ирКоманднаяПанельФормы</CommandGroup>
+			<CommandGroup>ирОтладка</CommandGroup>
+			<CommandGroup>ирРазработка</CommandGroup>
 			<CommonForm>ирАдаптацияРасширения</CommonForm>
 			<CommonForm>ирВыпускВариантаПортативный</CommonForm>
 			<CommonForm>ирВыпускВариантаРасширение</CommonForm>
