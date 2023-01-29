@@ -339,6 +339,12 @@
 			<Button name="ФормаНастроитьКолонки" id="84">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.НастройкаКолонок</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Колонки</v8:content>
+					</v8:item>
+				</Title>
 				<ShapeRepresentation>None</ShapeRepresentation>
 				<ExtendedTooltip name="ФормаНастроитьКолонкиРасширеннаяПодсказка" id="85"/>
 			</Button>
@@ -939,6 +945,10 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеКонтекстноеМеню" id="272"/>
 													<ExtendedTooltip name="КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеРасширеннаяПодсказка" id="273"/>
+													<Events>
+														<Event name="AutoComplete">КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеАвтоПодбор</Event>
+														<Event name="TextEditEnd">КомпоновщикНастроекПользовательскийОтборЛевоеЗначениеОкончаниеВводаТекста</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</ColumnGroup>
@@ -3323,7 +3333,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Колонки</v8:content>
+					<v8:content>_</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -3337,7 +3347,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка колонок</v8:content>
+					<v8:content>Настройка колонок. После ":" показано количество скрытых колонок.</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
