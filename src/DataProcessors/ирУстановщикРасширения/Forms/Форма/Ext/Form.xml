@@ -195,6 +195,29 @@
 							<Group>Vertical</Group>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="17"/>
 							<ChildItems>
+								<LabelDecoration name="ДекорацияЗапретРусскийЯзык" id="71">
+									<Width>50</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В тонком клиенте будет недоступен запуск глобального меню, т.к. в конфигурации запрещены синхронные вызовы.
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>В конфигурации необходимо добавить язык "Русский" с кодом "ru".
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>В тонком клиенте будет недоступен запуск глобального меню, т.к. в конфигурации запрещены синхронные вызовы.
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗапретРусскийЯзыкContextMenu" id="72"/>
+									<ExtendedTooltip name="ДекорацияЗапретРусскийЯзыкExtendedTooltip" id="73"/>
+								</LabelDecoration>
 								<LabelDecoration name="ДекорацияНужноДобавитьПользователя" id="53">
 									<Width>50</Width>
 									<TextColor>style:SpecialTextColor</TextColor>
@@ -214,6 +237,29 @@
 									</Title>
 									<ContextMenu name="ДекорацияНужноДобавитьПользователяКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ДекорацияНужноДобавитьПользователяРасширеннаяПодсказка" id="55"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНужноДобавитьПользователя1" id="68">
+									<Width>50</Width>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если после установки вручную поднять режим совместимости расширения до 8.3.14 и включить в нем основую роль, то оно станет видимым без пользователей.
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Если после установки вручную поднять режим совместимости расширения до 8.3.14 и включить в нем основую роль, то оно станет видимым без пользователей.
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Если после установки вручную поднять режим совместимости расширения до 8.3.14 и включить в нем основую роль, то оно станет видимым без пользователей.
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНужноДобавитьПользователя1КонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ДекорацияНужноДобавитьПользователя1РасширеннаяПодсказка" id="70"/>
 								</LabelDecoration>
 								<LabelDecoration name="ДекорацияЗапретСинхронныхВызовов" id="65">
 									<Width>50</Width>
