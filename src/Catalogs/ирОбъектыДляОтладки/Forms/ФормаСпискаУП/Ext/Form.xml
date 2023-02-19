@@ -76,6 +76,9 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="26"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="27"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="Код" id="14">
 					<DataPath>Список.Code</DataPath>

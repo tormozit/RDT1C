@@ -373,6 +373,11 @@
 				<CommandName>Form.Command.ПриемОбъекта</CommandName>
 				<ExtendedTooltip name="ФормаПриемОбъектаРасширеннаяПодсказка" id="389"/>
 			</Button>
+			<Button name="ФормаКолонкаБД" id="390">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КолонкаБД</CommandName>
+				<ExtendedTooltip name="ФормаКолонкаБДРасширеннаяПодсказка" id="391"/>
+			</Button>
 			<Button name="ФормаОткрытьОбъектМетаданных" id="95">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОткрытьОбъектМетаданных</CommandName>
@@ -2949,7 +2954,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сбросить настройки списка</v8:content>
+					<v8:content>Сбросить настройки списка. По умолчанию будут видимы все стандартные важные колонки и не более 777 обычных колонок по алфавиту.</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -4424,6 +4429,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПриемОбъекта</Action>
+		</Command>
+		<Command name="КолонкаБД" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонка БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонка БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F12</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.ирКолонкаТаблицы</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КолонкаБД</Action>
 		</Command>
 	</Commands>
 	<Parameters>
