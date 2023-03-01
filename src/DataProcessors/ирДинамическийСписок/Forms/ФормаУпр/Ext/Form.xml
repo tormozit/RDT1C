@@ -1453,7 +1453,7 @@
 			<Footer>true</Footer>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
-			<FileDragMode>AsFile</FileDragMode>
+			<EnableDrag>true</EnableDrag>
 			<DataPath>ДинамическийСписок</DataPath>
 			<RowPictureDataPath>ДинамическийСписок.DefaultPicture</RowPictureDataPath>
 			<SearchStringLocation>PullFromTop</SearchStringLocation>
@@ -1498,10 +1498,12 @@
 				<ExtendedTooltip name="ДинамическийСписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="DragCheck">ДинамическийСписокПроверкаПеретаскивания</Event>
 				<Event name="Selection">ДинамическийСписокВыбор</Event>
 				<Event name="BeforeAddRow">ДинамическийСписокПередНачаломДобавления</Event>
 				<Event name="OnActivateRow">ДинамическийСписокПриАктивизацииСтроки</Event>
 				<Event name="OnActivateField">ДинамическийСписокПриАктивизацииПоля</Event>
+				<Event name="Drag">ДинамическийСписокПеретаскивание</Event>
 				<Event name="ChoiceProcessing">ДинамическийСписокОбработкаВыбора</Event>
 				<Event name="OnGetDataAtServer">ДинамическийСписокПриПолученииДанныхНаСервере</Event>
 				<Event name="BeforeRowChange">ДинамическийСписокПередНачаломИзменения</Event>
