@@ -81,7 +81,7 @@
 				<Event name="Opening">КаталогФайловогоКэшаОткрытие</Event>
 			</Events>
 		</InputField>
-		<CheckBoxField name="ОтладкаДляТекущегоПользователя" id="1">
+		<CheckBoxField name="СозданиеВнешнихОбработокЧерезФайл" id="1">
 			<DataPath>СозданиеВнешнихОбработокЧерезФайл</DataPath>
 			<ToolTip>
 				<v8:item>
@@ -98,10 +98,10 @@
 				</v8:item>
 			</ToolTip>
 			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ОтладкаДляТекущегоПользователяКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ОтладкаДляТекущегоПользователяРасширеннаяПодсказка" id="60"/>
+			<ContextMenu name="СозданиеВнешнихОбработокЧерезФайлКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СозданиеВнешнихОбработокЧерезФайлРасширеннаяПодсказка" id="60"/>
 			<Events>
-				<Event name="OnChange">ОтладкаДляТекущегоПользователяПриИзменении</Event>
+				<Event name="OnChange">СозданиеВнешнихОбработокЧерезФайлПриИзменении</Event>
 			</Events>
 		</CheckBoxField>
 		<LabelDecoration name="НадписьНеРаботаютТочкиОстанова" id="51">
