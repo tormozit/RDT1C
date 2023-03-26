@@ -725,7 +725,7 @@
 
 Процедура УстановитьТелоHTML(Знач ТекстHTML, Знач ПереносСлов = Истина)
 	
-	ОформлениеТекста = "<pre style=""FONT-SIZE: 10pt; FONT-FAMILY: Courier New; color: #000000;";
+	ОформлениеТекста = "<pre style=""FONT-SIZE: 10pt; FONT-FAMILY: Courier New; color: #000000; tab-size: 4;";
 	Если ПереносСлов Тогда                              
 		// https://developer.mozilla.org/ru/docs/Web/CSS/overflow-wrap
 		// normal, keep-all и остальные вебкит не поддерживает, т.к. в нем используется режим совместимости IE7.0 https://forum.mista.ru/topic.php?id=884540
@@ -736,6 +736,12 @@
 	ДокументHtml = ЭлементФормы.Документ;
 	//ДокументHtml.body.innerHTML = РаскрашенныйТекст;
 	ДокументHtml.documentElement.innerHTML = РаскрашенныйТекст;
+
+КонецПроцедуры
+
+Процедура УстановитьОтображаемыйТекст(Знач Текст, Знач ПереносСлов = Истина) Экспорт 
+	
+	УстановитьТелоHTML(ирОбщий.КодироватьТекстВXMLЛкс(Текст), ПереносСлов);
 
 КонецПроцедуры
 

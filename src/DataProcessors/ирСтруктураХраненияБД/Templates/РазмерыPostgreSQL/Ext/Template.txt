@@ -6,7 +6,9 @@
 	pretty_sizes.indexes_size/1024 AS IndexKB,
 	pretty_sizes.total_size/1024 AS ReservedKB,
 	c.reltuples::integer AS Rows,
-	'' as IndexType
+	'' as IndexType,
+	0 AS IndexUses,
+	0 AS IndexUpdates
 FROM
 	(SELECT
 		all_tables.table_name AS table_name,

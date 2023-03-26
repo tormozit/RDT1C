@@ -13,7 +13,9 @@ a1.DATA * @pagesizeKB AS DataKB,
 SI.name as IndexName,
 --SI.Index_ID as IndexID,
 SI.type_desc AS IndexType,
-sc.RecordLength as RecordLength
+sc.RecordLength as RecordLength,
+dm_ius.user_seeks + dm_ius.user_scans + dm_ius.user_lookups AS IndexUses,
+dm_ius.user_updates AS IndexUpdates 
 FROM
     (SELECT ps.object_id, ps.index_id,
             CASE WHEN (ps.index_id < 2) THEN ROW_COUNT ELSE 0 END AS [ROWS],
@@ -39,4 +41,6 @@ FROM
 			 LEFT JOIN sys.columns as sc with (nolock) ON sic.object_id = sc.object_id AND sic.column_id = sc.column_id
 			group by sic.object_id, sic.index_id) sc 
 		on sc.index_id = SI.index_id and sc.object_id = SI.object_id
+	LEFT JOIN sys.dm_db_index_usage_stats dm_ius 
+	ON SI.object_id = dm_ius.OBJECT_ID 
 WHERE a2.TYPE <> N'S' AND a2.TYPE <> N'IT'
