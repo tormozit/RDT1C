@@ -573,6 +573,40 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="6c369c65-8cff-4487-909b-5db0804f41a0">
+				<Properties>
+					<Name>КолонкиПараметров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонки параметров</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="6ea2f456-610e-4b5c-bf3d-7ecb5c5e5d12">
 				<Properties>
 					<Name>Компоновщик</Name>
@@ -872,61 +906,6 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="1abc4741-f7f7-4e50-8d1b-e048f1b2972d">
-				<Properties>
-					<Name>ПодключатьСвязанныеТаблицы</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подключать связанные таблицы</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Подключать связанные таблицы</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Подключать связанные таблицы</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="4135a108-946a-4639-a39a-d9d5a4c436a7">
 				<Properties>
 					<Name>ПодключатьПоляНесогласованности</Name>
@@ -963,6 +942,61 @@
 						<v8:item>
 							<v8:lang>uk</v8:lang>
 							<v8:content>Подключать поля проверки несогласованности данных по связям и параметрам выбора. Они помещаются в папку "Несогласовано".</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1abc4741-f7f7-4e50-8d1b-e048f1b2972d">
+				<Properties>
+					<Name>ПодключатьСвязанныеТаблицы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключать связанные таблицы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Подключать связанные таблицы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Подключать связанные таблицы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Подключать поля связанных таблиц. Числа подчиненных строк (движения документов, табличные части) помещаются в папку "Число подчиненных строк". Поля каждого связанного по полному набору измерений регистра помещаются в папку с его названием.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -2223,6 +2257,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ВыгрузкаВФайл</Form>
+			<Form>ЗагрузитьИзВерсии</Form>
 			<Form>ЗаменитьСсылкиНаОбъекты</Form>
 			<Form>Записать</Form>
 			<Form>ЗаписатьВерсию</Form>

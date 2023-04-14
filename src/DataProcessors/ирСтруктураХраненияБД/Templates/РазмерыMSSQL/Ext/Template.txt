@@ -42,5 +42,5 @@ FROM
 			group by sic.object_id, sic.index_id) sc 
 		on sc.index_id = SI.index_id and sc.object_id = SI.object_id
 	LEFT JOIN sys.dm_db_index_usage_stats dm_ius 
-	ON SI.object_id = dm_ius.OBJECT_ID 
+	ON SI.object_id = dm_ius.OBJECT_ID AND SI.index_id = dm_ius.index_id AND dm_ius.database_id = DB_ID()
 WHERE a2.TYPE <> N'S' AND a2.TYPE <> N'IT'
