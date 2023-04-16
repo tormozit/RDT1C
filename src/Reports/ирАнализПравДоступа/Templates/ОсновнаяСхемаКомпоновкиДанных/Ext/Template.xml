@@ -388,12 +388,12 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Поле.ПолноеИмя</dataPath>
+			<dataPath>ПолеПолноеИмя</dataPath>
 			<field>ПолеПолноеИмя</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поле.Полное имя</v8:content>
+					<v8:content>Поле полное имя</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -404,6 +404,18 @@
 					<v8:content>Поле.Полное имя</v8:content>
 				</v8:item>
 			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
 			<valueType>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -602,7 +614,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поле.Первый тип</v8:content>
+					<v8:content>Поле.Описание типов</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -762,7 +774,7 @@
 		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>ФункциональныеОпцииПолей</destinationDataSet>
 		<sourceExpression>ОбъектМетаданных + "." + ТабличнаяЧасть + "." + Поле</sourceExpression>
-		<destinationExpression>Поле.ПолноеИмя</destinationExpression>
+		<destinationExpression>ПолеПолноеИмя</destinationExpression>
 	</dataSetLink>
 	<dataSetLink>
 		<sourceDataSet>ФункциональныеОпцииПолей</sourceDataSet>
@@ -868,7 +880,6 @@
 		<dataPath>ФункциональнаяОпция.Включена</dataPath>
 		<expression>Максимум(ФункциональнаяОпция.Включена)</expression>
 		<group>Поле</group>
-		<group>Поле.ПолноеИмя</group>
 	</totalField>
 	<totalField>
 		<dataPath>ОбъектМетаданных.ПолеПроверки</dataPath>
@@ -981,16 +992,74 @@
 				</dcsat:tableCell>
 			</dcsat:item>
 		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>Расшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Поле</dcsat:field>
+				<dcsat:expression>Поле</dcsat:expression>
+			</dcsat:fieldExpression>
+		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>ОписаниеТипов</dcsat:name>
 			<dcsat:expression>Поле.ОписаниеТипов</dcsat:expression>
 		</parameter>
+	</template>
+	<template>
+		<name>Макет5</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Представление</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Расшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
 			<dcsat:name>Расшифровка</dcsat:name>
 			<dcsat:fieldExpression>
-				<dcsat:field>Поле.ОписаниеТипов</dcsat:field>
-				<dcsat:expression>Поле.ОписаниеТипов</dcsat:expression>
+				<dcsat:field>Поле</dcsat:field>
+				<dcsat:expression>Поле</dcsat:expression>
 			</dcsat:fieldExpression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Представление</dcsat:name>
+			<dcsat:expression>Поле.Представление</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет6</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ПросмотрТипов</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Расшифровка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>Расшифровка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Поле</dcsat:field>
+				<dcsat:expression>Поле</dcsat:expression>
+			</dcsat:fieldExpression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ПросмотрТипов</dcsat:name>
+			<dcsat:expression>Поле.ПросмотрТипов</dcsat:expression>
 		</parameter>
 	</template>
 	<fieldTemplate>
@@ -1004,6 +1073,14 @@
 	<fieldTemplate>
 		<field>Поле.ОписаниеТипов</field>
 		<template>Макет4</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Поле.Представление</field>
+		<template>Макет5</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>Поле.ПросмотрТипов</field>
+		<template>Макет6</template>
 	</fieldTemplate>
 	<settingsVariant>
 		<dcsset:name>ПоМетаданным</dcsset:name>
