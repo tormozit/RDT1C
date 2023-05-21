@@ -6,5 +6,5 @@ FROM
 	FROM sys.dm_xe_sessions AS s 
 	JOIN sys.dm_xe_session_targets AS t 
 		ON t.event_session_address = s.address
-	WHERE s.name = 'RDT1C_{ИмяСессии}_{ИдентификаторСессии}'
+	WHERE s.name = 'RDT1C_{ИдентификаторБазы}_{ИмяСессии}_{ИдентификаторСессии}'
 		AND t.target_name = N'ring_buffer') AS T

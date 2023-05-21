@@ -7,7 +7,7 @@ DECLARE session_list CURSOR FOR
 SELECT 
 	[name]
 FROM sys.server_event_sessions
-where [name] LIKE 'RDT1C_%_%';
+where [name] LIKE 'RDT1C_{ИдентификаторБазы}_%_%';
 
 OPEN session_list;
 

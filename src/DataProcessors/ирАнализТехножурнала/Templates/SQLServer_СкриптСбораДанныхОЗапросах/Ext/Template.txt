@@ -1,4 +1,4 @@
-﻿CREATE EVENT SESSION [RDT1C_getQueriesInfo_{ИдентификаторСессии}] ON SERVER 
+﻿CREATE EVENT SESSION [RDT1C_{ИдентификаторБазы}_getQueriesInfo_{ИдентификаторСессии}] ON SERVER 
 ADD EVENT sqlserver.rpc_completed(
     ACTION(
         sqlos.cpu_id,
@@ -15,7 +15,7 @@ ADD EVENT sqlserver.rpc_completed(
         sqlserver.sql_text
     )
     WHERE (
-        [sqlserver].[database_id]=({ИдентификаторБазыДанных})
+        [sqlserver].[database_id]=({ИдентификаторБазы})
         AND [sqlserver].[session_id]=({ИдентификаторСоединения})
     )
 ),
@@ -35,7 +35,7 @@ ADD EVENT sqlserver.sql_batch_completed(
         sqlserver.sql_text
     )
     WHERE (
-        [sqlserver].[database_id]=({ИдентификаторБазыДанных})
+        [sqlserver].[database_id]=({ИдентификаторБазы})
         AND [sqlserver].[session_id]=({ИдентификаторСоединения})
     )
 ),
@@ -55,7 +55,7 @@ ADD EVENT sqlserver.sp_statement_completed(
         sqlserver.sql_text
     )
     WHERE ( 
-        [sqlserver].[database_id]=({ИдентификаторБазыДанных})
+        [sqlserver].[database_id]=({ИдентификаторБазы})
         AND [sqlserver].[session_id]=({ИдентификаторСоединения})
     )
 ),
@@ -75,7 +75,7 @@ ADD EVENT sqlserver.sql_statement_completed(
         sqlserver.sql_text
     )
     WHERE ( 
-        [sqlserver].[database_id]=({ИдентификаторБазыДанных})
+        [sqlserver].[database_id]=({ИдентификаторБазы})
         AND [sqlserver].[session_id]=({ИдентификаторСоединения})
     )
 )
@@ -90,6 +90,6 @@ WITH (
     STARTUP_STATE=OFF
 );
 
-ALTER EVENT SESSION [RDT1C_getQueriesInfo_{ИдентификаторСессии}]
+ALTER EVENT SESSION [RDT1C_{ИдентификаторБазы}_getQueriesInfo_{ИдентификаторСессии}]
 ON SERVER  
 STATE = START;

@@ -1,6 +1,6 @@
 ﻿IF EXISTS (SELECT *
       FROM sys.server_event_sessions
-      WHERE name = 'RDT1C_{ИмяСессии}_{ИдентификаторСессии}')
+      WHERE name = 'RDT1C_{ИдентификаторБазы}_{ИмяСессии}_{ИдентификаторСессии}')
 BEGIN
-    DROP EVENT SESSION RDT1C_{ИмяСессии}_{ИдентификаторСессии} ON SERVER;
+    DROP EVENT SESSION RDT1C_{ИдентификаторБазы}_{ИмяСессии}_{ИдентификаторСессии} ON SERVER;
 END
