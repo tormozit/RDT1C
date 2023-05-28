@@ -1,0 +1,41 @@
+﻿DECLARE @table_name SYSNAME
+DECLARE @table_nameLocal SYSNAME
+SELECT @table_name = %ГлобальноеИмяВременнойТаблицы%
+SELECT @table_nameLocal = %ИмяНовойВременнойТаблицы%
+
+DECLARE 
+      @object_name SYSNAME
+    , @object_id INT
+
+SELECT 
+    @object_id = s.[object_id]
+from tempdb.sys.tables as s
+WHERE s.name = @table_name
+
+DECLARE @SQL NVARCHAR(MAX) = ''
+;
+SELECT 'CREATE TABLE ' + @table_nameLocal + '(' + CHAR(13) + STUFF((
+    SELECT CHAR(9) + ', [' + c.name + '] ' + 
+        CASE WHEN c.is_computed = 1
+            THEN 'AS ' + cc.[definition] 
+            ELSE UPPER(tp.name) + 
+                CASE WHEN tp.name IN ('varchar', 'char', 'varbinary', 'binary', 'text')
+                       THEN '(' + CASE WHEN c.max_length = -1 THEN 'MAX' ELSE CAST(c.max_length AS VARCHAR(5)) END + ')'
+                     WHEN tp.name IN ('nvarchar', 'nchar', 'ntext')
+                       THEN '(' + CASE WHEN c.max_length = -1 THEN 'MAX' ELSE CAST(c.max_length / 2 AS VARCHAR(5)) END + ')'
+                     WHEN tp.name IN ('datetime2', 'time2', 'datetimeoffset') 
+                       THEN '(' + CAST(c.scale AS VARCHAR(5)) + ')'
+                     WHEN tp.name = 'decimal' 
+                       THEN '(' + CAST(c.[precision] AS VARCHAR(5)) + ',' + CAST(c.scale AS VARCHAR(5)) + ')'
+                    ELSE ''
+                END +
+                CASE WHEN c.collation_name IS NOT NULL THEN ' COLLATE ' + c.collation_name ELSE '' END +
+                CASE WHEN c.is_nullable = 1 THEN ' NULL' ELSE ' NOT NULL' END 
+        END + CHAR(13)
+    FROM tempdb.sys.columns c WITH (NOWAIT)
+    JOIN tempdb.sys.types tp WITH (NOWAIT) ON c.user_type_id = tp.user_type_id
+    LEFT JOIN tempdb.sys.computed_columns cc WITH (NOWAIT) ON c.[object_id] = cc.[object_id] AND c.column_id = cc.column_id
+    WHERE c.[object_id] = @object_id
+    ORDER BY c.column_id
+    FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, CHAR(9) + ' ')
+    + ')'  + CHAR(13)
