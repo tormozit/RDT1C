@@ -291,16 +291,19 @@
 		КонецЕсли; 
 	КонецЕсли; 
 	
-	мWMI =  ирКэш.ПолучитьCOMОбъектWMIЛкс(Компьютер);
-	// http://www.forum.mista.ru/topic.php?id=752260
-	//ИмяКласса = "Win32_OperatingSystem";
-	//КоллекцияОС = мWMI.InstancesOf(ИмяКласса);
-	//Для каждого лОС Из КоллекцияОС Цикл
-	//	Прервать;
-	//КонецЦикла;
-	//Результат = Лев(лОС.OSArchitecture, 2) = "64";
-	РезультатЗапроса = мWMI.ExecQuery("select AddressWidth from Win32_Processor where DeviceID=""CPU0"" AND AddressWidth=64");
-	Результат = РезультатЗапроса.Count > 0;
+	Результат = ирКэш.Это64битныйПроцессЛкс();
+	Если Не Результат Тогда
+		мWMI =  ирКэш.ПолучитьCOMОбъектWMIЛкс(Компьютер);
+		// http://www.forum.mista.ru/topic.php?id=752260
+		//ИмяКласса = "Win32_OperatingSystem";
+		//КоллекцияОС = мWMI.InstancesOf(ИмяКласса);
+		//Для каждого лОС Из КоллекцияОС Цикл
+		//	Прервать;
+		//КонецЦикла;
+		//Результат = Лев(лОС.OSArchitecture, 2) = "64";
+		РезультатЗапроса = мWMI.ExecQuery("select AddressWidth from Win32_Processor where AddressWidth=64");
+		Результат = РезультатЗапроса.Count > 0;
+	КонецЕсли;
 	
 	Если ирКэш.ЛиПортативныйРежимЛкс() Тогда
 		КэшФункции[КлючНаборПараметров] = Результат;
