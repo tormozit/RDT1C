@@ -880,20 +880,7 @@
 							<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Красным нехватка выходов</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Красным нехватка выходов</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Красным нехватка выходов</v8:content>
-						</v8:item>
-					</dcsset:presentation>
+					<dcsset:presentation xsi:type="xs:string">Красным нехватка выходов</dcsset:presentation>
 				</dcsset:item>
 				<dcsset:item>
 					<dcsset:selection/>
@@ -910,20 +897,7 @@
 							<dcscor:value xsi:type="v8ui:Color">#009600</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Зеленым нехватка входов</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Зеленым нехватка входов</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Зеленым нехватка входов</v8:content>
-						</v8:item>
-					</dcsset:presentation>
+					<dcsset:presentation xsi:type="xs:string">Зеленым нехватка входов</dcsset:presentation>
 				</dcsset:item>
 				<dcsset:item>
 					<dcsset:selection>
@@ -940,21 +914,12 @@
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>БЛ=</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>БЛ=</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>БЛ=</v8:content>
-								</v8:item>
-							</dcscor:value>
+							<dcscor:value xsi:type="xs:string">БЛ=</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1027,20 +992,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-							</dcscor:value>
+							<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=6</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1300,21 +1252,12 @@
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ЧДЦ=6; БЛ=</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>ЧДЦ=6; БЛ=</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>ЧДЦ=6; БЛ=</v8:content>
-								</v8:item>
-							</dcscor:value>
+							<dcscor:value xsi:type="xs:string">ЧДЦ=6; БЛ=</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1331,20 +1274,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ЧДЦ=2</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>ЧДЦ=2</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>ЧДЦ=2</v8:content>
-								</v8:item>
-							</dcscor:value>
+							<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -1394,20 +1324,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Формат</dcscor:parameter>
-							<dcscor:value xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>en</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>ЧЦ=15; ЧДЦ=6</v8:content>
-								</v8:item>
-							</dcscor:value>
+							<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=6</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
