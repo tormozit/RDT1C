@@ -8,7 +8,6 @@
 
 Перем мРедакторHTML; // Кэш
 Перем НачальнаяСтрока, НачальнаяКолонка, КонечнаяСтрока, КонечнаяКолонка; // Временные переменные для всех методов
-Перем ЛиВнутриУстановкиТекста;
 Перем мПлатформа; 
 Перем мСлужебнаяФорма;
 
@@ -496,8 +495,8 @@
 		Обработки.ирПлатформа.Создать().БазовыйФайлРедактораКода();
 	#КонецЕсли
 	
-	РедакторHTML = ЭлементФормы.Документ.defaultView;
-	ЭлементСтиля = РедакторHTML.document.createElement("style");
+	мРедакторHTML = ЭлементФормы.Документ.defaultView;
+	ЭлементСтиля = мРедакторHTML.document.createElement("style");
 	ЭлементСтиля.setAttribute("type", "text/css");
 	ЭлементСтиля.innerHTML = "
 	// Убираем полосы прокрутки 1С
@@ -548,21 +547,21 @@
 	|	width: 40%;
 	|	float: left;
 	|}";
-	РедакторHTML.document.head.appendChild(ЭлементСтиля);
-	РедакторHTML.showStatusBar(Ложь); // параметр Ложь - отображаем снизу справа
-	РедакторHTML.renderWhitespace(Истина);
-	РедакторHTML.setFontSize(13);
-	РедакторHTML.setLineHeight(15);
-	РедакторHTML.disableContextMenu();
-	РедакторHTML.setOption("autoResizeEditorLayout", Истина); // https://github.com/salexdv/bsl_console/issues/185
-	//РедакторHTML.setOption("lineHeight", 15);  // Высота строки редактора https://github.com/salexdv/bsl_console/issues/195
-	//РедакторHTML.setOption("suggestFontSize", 13); // шрифт окна автодополнения https://github.com/salexdv/bsl_console/issues/194
-	//РедакторHTML.setOption("suggestLineHeight", 15); // шрифт окна автодополнения https://github.com/salexdv/bsl_console/issues/194
+	мРедакторHTML.document.head.appendChild(ЭлементСтиля);
+	мРедакторHTML.showStatusBar(Ложь); // параметр Ложь - отображаем снизу справа
+	мРедакторHTML.renderWhitespace(Истина);
+	мРедакторHTML.setFontSize(13);
+	мРедакторHTML.setLineHeight(15);
+	мРедакторHTML.disableContextMenu();
+	мРедакторHTML.setOption("autoResizeEditorLayout", Истина); // https://github.com/salexdv/bsl_console/issues/185
+	//мРедакторHTML.setOption("lineHeight", 15);  // Высота строки редактора https://github.com/salexdv/bsl_console/issues/195
+	//мРедакторHTML.setOption("suggestFontSize", 13); // шрифт окна автодополнения https://github.com/salexdv/bsl_console/issues/194
+	//мРедакторHTML.setOption("suggestLineHeight", 15); // шрифт окна автодополнения https://github.com/salexdv/bsl_console/issues/194
 	//ИмяШрифта = ирКэш.ИмяШрифтаРедактораМодуляКонфигуратораЛкс();
 	//Если ЗначениеЗаполнено(ИмяШрифта) Тогда
-	//	РедакторHTML.setFontFamily(ИмяШрифта);
+	//	мРедакторHTML.setFontFamily(ИмяШрифта);
 	//Иначе
-		РедакторHTML.setFontFamily("Lucida Console");
+		мРедакторHTML.setFontFamily("Lucida Console");
 	//КонецЕсли; 
 КонецПроцедуры
 
