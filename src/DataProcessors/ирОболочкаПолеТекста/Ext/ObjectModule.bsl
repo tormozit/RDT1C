@@ -518,7 +518,7 @@
 	ЭлементСтиля.innerHTML = "
 	// Убираем полосы прокрутки 1С
 	|body {
-	|	overflow: hidden;
+	|	overflow: hidden; 
 	|}
 	// Цвета статусной строки
 	|.statusbar-widget {
