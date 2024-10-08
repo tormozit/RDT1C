@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>7.47.1</Version>
+			<Version>7.47.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -502,9 +502,12 @@
 			<Report>ирПодпискиНаСобытия</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализДанных</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
-			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
+			<DataProcessor>ирАнализТехножурнала</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
+			<DataProcessor>ирДинамическийСписок</DataProcessor>
+			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
 			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
 			<DataProcessor>ирИмитаторКонстантаМенеджер</DataProcessor>
 			<DataProcessor>ирИмитаторНаборЗаписей</DataProcessor>
@@ -553,18 +556,15 @@
 			<DataProcessor>ирСравнениеТаблиц</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
-			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
-			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
+			<DataProcessor>ирТипКомпонента1CD</DataProcessor>
+			<DataProcessor>ирТипКомпонентаRegEx</DataProcessor>
+			<DataProcessor>ирТипКомпонентаОбщая</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСервера1С</DataProcessor>
 			<DataProcessor>ирУстановщикРасширения</DataProcessor>
-			<DataProcessor>ирТипКомпонента1CD</DataProcessor>
-			<DataProcessor>ирТипКомпонентаRegEx</DataProcessor>
-			<DataProcessor>ирТипКомпонентаОбщая</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
