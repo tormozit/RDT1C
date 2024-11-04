@@ -438,6 +438,21 @@
 							</ToolTip>
 							<ExtendedTooltip name="ИсполняемыеНастройкиРасширеннаяПодсказка" id="107"/>
 							<ChildItems>
+								<CommandBar name="Группа3" id="158">
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="159"/>
+									<ChildItems>
+										<Button name="ОтладитьПолучениеДанных" id="154">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ОтладитьОбновлениеДанных</CommandName>
+											<ExtendedTooltip name="ОтладитьПолучениеДанныхРасширеннаяПодсказка" id="155"/>
+										</Button>
+										<Button name="НастройкаТехножурнала" id="156">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.НастройкаТехножурнала</CommandName>
+											<ExtendedTooltip name="НастройкаТехножурналаРасширеннаяПодсказка" id="157"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
 								<LabelDecoration name="ДекорацияНедоступно" id="149">
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<HorizontalStretch>true</HorizontalStretch>
@@ -745,6 +760,61 @@
 			</Picture>
 			<Action>ОтладитьКомпоновку</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтладитьОбновлениеДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладить обновление данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Отладить компоновку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отладить компоновку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ трассы обновления данных списка в СУБД и в техножурнале по текущему пользователю, где должны быть включены событие QERR и события запросов к БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Анализ трассы обновления данных списка в СУБД и в техножурнале по текущему пользователю, где должны быть включены событие QERR и события запросов к БД</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Анализ трассы обновления данных списка в СУБД и в техножурнале по текущему пользователю, где должны быть включены событие QERR и события запросов к БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирТехноЖурнал</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтладитьОбновлениеДанных</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НастройкаТехножурнала" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка техножурнала</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройку техножурнала по пользователю. Будет предложено установить рекомендуемую настройку.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ирНастройкаТехножурнала</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастройкаТехножурнала</Action>
 		</Command>
 	</Commands>
 	<Parameters>
