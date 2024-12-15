@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>7.56.2</Version>
+			<Version>7.57.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -503,8 +503,10 @@
 			<Report>ирПодпискиНаСобытия</Report>
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализДанных</DataProcessor>
-			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
+			<DataProcessor>ирАнализТехножурнала</DataProcessor>
+			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
+			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
 			<DataProcessor>ирДинамическийСписок</DataProcessor>
 			<DataProcessor>ирЗагрузкаТабличныхДанных</DataProcessor>
 			<DataProcessor>ирИмитаторАлгоритмОбъект</DataProcessor>
@@ -556,8 +558,8 @@
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
 			<DataProcessor>ирТипКомпонента1CD</DataProcessor>
-			<DataProcessor>ирАнализТехножурнала</DataProcessor>
-			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
+			<DataProcessor>ирТипКомпонентаADOUtils</DataProcessor>
+			<DataProcessor>ирТипКомпонентаFuzzySearch</DataProcessor>
 			<DataProcessor>ирТипКомпонентаRegEx</DataProcessor>
 			<DataProcessor>ирТипКомпонентаОбщая</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
@@ -566,8 +568,6 @@
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСервера1С</DataProcessor>
 			<DataProcessor>ирУстановщикРасширения</DataProcessor>
-			<DataProcessor>ирТипКомпонентаADOUtils</DataProcessor>
-			<DataProcessor>ирТипКомпонентаFuzzySearch</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
