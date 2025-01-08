@@ -273,7 +273,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РежимОтладкиИР</v8:content>
+							<v8:content>ПодготовкаКИзменениюСтруктурыБД</v8:content>
 						</v8:item>
 					</tl>
 					<r>18</r>
@@ -285,7 +285,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отключает использование однострочных сверток кода. Снижает скорость, но облегчает отладку.</v8:content>
+							<v8:content>Служебный</v8:content>
 						</v8:item>
 					</tl>
 					<r>19</r>
@@ -302,7 +302,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТестироватьМетаданныеИР</v8:content>
+							<v8:content>РежимОтладкиИР</v8:content>
 						</v8:item>
 					</tl>
 					<r>20</r>
@@ -314,7 +314,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Неинтерактивно запустить тестирование метаданных, записать результат и завершить работу. ТестироватьМетаданныеИР;&lt;ИмяФайлаНастроекФормы&gt;;&lt;ИмяФайлаРезультата&gt;</v8:content>
+							<v8:content>Отключает использование однострочных сверток кода. Снижает скорость, но облегчает отладку.</v8:content>
 						</v8:item>
 					</tl>
 					<r>21</r>
@@ -322,15 +322,44 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТестироватьМетаданныеИР</v8:content>
+						</v8:item>
+					</tl>
+					<r>22</r>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неинтерактивно запустить тестирование метаданных, записать результат и завершить работу. ТестироватьМетаданныеИР;&lt;ИмяФайлаНастроекФормы&gt;;&lt;ИмяФайлаРезультата&gt;</v8:content>
+						</v8:item>
+					</tl>
+					<r>23</r>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<fixedBackground>true</fixedBackground>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>6</defaultFormatIndex>
-	<height>10</height>
-	<vgRows>10</vgRows>
+	<height>11</height>
+	<vgRows>11</vgRows>
 	<saveViewSettings>true</saveViewSettings>
 	<viewSettings>
 		<currentColumn>1</currentColumn>
-		<currentRow>2</currentRow>
+		<currentRow>9</currentRow>
 		<scale>100</scale>
 		<showGrid>true</showGrid>
 		<showHeaders>true</showHeaders>
@@ -352,8 +381,8 @@
 		<showComments>false</showComments>
 		<selection>
 			<type>Rectangle</type>
-			<beginRow>2</beginRow>
-			<endRow>2</endRow>
+			<beginRow>9</beginRow>
+			<endRow>9</endRow>
 			<beginColumn>1</beginColumn>
 			<endColumn>1</endColumn>
 		</selection>
@@ -364,7 +393,7 @@
 	<font faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<font faceName="Arial" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
-		<width>248</width>
+		<width>264</width>
 	</format>
 	<format>
 		<width>512</width>
