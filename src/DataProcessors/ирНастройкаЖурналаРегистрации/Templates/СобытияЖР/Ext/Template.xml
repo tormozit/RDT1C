@@ -3121,6 +3121,7 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -3764,38 +3765,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_Транзакция_Начало</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_Транзакция_Начало</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_Транзакция_Начало</v8:content>
+							<v8:content>Событие_Сеанс_ПодключениеВнешнейОбработки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Transaction$_.Begin</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Transaction$_.Begin</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Transaction$_.Begin</v8:content>
+							<v8:content>_$Session$_.ExternalDataProcessorConnect</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3806,15 +3791,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Начало</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Начало</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Начало</v8:content>
+							<v8:content>Подключение внешней обработки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3844,15 +3821,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Транзакция</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3863,15 +3832,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3879,6 +3848,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -3888,38 +3871,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_Транзакция_Фиксация</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_Транзакция_Фиксация</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_Транзакция_Фиксация</v8:content>
+							<v8:content>Событие_Сеанс_ОшибкаПодключенияВнешнейОбработки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Transaction$_.Commit</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Transaction$_.Commit</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Transaction$_.Commit</v8:content>
+							<v8:content>_$Session$_.ExternalDataProcessorConnectError</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3930,15 +3897,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фиксация</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фиксация</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фиксация</v8:content>
+							<v8:content>Ошибка подключения внешней обработки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3964,19 +3923,11 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Транзакция</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -3987,15 +3938,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>9</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4003,6 +3954,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -4012,38 +3977,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_Транзакция_Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_Транзакция_Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_Транзакция_Отмена</v8:content>
+							<v8:content>Событие_Сеанс_ПодключениеВнешнегоОтчета</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Transaction$_.Rollback</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Transaction$_.Rollback</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Transaction$_.Rollback</v8:content>
+							<v8:content>_$Session$_.ExternalReportConnect</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4054,15 +4003,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Отмена</v8:content>
+							<v8:content>Подключение внешнего отчета</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4088,19 +4029,11 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Транзакция</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Транзакция</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4111,15 +4044,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>4</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>4</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>4</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4127,6 +4060,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -4136,38 +4083,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
+							<v8:content>Событие_Сеанс_ОшибкаПодключенияВнешнегоОтчета</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Job$_.Start</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Job$_.Start</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Job$_.Start</v8:content>
+							<v8:content>_$Session$_.ExternalReportConnectError</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4178,15 +4109,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запуск</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Запуск</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Запуск</v8:content>
+							<v8:content>Ошибка подключения внешнего отчета</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4216,15 +4139,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4235,15 +4150,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>8</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>8</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>8</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4251,6 +4166,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -4260,38 +4189,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
+							<v8:content>Событие_Сеанс_ПодключениеВнешнейКомпоненты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Job$_.Cancel</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Job$_.Cancel</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Job$_.Cancel</v8:content>
+							<v8:content>_$Session$_.ExternalAddInAttach</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4302,15 +4215,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Отмена</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Отмена</v8:content>
+							<v8:content>Подключение внешней компоненты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4336,19 +4241,11 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4359,15 +4256,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4375,6 +4272,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -4384,38 +4295,22 @@
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
+							<v8:content>Событие_Сеанс_ОшибкаПодключенияВнешнейКомпоненты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Job$_.Succeed</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>_$Job$_.Succeed</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>_$Job$_.Succeed</v8:content>
+							<v8:content>_$Session$_.ExternalAddInAttachError</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4426,15 +4321,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Успешное завершение</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Успешное завершение</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Успешное завершение</v8:content>
+							<v8:content>Ошибка подключения внешней компоненты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4460,19 +4347,11 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
+							<v8:content>Сеанс</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4483,15 +4362,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>7</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>7</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>7</v8:content>
+							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4499,6 +4378,20 @@
 			<c>
 				<c>
 					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>803026</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -4512,34 +4405,34 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Начало</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Начало</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Начало</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$Job$_.Fail</v8:content>
+							<v8:content>_$Transaction$_.Begin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>_$Job$_.Fail</v8:content>
+							<v8:content>_$Transaction$_.Begin</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>_$Job$_.Fail</v8:content>
+							<v8:content>_$Transaction$_.Begin</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4550,15 +4443,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Начало</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Начало</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Начало</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4569,34 +4462,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Ошибка</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Ошибка</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>16</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фоновое задание</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4607,15 +4481,34 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>3</v8:content>
+							<v8:content>Транзакция</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>3</v8:content>
+							<v8:content>Транзакция</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>3</v8:content>
+							<v8:content>Транзакция</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>9</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>9</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>9</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4636,34 +4529,34 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Фиксация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Фиксация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+							<v8:content>Событие_Транзакция_Фиксация</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>_$PerformError$_</v8:content>
+							<v8:content>_$Transaction$_.Commit</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>_$PerformError$_</v8:content>
+							<v8:content>_$Transaction$_.Commit</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>_$PerformError$_</v8:content>
+							<v8:content>_$Transaction$_.Commit</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4674,15 +4567,15 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Фиксация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Фиксация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Ошибка выполнения</v8:content>
+							<v8:content>Фиксация</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4693,53 +4586,53 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Ошибка</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Ошибка</v8:content>
+							<v8:content>Информация</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Прочее</v8:content>
+							<v8:content>Транзакция</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Прочее</v8:content>
+							<v8:content>Транзакция</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Прочее</v8:content>
+							<v8:content>Транзакция</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>6</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>9</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>9</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>2</v8:content>
+							<v8:content>9</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -4755,18 +4648,120 @@
 		<index>37</index>
 		<row>
 			<c>
-				<i>2</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_Транзакция_Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_Транзакция_Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_Транзакция_Отмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$Transaction$_.Rollback</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$Transaction$_.Rollback</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$Transaction$_.Rollback</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транзакция</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Транзакция</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Транзакция</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4777,18 +4772,120 @@
 		<index>38</index>
 		<row>
 			<c>
-				<i>2</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Запуск</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$Job$_.Start</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$Job$_.Start</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$Job$_.Start</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Запуск</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запуск</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>8</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>8</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>8</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4799,18 +4896,120 @@
 		<index>39</index>
 		<row>
 			<c>
-				<i>2</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_Отмена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$Job$_.Cancel</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$Job$_.Cancel</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$Job$_.Cancel</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4821,18 +5020,120 @@
 		<index>40</index>
 		<row>
 			<c>
-				<i>2</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_УспешноеЗавершение</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$Job$_.Succeed</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$Job$_.Succeed</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$Job$_.Succeed</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Успешное завершение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Успешное завершение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Успешное завершение</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>7</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>7</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>7</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4843,13 +5144,120 @@
 		<index>41</index>
 		<row>
 			<c>
-				<i>2</i>
 				<c>
-					<f>14</f>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_ФоновоеЗадание_ОшибкаВыполнения</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$Job$_.Fail</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$Job$_.Fail</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$Job$_.Fail</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фоновое задание</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4860,13 +5268,120 @@
 		<index>42</index>
 		<row>
 			<c>
-				<i>2</i>
 				<c>
-					<f>14</f>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Событие_ОшибкаВыполнения</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
-				<i>6</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>_$PerformError$_</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>_$PerformError$_</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>_$PerformError$_</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ошибка выполнения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>15</f>
 				</c>
@@ -4877,9 +5392,19 @@
 		<index>43</index>
 		<row>
 			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
 				<i>2</i>
 				<c>
 					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
 				</c>
 			</c>
 			<c>
@@ -4894,9 +5419,19 @@
 		<index>44</index>
 		<row>
 			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
 				<i>2</i>
 				<c>
 					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
 				</c>
 			</c>
 			<c>
@@ -4914,6 +5449,11 @@
 				<i>2</i>
 				<c>
 					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
 				</c>
 			</c>
 			<c>
@@ -5132,16 +5672,7 @@
 		<index>58</index>
 		<row>
 			<c>
-				<c>
-					<f>0</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>14</f>
 				</c>
@@ -5158,19 +5689,9 @@
 		<index>59</index>
 		<row>
 			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>14</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
 				</c>
 			</c>
 			<c>
@@ -5185,20 +5706,9 @@
 		<index>60</index>
 		<row>
 			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>14</f>
-				</c>
-			</c>
-			<c>
-				<i>4</i>
-				<c>
-					<f>0</f>
 				</c>
 			</c>
 			<c>
@@ -5230,12 +5740,7 @@
 		<index>62</index>
 		<row>
 			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>14</f>
 				</c>
@@ -5252,7 +5757,11 @@
 		<index>63</index>
 		<row>
 			<c>
-				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>0</f>
 				</c>
@@ -5285,6 +5794,11 @@
 				</c>
 			</c>
 			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
 				<i>6</i>
 				<c>
 					<f>15</f>
@@ -5307,6 +5821,7 @@
 				</c>
 			</c>
 			<c>
+				<i>4</i>
 				<c>
 					<f>0</f>
 				</c>
@@ -5360,6 +5875,116 @@
 	</rowsItem>
 	<rowsItem>
 		<index>68</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>69</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>70</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>71</index>
+		<row>
+			<c>
+				<i>2</i>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>72</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+			<c>
+				<i>6</i>
+				<c>
+					<f>15</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>73</index>
 		<indexTo>149</indexTo>
 		<row>
 			<empty>true</empty>
@@ -5368,10 +5993,10 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>1</id>
-		<formatIndex>18</formatIndex>
-		<beginRow>40</beginRow>
+		<formatIndex>19</formatIndex>
+		<beginRow>45</beginRow>
 		<beginRowOffset>6</beginRowOffset>
-		<endRow>41</endRow>
+		<endRow>46</endRow>
 		<endRowOffset>9</endRowOffset>
 		<beginColumn>0</beginColumn>
 		<beginColumnOffset>42</beginColumnOffset>
@@ -5385,10 +6010,10 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>2</id>
-		<formatIndex>18</formatIndex>
-		<beginRow>40</beginRow>
+		<formatIndex>19</formatIndex>
+		<beginRow>45</beginRow>
 		<beginRowOffset>6</beginRowOffset>
-		<endRow>41</endRow>
+		<endRow>46</endRow>
 		<endRowOffset>9</endRowOffset>
 		<beginColumn>0</beginColumn>
 		<beginColumnOffset>129</beginColumnOffset>
@@ -5402,10 +6027,10 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>3</id>
-		<formatIndex>18</formatIndex>
-		<beginRow>40</beginRow>
+		<formatIndex>19</formatIndex>
+		<beginRow>45</beginRow>
 		<beginRowOffset>3</beginRowOffset>
-		<endRow>41</endRow>
+		<endRow>46</endRow>
 		<endRowOffset>6</endRowOffset>
 		<beginColumn>0</beginColumn>
 		<beginColumnOffset>216</beginColumnOffset>
@@ -5419,10 +6044,10 @@
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>4</id>
-		<formatIndex>18</formatIndex>
-		<beginRow>40</beginRow>
+		<formatIndex>19</formatIndex>
+		<beginRow>45</beginRow>
 		<beginRowOffset>6</beginRowOffset>
-		<endRow>41</endRow>
+		<endRow>46</endRow>
 		<endRowOffset>9</endRowOffset>
 		<beginColumn>0</beginColumn>
 		<beginColumnOffset>306</beginColumnOffset>
@@ -5551,8 +6176,8 @@ y73a3nMCR2ocPXejq40AAAAASUVORK5CYII=</picture>
 	</picture>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>16</defaultFormatIndex>
-	<height>68</height>
-	<vgRows>68</vgRows>
+	<height>73</height>
+	<vgRows>73</vgRows>
 	<namedItem xsi:type="NamedItemDrawing">
 		<name>Информация</name>
 		<drawingID>2</drawingID>
@@ -5561,8 +6186,8 @@ y73a3nMCR2ocPXejq40AAAAASUVORK5CYII=</picture>
 		<name>КартинкиУровней</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>40</beginRow>
-			<endRow>41</endRow>
+			<beginRow>45</beginRow>
+			<endRow>46</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5584,7 +6209,7 @@ y73a3nMCR2ocPXejq40AAAAASUVORK5CYII=</picture>
 		<area>
 			<type>Rows</type>
 			<beginRow>0</beginRow>
-			<endRow>36</endRow>
+			<endRow>42</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5600,7 +6225,7 @@ y73a3nMCR2ocPXejq40AAAAASUVORK5CYII=</picture>
 	</line>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
 	<format>
-		<width>318</width>
+		<width>346</width>
 	</format>
 	<format>
 		<width>270</width>
@@ -5664,6 +6289,9 @@ y73a3nMCR2ocPXejq40AAAAASUVORK5CYII=</picture>
 	</format>
 	<format>
 		<width>353</width>
+	</format>
+	<format>
+		<width>318</width>
 	</format>
 	<format>
 		<drawingBorder>2</drawingBorder>
