@@ -45,6 +45,7 @@
 							<v8:content>Группа левая</v8:content>
 						</v8:item>
 					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -77,11 +78,12 @@
 							<ExtendedTooltip name="ПерейтиНаРасширениеРасширеннаяПодсказка" id="8043"/>
 						</Button>
 						<LabelDecoration name="Текст" id="1">
+							<HorizontalStretch>true</HorizontalStretch>
 							<TextColor>style:SpecialTextColor</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;Предупреждение&gt;</v8:content>
+									<v8:content>&lt;Предупреждение Предупреждение Предупреждение Предупреждение&gt;</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
@@ -753,7 +755,12 @@
 					<v8:content>Запустить установщик инструментов в варианте "Расширение". Он работает быстрее, удобнее, дает больше возможностей, имеет меньше проблем совместимости.</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПерейтиНаРасширение</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>
