@@ -1,0 +1,40 @@
+﻿param(
+    [Parameter(Mandatory=$true, Position=0)]
+    [string]$Directory,
+    
+    [Parameter(Mandatory=$true, Position=1)]
+    [string]$FileMask
+)
+
+Add-Type -AssemblyName System.Collections.Concurrent
+
+# Создаем число потоков в 2 раза меньше доступных процессоров
+$runspacePool = [RunspaceFactory]::CreateRunspacePool(1, [Environment]::ProcessorCount/2)
+$runspacePool.Open()
+
+$tasks = Get-ChildItem $Directory -Recurse -Include $FileMask -File | ForEach-Object {
+    $ps = [PowerShell]::Create().AddScript({
+        param($file)
+        try {
+            $stream = [System.IO.File]::OpenRead($file)
+            $null = $stream.ReadByte()
+        }
+        finally {
+            if ($stream) { $stream.Dispose() }
+        }
+    }).AddArgument($_.FullName)
+    
+    $ps.RunspacePool = $runspacePool
+    @{
+        Instance = $ps
+        Handle = $ps.BeginInvoke()
+    }
+}
+
+# Ожидание завершения
+$tasks | ForEach-Object {
+    $_.Instance.EndInvoke($_.Handle)
+    $_.Instance.Dispose()
+}
+
+$runspacePool.Close()
