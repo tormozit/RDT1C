@@ -59,7 +59,9 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам.</v8:content>
+					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам. Доступность каталога процессу означает одновременно:
+1. Существование файлового пути для этого этого процесса
+2. Наличие прав у этого процесса на чтение каталога</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
@@ -209,6 +211,38 @@
 					<ContextMenu name="ВнешниеОбработкиСсылкаКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="ВнешниеОбработкиСсылкаРасширеннаяПодсказка" id="77"/>
 				</InputField>
+				<CheckBoxField name="СписокПометкаУдаления" id="85">
+					<DataPath>Список.ПометкаУдаления</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокПометкаУдаленияКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="СписокПометкаУдаленияРасширеннаяПодсказка" id="87"/>
+				</CheckBoxField>
+				<LabelField name="СписокВерсия" id="88">
+					<DataPath>Список.Версия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="СписокВерсияКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="СписокВерсияРасширеннаяПодсказка" id="90"/>
+				</LabelField>
 				<InputField name="ВнешниеОбработкиИмяФайла" id="23">
 					<DataPath>Список.ИмяФайла</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -377,6 +411,32 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Версия" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
