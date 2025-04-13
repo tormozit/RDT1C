@@ -5167,6 +5167,32 @@
 			<Template>ФункцияОтВарианты</Template>
 			<Template>ШаблонВнешнейОбработкиСервиса82</Template>
 			<Template>ШаблонВнешнейОбработкиСМакетом82</Template>
+			<Command uuid="2f4ed1b5-4346-49f2-b1a2-af1959506810">
+				<Properties>
+					<Name>КомпактныйИнтерфейсОтключить</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компактный интерфейс отключить</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компактный интерфейс обеспечивает меньшие отступы (промежутки) между элементами управляемых форм (не действует на обычные формы). Включить его можно соседней командой "Запуск сеанса", А эта команда его отключает.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 			<Command uuid="bebd9f67-56c8-4001-af04-ffc18bc3a306">
 				<Properties>
 					<Name>ОПодсистеме</Name>
@@ -5240,6 +5266,48 @@
 						<xr:Ref>CommonPicture.ирЗапретОжидания</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="e0c5747a-4283-4f59-8c68-0547dd11e5aa">
+				<Properties>
+					<Name>ОткрытьЗапускСеанса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск сеанса</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Запуск сеанса</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запуск сеанса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture/>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
@@ -5629,48 +5697,6 @@
 						<xr:Ref>CommonPicture.ирКоманднаяПанель</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-			<Command uuid="e0c5747a-4283-4f59-8c68-0547dd11e5aa">
-				<Properties>
-					<Name>ОткрытьЗапускСеанса</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Запуск сеанса</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Запуск сеанса</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Запуск сеанса</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>ActionsPanelTools</Group>
-					<CommandParameterType/>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Открыть запуск сеанса с выбранными параметрами</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Picture/>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
