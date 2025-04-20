@@ -1,4 +1,5 @@
-﻿param(
+﻿# Загружаем в кэш ОС все файлы из папки 
+param(
     [Parameter(Mandatory=$true, Position=0)]
     [string]$Directory,
     
