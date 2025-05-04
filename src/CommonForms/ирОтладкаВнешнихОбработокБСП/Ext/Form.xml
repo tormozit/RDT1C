@@ -235,6 +235,12 @@
 					<ContextMenu name="СписокПометкаУдаленияКонтекстноеМеню" id="86"/>
 					<ExtendedTooltip name="СписокПометкаУдаленияРасширеннаяПодсказка" id="87"/>
 				</CheckBoxField>
+				<LabelField name="СписокПубликация" id="91">
+					<DataPath>Список.Публикация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокПубликацияКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="СписокПубликацияРасширеннаяПодсказка" id="93"/>
+				</LabelField>
 				<LabelField name="СписокВерсия" id="88">
 					<DataPath>Список.Версия</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -435,6 +441,21 @@
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
 							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Публикация" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Публикация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
