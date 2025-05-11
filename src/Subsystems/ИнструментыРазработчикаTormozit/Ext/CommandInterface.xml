@@ -36,11 +36,6 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="0:622402c2-0158-4e5b-a10c-646b12979881">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
 		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -112,6 +107,11 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ирСравнениеТаблиц.Command.Команда1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТекстов.Command.Команда1">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -171,10 +171,6 @@
 			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
-		<Command name="0:622402c2-0158-4e5b-a10c-646b12979881">
-			<CommandGroup>CommandGroup.ирАдминистрирование</CommandGroup>
-			<Placement>Auto</Placement>
-		</Command>
 		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1">
 			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
 			<Placement>Auto</Placement>
@@ -235,6 +231,10 @@
 			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="DataProcessor.ирСравнениеТекстов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.Command.Команда1">
 			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
 			<Placement>Auto</Placement>
@@ -256,4 +256,72 @@
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DataProcessor.ирПодборИОбработкаОбъектов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПодготовкаКИзменениюСтруктурыБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьПодключениеВнешнихИсточниковДанных">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПоискБитыхСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПоискДублейИЗаменаСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПолнотекстовыйПоискДанных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирПлатформа.Command.ОткрытьРегистрациюCOMКомпонент">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторИзмененийНаУзлах.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторКонстант.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОбъектаБД.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторОстатков.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПользователей.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирРедакторПредопределенных.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирСборщикиСчетчиковWindows.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТаблиц.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирСравнениеТекстов.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУдалениеОбъектовСКонтролемСсылок.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеCOMКлассами1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеИтогамиРегистров.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеПрофайлами1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ирУправлениеСлужбамиСервера1С.Command.Команда1">
+			<CommandGroup>CommandGroup.ирАдминистрирование2</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ирАдминистрирование2</Group>
+	</GroupsOrder>
 </CommandInterface>
