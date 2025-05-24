@@ -3,7 +3,8 @@ param (
 [int]$processID,
 [string]$file,
 [string]$line,
-[string]$internalName
+[string]$internalName,
+[int]$jump
 )
 #$processID = 31704
 #$file = "C:\1C\EPF\ИзменениеКонфиденциальнойИнформации.epf"
@@ -169,3 +170,12 @@ if($line -ne $null)
 	$wshell.SendKeys($line)
 	$wshell.SendKeys("{ENTER}")
 }
+
+if($jump -ne $null)
+{   
+	$wshell.SendKeys("{end}");    
+	#Для вызова метода "();"
+	$wshell.SendKeys("{left 3}"); 
+	$wshell.SendKeys("^{f12}");
+}
+
