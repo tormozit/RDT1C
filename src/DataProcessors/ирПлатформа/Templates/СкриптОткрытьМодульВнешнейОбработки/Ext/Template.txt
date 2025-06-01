@@ -1,10 +1,14 @@
-﻿# Этот скрипт почему то очень долго работает при запуске из приложения 1С. При этом независимый запуск выполняется быстро.
+﻿# Этот скрипт почему то очень долго работает при синхронном запуске из приложения 1С. Асинхронный запуск выполняется быстро.
 param (
 [int]$processID,
 [string]$file,
-[string]$line,
 [string]$internalName,
-[int]$jump
+[Parameter(Mandatory = $false)]
+[string]$line,
+[Parameter(Mandatory = $false)]
+[string]$form,
+[Parameter(Mandatory = $false)]
+[string]$jump
 )
 #$processID = 31704
 #$file = "C:\1C\EPF\ИзменениеКонфиденциальнойИнформации.epf"
@@ -149,9 +153,17 @@ $buttonДействия.SetFocus()
 #Нажимаем там Действия/МодульОбъекта
 $wshell.SendKeys("{ENTER}")
 $wshell.SendKeys("{Down}")
-$wshell.SendKeys("{ENTER}")
-
-if($line -ne $null)
+if($form)
+{   
+	$wshell.SendKeys("{Down}")
+	$wshell.SendKeys("{ENTER}")
+	$wshell.SendKeys("%2")
+}
+else
+{   
+	$wshell.SendKeys("{ENTER}")
+}
+if($line)
 {   
     $start = Get-Date
     while($buttonДействия.Current.HasKeyboardFocus -and ((Get-Date) - $start).TotalMilliseconds -le 1000)
@@ -170,8 +182,7 @@ if($line -ne $null)
 	$wshell.SendKeys($line)
 	$wshell.SendKeys("{ENTER}")
 }
-
-if($jump -ne $null)
+if($jump)
 {   
 	$wshell.SendKeys("{end}");    
 	#Для вызова метода "();"
