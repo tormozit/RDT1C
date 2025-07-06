@@ -20,11 +20,11 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Платформа (ИР)</v8:content>
+					<v8:content>Базы пользователя ОС (ИР)</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Платформа (ИР)</v8:content>
+					<v8:content>Базы пользователя ОС (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -42,6 +42,14 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог портативных инструментов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Каталог портативных инструментов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Каталог портативных инструментов</v8:content>
 						</v8:item>
 					</Synonym>
@@ -82,6 +90,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Указатель общий всех пользователей</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Указатель общий всех пользователей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Указатель общий всех пользователей</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -118,6 +134,14 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Указатель общий пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Указатель общий пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Указатель общий пользователя</v8:content>
 						</v8:item>
 					</Synonym>
@@ -158,6 +182,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Файл список общий пользователя</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Файл список общий пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Файл список общий пользователя</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -194,6 +226,14 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Файл список общий всех пользователей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Файл список общий всех пользователей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Файл список общий всех пользователей</v8:content>
 						</v8:item>
 					</Synonym>
@@ -372,6 +412,24 @@
 ● WebClient ‑ веб-клиент.
 Параметр может редактироваться в окне свойств информационной базы.</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Определяет тип клиентского приложения:
+● Auto ‑ автоматический выбор типа клиентского приложения;
+● ThinClient ‑ тонкий клиент;
+● ThickClient ‑ толстый клиент;
+● WebClient ‑ веб-клиент.
+Параметр может редактироваться в окне свойств информационной базы.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Определяет тип клиентского приложения:
+● Auto ‑ автоматический выбор типа клиентского приложения;
+● ThinClient ‑ тонкий клиент;
+● ThickClient ‑ толстый клиент;
+● WebClient ‑ веб-клиент.
+Параметр может редактироваться в окне свойств информационной базы.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
@@ -398,6 +456,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>App arch</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>App arch</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>App arch</v8:content>
 								</v8:item>
 							</Synonym>
@@ -565,6 +631,22 @@
 Если значение параметра App равно Auto и параметр DefaultApp не указан, выполняется запуск тонкого клиента с параметром командной строки /AppAutoCheckMode.
 Если параметр DefaultApp задан, то выполняется запуск указанного в нем клиента с указанием параметра /AppAutoCheckMode.</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Тип клиента, который определяется и помещается в данный файл программой запуска при автоматическом определении типа клиентского приложения (ключ /AppAutoCheckMode):
+● ThinClient ‑ тонкий клиент;
+● ThickClient ‑ толстый клиент.
+Если значение параметра App равно Auto и параметр DefaultApp не указан, выполняется запуск тонкого клиента с параметром командной строки /AppAutoCheckMode.
+Если параметр DefaultApp задан, то выполняется запуск указанного в нем клиента с указанием параметра /AppAutoCheckMode.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Тип клиента, который определяется и помещается в данный файл программой запуска при автоматическом определении типа клиентского приложения (ключ /AppAutoCheckMode):
+● ThinClient ‑ тонкий клиент;
+● ThickClient ‑ толстый клиент.
+Если значение параметра App равно Auto и параметр DefaultApp не указан, выполняется запуск тонкого клиента с параметром командной строки /AppAutoCheckMode.
+Если параметр DefaultApp задан, то выполняется запуск указанного в нем клиента с указанием параметра /AppAutoCheckMode.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
@@ -616,6 +698,14 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Версия системы платформы, которая реально использовалась при последнем запуске. Автоматически определяется и помещается в данный файл программой запуска, если выполняется запуск с параметром /AppAutoCheckVersion. При последующих запусках будет использоваться именно эта версия, а не та, которая указана в параметре Version. Для файловых баз - вредный атрибут, т.к. работает противоречиво по отношению к Version и потому очищается инструментом.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Версия системы платформы, которая реально использовалась при последнем запуске. Автоматически определяется и помещается в данный файл программой запуска, если выполняется запуск с параметром /AppAutoCheckVersion. При последующих запусках будет использоваться именно эта версия, а не та, которая указана в параметре Version. Для файловых баз - вредный атрибут, т.к. работает противоречиво по отношению к Version и потому очищается инструментом.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Версия системы платформы, которая реально использовалась при последнем запуске. Автоматически определяется и помещается в данный файл программой запуска, если выполняется запуск с параметром /AppAutoCheckVersion. При последующих запусках будет использоваться именно эта версия, а не та, которая указана в параметре Version. Для файловых баз - вредный атрибут, т.к. работает противоречиво по отношению к Version и потому очищается инструментом.</v8:content>
 								</v8:item>
 							</ToolTip>
@@ -670,6 +760,14 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Признак, что базы принадлежит общему списку</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Признак, что базы принадлежит общему списку</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Признак, что базы принадлежит общему списку</v8:content>
 								</v8:item>
 							</ToolTip>
@@ -919,6 +1017,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Версия платформы, которая должна использоваться для запуска. Параметр может редактироваться в окне свойств базы.</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Версия платформы, которая должна использоваться для запуска. Параметр может редактироваться в окне свойств базы.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Версия платформы, которая должна использоваться для запуска. Параметр может редактироваться в окне свойств базы.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
@@ -975,6 +1081,18 @@
 ● 1 ‑ пытаться выполнить аутентификацию средствами ОС. Если выполнено неудачно, запрашивается логин/пароль.
 ● 0 ‑ всегда использовать аутентификацию с помощью логина/пароля.</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Определяет вариант аутентификации пользователя. Принимает значения:
+● 1 ‑ пытаться выполнить аутентификацию средствами ОС. Если выполнено неудачно, запрашивается логин/пароль.
+● 0 ‑ всегда использовать аутентификацию с помощью логина/пароля.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Определяет вариант аутентификации пользователя. Принимает значения:
+● 1 ‑ пытаться выполнить аутентификацию средствами ОС. Если выполнено неудачно, запрашивается логин/пароль.
+● 0 ‑ всегда использовать аутентификацию с помощью логина/пароля.</v8:content>
+								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
@@ -1001,6 +1119,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Версия платформы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Версия платформы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Версия платформы</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1041,6 +1167,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Дата запуска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Дата запуска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Дата запуска</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1130,6 +1264,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Избранное</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Избранное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Избранное</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1166,6 +1308,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Изменена</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Изменена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Изменена</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1200,6 +1350,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Имя в кластере</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Имя в кластере</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Имя в кластере</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1434,6 +1592,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Клавиша запуска</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Клавиша запуска</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Клавиша запуска</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1450,6 +1616,14 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Цифровая клавиша, нажатие которой с ALT запускает базу.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Цифровая клавиша, нажатие которой с ALT запускает базу.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Цифровая клавиша, нажатие которой с ALT запускает базу.</v8:content>
 								</v8:item>
 							</ToolTip>
@@ -1478,6 +1652,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Кластер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Кластер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Кластер</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1616,6 +1798,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Папка</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Папка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Папка</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1704,6 +1894,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Пользователь</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1742,6 +1940,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Пометка удаления</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Пометка удаления</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Пометка удаления</v8:content>
 								</v8:item>
 							</Synonym>
@@ -1966,11 +2172,11 @@
 								</v8:item>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Размер каталога клиентского кэша КБ</v8:content>
+									<v8:content>Размер каталога файловой базы КБ</v8:content>
 								</v8:item>
 								<v8:item>
 									<v8:lang>uk</v8:lang>
-									<v8:content>Размер каталога клиентского кэша КБ</v8:content>
+									<v8:content>Размер каталога файловой базы КБ</v8:content>
 								</v8:item>
 							</ToolTip>
 							<MarkNegatives>false</MarkNegatives>
@@ -2200,6 +2406,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Каталоги поиска платформы</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Каталоги поиска платформы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Каталоги поиска платформы</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -2240,6 +2454,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Каталог</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Каталог</v8:content>
 								</v8:item>
 							</Synonym>
@@ -2294,6 +2516,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Основные версии платформы</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Основные версии платформы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Основные версии платформы</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -2336,6 +2566,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Для версий</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Для версий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Для версий</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -2374,6 +2612,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать версию</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Использовать версию</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Использовать версию</v8:content>
 								</v8:item>
 							</Synonym>
@@ -2805,6 +3051,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Есть в реестре</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Есть в реестре</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Есть в реестре</v8:content>
 								</v8:item>
 							</Synonym>
@@ -3414,11 +3668,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Динамический список (ИР)</v8:content>
+							<v8:content>Базы пользователя ОС (ИР)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Динамический список (ИР)</v8:content>
+							<v8:content>Базы пользователя ОС (ИР)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

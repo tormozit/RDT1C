@@ -65,11 +65,15 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам.</v8:content>
+					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам. Доступность каталога процессу означает одновременно:
+1. Существование файлового пути для этого этого процесса
+2. Наличие прав у этого процесса на чтение каталога</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам.</v8:content>
+					<v8:content>Рекомендуется выбирать сетевой каталог, чтобы он был доступен любому серверному и нужным клиентским процессам. Доступность каталога процессу означает одновременно:
+1. Существование файлового пути для этого этого процесса
+2. Наличие прав у этого процесса на чтение каталога</v8:content>
 				</v8:item>
 			</ToolTip>
 			<ChoiceButton>true</ChoiceButton>
@@ -219,10 +223,26 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content> </v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Пометка удаления</v8:content>
 						</v8:item>
 					</ToolTip>
@@ -425,6 +445,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Пометка удаления</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
@@ -434,6 +462,14 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Версия</v8:content>
 						</v8:item>
 					</Title>
@@ -449,6 +485,14 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Публикация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Публикация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Публикация</v8:content>
 						</v8:item>
 					</Title>
