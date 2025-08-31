@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение строк</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        
+        .comparison {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .text-row {
+            display: flex;
+            align-items: flex-start;
+            min-height: 15px;
+        }
+        
+        .text-content {
+            white-space: pre;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.2;
+        }
+        
+        .diff-delete {
+            background-color: #ffe0e0;
+            color: #c62828;
+        }
+        
+        .diff-insert {
+            background-color: #e0ffe0;
+            color: #2e7d32;
+        }
+        
+        .diff-space {
+            background-color: #e0e0ff;
+            color: #1565c0;
+        }
+        
+        .char-cell {
+            display: inline-block;
+            min-width: 7px;
+            text-align: center;
+            margin: 0 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="comparison" id="comparisonResult"></div>
+    <script>
+        // Функция для сравнения двух строк с выделением различий
+        function setText(text1, text2, IgnoreBoundaryWhitespace = true) {
+            const comparisonResult = document.getElementById('comparisonResult');
+            comparisonResult.innerHTML = '';
+            
+            let processedText1 = text1;
+            let processedText2 = text2;
+            
+            // Обработка крайней пустоты
+            if (IgnoreBoundaryWhitespace) {
+                processedText1 = text1.trim();
+                processedText2 = text2.trim();
+            }
+            
+            // Если строки полностью совпадают после обработки
+            if (processedText1 === processedText2) {
+                addTextRow(processedText1, 'common');
+                addTextRow(processedText2, 'common');
+                return;
+            }
+            
+            // Находим различия с помощью алгоритма Левенштейна
+            const diff = computeDiff(processedText1, processedText2);
+            
+            // Выравниваем строки и добавляем служебные пробелы
+            const aligned = alignStrings(diff);
+            
+            // Отображаем выровненные строки
+            addTextRow(aligned.str1, 'diff', aligned.types1);
+            addTextRow(aligned.str2, 'diff', aligned.types2);
+        }
+        
+        // Добавление строки
+        function addTextRow(text, type, types = null) {
+            const row = document.createElement('div');
+            row.className = 'text-row';
+            
+            const textContent = document.createElement('div');
+            textContent.className = 'text-content';
+            
+            if (type === 'common') {
+                textContent.innerHTML = escapeHtml(text);
+            } else {
+                textContent.innerHTML = formatAlignedText(text, types);
+            }
+            
+            row.appendChild(textContent);
+            document.getElementById('comparisonResult').appendChild(row);
+        }
+        
+        // Форматирование выровненного текста
+        function formatAlignedText(text, types) {
+            let html = '';
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const type = types[i];
+                
+                let spanClass = '';
+                if (type === 'delete') spanClass = 'diff-delete';
+                else if (type === 'insert') spanClass = 'diff-insert';
+                else if (type === 'space') spanClass = 'diff-space';
+                
+                if (spanClass) {
+                    html += `<span class="${spanClass} char-cell">${escapeHtml(char)}</span>`;
+                } else {
+                    html += `<span class="char-cell">${escapeHtml(char)}</span>`;
+                }
+            }
+            return html;
+        }
+        
+        // Выравнивание строк с добавлением служебных пробелов
+        function alignStrings(diff) {
+            let str1 = '';
+            let str2 = '';
+            let types1 = [];
+            let types2 = [];
+            
+            for (const operation of diff) {
+                if (operation.type === 'common') {
+                    str1 += operation.char1;
+                    str2 += operation.char2;
+                    types1.push('common');
+                    types2.push('common');
+                } else if (operation.type === 'delete') {
+                    str1 += operation.char1;
+                    str2 += ' ';
+                    types1.push('delete');
+                    types2.push('space');
+                } else if (operation.type === 'insert') {
+                    str1 += ' ';
+                    str2 += operation.char2;
+                    types1.push('space');
+                    types2.push('insert');
+                } else if (operation.type === 'replace') {
+                    str1 += operation.char1;
+                    str2 += operation.char2;
+                    types1.push('delete');
+                    types2.push('insert');
+                }
+            }
+            
+            return { str1, str2, types1, types2 };
+        }
+        
+        // Алгоритм вычисления различий на основе Левенштейна
+        function computeDiff(str1, str2) {
+            const m = str1.length;
+            const n = str2.length;
+            
+            const dp = Array(m + 1).fill().map(() => Array(n + 1).fill(0));
+            
+            for (let i = 0; i <= m; i++) {
+                for (let j = 0; j <= n; j++) {
+                    if (i === 0) {
+                        dp[i][j] = j;
+                    } else if (j === 0) {
+                        dp[i][j] = i;
+                    } else if (str1[i - 1] === str2[j - 1]) {
+                        dp[i][j] = dp[i - 1][j - 1];
+                    } else {
+                        dp[i][j] = 1 + Math.min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]);
+                    }
+                }
+            }
+            
+            const diff = [];
+            let i = m, j = n;
+            
+            while (i > 0 || j > 0) {
+                if (i > 0 && j > 0 && str1[i - 1] === str2[j - 1]) {
+                    diff.unshift({ type: 'common', char1: str1[i - 1], char2: str2[j - 1] });
+                    i--;
+                    j--;
+                } else {
+                    if (j > 0 && (i === 0 || dp[i][j - 1] <= dp[i - 1][j] && dp[i][j - 1] <= dp[i - 1][j - 1])) {
+                        diff.unshift({ type: 'insert', char1: '', char2: str2[j - 1] });
+                        j--;
+                    } else if (i > 0 && (j === 0 || dp[i - 1][j] <= dp[i][j - 1] && dp[i - 1][j] <= dp[i - 1][j - 1])) {
+                        diff.unshift({ type: 'delete', char1: str1[i - 1], char2: '' });
+                        i--;
+                    } else {
+                        diff.unshift({ type: 'replace', char1: str1[i - 1], char2: str2[j - 1] });
+                        i--;
+                        j--;
+                    }
+                }
+            }
+            
+            return diff;
+        }
+        
+        // Экранирование HTML для безопасности
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // Экспорт функции для внешнего использования
+        window.setText = setText;
+    </script>
+</body>
+</html>
