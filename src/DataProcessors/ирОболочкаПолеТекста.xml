@@ -36,25 +36,19 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="ea30fc7b-3ec8-442f-a36d-cbdbdae35213">
+			<Attribute uuid="8d9c659c-5031-4844-a73b-e1e256fb8bba">
 				<Properties>
-					<Name>ФиксированноеВыделениеДвумерное</Name>
+					<Name>Готово</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фиксированное выделение двумерное</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Фиксированное выделение двумерное</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Фиксированное выделение двумерное</v8:content>
+							<v8:content>Готово</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
-					<Type/>
+					<Comment>Обновлять его нужно явно</Comment>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
@@ -97,6 +91,46 @@
 					<Type>
 						<v8:Type>v8:ValueTable</v8:Type>
 					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ea30fc7b-3ec8-442f-a36d-cbdbdae35213">
+				<Properties>
+					<Name>ФиксированноеВыделениеДвумерное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированное выделение двумерное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Фиксированное выделение двумерное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фиксированное выделение двумерное</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>en</id>
+			<code>Английский</code>
+			<description>Английский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>1</size>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<formatIndex>1</formatIndex>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[ИмяЗапроса] (Строк: [КоличествоСтрок])</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>Расшифровка</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<c>
+				<c>
+					<f>3</f>
+					<parameter>Значение</parameter>
+					<detailParameter>Расшифровка</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>4</defaultFormatIndex>
+	<height>2</height>
+	<vgRows>2</vgRows>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ЗапросИмя</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>0</beginRow>
+			<endRow>0</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбластьЯчейки</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>1</beginRow>
+			<endRow>1</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+		</area>
+	</namedItem>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+	</line>
+	<font faceName="Arial" height="10" bold="true" italic="false" underline="true" strikeout="false" kind="Absolute"/>
+	<format>
+		<height>66</height>
+	</format>
+	<format>
+		<font>0</font>
+		<height>96</height>
+		<width>72</width>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#5C5845</textColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Template</fillType>
+		<protection>true</protection>
+	</format>
+	<format>
+		<border>0</border>
+		<verticalAlignment>Top</verticalAlignment>
+		<fillType>Parameter</fillType>
+		<protection>false</protection>
+		<columnSizeChange>QuickChange</columnSizeChange>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+</document>
