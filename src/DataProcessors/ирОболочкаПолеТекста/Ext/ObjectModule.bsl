@@ -110,7 +110,7 @@
 				мПлатформа = Обработки.ирПлатформа.Создать()
 			#КонецЕсли
 			Если Истина
-				И мПлатформа.ИспользоватьЭмуляциюНажатияКлавиш() 
+				И мПлатформа.ИспользоватьЭмуляциюНажатияКлавиш 
 				И ирКэш.НомерВерсииПлатформыЛкс() = 803022 
 			Тогда
 				// Антибаг платформы 8.3.22 https://www.hostedredmine.com/issues/958530
@@ -535,16 +535,16 @@
 	ЭлементСтиля = мРедакторHTML.document.createElement("style");
 	ЭлементСтиля.setAttribute("type", "text/css");
 	ЭлементСтиля.innerHTML = "
-	// Убираем полосы прокрутки 1С
+	|	// Убираем полосы прокрутки 1С
 	|body {
 	|	overflow: hidden; 
 	|}
-	// Цвета статусной строки
+	|	// Цвета статусной строки
 	|.statusbar-widget {
 	|	background: #c2dfef;
 	|	color: #000;
 	|}
-	// Окно подсказки по вызову метода
+	| // Окно подсказки по вызову метода
 	|.editor-widget.parameter-hints-widget .code {
 	|	font-size: 13px !important;
 	|	line-height: 15px;
@@ -560,18 +560,18 @@
 	|  max-width: 600px;
 	|}
 	|.monaco-editor-hover .monaco-editor-hover-content {
-  	|	max-width: 600px;
+	|	max-width: 600px;
 	|}
-	// Подсказка удержания
+	|	// Подсказка удержания
 	|.monaco-editor-hover .hover-row {
 	|	font-size: 13px !important;
 	|	line-height: 15px;
 	|}
-	// Подсказка автодополнения
+	|	// Подсказка автодополнения
 	|.monaco-editor .suggest-widget {
 	|	width: 500px;
 	|}
-	// Подсказка автодополнения вместе с окном детальной инфы
+	|	// Подсказка автодополнения вместе с окном детальной инфы
 	|.monaco-editor .suggest-widget.docs-side {
 	|	width: 1000px;
 	|}
@@ -582,7 +582,12 @@
 	|.monaco-editor .suggest-widget.docs-side > .tree {
 	|	width: 40%;
 	|	float: left;
-	|}";
+	|}
+	| // Уменьшаем насыщенность цвета фона изменных строк. Не работает.
+	|.monaco-diff-editor .insert .view-line {
+	|	filter: saturate(0.9);
+	|}
+	|";
 	мРедакторHTML.document.head.appendChild(ЭлементСтиля);
 	мРедакторHTML.showStatusBar(Ложь); // параметр Ложь - отображаем снизу справа
 	мРедакторHTML.renderWhitespace(Истина);
