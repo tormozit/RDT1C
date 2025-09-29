@@ -1,0 +1,124 @@
+﻿<html><head>
+<meta charset="utf-8"><base href="v8config://ada14b12-452d-4f85-9d71-99554e8fc6c0/mdobject/id3053d7ea-78de-4c1d-a053-7140b86b7195/8eb4fad1-1fa6-403e-970f-2c12dbb43e23"></head>
+<body>
+<div id="responseContainer" style="display:none;"></div>
+<script type="text/javascript">
+// Глобальная переменная для хранения текущего XHR объекта
+window.currentXHR = null;
+window.sendHttpRequest = function(url, body, headersArray, cancelPrevious = true) {
+    try {
+        // Отменяем предыдущий запрос, если включен флаг и запрос существует и еще не завершен
+        if (cancelPrevious && window.currentXHR && window.currentXHR.readyState !== 4) {
+            window.currentXHR.abort();
+            window.currentXHR = null;
+        }
+        
+        var xhr = new XMLHttpRequest();
+        // Сохраняем ссылку на текущий запрос
+        window.currentXHR = xhr;
+        
+        xhr.open('POST', url, true);
+        
+        // Устанавливаем заголовки
+        headersArray = JSON.parse(headersArray);
+        for (var i = 0; i < headersArray.length; i++) {
+            xhr.setRequestHeader(headersArray[i].name, headersArray[i].value);
+        }
+        
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                // Очищаем текущий XHR только если это тот же самый запрос
+                if (window.currentXHR === xhr) {
+                    window.currentXHR = null;
+                }
+                
+                if (xhr.status === 200) {
+                    document.getElementById('responseContainer').innerText = xhr.responseText;
+                    var event = new MouseEvent('click', {
+                        view: window,
+                        bubbles: true,
+                        cancelable: true
+                    });
+                    document.body.dispatchEvent(event);
+                } else {
+                    // Проверяем, не была ли отмена запроса
+                    if (xhr.status !== 0) {
+                        var error = new Error('HTTP error: ' + xhr.status);
+                        document.getElementById('responseContainer').innerText = 'Ошибка: ' + error.message;
+                        alert('Ошибка при выполнении запроса: ' + error.message);
+                        var event = new MouseEvent('click', {
+                            view: window,
+                            bubbles: true,
+                            cancelable: true
+                        });
+                        document.body.dispatchEvent(event);
+                    }
+                }
+            }
+        };
+        
+        xhr.onerror = function() {
+            // Очищаем текущий XHR только если это тот же самый запрос
+            if (window.currentXHR === xhr) {
+                window.currentXHR = null;
+            }
+            
+            // Проверяем, не была ли отмена запроса (status = 0)
+            if (xhr.status !== 0) {
+                alert('Ошибка сети при выполнении запроса');
+                document.getElementById('responseContainer').innerText = 'Ошибка сети';
+                var event = new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                });
+                document.body.dispatchEvent(event);
+            }
+        };
+        
+        xhr.onabort = function() {
+            // Очищаем текущий XHR при отмене
+            if (window.currentXHR === xhr) {
+                window.currentXHR = null;
+            }
+        };
+        
+        xhr.send(body);
+        
+    } catch (error) {
+        alert('Ошибка при подготовке запроса: ' + error.message);
+        document.getElementById('responseContainer').innerText = 'Ошибка: ' + error.message;
+        var event = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true
+        });
+        document.body.dispatchEvent(event);
+    }
+};
+
+// Функция для принудительной отмены текущего запроса
+window.cancelCurrentRequest = function() {
+    if (window.currentXHR && window.currentXHR.readyState !== 4) {
+        window.currentXHR.abort();
+        window.currentXHR = null;
+        console.log('Текущий запрос отменен');
+    }
+};
+
+// Функция для проверки статуса текущего запроса
+window.getRequestStatus = function() {
+    if (!window.currentXHR) {
+        return 'Нет активных запросов';
+    }
+    
+    switch (window.currentXHR.readyState) {
+        case 0: return 'Запрос не инициализирован';
+        case 1: return 'Установлено соединение с сервером';
+        case 2: return 'Запрос получен';
+        case 3: return 'Обработка запроса';
+        case 4: return 'Запрос завершен';
+        default: return 'Неизвестный статус';
+    }
+};
+</script></body></html>

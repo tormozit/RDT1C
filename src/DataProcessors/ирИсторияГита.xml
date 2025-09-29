@@ -20,11 +20,11 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>История данных (ИР)</v8:content>
+					<v8:content>История гита (ИР)</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>История данных (ИР)</v8:content>
+					<v8:content>История гита (ИР)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -42,6 +42,14 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Папка гита</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Папка гита</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
 							<v8:content>Папка гита</v8:content>
 						</v8:item>
 					</Synonym>
@@ -92,6 +100,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Коммиты</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Коммиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коммиты</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -134,6 +150,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Автор</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Автор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Автор</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -172,6 +196,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Ветки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Ветки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Ветки</v8:content>
 								</v8:item>
 							</Synonym>
@@ -214,6 +246,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Дата</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -251,6 +291,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Дней от родителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Дней от родителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Дней от родителя</v8:content>
 								</v8:item>
 							</Synonym>
@@ -291,12 +339,68 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="0d22e3af-729d-4144-9767-f5759ce91e4e">
+						<Properties>
+							<Name>Задача</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задача</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Задача</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Задача</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>1024</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="e076c83c-4823-4c64-aed8-0ec8bcc52fe1">
 						<Properties>
 							<Name>Комментарий</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Комментарий</v8:content>
 								</v8:item>
 							</Synonym>
@@ -339,6 +443,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Коммит</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Коммит</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Коммит</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -377,6 +489,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Метки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Метки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Метки</v8:content>
 								</v8:item>
 							</Synonym>
@@ -419,6 +539,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Родители</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Родители</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Родители</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -459,6 +587,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Слияние</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Слияние</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Слияние</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -493,6 +629,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Файлов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Файлов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Файлов</v8:content>
 								</v8:item>
 							</Synonym>
@@ -548,6 +692,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Файлы коммита</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Файлы коммита</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Файлы коммита</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -590,12 +742,20 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Добавлено строк</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Добавлено строк</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Добавлено строк</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
-									<v8:Digits>5</v8:Digits>
+									<v8:Digits>6</v8:Digits>
 									<v8:FractionDigits>0</v8:FractionDigits>
 									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
@@ -629,6 +789,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Модуль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Модуль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Модуль</v8:content>
 								</v8:item>
 							</Synonym>
@@ -669,6 +837,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Номер родителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Номер родителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Номер родителя</v8:content>
 								</v8:item>
 							</Synonym>
@@ -712,6 +888,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Полное имя МД</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Полное имя МД</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Полное имя МД</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -750,6 +934,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Статус</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Статус</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Статус</v8:content>
 								</v8:item>
 							</Synonym>
@@ -792,6 +984,14 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Текст изменений</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Текст изменений</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Текст изменений</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -830,6 +1030,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Тип файла</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Тип файла</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Тип файла</v8:content>
 								</v8:item>
 							</Synonym>
@@ -872,12 +1080,20 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Удалено строк</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Удалено строк</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Удалено строк</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
-									<v8:Digits>5</v8:Digits>
+									<v8:Digits>6</v8:Digits>
 									<v8:FractionDigits>0</v8:FractionDigits>
 									<v8:AllowedSign>Any</v8:AllowedSign>
 								</v8:NumberQualifiers>
@@ -911,6 +1127,14 @@
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
+									<v8:content>Файл</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Файл</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
 									<v8:content>Файл</v8:content>
 								</v8:item>
 							</Synonym>
@@ -947,8 +1171,8 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>Форма</Form>
 			<Form>ОбновлениеИзEDT</Form>
+			<Form>Форма</Form>
 			<Command uuid="f198d273-3c70-4a9f-8687-66ef99cea418">
 				<Properties>
 					<Name>Команда1</Name>
@@ -959,11 +1183,11 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>История данных (ИР)</v8:content>
+							<v8:content>История гита (ИР)</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>История данных (ИР)</v8:content>
+							<v8:content>История гита (ИР)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
