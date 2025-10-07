@@ -31,28 +31,18 @@ window.sendHttpRequest = function(url, body, headersArray, cancelPrevious = true
                 if (window.currentXHR === xhr) {
                     window.currentXHR = null;
                 }
-                
+                var event = new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                });
                 if (xhr.status === 200) {
                     document.getElementById('responseContainer').innerText = xhr.responseText;
-                    var event = new MouseEvent('click', {
-                        view: window,
-                        bubbles: true,
-                        cancelable: true
-                    });
                     document.body.dispatchEvent(event);
                 } else {
-                    // Проверяем, не была ли отмена запроса
-                    if (xhr.status !== 0) {
-                        var error = new Error('HTTP error: ' + xhr.status);
-                        document.getElementById('responseContainer').innerText = 'Ошибка: ' + error.message;
-                        alert('Ошибка при выполнении запроса: ' + error.message);
-                        var event = new MouseEvent('click', {
-                            view: window,
-                            bubbles: true,
-                            cancelable: true
-                        });
-                        document.body.dispatchEvent(event);
-                    }
+                    var error = new Error('HTTP error: ' + xhr.status);
+                    document.getElementById('responseContainer').innerText = 'Ошибка: ' + error.message;
+                    document.body.dispatchEvent(event);
                 }
             }
         };
