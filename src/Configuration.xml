@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>7.97.1</Version>
+			<Version>7.97.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -223,6 +223,7 @@
 			<Style>ирОсновной</Style>
 			<CommonPicture>ирADO</CommonPicture>
 			<CommonPicture>ирCOM</CommonPicture>
+			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирCSV</CommonPicture>
 			<CommonPicture>ирExcel</CommonPicture>
 			<CommonPicture>ирGithub</CommonPicture>
@@ -475,7 +476,6 @@
 			<CommonPicture>ирЧисло</CommonPicture>
 			<CommonPicture>ирШрифт</CommonPicture>
 			<CommonPicture>ирЯчейкаТаблицы</CommonPicture>
-			<CommonPicture>ирCOMАдмин</CommonPicture>
 			<CommonPicture>ирСоветоватьИИ</CommonPicture>
 			<Interface>ирРазработчик</Interface>
 			<Role>ирОтладкаПользователя</Role>
@@ -511,6 +511,7 @@
 			<Report>ирСтатистикаПоЗапросамСУБД</Report>
 			<DataProcessor>ирАнализДанных</DataProcessor>
 			<DataProcessor>ирАнализЖурналаРегистрации</DataProcessor>
+			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирБазыПользователяОС</DataProcessor>
 			<DataProcessor>ирВводВыраженияВстроенногоЯзыка</DataProcessor>
 			<DataProcessor>ирВыгрузкаЗагрузкаДанныхЧерезФайл</DataProcessor>
@@ -578,7 +579,6 @@
 			<DataProcessor>ирУправлениеПрофайлами1С</DataProcessor>
 			<DataProcessor>ирУправлениеСлужбамиСервера1С</DataProcessor>
 			<DataProcessor>ирУстановщикРасширения</DataProcessor>
-			<DataProcessor>ирАнализТехножурнала</DataProcessor>
 			<DataProcessor>ирФоновыйЗапросХттп</DataProcessor>
 		</ChildObjects>
 	</Configuration>
