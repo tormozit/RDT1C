@@ -1,55 +1,354 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+﻿<html>
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__">
-	</link><meta name="GENERATOR" content="MSHTML 11.00.9600.18315"></meta><script type="text/javascript">
-	%ТекстJS%
+	<script type="text/javascript">
+		%ТекстJS%  
 	</script>
-	<script>
-	    function setText(text)
-	    {
-	    	try {
-			    marked.setOptions({
-				    breaks: true,    // Преобразовывать переносы строк в <br>
-				    gfm: true        // Включить GitHub Flavored Markdown
-				});
-	    		document.getElementById('content').innerHTML = marked(text);
-	    		return true;
-	    	} catch (error) {
-	    		alert(error.message);
-	    	}
-	    }
-	</script>
-	<style>
-	TABLE {
-		BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; border-color: #C2C2C2;
-	}
-	TH {
-		BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: black 1px solid; PADDING-RIGHT: 5px; border-color: #C2C2C2;
-	}
-	TD {
-		BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: black 1px solid; PADDING-RIGHT: 5px; border-color: #C2C2C2;
-	}
-	blockquote {
-	  background: #f9f9f9;
-	  border-left: 5px solid #ccc;
-	  margin: 1.5em 10px;
-	  padding: 0.5em 10px;
-	  quotes: "\201C""\201D""\2018""\2019";
-	}
-	blockquote:before {
-	  color: #ccc;
-	  content: open-quote;
-	  font-size: 4em;
-	  line-height: 0.1em;
-	  margin-right: 0.25em;
-	  vertical-align: -0.4em;
-	}
-	blockquote p {
-	  display: inline;
-	}</style>
+<style type=text/css>
+pre {
+    font-family: Courier;
+    color: #0000FF;
+    font-size: 9pt;
+}
+.k { color: red; }
+.c { color: green; }
+.s { color: black; }
+.n { color: black; }
+.p { color: brown; }
+TABLE {
+    BORDER-TOP: black 1px solid; 
+    BORDER-RIGHT: black 1px solid; 
+    BORDER-COLLAPSE: collapse; 
+    BORDER-BOTTOM: black 1px solid; 
+    BORDER-LEFT: black 1px solid; 
+    border-color: #C2C2C2;
+}
+TH {
+    BORDER-TOP: black 1px solid; 
+    BORDER-RIGHT: black 1px solid; 
+    BORDER-BOTTOM: black 1px solid; 
+    PADDING-BOTTOM: 5px; 
+    PADDING-TOP: 5px; 
+    PADDING-LEFT: 5px; 
+    BORDER-LEFT: black 1px solid; 
+    PADDING-RIGHT: 5px; 
+    border-color: #C2C2C2;
+}
+TD {
+    BORDER-TOP: black 1px solid; 
+    BORDER-RIGHT: black 1px solid; 
+    BORDER-BOTTOM: black 1px solid; 
+    PADDING-BOTTOM: 5px; 
+    PADDING-TOP: 5px; 
+    PADDING-LEFT: 5px; 
+    BORDER-LEFT: black 1px solid; 
+    PADDING-RIGHT: 5px; 
+    border-color: #C2C2C2;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+/* Стили для блоков кода 1С */
+.code-block-1c {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background: #f0f0f0;
+}
+.code-header, .code-footer {
+    background: #F0F0F0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 4px; /* Уменьшена высота */
+    font-size: 11px; /* Уменьшен размер шрифта */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.code-footer {
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+}
+.code-header span, .code-footer span {
+    font-weight: bold;
+    color: #666;
+}
+.code-header button, .code-footer button {
+    background: #e0e0e0; /* Приглушённый фон */
+    border: 1px solid #999; /* Приглушённая рамка */
+    color: #666; /* Приглушённый цвет текста */
+    margin: 0 2px;
+    margin-right: auto; /* Прижимаем к левому краю */
+    padding: 1px 6px; /* Уменьшено внутреннее пространство */
+    font-size: 10px; /* Уменьшен размер шрифта кнопки */
+    cursor: pointer;
+}
+.code-header button:hover, .code-footer button:hover {
+    background: #d0d0d0; /* Приглушённый фон при наведении */
+}
+.code-content {
+    padding: 8px;
+    margin: 0;
+    overflow: auto;
+    background: white;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.2;
+    max-height: 400px;
+}
+/* Цвета синтаксиса 1С - стандартные цвета */
+.c1c-keyword { color: #FF0000; } /* Красный для ключевых слов */
+.c1c-symbol { color: #FF0000; } /* Красный для спецсимволов */
+.c1c-comment { color: #008000; } /* Зеленый для комментариев */
+.c1c-string { color: #000000; } /* Черный для строк */
+.c1c-number { color: #000000; } /* Черный для чисел */
+.c1c-constant { color: #0000FF; } /* Синий для констант */
+.c1c-identifier { color: #0000FF; } /* Синий для идентификаторов */
+</style>
 </head>
 <body>
-	<div id="content"></div>
+<div id="content"></div>
+<script>
+function escapeHtml(text) {
+    if (!text) return '';
+    return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
+function highlight1C(code) {
+    if (!code) return '';
+    var keywords = [
+        'Процедура', 'Функция', 'КонецПроцедуры', 'КонецФункции', 
+        'Если', 'Тогда', 'Иначе', 'КонецЕсли', 'Для', 'Каждого', 
+        'Из', 'Цикл', 'КонецЦикла', 'Пока', 'Выполнять', 'Возврат',
+        'Продолжить', 'Прервать', 'Попытка', 'Исключение', 'КонецПопытки',
+        'ВызватьИсключение', 'Перем', 'Перейти', 'Не', 'И', 
+        'Или', 'ИначеЕсли', 'Экспорт', 'Знач', 'Новый'
+    ];
+    var constants = ['Истина', 'Ложь', 'Неопределено', 'Null'];
+    // Временные метки для уже обработанных элементов
+    var tokens = [];
+    var tokenIndex = 0;
+    function createToken(content) {
+        var marker = '___TOKEN_' + tokenIndex + '___';
+        tokens.push({ marker: marker, content: content });
+        tokenIndex++;
+        return marker;
+    }
+    
+    // Шаг 0: Удаляем HTML-комментарии
+    code = code.replace(/<!--[\s\S]*?-->/g, '');
+    
+    // Шаг 1: Обрабатываем директивы препроцессора &...
+    // Это должно быть до экранирования & и до обработки идентификаторов
+    var directiveRegex = /&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*/g; // Пример паттерна для директив
+    code = code.replace(directiveRegex, function(match) {
+        // Директивы можно оставить как идентификаторы или выделить отдельно
+        // Пока просто обернём в токен, чтобы избежать искажения на шаге 3
+        // Можно использовать цвет ключевого слова или специальный класс
+        return createToken('<span class="c1c-keyword">' + escapeHtml(match) + '</span>');
+    });
+
+    // Шаг 2: Обрабатываем многострочные строки (|...") и обычные строки (")
+    // Сначала обрабатываем многострочные строки
+    var multilineStringRegex = /"[^"]*(?:\|(?:\r?|)[^"]*)*"/g;
+    code = code.replace(multilineStringRegex, function(match) {
+        return createToken('<span class="c1c-string">' + escapeHtml(match) + '</span>');
+    });
+    // Затем обрабатываем обычные строки (если остались необработанные)
+    var singleLineStringRegex = /"[^"]*"/g;
+    code = code.replace(singleLineStringRegex, function(match) {
+        // Проверяем, не является ли это уже обработанным токеном
+        if (match.startsWith('___TOKEN_')) {
+            return match; // Уже обработано
+        }
+        return createToken('<span class="c1c-string">' + escapeHtml(match) + '</span>');
+    });
+    // Шаг 3: Обрабатываем комментарии
+    code = code.replace(/\/\/.*$/gm, function(match) {
+        return createToken('<span class="c1c-comment">' + escapeHtml(match) + '</span>');
+    });
+    // Шаг 4: Экранируем только опасные символы, но не < и > (и не & внутри токенов)
+    // Символ & теперь не трогаем, так как директивы (&...) уже в токенах
+    code = code
+        .replace(/&(?!(?:[a-zA-Z0-9]+|#\d+|#[xX][a-fA-F0-9]+);)/g, '&amp;') // Экранируем & только если это не начало HTML сущности
+        .replace(/</g, '<')
+        .replace(/>/g, '>')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    // Шаг 5: Обрабатываем числа
+    code = code.replace(/\b(\d+\.?\d*)\b/g, function(match) {
+        return createToken('<span class="c1c-number">' + match + '</span>');
+    });
+    // Шаг 6: Обрабатываем ключевые слова
+    for (var i = 0; i < keywords.length; i++) {
+        var escapedKeyword = keywords[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        var regex = new RegExp('\\b(' + escapedKeyword + ')\\b', 'gi');
+        code = code.replace(regex, function(match) {
+            return createToken('<span class="c1c-keyword">' + match + '</span>');
+        });
+    }
+    // Шаг 7: Обрабатываем константы
+    for (var j = 0; j < constants.length; j++) {
+        var escapedConstant = constants[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        var constRegex = new RegExp('\\b(' + escapedConstant + ')\\b', 'gi');
+        code = code.replace(constRegex, function(match) {
+            return createToken('<span class="c1c-constant">' + match + '</span>');
+        });
+    }
+    // Шаг 8: Обрабатываем идентификаторы (только те, что не были обработаны ранее)
+    code = code.replace(/\b([а-яёa-z_][а-яёa-z0-9_]*)\b/gi, function(match) {
+        // Если это не временный токен, обрабатываем как идентификатор
+        if (!match.startsWith('___TOKEN_')) {
+            return createToken('<span class="c1c-identifier">' + match + '</span>');
+        }
+        return match;
+    });
+    // Шаг 9: Обрабатываем спецсимволы (кроме тех, что уже в токенах)
+    code = code.replace(/([{}()\[\].,;:=<>+\-*\/])/g, function(match) {
+        // Проверяем, не является ли это временным токеном
+        if (!match.startsWith('___TOKEN_')) {
+            return createToken('<span class="c1c-symbol">' + match + '</span>');
+        }
+        return match;
+    });
+    // Шаг 10: Восстанавливаем все токены
+    for (var i = 0; i < tokens.length; i++) {
+        var regex = new RegExp(tokens[i].marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+        code = code.replace(regex, tokens[i].content);
+    }
+    // Шаг 11: Убедиться, что мусорные вставки удалены (дополнительная проверка)
+    code = code.replace(/___TOKEN_\d+___/g, '');
+    return code;
+}
+
+// Функция копирования в буфер
+function copyToClipboard(text) {
+    try {
+        var textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        var successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        return successful;
+    } catch (err) {
+        console.error('Не удалось скопировать текст: ', err);
+        return false;
+    }
+}
+
+// Обработчик кнопок
+function handleCodeAction(action, btn) {
+    var codeBlock = btn.closest('.code-block-1c');
+    if (!codeBlock) {
+        codeBlock = btn.parentNode.parentNode;
+    }
+    var codeContent = codeBlock.querySelector('.code-content');
+    if (!codeContent) {
+        console.error('Не найден элемент с кодом');
+        return;
+    }
+    // Получаем чистый текст, убирая HTML-теги
+    var text = codeContent.textContent || codeContent.innerText || '';
+    if (action === 'copy') {
+        var success = copyToClipboard(text);
+        if (success) {
+            // Визуальная обратная связь
+            var originalText = btn.textContent;
+            btn.textContent = 'Скопировано!';
+            btn.style.backgroundColor = '#90EE90';
+            setTimeout(function() {
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+            }, 1500);
+        } else {
+            btn.textContent = 'Ошибка!';
+            btn.style.backgroundColor = '#FFB6C1';
+            setTimeout(function() {
+                btn.textContent = 'Копировать';
+                btn.style.backgroundColor = '';
+            }, 1500);
+        }
+    }
+    // Передаем событие в 1С
+    if (window.handle1CCodeAction) {
+        window.handle1CCodeAction(action, text);
+    }
+}
+
+// Инициализация marked
+if (typeof marked !== 'undefined') {
+    var originalRenderer = new marked.Renderer();
+    var originalCode = originalRenderer.code;
+    marked.Renderer.prototype.code = function(code, language) {
+        if (language && (false
+        		|| language.toLowerCase() === '1с' 
+        		|| language.toLowerCase() === '1c'
+        		|| language.toLowerCase() === 'bsl'))
+        {
+            var highlighted = highlight1C(code);
+            var lines = code.split('\n'); // Исправлено: использовать \n для подсчета строк
+            var hasFooter = lines.length > 20;
+            var html = '<div class="code-block-1c">' +
+                       '<div class="code-header">' +
+                       '<span>1C</span>' +
+                       '<div>' +
+                       '<button onclick="handleCodeAction(\'copy\', this)">Копировать</button>' +
+                       '<button onclick="handleCodeAction(\'compare\', this)">Сравнить</button>' +
+                       '</div>' +
+                       '</div>' +
+                       '<pre class="code-content">' + highlighted + '</pre>';
+            if (hasFooter) {
+                html += '<div class="code-footer">' +
+                        '<span>1C</span>' +
+                        '<div>' +
+                        '<button onclick="handleCodeAction(\'copy\', this)">Копировать</button>' +
+                        '<button onclick="handleCodeAction(\'compare\', this)">Сравнить</button>' +
+                        '</div>' +
+                        '</div>';
+            }
+            html += '</div>';
+            return html;
+        }
+        return originalCode.call(this, code, language);
+    };
+    marked.setOptions({
+        breaks: true,
+        gfm: true
+    });
+}
+
+// Функция установки текста
+function setText(text) {
+    try {
+        document.getElementById('content').innerHTML = marked(text);
+        return true;
+    } catch (e) {
+        // Fallback: просто показываем текст как есть
+        document.getElementById('content').innerText = text;
+        return false;
+    }
+}
+</script>
 </body>
 </html>
