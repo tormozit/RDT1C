@@ -1,0 +1,535 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<!-- для выполнения в Webkit 605 -->
+<div id="dataContainer" style="display:none;"></div>
+<script type="text/javascript">
+// Глобальные переменные для хранения текущих объектов запросов
+window.currentXHR = null;
+window.currentStreamXHR = null;
+window._1CAPI = window._1CAPI || {}; // Иначе 8.3.25- не увидит методы
+window._isManualCancel = false; // Флаг для отслеживания ручной отмены
+
+// Статус stream запроса
+window.streamStatus = {
+    isCompleted: false,
+    totalChunks: 0,
+    receivedChunks: 0,
+    lastChunkTime: null,
+    lastEventTime: 0, // Время последнего сгенерированного события
+    pendingChunks: 0, // Количество чанков, ожидающих уведомления
+    throttleDelay: 0 // Задержка между событиями по умолчанию (мс)
+};
+
+window._1CAPI.isActiveHttpRequest = function() {
+	return (window.currentXHR != null && window.currentXHR.readyState !== 4);
+};
+
+// Функция для обычных HTTP запросов
+window._1CAPI.sendHttpRequest = function(url, body, headersArray, cancelPrevious) {
+    if (cancelPrevious === undefined) cancelPrevious = true;
+    
+    try {
+        // Отменяем предыдущий запрос, если включен флаг и запрос существует и еще не завершен
+        if (cancelPrevious && _1CAPI.isActiveHttpRequest()) {
+            window.currentXHR.abort();
+            window.currentXHR = null;
+        }
+		window._isManualCancel = false;        
+        var xhr = new XMLHttpRequest();
+        // Сохраняем ссылку на текущий запрос
+        window.currentXHR = xhr;
+        
+        xhr.open('POST', url, true);
+        
+        // Устанавливаем заголовки
+        headersArray = JSON.parse(headersArray);
+        for (var i = 0; i < headersArray.length; i++) {
+            xhr.setRequestHeader(headersArray[i].name, headersArray[i].value);
+        }
+        
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                // Очищаем текущий XHR только если это тот же самый запрос
+                if (window.currentXHR === xhr) {
+                    window.currentXHR = null;
+                }
+                
+                // Проверяем, не была ли ручная отмена
+                if (window._isManualCancel) {
+                    return;
+                }
+                
+                var event = document.createEvent('MouseEvents');
+                event.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                if (xhr.status === 200) {
+                    document.getElementById('dataContainer').innerText = xhr.responseText;
+                    document.body.dispatchEvent(event);
+                } else {
+                    var error = new Error('HTTP error: ' + xhr.status + ': ' + xhr.responseText);
+                    document.getElementById('dataContainer').innerText = 'Ошибка: ' + error.message;
+                    document.body.dispatchEvent(event);
+                }
+            }
+        };
+        
+        xhr.onerror = function() {
+            // Очищаем текущий XHR только если это тот же самый запрос
+            if (window.currentXHR === xhr) {
+                window.currentXHR = null;
+            }
+            
+            // Проверяем, не была ли ручная отмена
+            if (window._isManualCancel) {
+                return;
+            }
+            
+            // Проверяем, не была ли отмена запроса (status = 0)
+            if (xhr.status !== 0) {
+                alert('Ошибка: Сетевая');
+                document.getElementById('dataContainer').innerText = 'Ошибка: Сетевая';
+                var event = document.createEvent('MouseEvents');
+                event.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                document.body.dispatchEvent(event);
+            }
+        };
+        
+        xhr.onabort = function() {
+            // Очищаем текущий XHR при отмене
+            if (window.currentXHR === xhr) {
+                window.currentXHR = null;
+            }
+        };
+        
+        xhr.send(body);
+        
+    } catch (error) {
+        // Проверяем, не была ли ручная отмена
+        if (window._isManualCancel) {
+            return;
+        }
+        
+        alert('Ошибка при подготовке запроса: ' + error.message);
+        document.getElementById('dataContainer').innerText = 'Ошибка: ' + error.message;
+        var event = document.createEvent('MouseEvents');
+        event.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        document.body.dispatchEvent(event);
+    }
+};
+
+// Отправка запроса с поддержкой Stream API
+window._1CAPI.sendStreamRequest = function(url, body, headersArray, cancelPrevious, throttleDelay) {
+    if (cancelPrevious === undefined) cancelPrevious = true;
+    if (throttleDelay === undefined) throttleDelay = 500;
+    
+    try {
+        // Отменяем предыдущий stream запрос, если включен флаг
+        if (cancelPrevious && window.currentStreamXHR && window.currentStreamXHR.readyState !== 4) {
+            window.currentStreamXHR.abort();
+            window.currentStreamXHR = null;
+        }
+        window._isManualCancel = false;
+	    document.getElementById('dataContainer').innerText = '';
+       
+        // Сбрасываем статус перед новым запросом
+        window.streamStatus = {
+            isCompleted: false,
+            totalChunks: 0,
+            receivedChunks: 0,
+            lastChunkTime: null,
+            startTime: new Date().toISOString(),
+            lastEventTime: 0,
+            pendingChunks: 0,
+            throttleDelay: throttleDelay // Сохраняем переданную задержку
+        }; 
+        
+        var xhr = new XMLHttpRequest();
+        window.currentStreamXHR = xhr;
+        
+        xhr.open('POST', url, true);
+        
+        // Устанавливаем заголовки
+        headersArray = JSON.parse(headersArray);
+        for (var i = 0; i < headersArray.length; i++) {
+            xhr.setRequestHeader(headersArray[i].name, headersArray[i].value);
+        }
+        
+        var receivedLength = 0;
+        var buffer = '';
+        var chunkCounter = 0;
+        
+        xhr.onreadystatechange = function() {
+            // Проверяем, не была ли ручная отмена
+            if (window._isManualCancel) {
+                return;
+            }
+            
+            if (xhr.readyState === 3) { // LOADING - получаем данные по частям
+                try {
+                    var newData = xhr.responseText.substring(receivedLength);
+                    receivedLength = xhr.responseText.length;
+                    
+                    if (newData) {
+                        buffer += newData;
+                        
+                        // Обрабатываем буфер построчно (для SSE формата)
+                        var lines = buffer.split('\n');
+                        buffer = lines.pop(); // Последняя строка может быть неполной
+                        
+                        for (var i = 0; i < lines.length; i++) {
+                            var line = lines[i].trim();
+                            if (line && line.indexOf('data: ') === 0) {
+                                var jsonData = line.substring(6); // Убираем "data: "
+                                if (jsonData.trim()) {
+                                    chunkCounter++;
+                                    processStreamChunk(jsonData, chunkCounter);
+                                }
+                            }
+                        }
+                        // ТРОТТЛИНГ: генерируем событие с учетом переданной задержки
+                        generateThrottledChunkEvent();
+                    }
+                } catch (e) {
+                    // Проверяем, не была ли ручная отмена
+                    if (window._isManualCancel) {
+                        return;
+                    }
+			        var errorMessage = 'Ошибка: Обработка stream: ' + e.message;
+			        document.getElementById('dataContainer').innerText = errorMessage;
+			        generateChunkEvent('ERROR', errorMessage);
+                }
+            }
+            else if (xhr.readyState === 4) { // DONE - запрос завершен
+                // Проверяем, не была ли ручная отмена
+                if (window._isManualCancel) {
+                    if (window.currentStreamXHR === xhr) {
+                        window.currentStreamXHR = null;
+                    }
+                    return;
+                }
+                
+                // ПЕРВОЕ - проверяем статус HTTP на ошибки
+                if (xhr.status !== 200) {
+                    var error = new Error('HTTP error: ' + xhr.status + ': ' + xhr.responseText);
+                    var errorMessage = 'Ошибка: ' + error.message;
+                    document.getElementById('dataContainer').innerText = errorMessage;
+                    window.streamStatus.isCompleted = true;
+                    generateChunkEvent('ERROR', errorMessage);
+                    
+                    if (window.currentStreamXHR === xhr) {
+                        window.currentStreamXHR = null;
+                    }
+                    return; // Выходим, не обрабатываем дальше
+                }
+                
+                // Обрабатываем оставшиеся данные в буфере (только для успешных запросов)
+                if (buffer.trim()) {
+                    var lines = buffer.split('\n');
+                    for (var i = 0; i < lines.length; i++) {
+                        var line = lines[i].trim();
+                        if (line && line.indexOf('data: ') === 0) {
+                            var jsonData = line.substring(6);
+                            if (jsonData.trim()) {
+                                chunkCounter++;
+                                processStreamChunk(jsonData, chunkCounter);
+                            }
+                        }
+                    }
+                }
+                
+                // ВАЖНО: При завершении запроса генерируем событие для всех оставшихся чанков БЕЗ ТРОТТЛИНГА
+                if (window.streamStatus.pendingChunks > 0) {
+                    generateChunkEvent('CHUNK', 'Получено чанков: ' + window.streamStatus.pendingChunks);
+                    window.streamStatus.pendingChunks = 0;
+                }
+                
+                // Устанавливаем статус завершения
+                window.streamStatus.isCompleted = true;
+                window.streamStatus.totalChunks = chunkCounter;
+                window.streamStatus.receivedChunks = chunkCounter;
+                
+                // Добавляем финальный маркер завершения
+                var finalContent = document.getElementById('dataContainer').innerText;
+                var completionMarker = 'Конец: получено ' + chunkCounter + ' чанков';
+                document.getElementById('dataContainer').innerText = finalContent + '\n' + completionMarker;
+                
+                // Генерируем финальное событие (без троттлинга)
+                generateChunkEvent('COMPLETED', completionMarker);
+                
+                // Очищаем текущий XHR
+                if (window.currentStreamXHR === xhr) {
+                    window.currentStreamXHR = null;
+                }
+            }
+        };
+        
+        xhr.onerror = function() {
+            // Проверяем, не была ли ручная отмена
+            if (window._isManualCancel) {
+                if (window.currentStreamXHR === xhr) {
+                    window.currentStreamXHR = null;
+                }
+                window.streamStatus.isCompleted = true;
+                return;
+            }
+            
+            if (window.currentStreamXHR === xhr) {
+                window.currentStreamXHR = null;
+            }
+            window.streamStatus.isCompleted = true;
+            
+            // При ошибке тоже генерируем событие для оставшихся чанков БЕЗ ТРОТТЛИНГА
+            if (window.streamStatus.pendingChunks > 0) {
+                generateChunkEvent('CHUNK', 'Получено чанков: ' + window.streamStatus.pendingChunks);
+                window.streamStatus.pendingChunks = 0;
+            }
+            
+	        var errorMessage = 'Ошибка: Сеть';
+	        document.getElementById('dataContainer').innerText = errorMessage;
+	        generateChunkEvent('ERROR', errorMessage);
+        };
+        
+        xhr.onabort = function() {
+            // Проверяем, не была ли ручная отмена
+            if (window._isManualCancel) {
+                if (window.currentStreamXHR === xhr) {
+                    window.currentStreamXHR = null;
+                }
+                window.streamStatus.isCompleted = true;
+                return;
+            }
+            
+            if (window.currentStreamXHR === xhr) {
+                window.currentStreamXHR = null;
+            }
+            window.streamStatus.isCompleted = true;
+            
+            // При отмене тоже генерируем событие для оставшихся чанков БЕЗ ТРОТТЛИНГА
+            if (window.streamStatus.pendingChunks > 0) {
+                generateChunkEvent('CHUNK', 'Получено чанков: ' + window.streamStatus.pendingChunks);
+                window.streamStatus.pendingChunks = 0;
+            }
+            
+            document.getElementById('dataContainer').innerText = 'Отмена:';
+            generateChunkEvent('ABORTED', 'Запрос отменен');
+        };
+        
+        xhr.send(body);
+        
+    } catch (error) {
+        // Проверяем, не была ли ручная отмена
+        if (window._isManualCancel) {
+            return;
+        }
+        
+        window.streamStatus.isCompleted = true;
+        var errorMessage = 'Ошибка: Подготовка запроса: ' + error.message;
+        document.getElementById('dataContainer').innerText = errorMessage;
+        generateChunkEvent('ERROR', errorMessage);
+    }
+};
+
+// Функция обработки чанков stream данных
+function processStreamChunk(chunk, chunkNumber) {
+    try {
+        // Проверяем, не была ли ручная отмена
+        if (window._isManualCancel) {
+            return;
+        }
+        
+        // Накопление чанков в dataContainer
+        var chunkWithMarker = 'data: ' + chunk;
+        var currentContent = document.getElementById('dataContainer').innerText;
+        if (currentContent) {
+            document.getElementById('dataContainer').innerText = currentContent + '\n' + chunkWithMarker;
+        } else {
+            document.getElementById('dataContainer').innerText = chunkWithMarker;
+        }
+        window.streamStatus.receivedChunks = chunkNumber;
+        window.streamStatus.lastChunkTime = new Date().toISOString();
+        window.streamStatus.pendingChunks++; // Увеличиваем счетчик ожидающих чанков
+    } catch (e) {
+        // Проверяем, не была ли ручная отмена
+        if (window._isManualCancel) {
+            return;
+        }
+        
+        var errorMessage = 'Ошибка: Обработка чанка: ' + e.message;
+        document.getElementById('dataContainer').innerText = errorMessage;
+        generateChunkEvent('ERROR', errorMessage);
+    }
+}
+
+// Функция троттлинга событий (с учетом переданной задержки)
+function generateThrottledChunkEvent() {
+    // Проверяем, не была ли ручная отмена
+    if (window._isManualCancel) {
+        return;
+    }
+    
+    var currentTime = Date.now();
+    var timeSinceLastEvent = currentTime - window.streamStatus.lastEventTime;
+    
+    // Если прошло больше указанной задержки с последнего события, генерируем новое
+    if (timeSinceLastEvent > window.streamStatus.throttleDelay) {
+        generateChunkEvent('CHUNK', 'Получено чанков: ' + window.streamStatus.pendingChunks);
+        window.streamStatus.lastEventTime = currentTime;
+        window.streamStatus.pendingChunks = 0; // Сбрасываем счетчик
+    }
+    // Иначе событие будет сгенерировано при завершении запроса
+}
+
+// Функция генерации события onclick для чанка
+function generateChunkEvent(type, data, chunkNumber) {
+    // Проверяем, не была ли ручная отмена
+    if (window._isManualCancel) {
+        return;
+    }
+    
+    if (chunkNumber === undefined) chunkNumber = null;
+    
+    try {
+        var eventData = {
+            type: type,
+            data: data,
+            chunkNumber: chunkNumber,
+            timestamp: new Date().toISOString(),
+            streamStatus: {
+                isCompleted: window.streamStatus.isCompleted,
+                receivedChunks: window.streamStatus.receivedChunks,
+                totalChunks: window.streamStatus.totalChunks,
+                pendingChunks: window.streamStatus.pendingChunks,
+                throttleDelay: window.streamStatus.throttleDelay
+            }
+        };
+        
+        var event = document.createEvent('MouseEvents');
+        event.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        
+        // Для событий используем временное хранение в data атрибуте
+        var tempEventData = JSON.stringify(eventData);
+        document.body.setAttribute('data-lastevent', tempEventData);
+        document.body.dispatchEvent(event);
+        
+    } catch (e) {
+        console.error('Ошибка генерации события:', e);
+    }
+}
+
+// Функция для проверки завершения stream
+window._1CAPI.isStreamCompleted = function() {
+    return window.streamStatus.isCompleted;
+};
+
+// Функция для получения статуса stream
+window.getStreamStatus = function() {
+    return {
+        isCompleted: window.streamStatus.isCompleted,
+        receivedChunks: window.streamStatus.receivedChunks,
+        totalChunks: window.streamStatus.totalChunks,
+        lastChunkTime: window.streamStatus.lastChunkTime,
+        startTime: window.streamStatus.startTime,
+        pendingChunks: window.streamStatus.pendingChunks,
+        throttleDelay: window.streamStatus.throttleDelay
+    };
+};
+
+// Функция для получения всех накопленных данных
+window._1CAPI.getAndClearAllData = function() {
+    var result = document.getElementById('dataContainer').innerText;
+    document.getElementById('dataContainer').innerText = '';
+    return result;
+};
+
+// Функция для получения последнего чанка
+window.getLastChunk = function() {
+    var allData = document.getElementById('dataContainer').innerText;
+    var lines = allData.split('\n');
+    return lines.length > 0 ? lines[lines.length - 1] : '';
+};
+
+// Функция для получения количества чанков
+window.getChunkCount = function() {
+    var allData = document.getElementById('dataContainer').innerText;
+    var lines = allData.split('\n');
+    var count = 0;
+    for (var i = 0; i < lines.length; i++) {
+        if (lines[i].trim().indexOf('data: ') === 0) {
+            count++;
+        }
+    }
+    return count;
+};
+
+// Функция для принудительной отмены текущего запроса
+window._1CAPI.cancelCurrentRequest = function() {
+    // Устанавливаем флаг отмены перед вызовом abort()
+    window._isManualCancel = true;
+    
+    if (window.currentXHR && window.currentXHR.readyState !== 4) {
+        window.currentXHR.abort();
+        window.currentXHR = null;
+    }
+    if (window.currentStreamXHR && window.currentStreamXHR.readyState !== 4) {
+        window.currentStreamXHR.abort();
+        window.currentStreamXHR = null;
+        document.getElementById('dataContainer').innerText = 'Отмена:';
+        // Не генерируем события при ручной отмене
+    }
+    
+    // Сбрасываем флаг после небольшой задержки
+    setTimeout(() => { window._isManualCancel = false; }, 100);
+};
+
+// Функция для проверки статуса текущего запроса
+window._1CAPI.getRequestStatus = function() {
+    if (!window.currentXHR && !window.currentStreamXHR) {
+        return 'Нет активных запросов';
+    }
+    
+    var status = '';
+    if (window.currentXHR) {
+        status += 'Запрос:' + getReadyStateText(window.currentXHR.readyState);
+    }
+    if (window.currentStreamXHR) {
+        if (status) status += ' | ';
+        status += 'Поток:' + getReadyStateText(window.currentStreamXHR.readyState);
+        if (window.streamStatus.isCompleted) {
+            status += ' (завершен)';
+        } else {
+            status += ' (активен, чанков: ' + window.streamStatus.receivedChunks + ')';
+        }
+    }
+    
+    return status;
+};
+
+function getReadyStateText(readyState) {
+    switch (readyState) {
+        case 0: return 'Подготовка';
+        case 1: return 'Соединено';
+        case 2: return 'Отправка';
+        case 3: return 'Получение';
+        case 4: return 'Завершен';
+        default: return 'Неизвестно';
+    }
+}
+
+// Функция для очистки данных
+window.clearStreamData = function() {
+    document.getElementById('dataContainer').innerText = '';
+    window.streamStatus = {
+        isCompleted: false,
+        totalChunks: 0,
+        receivedChunks: 0,
+        lastChunkTime: null,
+        lastEventTime: 0,
+        pendingChunks: 0,
+        throttleDelay: 0
+    };
+};
+</script>
+</body>
+</html>

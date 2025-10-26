@@ -116,6 +116,14 @@
 					<v8:content>Профиль групп доступа.Количество ролей</v8:content>
 				</v8:item>
 			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПрофильГруппДоступа</dataPath>
@@ -134,6 +142,13 @@
 					<v8:content>Профиль групп доступа</v8:content>
 				</v8:item>
 			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>РольИмя</dataPath>
@@ -164,6 +179,13 @@
 				<group>true</group>
 				<order>true</order>
 			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>ПрофилиГруппДоступа</objectName>
