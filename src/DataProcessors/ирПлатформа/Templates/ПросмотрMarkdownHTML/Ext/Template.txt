@@ -4,6 +4,9 @@
 		%ТекстJS%  
 	</script>
 <style type=text/css>
+body {
+    margin: 2px;
+}  
 pre {
     font-family: Courier;
     color: #0000FF;
@@ -132,6 +135,7 @@ function escapeHtml(text) {
 
 function highlight1C(code) {
     if (!code) return '';
+    code = code.replace(/\t/g, '    ');
     var keywords = [
         'Процедура', 'Функция', 'КонецПроцедуры', 'КонецФункции', 
         'Если', 'Тогда', 'Иначе', 'КонецЕсли', 'Для', 'Каждого', 
@@ -338,15 +342,46 @@ if (typeof marked !== 'undefined') {
     });
 }
 
-// Функция установки текста
-function setText(text) {
-    try {
-        document.getElementById('content').innerHTML = marked(text);
+// Функция установки текста (работает с marked и без него)
+function setText(text, fontSize) {
+    var contentElement = document.getElementById('content');
+    
+    // Устанавливаем размер шрифта для блоков кода 1С
+   if (fontSize) {
+        // Создаем или обновляем стиль для размера шрифта
+        var styleId = 'dynamic-code-font-size';
+        var existingStyle = document.getElementById(styleId);
+        
+        if (existingStyle) {
+            existingStyle.remove();
+        }
+        
+        var style = document.createElement('style');
+        style.id = styleId;
+        style.textContent = `
+            .code-block-1c .code-content,
+            #content pre {
+                font-size: ${fontSize} !important;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+        
+    if (typeof marked !== 'undefined') {
+        // Используем marked если доступен
+        try {
+            contentElement.innerHTML = marked(text);
+            return true;
+        } catch (e) {
+            console.error('Ошибка marked:', e);
+            // Fallback на простой текст
+            contentElement.innerText = text;
+            return false;
+        }
+    } else {
+        // Режим без marked - просто выводим текст как есть
+        contentElement.innerHTML = '<pre>' + highlight1C(text) + '</pre>';
         return true;
-    } catch (e) {
-        // Fallback: просто показываем текст как есть
-        document.getElementById('content').innerText = text;
-        return false;
     }
 }
 </script>
