@@ -25078,15 +25078,16 @@
 			ДетальноеОписаниеОтдельное = ирОбщий.СтрСоединитьЛкс(СтруктураОписания, "");
 			Если ЛиФорматХТМЛ Тогда
 				ДетальноеОписаниеОтдельное = СтрЗаменить(ДетальноеОписаниеОтдельное, Символы.ПС, Символы.ПС + "<br>");
+				РазмерШрифта = "70%"; /// 70% - примерно 8pt
 				ДетальноеОписаниеОтдельное = "<html><head><style>
 				|  body {
-				|        font-size: 9pt;
+				//|        font-size: 8pt;
+				|        font-size: "+РазмерШрифта+";
 				|        margin: 2px;
 				|        line-height: 1.2;
-				|		 font-family: Segoe UI, Tahoma, Arial, sans-serif;
+				|		 font-family: Tahoma, Segoe UI, Helvetica, Arial, sans-serif;
 				|    }  
 				|  b {
-				//|    color: #303030;
 				|    opacity: 0.8
 				|  }     
 				|</style>

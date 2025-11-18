@@ -121,18 +121,9 @@ blockquote p {
 </style>
 </head>
 <body>
+<!-- для выполнения в Webkit 605 -->
 <div id="content"></div>
 <script>
-function escapeHtml(text) {
-    if (!text) return '';
-    return text
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
-}
-
 function highlight1C(code) {
     if (!code) return '';
     code = code.replace(/\t/g, '    ');
@@ -145,9 +136,10 @@ function highlight1C(code) {
         'Или', 'ИначеЕсли', 'Экспорт', 'Знач', 'Новый'
     ];
     var constants = ['Истина', 'Ложь', 'Неопределено', 'Null'];
-    // Временные метки для уже обработанных элементов
+    
     var tokens = [];
     var tokenIndex = 0;
+    
     function createToken(content) {
         var marker = '___TOKEN_' + tokenIndex + '___';
         tokens.push({ marker: marker, content: content });
@@ -159,46 +151,44 @@ function highlight1C(code) {
     code = code.replace(/<!--[\s\S]*?-->/g, '');
     
     // Шаг 1: Обрабатываем директивы препроцессора &...
-    // Это должно быть до экранирования & и до обработки идентификаторов
-    var directiveRegex = /&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*/g; // Пример паттерна для директив
+    var directiveRegex = /&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*/g;
     code = code.replace(directiveRegex, function(match) {
-        // Директивы можно оставить как идентификаторы или выделить отдельно
-        // Пока просто обернём в токен, чтобы избежать искажения на шаге 3
-        // Можно использовать цвет ключевого слова или специальный класс
-        return createToken('<span class="c1c-keyword">' + escapeHtml(match) + '</span>');
+        return createToken('<span class="c1c-keyword">' + match + '</span>');
     });
 
-    // Шаг 2: Обрабатываем многострочные строки (|...") и обычные строки (")
-    // Сначала обрабатываем многострочные строки
+    // Шаг 2: Обрабатываем строки (многострочные и обычные)
     var multilineStringRegex = /"[^"]*(?:\|(?:\r?|)[^"]*)*"/g;
     code = code.replace(multilineStringRegex, function(match) {
-        return createToken('<span class="c1c-string">' + escapeHtml(match) + '</span>');
+        return createToken('<span class="c1c-string">' + match + '</span>');
     });
-    // Затем обрабатываем обычные строки (если остались необработанные)
+    
     var singleLineStringRegex = /"[^"]*"/g;
     code = code.replace(singleLineStringRegex, function(match) {
-        // Проверяем, не является ли это уже обработанным токеном
         if (match.startsWith('___TOKEN_')) {
-            return match; // Уже обработано
+            return match;
         }
-        return createToken('<span class="c1c-string">' + escapeHtml(match) + '</span>');
+        return createToken('<span class="c1c-string">' + match + '</span>');
     });
+    
     // Шаг 3: Обрабатываем комментарии
     code = code.replace(/\/\/.*$/gm, function(match) {
-        return createToken('<span class="c1c-comment">' + escapeHtml(match) + '</span>');
+        return createToken('<span class="c1c-comment">' + match + '</span>');
     });
-    // Шаг 4: Экранируем только опасные символы, но не < и > (и не & внутри токенов)
-    // Символ & теперь не трогаем, так как директивы (&...) уже в токенах
+    
+    // Шаг 4: Экранируем только HTML-опасные символы, но не внутри строк и комментариев
+    // ВАЖНО: убираем экранирование кавычек, так как они уже обработаны в строках
     code = code
-        .replace(/&(?!(?:[a-zA-Z0-9]+|#\d+|#[xX][a-fA-F0-9]+);)/g, '&amp;') // Экранируем & только если это не начало HTML сущности
-        .replace(/</g, '<')
-        .replace(/>/g, '>')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
+        .replace(/&(?!(?:[a-zA-Z0-9]+|#\d+|#[xX][a-fA-F0-9]+);)/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    // УБИРАЕМ экранирование кавычек: .replace(/"/g, '&quot;')
+    // УБИРАЕМ экранирование апострофов: .replace(/'/g, '&#039;')
+    
     // Шаг 5: Обрабатываем числа
     code = code.replace(/\b(\d+\.?\d*)\b/g, function(match) {
         return createToken('<span class="c1c-number">' + match + '</span>');
     });
+    
     // Шаг 6: Обрабатываем ключевые слова
     for (var i = 0; i < keywords.length; i++) {
         var escapedKeyword = keywords[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -207,6 +197,7 @@ function highlight1C(code) {
             return createToken('<span class="c1c-keyword">' + match + '</span>');
         });
     }
+    
     // Шаг 7: Обрабатываем константы
     for (var j = 0; j < constants.length; j++) {
         var escapedConstant = constants[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -215,31 +206,34 @@ function highlight1C(code) {
             return createToken('<span class="c1c-constant">' + match + '</span>');
         });
     }
-    // Шаг 8: Обрабатываем идентификаторы (только те, что не были обработаны ранее)
+    
+    // Шаг 8: Обрабатываем идентификаторы
     code = code.replace(/\b([а-яёa-z_][а-яёa-z0-9_]*)\b/gi, function(match) {
-        // Если это не временный токен, обрабатываем как идентификатор
         if (!match.startsWith('___TOKEN_')) {
             return createToken('<span class="c1c-identifier">' + match + '</span>');
         }
         return match;
     });
-    // Шаг 9: Обрабатываем спецсимволы (кроме тех, что уже в токенах)
+    
+    // Шаг 9: Обрабатываем спецсимволы
     code = code.replace(/([{}()\[\].,;:=<>+\-*\/])/g, function(match) {
-        // Проверяем, не является ли это временным токеном
         if (!match.startsWith('___TOKEN_')) {
             return createToken('<span class="c1c-symbol">' + match + '</span>');
         }
         return match;
     });
+    
     // Шаг 10: Восстанавливаем все токены
     for (var i = 0; i < tokens.length; i++) {
         var regex = new RegExp(tokens[i].marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
         code = code.replace(regex, tokens[i].content);
     }
-    // Шаг 11: Убедиться, что мусорные вставки удалены (дополнительная проверка)
+    
+    // Шаг 11: Удаляем оставшиеся токены
     code = code.replace(/___TOKEN_\d+___/g, '');
+    
     return code;
-}
+} 
 
 // Функция копирования в буфер
 function copyToClipboard(text) {
@@ -342,12 +336,14 @@ if (typeof marked !== 'undefined') {
     });
 }
 
+window._1CAPI = window._1CAPI || {};
+
 // Функция установки текста (работает с marked и без него)
-function setText(text, fontSize) {
+window._1CAPI.setText = function(text, fontSize) {
     var contentElement = document.getElementById('content');
     
     // Устанавливаем размер шрифта для блоков кода 1С
-   if (fontSize) {
+    if (fontSize) {
         // Создаем или обновляем стиль для размера шрифта
         var styleId = 'dynamic-code-font-size';
         var existingStyle = document.getElementById(styleId);
@@ -358,12 +354,7 @@ function setText(text, fontSize) {
         
         var style = document.createElement('style');
         style.id = styleId;
-        style.textContent = `
-            .code-block-1c .code-content,
-            #content pre {
-                font-size: ${fontSize} !important;
-            }
-        `;
+        style.textContent = '.code-block-1c .code-content, #content pre { font-size: ' + fontSize + ' !important; }';
         document.head.appendChild(style);
     }
         
@@ -383,7 +374,7 @@ function setText(text, fontSize) {
         contentElement.innerHTML = '<pre>' + highlight1C(text) + '</pre>';
         return true;
     }
-}
+};
 </script>
 </body>
 </html>
