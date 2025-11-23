@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!-- для выполнения в Webkit 605 внутри поля HTML формы платформы 1С -->
+<html>
 <head>
 	<script type="text/javascript">
 		%ТекстJS%  
@@ -121,22 +122,21 @@ blockquote p {
 </style>
 </head>
 <body>
-<!-- для выполнения в Webkit 605 -->
 <div id="content"></div>
 <script>
 function highlight1C(code) {
     if (!code) return '';
-    code = code.replace(/\t/g, '    ');
+    code = code.replace(new RegExp('\\t', 'g'), '    ');
+    
     var keywords = [
         'Процедура', 'Функция', 'КонецПроцедуры', 'КонецФункции', 
         'Если', 'Тогда', 'Иначе', 'КонецЕсли', 'Для', 'Каждого', 
         'Из', 'Цикл', 'КонецЦикла', 'Пока', 'Выполнять', 'Возврат',
         'Продолжить', 'Прервать', 'Попытка', 'Исключение', 'КонецПопытки',
         'ВызватьИсключение', 'Перем', 'Перейти', 'Не', 'И', 
-        'Или', 'ИначеЕсли', 'Экспорт', 'Знач', 'Новый'
+        'Или', 'ИначеЕсли', 'Экспорт', 'Знач', 'Новый', 'Истина', "Ложь"
     ];
     var constants = ['Истина', 'Ложь', 'Неопределено', 'Null'];
-    
     var tokens = [];
     var tokenIndex = 0;
     
@@ -147,93 +147,118 @@ function highlight1C(code) {
         return marker;
     }
     
-    // Шаг 0: Удаляем HTML-комментарии
-    code = code.replace(/<!--[\s\S]*?-->/g, '');
+    // Шаг 1: Обрабатываем строки ДО любого экранирования
+    // В строке пишем четыре слеша, чтобы в регулярку попало два (для экранирования точки)
+    var stringRegex = new RegExp('"([^"\\\\]|\\\\.)*"', 'g');
+    code = code.replace(stringRegex, function(match) {
+        return createToken('___STRING___' + match + '___STRING___');
+    });
     
-    // Шаг 1: Обрабатываем директивы препроцессора &...
-    var directiveRegex = /&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*/g;
+    // Шаг 2: Обрабатываем комментарии 1С (// ...)
+    code = code.replace(new RegExp('\\/\\/.*$', 'gm'), function(match) {
+        return createToken('<span class="c1c-comment">' + match + '</span>');
+    });
+    
+    // Шаг 3: Обрабатываем директивы препроцессора &...
+    var directiveRegex = new RegExp('&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*', 'g');
     code = code.replace(directiveRegex, function(match) {
         return createToken('<span class="c1c-keyword">' + match + '</span>');
     });
 
-    // Шаг 2: Обрабатываем строки (многострочные и обычные)
-    var multilineStringRegex = /"[^"]*(?:\|(?:\r?|)[^"]*)*"/g;
-    code = code.replace(multilineStringRegex, function(match) {
-        return createToken('<span class="c1c-string">' + match + '</span>');
+    // Шаг 3.5: Обрабатываем операторы сравнения < и > отдельно
+    code = code.replace(new RegExp('([<>])', 'g'), function(match) {
+        var safeChar = (match === '<') ? '&lt;' : '&gt;';
+        return createToken('<span class="c1c-symbol">' + safeChar + '</span>');
     });
-    
-    var singleLineStringRegex = /"[^"]*"/g;
-    code = code.replace(singleLineStringRegex, function(match) {
-        if (match.startsWith('___TOKEN_')) {
-            return match;
+
+    // Шаг 4: Экранируем HTML-опасные символы
+    var rgxStringMarker = new RegExp('___STRING___', 'g');
+    var rgxAmp = new RegExp('&', 'g');
+    var rgxLt = new RegExp('<', 'g');
+    var rgxGt = new RegExp('>', 'g');
+
+    for (var i = 0; i < tokens.length; i++) {
+        if (tokens[i].content.indexOf('___STRING___') !== -1) {
+            var stringContent = tokens[i].content.replace(rgxStringMarker, '');
+            var escapedString = stringContent
+                .replace(rgxAmp, '&amp;')
+                .replace(rgxLt, '&lt;')
+                .replace(rgxGt, '&gt;');
+            tokens[i].content = '<span class="c1c-string">' + escapedString + '</span>';
         }
-        return createToken('<span class="c1c-string">' + match + '</span>');
-    });
+    }
     
-    // Шаг 3: Обрабатываем комментарии
-    code = code.replace(/\/\/.*$/gm, function(match) {
-        return createToken('<span class="c1c-comment">' + match + '</span>');
-    });
-    
-    // Шаг 4: Экранируем только HTML-опасные символы, но не внутри строк и комментариев
-    // ВАЖНО: убираем экранирование кавычек, так как они уже обработаны в строках
+    // Экранируем оставшийся код
     code = code
-        .replace(/&(?!(?:[a-zA-Z0-9]+|#\d+|#[xX][a-fA-F0-9]+);)/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-    // УБИРАЕМ экранирование кавычек: .replace(/"/g, '&quot;')
-    // УБИРАЕМ экранирование апострофов: .replace(/'/g, '&#039;')
-    
+        .replace(rgxAmp, '&amp;')
+        .replace(rgxLt, '&lt;')
+        .replace(rgxGt, '&gt;');
+
     // Шаг 5: Обрабатываем числа
-    code = code.replace(/\b(\d+\.?\d*)\b/g, function(match) {
+    code = code.replace(new RegExp('\\b(\\d+\\.?\\d*)\\b', 'g'), function(match) {
         return createToken('<span class="c1c-number">' + match + '</span>');
     });
-    
-    // Шаг 6: Обрабатываем ключевые слова
+
+    // Шаг 6: Обрабатываем ключевые слова с кастомными границами
+    var wordBoundaryPrefix = '([^а-яёa-z0-9_]|^)';
+    var wordBoundarySuffix = '(?=[^а-яёa-z0-9_]|$)';
+
     for (var i = 0; i < keywords.length; i++) {
-        var escapedKeyword = keywords[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        var regex = new RegExp('\\b(' + escapedKeyword + ')\\b', 'gi');
-        code = code.replace(regex, function(match) {
-            return createToken('<span class="c1c-keyword">' + match + '</span>');
+        // Экранируем спецсимволы в самом ключевом слове
+        var escapedKeyword = keywords[i].replace(new RegExp('[.*+?^${}()|[\\]\\\\]', 'g'), '\\$&');
+        var regex = new RegExp(wordBoundaryPrefix + '(' + escapedKeyword + ')' + wordBoundarySuffix, 'gi');
+        
+        code = code.replace(regex, function(match, prefix, kw) {
+            return prefix + createToken('<span class="c1c-keyword">' + kw + '</span>');
         });
     }
     
     // Шаг 7: Обрабатываем константы
     for (var j = 0; j < constants.length; j++) {
-        var escapedConstant = constants[j].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        var constRegex = new RegExp('\\b(' + escapedConstant + ')\\b', 'gi');
-        code = code.replace(constRegex, function(match) {
-            return createToken('<span class="c1c-constant">' + match + '</span>');
+        var escapedConstant = constants[j].replace(new RegExp('[.*+?^${}()|[\\]\\\\]', 'g'), '\\$&');
+        var constRegex = new RegExp(wordBoundaryPrefix + '(' + escapedConstant + ')' + wordBoundarySuffix, 'gi');
+        
+        code = code.replace(constRegex, function(match, prefix, cnst) {
+            return prefix + createToken('<span class="c1c-constant">' + cnst + '</span>');
         });
     }
     
     // Шаг 8: Обрабатываем идентификаторы
-    code = code.replace(/\b([а-яёa-z_][а-яёa-z0-9_]*)\b/gi, function(match) {
-        if (!match.startsWith('___TOKEN_')) {
-            return createToken('<span class="c1c-identifier">' + match + '</span>');
+    var identRegexStr = '([^а-яёa-z0-9_]|^)([а-яёa-z_][а-яёa-z0-9_]*)(?=[^а-яёa-z0-9_]|$)';
+    var identRegex = new RegExp(identRegexStr, 'gi');
+    
+    code = code.replace(identRegex, function(match, prefix, word) {
+        if (word.indexOf('___TOKEN_') !== 0) {
+            return prefix + createToken('<span class="c1c-identifier">' + word + '</span>');
         }
         return match;
     });
-    
+
     // Шаг 9: Обрабатываем спецсимволы
-    code = code.replace(/([{}()\[\].,;:=<>+\-*\/])/g, function(match) {
-        if (!match.startsWith('___TOKEN_')) {
+    // Внимание: внутри [] нужно экранировать минус и скобки
+    var symbolRegex = new RegExp('([{}()\\[\\].,;:=+\\-*\\/])', 'g');
+    
+    code = code.replace(symbolRegex, function(match) {
+        if (match.indexOf('___TOKEN_') !== 0) {
             return createToken('<span class="c1c-symbol">' + match + '</span>');
         }
         return match;
     });
-    
+
     // Шаг 10: Восстанавливаем все токены
     for (var i = 0; i < tokens.length; i++) {
-        var regex = new RegExp(tokens[i].marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+        // Экранируем маркер для использования в RegExp
+        var escapedMarker = tokens[i].marker.replace(new RegExp('[.*+?^${}()|[\\]\\\\]', 'g'), '\\$&');
+        var regex = new RegExp(escapedMarker, 'g');
         code = code.replace(regex, tokens[i].content);
     }
     
-    // Шаг 11: Удаляем оставшиеся токены
-    code = code.replace(/___TOKEN_\d+___/g, '');
+    // Шаг 11: Чистка
+    code = code.replace(new RegExp('___TOKEN_\\d+___', 'g'), '');
+    code = code.replace(new RegExp('___STRING___', 'g'), '');
     
     return code;
-} 
+}
 
 // Функция копирования в буфер
 function copyToClipboard(text) {
