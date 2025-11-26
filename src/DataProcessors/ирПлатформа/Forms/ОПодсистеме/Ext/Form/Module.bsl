@@ -329,35 +329,58 @@
 
 Процедура ОткрытьИсториюИзменений(Знач СтрокаОписания = Неопределено)
 	
+	//Если СтрокаОписания <> Неопределено Тогда
+	//	СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=fixed_version%3Adesc%2Ccategory%2Csubject&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=5&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-30&f%5B%5D=subject&op%5Bsubject%5D=*&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=fixed_version&group_by=&t%5B%5D=";
+	//	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "25716", СтрокаОписания.Код);
+	//Иначе
+	//	СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=fixed_version%3Adesc%2Ccategory%2Csubject&f%5B%5D=fixed_version.status&op%5Bfixed_version.status%5D=%3D&v%5Bfixed_version.status%5D%5B%5D=closed&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-30&f%5B%5D=&c%5B%5D=category&c%5B%5D=tracker&c%5B%5D=subject&group_by=fixed_version&t%5B%5D=&f%5B%5D=subject&op%5Bsubject%5D=%2A";
+	//КонецЕсли; 
+	//СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-30", Формат(НачальнаяДатаИсторииИзменений(), "ДФ=yyyy-ММ-dd"));
+	//ЗапуститьПриложение(СтрокаЗапроса);
 	Если СтрокаОписания <> Неопределено Тогда
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=fixed_version%3Adesc%2Ccategory%2Csubject&f%5B%5D=status_id&op%5Bstatus_id%5D=%3D&v%5Bstatus_id%5D%5B%5D=5&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-30&f%5B%5D=subject&op%5Bsubject%5D=*&f%5B%5D=&c%5B%5D=tracker&c%5B%5D=subject&c%5B%5D=fixed_version&group_by=&t%5B%5D=";
-		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "25716", СтрокаОписания.Код);
-	Иначе
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=fixed_version%3Adesc%2Ccategory%2Csubject&f%5B%5D=fixed_version.status&op%5Bfixed_version.status%5D=%3D&v%5Bfixed_version.status%5D%5B%5D=closed&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-08-30&f%5B%5D=&c%5B%5D=category&c%5B%5D=tracker&c%5B%5D=subject&group_by=fixed_version&t%5B%5D=&f%5B%5D=subject&op%5Bsubject%5D=%2A";
-	КонецЕсли; 
-	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-30", Формат(НачальнаяДатаИсторииИзменений(), "ДФ=yyyy-ММ-dd"));
-	ЗапуститьПриложение(СтрокаЗапроса);
+		КлючУникальности1 = СтрокаОписания.Синоним;
+	КонецЕсли;
+	Форма = ПолучитьФорму("ЗадачиПодсистемы",, КлючУникальности1);
+	ОткрытьЗадачиПодсистемы(Форма, СтрокаОписания, КлючУникальности1);
 
 КонецПроцедуры
 
 Процедура ОткрытьСписокОшибок(Знач СтрокаОписания = Неопределено, ТолькоНовые = Ложь)
 	
-	Если СтрокаОписания <> Неопределено Тогда
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
-		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "25716", СтрокаОписания.Код);
+	Если ТолькоНовые Тогда
+		Если СтрокаОписания <> Неопределено Тогда
+			СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=category_id&op%5Bcategory_id%5D=%3D&v%5Bcategory_id%5D%5B%5D=25716&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
+			СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "25716", СтрокаОписания.Код);
+		Иначе
+			СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=category&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
+		КонецЕсли; 
+		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-30", Формат(ИспользуемаяВерсияДатаВыпуска, "ДФ=yyyy-ММ-dd"));
+		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-09-01", Формат(ИспользуемаяВерсияДатаВыпуска + 24*60*60, "ДФ=yyyy-ММ-dd"));
+		Если ТолькоНовые Тогда 
+			ДатаПодмены = ИспользуемаяВерсияДатаВыпуска;
+		Иначе
+			ДатаПодмены = Дата(1,1,2); // Пустую сайт не принимает
+		КонецЕсли; 
+		СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-31", Формат(ДатаПодмены + 24*60*60, "ДФ=yyyy-ММ-dd"));
+		ЗапуститьПриложение(СтрокаЗапроса);
 	Иначе
-		СтрокаЗапроса = "https://www.hostedredmine.com/projects/devtool1c/issues?utf8=%E2%9C%93&set_filter=1&sort=updated_on%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=%21&v%5Bstatus_id%5D%5B%5D=6&f%5B%5D=tracker_id&op%5Btracker_id%5D=%3D&v%5Btracker_id%5D%5B%5D=1&f%5B%5D=fixed_version.due_date&op%5Bfixed_version.due_date%5D=%3E%3D&v%5Bfixed_version.due_date%5D%5B%5D=2020-09-01&f%5B%5D=start_date&op%5Bstart_date%5D=%3C%3D&v%5Bstart_date%5D%5B%5D=2020-08-30&f%5B%5D=created_on&op%5Bcreated_on%5D=%3E%3D&v%5Bcreated_on%5D%5B%5D=2020-08-31&f%5B%5D=&c%5B%5D=category&c%5B%5D=subject&c%5B%5D=status&c%5B%5D=fixed_version&c%5B%5D=updated_on&group_by=&t%5B%5D=";
-	КонецЕсли; 
-	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-30", Формат(ИспользуемаяВерсияДатаВыпуска, "ДФ=yyyy-ММ-dd"));
-	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-09-01", Формат(ИспользуемаяВерсияДатаВыпуска + 24*60*60, "ДФ=yyyy-ММ-dd"));
-	Если ТолькоНовые Тогда 
-		ДатаПодмены = ИспользуемаяВерсияДатаВыпуска;
-	Иначе
-		ДатаПодмены = Дата(1,1,2); // Пустую сайт не принимает
-	КонецЕсли; 
-	СтрокаЗапроса = ирОбщий.СтрЗаменитьЛкс(СтрокаЗапроса, "2020-08-31", Формат(ДатаПодмены + 24*60*60, "ДФ=yyyy-ММ-dd"));
-	ЗапуститьПриложение(СтрокаЗапроса);
+		КлючУникальности1 = "Ошибки";
+		Если СтрокаОписания <> Неопределено Тогда
+			КлючУникальности1 = КлючУникальности1 + ". " + СтрокаОписания.Синоним;
+		КонецЕсли;
+		Форма = ПолучитьФорму("ЗадачиПодсистемы",, КлючУникальности1);
+		Форма.ЭлементыФормы.ЗадачиПодсистемы.ОтборСтрок.Тип.Установить("Bug");
+		ОткрытьЗадачиПодсистемы(Форма, СтрокаОписания, КлючУникальности1);
+	КонецЕсли;
 
+КонецПроцедуры
+
+Процедура ОткрытьЗадачиПодсистемы(Знач Форма, Знач СтрокаОписания, Знач КлючУникальности1) Экспорт
+	Если СтрокаОписания <> Неопределено Тогда
+		Форма.ЭлементыФормы.ЗадачиПодсистемы.ОтборСтрок.Категория.Установить(СтрокаОписания.Синоним);
+	КонецЕсли;
+	ирОбщий.ОбновитьТекстПослеМаркераЛкс(Форма.Заголовок,, КлючУникальности1);
+	Форма.Открыть();
 КонецПроцедуры
 
 Процедура ВсеОшибкиИнструментаНажатие(Элемент)
