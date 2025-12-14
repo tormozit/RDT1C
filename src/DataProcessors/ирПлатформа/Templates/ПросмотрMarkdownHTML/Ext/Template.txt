@@ -115,6 +115,7 @@ blockquote p {
 .c1c-keyword { color: #FF0000; } /* Красный для ключевых слов */
 .c1c-symbol { color: #FF0000; } /* Красный для спецсимволов */
 .c1c-comment { color: #008000; } /* Зеленый для комментариев */
+.c1c-comment .c1c-string { color: inherit; } /* Строки внутри комментариев остаются зелеными */
 .c1c-string { color: #000000; } /* Черный для строк */
 .c1c-number { color: #000000; } /* Черный для чисел */
 .c1c-constant { color: #0000FF; } /* Синий для констант */
@@ -147,18 +148,20 @@ function highlight1C(code) {
         return marker;
     }
     
-    // Шаг 1: Обрабатываем строки ДО любого экранирования
-    // В строке пишем четыре слеша, чтобы в регулярку попало два (для экранирования точки)
-    var stringRegex = new RegExp('"([^"\\\\]|\\\\.)*"', 'g');
-    code = code.replace(stringRegex, function(match) {
-        return createToken('___STRING___' + match + '___STRING___');
-    });
+	// Шаг 1 и 2 (Объединенные): Обрабатываем строки и комментарии ОДНОВРЕМЕННО
+    // Регулярка ищет: (Группа 1: Строка) ИЛИ (Группа 3: Комментарий)
+    var combinedRegex = new RegExp('("([^"\\\\]|\\\\.)*")|(\\/\\/.*$)', 'gm');
     
-    // Шаг 2: Обрабатываем комментарии 1С (// ...)
-    code = code.replace(new RegExp('\\/\\/.*$', 'gm'), function(match) {
-        return createToken('<span class="c1c-comment">' + match + '</span>');
+    code = code.replace(combinedRegex, function(match, strMatch, strInner, commentMatch) {
+        if (commentMatch) {
+            // Если сработала часть регулярки для комментария
+            return createToken('<span class="c1c-comment">' + match + '</span>');
+        } else {
+            // Если сработала часть регулярки для строки
+            return createToken('___STRING___' + match + '___STRING___');
+        }
     });
-    
+        
     // Шаг 3: Обрабатываем директивы препроцессора &...
     var directiveRegex = new RegExp('&[А-Яа-яЁёA-Za-z_][А-Яа-яЁёA-Za-z_0-9]*', 'g');
     code = code.replace(directiveRegex, function(match) {
@@ -246,7 +249,7 @@ function highlight1C(code) {
     });
 
     // Шаг 10: Восстанавливаем все токены
-    for (var i = 0; i < tokens.length; i++) {
+    for (var i = tokens.length - 1; i >= 0; i--) {
         // Экранируем маркер для использования в RegExp
         var escapedMarker = tokens[i].marker.replace(new RegExp('[.*+?^${}()|[\\]\\\\]', 'g'), '\\$&');
         var regex = new RegExp(escapedMarker, 'g');

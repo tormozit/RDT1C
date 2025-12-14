@@ -810,6 +810,41 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<objectName>Права</objectName>
 	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>Пользователи</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь</dataPath>
+			<field>Пользователь</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь.ЕстьАутентификация</dataPath>
+			<field>ЕстьАутентификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь. Есть аутентификация</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>Пользователи</objectName>
+	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>Основной</sourceDataSet>
 		<destinationDataSet>РолиПользователей</destinationDataSet>
@@ -881,6 +916,12 @@
 		<destinationDataSet>Права</destinationDataSet>
 		<sourceExpression>Право</sourceExpression>
 		<destinationExpression>Право</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>РолиПользователей</sourceDataSet>
+		<destinationDataSet>Пользователи</destinationDataSet>
+		<sourceExpression>Пользователь</sourceExpression>
+		<destinationExpression>Пользователь</destinationExpression>
 	</dataSetLink>
 	<calculatedField>
 		<dataPath>ОбъектМетаданных.ПолеПроверки</dataPath>
@@ -1486,6 +1527,9 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Доступ</dcsset:field>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пользователь.ЕстьАутентификация</dcsset:field>
+				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
@@ -1525,6 +1569,12 @@
 					<dcsset:left xsi:type="dcscor:Field">Роль</dcsset:left>
 					<dcsset:comparisonType>Contains</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:string"/>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Пользователь.ЕстьАутентификация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:order>
