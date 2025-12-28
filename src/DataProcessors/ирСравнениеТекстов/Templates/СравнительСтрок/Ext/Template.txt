@@ -1,35 +1,57 @@
-﻿<!DOCTYPE html>
-<https://chat.qwen.ai>
-<html lang="ru">
+﻿<html lang="ru">
+<!-- для выполнения в Webkit 605 внутри поля HTML формы платформы 1С -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сравнение строк</title>
     <style>
-        body {
-            font-family: 'Courier New', monospace;
+        html, body {
+            width: 100vw;
+            height: 100%;
             margin: 0;
             padding: 0;
+            overflow-x: hidden; 
             background-color: white;
+            font-family: "Lucida Console", 'Courier New', monospace; 
         }
         
         .comparison {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
+            display: block; 
+            width: 100%;
+            overflow-x: auto; 
+            padding-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        .comparison::-webkit-scrollbar {
+            height: 8px; 
+            width: 8px;
+        }
+        
+        .comparison::-webkit-scrollbar-thumb {
+            background-color: #a0a0a0;
+            border-radius: 4px;
+        }
+        
+        .comparison::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
         }
         
         .text-row {
             display: flex;
             align-items: flex-start;
             min-height: 15px;
+            width: -webkit-max-content; 
+            width: max-content;
+            min-width: 100%; 
+            margin-bottom: 2px; 
         }
         
         .text-content {
             white-space: pre;
-            overflow-x: auto;
-            font-size: 13px;
-            line-height: 1.2;
+            /* ОБНОВЛЕНО: Размер и высота строки */
+            font-size: 13px; 
+            line-height: 15px; /* Теперь фиксировано 15px */
         }
         
         .diff-delete {
@@ -49,16 +71,15 @@
         
         .char-cell {
             display: inline-block;
-            min-width: 7px;
+            min-width: 6px;
             text-align: center;
-            margin: 0 0.5px;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <div class="comparison" id="comparisonResult"></div>
     <script>
-        // Функция для сравнения двух строк с выделением различий
         function setText(text1, text2, IgnoreBoundaryWhitespace = true) {
             const comparisonResult = document.getElementById('comparisonResult');
             comparisonResult.innerHTML = '';
@@ -66,31 +87,26 @@
             let processedText1 = text1;
             let processedText2 = text2;
             
-            // Обработка крайней пустоты
             if (IgnoreBoundaryWhitespace) {
                 processedText1 = text1.trim();
                 processedText2 = text2.trim();
             }
             
-            // Если строки полностью совпадают после обработки
             if (processedText1 === processedText2) {
                 addTextRow(processedText1, 'common');
                 addTextRow(processedText2, 'common');
                 return;
             }
             
-            // Находим различия с помощью улучшенного алгоритма
             const diff = computeHybridDiff(processedText1, processedText2);
-            
-            // Выравниваем строки и добавляем служебные пробелы
             const aligned = alignStrings(diff);
-            
-            // Отображаем выровненные строки
             addTextRow(aligned.str1, 'diff', aligned.types1);
             addTextRow(aligned.str2, 'diff', aligned.types2);
+
+            // После добавления строк в DOM прокручиваем к первому различию
+            setTimeout(() => scrollToFirstDiff(), 0);
         }
         
-        // Добавление строки
         function addTextRow(text, type, types = null) {
             const row = document.createElement('div');
             row.className = 'text-row';
@@ -108,7 +124,6 @@
             document.getElementById('comparisonResult').appendChild(row);
         }
         
-        // Форматирование выровненного текста
         function formatAlignedText(text, types) {
             let html = '';
             for (let i = 0; i < text.length; i++) {
@@ -129,7 +144,6 @@
             return html;
         }
         
-        // Выравнивание строк с добавлением служебных пробелов
         function alignStrings(diff) {
             let str1 = '';
             let str2 = '';
@@ -138,7 +152,6 @@
             
             for (const operation of diff) {
                 if (operation.type === 'common') {
-                    // Для общих фрагментов добавляем символы по одному
                     for (let i = 0; i < operation.text.length; i++) {
                         str1 += operation.text[i];
                         str2 += operation.text[i];
@@ -146,7 +159,6 @@
                         types2.push('common');
                     }
                 } else if (operation.type === 'delete') {
-                    // Для удаленных фрагментов добавляем символы в первую строку, пробелы во вторую
                     for (let i = 0; i < operation.text.length; i++) {
                         str1 += operation.text[i];
                         str2 += ' ';
@@ -154,7 +166,6 @@
                         types2.push('space');
                     }
                 } else if (operation.type === 'insert') {
-                    // Для вставленных фрагментов добавляем пробелы в первую строку, символы во вторую
                     for (let i = 0; i < operation.text.length; i++) {
                         str1 += ' ';
                         str2 += operation.text[i];
@@ -162,13 +173,7 @@
                         types2.push('insert');
                     }
                 } else if (operation.type === 'replace') {
-                    // Для замены используем посимвольное сравнение для лучшего выравнивания
-                    const len1 = operation.text1.length;
-                    const len2 = operation.text2.length;
-                    
-                    // Используем стандартный алгоритм Левенштейна для фрагментов замены
                     const subDiff = computeCharDiff(operation.text1, operation.text2);
-                    
                     for (const subOp of subDiff) {
                         if (subOp.type === 'common') {
                             str1 += subOp.char;
@@ -194,36 +199,26 @@
                     }
                 }
             }
-            
             return { str1, str2, types1, types2 };
         }
         
-        // Гибридный алгоритм вычисления различий
         function computeHybridDiff(str1, str2) {
-            if (str1 === str2) {
-                return [{ type: 'common', text: str1 }];
-            }
+            if (str1 === str2) return [{ type: 'common', text: str1 }];
             
-            // Сначала попробуем найти длинные совпадающие подстроки
             const commonSubstrings = findLongestCommonSubstrings(str1, str2);
-            
             if (commonSubstrings.length === 0) {
-                // Если нет общих подстрок, используем посимвольное сравнение
                 return [{ type: 'replace', text1: str1, text2: str2 }];
             }
             
-            // Разбиваем строки на части на основе найденных общих подстрок
             let result = [];
             let pos1 = 0, pos2 = 0;
             
             for (const cs of commonSubstrings) {
-                // Добавляем различающиеся части перед общим фрагментом
                 if (cs.start1 > pos1 || cs.start2 > pos2) {
                     const before1 = str1.substring(pos1, cs.start1);
                     const before2 = str2.substring(pos2, cs.start2);
                     
                     if (before1 && before2) {
-                        // Используем посимвольное сравнение для несовпадающих частей
                         result.push({ type: 'replace', text1: before1, text2: before2 });
                     } else if (before1) {
                         result.push({ type: 'delete', text: before1 });
@@ -231,52 +226,38 @@
                         result.push({ type: 'insert', text: before2 });
                     }
                 }
-                
-                // Добавляем общий фрагмент
                 result.push({ type: 'common', text: cs.text });
-                
-                // Обновляем позиции
                 pos1 = cs.start1 + cs.text.length;
                 pos2 = cs.start2 + cs.text.length;
             }
             
-            // Добавляем оставшиеся части
             if (pos1 < str1.length || pos2 < str2.length) {
                 const after1 = str1.substring(pos1);
                 const after2 = str2.substring(pos2);
-                
-                if (after1 && after2) {
-                    result.push({ type: 'replace', text1: after1, text2: after2 });
-                } else if (after1) {
-                    result.push({ type: 'delete', text: after1 });
-                } else if (after2) {
-                    result.push({ type: 'insert', text: after2 });
-                }
+                if (after1 && after2) result.push({ type: 'replace', text1: after1, text2: after2 });
+                else if (after1) result.push({ type: 'delete', text: after1 });
+                else if (after2) result.push({ type: 'insert', text: after2 });
             }
             
             return result;
         }
         
-        // Поиск самых длинных общих подстрок
         function findLongestCommonSubstrings(str1, str2) {
             const m = str1.length;
             const n = str2.length;
-            
             if (m === 0 || n === 0) return [];
             
-            // Создаем матрицу для поиска общих подстрок
             const dp = Array(m + 1).fill().map(() => Array(n + 1).fill(0));
             let maxLength = 0;
             const endings = [];
             
-            // Заполняем матрицу
             for (let i = 1; i <= m; i++) {
                 for (let j = 1; j <= n; j++) {
                     if (str1[i-1] === str2[j-1]) {
                         dp[i][j] = dp[i-1][j-1] + 1;
                         if (dp[i][j] > maxLength) {
                             maxLength = dp[i][j];
-                            endings.length = 0; // Очищаем предыдущие результаты
+                            endings.length = 0;
                             endings.push({ i, j });
                         } else if (dp[i][j] === maxLength && maxLength > 0) {
                             endings.push({ i, j });
@@ -285,11 +266,9 @@
                 }
             }
             
-            // Если не нашли общих подстрок длиной больше 3, ищем подстроки длиной 3 и более
             if (maxLength < 3) {
                 maxLength = 0;
                 endings.length = 0;
-                
                 for (let i = 1; i <= m; i++) {
                     for (let j = 1; j <= n; j++) {
                         if (str1[i-1] === str2[j-1]) {
@@ -303,19 +282,14 @@
                                     endings.push({ i, j });
                                 }
                             }
-                        } else {
-                            dp[i][j] = 0;
-                        }
+                        } else dp[i][j] = 0;
                     }
                 }
             }
             
             if (maxLength === 0) return [];
             
-            // Восстанавливаем общие подстроки
             const substrings = [];
-            const used = new Set();
-            
             for (const end of endings) {
                 const i = end.i;
                 const j = end.j;
@@ -323,7 +297,6 @@
                 const start2 = j - maxLength;
                 const text = str1.substring(start1, i);
                 
-                // Проверяем, не пересекается ли с уже добавленными подстроками
                 let isOverlapping = false;
                 for (const sub of substrings) {
                     if (!(start1 >= sub.start1 + sub.text.length || 
@@ -336,50 +309,33 @@
                 }
                 
                 if (!isOverlapping) {
-                    substrings.push({
-                        text: text,
-                        start1: start1,
-                        start2: start2,
-                        length: maxLength
-                    });
+                    substrings.push({ text, start1, start2, length: maxLength });
                 }
             }
-            
-            // Сортируем по позиции в первой строке
             substrings.sort((a, b) => a.start1 - b.start1);
-            
             return substrings;
         }
         
-        // Посимвольный алгоритм Левенштейна для небольших фрагментов
         function computeCharDiff(str1, str2) {
             const m = str1.length;
             const n = str2.length;
-            
             const dp = Array(m + 1).fill().map(() => Array(n + 1).fill(0));
             
             for (let i = 0; i <= m; i++) {
                 for (let j = 0; j <= n; j++) {
-                    if (i === 0) {
-                        dp[i][j] = j;
-                    } else if (j === 0) {
-                        dp[i][j] = i;
-                    } else if (str1[i - 1] === str2[j - 1]) {
-                        dp[i][j] = dp[i - 1][j - 1];
-                    } else {
-                        dp[i][j] = 1 + Math.min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]);
-                    }
+                    if (i === 0) dp[i][j] = j;
+                    else if (j === 0) dp[i][j] = i;
+                    else if (str1[i - 1] === str2[j - 1]) dp[i][j] = dp[i - 1][j - 1];
+                    else dp[i][j] = 1 + Math.min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]);
                 }
             }
             
             const diff = [];
             let i = m, j = n;
-            
             while (i > 0 || j > 0) {
                 if (i > 0 && j > 0 && str1[i - 1] === str2[j - 1]) {
                     diff.unshift({ type: 'common', char: str1[i - 1] });
-                    i--;
-                    j--;
+                    i--; j--;
                 } else {
                     if (j > 0 && (i === 0 || dp[i][j - 1] <= dp[i - 1][j] && dp[i][j - 1] <= dp[i - 1][j - 1])) {
                         diff.unshift({ type: 'insert', char: str2[j - 1] });
@@ -389,23 +345,30 @@
                         i--;
                     } else {
                         diff.unshift({ type: 'replace', char1: str1[i - 1], char2: str2[j - 1] });
-                        i--;
-                        j--;
+                        i--; j--;
                     }
                 }
             }
-            
             return diff;
         }
         
-        // Экранирование HTML для безопасности
         function escapeHtml(text) {
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
         }
+
+        // НОВАЯ ФУНКЦИЯ: Прокрутка к первому различию
+        function scrollToFirstDiff() {
+            const container = document.getElementById('comparisonResult');
+            // Находим первый элемент с классом различия
+            const firstDiff = container.querySelector('.diff-delete, .diff-insert, .diff-space');
+            if (firstDiff) {
+                // Прокручиваем контейнер так, чтобы элемент был видим
+                firstDiff.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'start' });
+            }
+        }
         
-        // Экспорт функции для внешнего использования
         window.setText = setText;
     </script>
 </body>

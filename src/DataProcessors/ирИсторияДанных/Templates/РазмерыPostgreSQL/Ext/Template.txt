@@ -1,0 +1,54 @@
+﻿SELECT
+    q.MetadataId AS MetadataId,
+    COUNT(DISTINCT q.DataId) AS CountDataId,
+    COUNT(q.VersionNumber) AS ReadyCount,
+    COUNT(q.RawSize) AS RawCount,
+    MAX(q.VersionNumber) AS MaxVer,
+    SUM(q.ReadySize) / 1024 AS ReadySizeKb,
+    SUM(q.RawSize) / 1024 AS RawSizeKb,
+    MIN(q.Date) AS MinDate,
+    MAX(q.Date) AS MaxDate
+FROM
+    (--{Выборка: ГотовыеВерсии ----------------------------------------
+    SELECT
+        md._MetadataId AS MetadataId,
+        l._DataId AS DataId,
+        v._VersionNumber AS VersionNumber,
+        v._Date AS Date,
+        100 + OCTET_LENGTH(v._UserName) * 2 + OCTET_LENGTH(v._UserFullName) * 2 + OCTET_LENGTH(v._Comment) * 2 + OCTET_LENGTH(v._Content) AS ReadySize,
+        NULL::bigint AS RawSize -- Явное приведение типа для UNION
+    FROM
+        _DataHistoryMetadata AS md
+        INNER JOIN _DataHistoryLatestVersions AS l
+            ON md._MetadataId = l._MetadataId
+        INNER JOIN _DataHistoryVersions AS v
+		ON 0 = 0
+            AND v._HistoryDataId = l._HistoryDataId
+            AND v._MetadataVersionNumber = md._MetadataVersionNumber
+    UNION ALL
+    --{Выборка: СырыеВерсии ----------------------------------------
+    SELECT
+        md._MetadataId AS MetadataId,
+        v._DataId AS DataId,
+        NULL::integer AS VersionNumber, -- Явное приведение типа для UNION
+        NULL::timestamp AS Date,        -- Явное приведение типа для UNION
+        NULL::bigint AS ReadySize,      -- Явное приведение типа для UNION
+        100 + OCTET_LENGTH(v._Content) AS RawSize
+    FROM
+        _DataHistoryMetadata AS md
+        INNER JOIN _DataHistoryQueue0 AS v
+            ON md._MetadataId = v._MetadataId
+        INNER JOIN (
+            SELECT
+                m._MetadataId AS _MetadataId,
+                MAX(m._MetadataVersionNumber) AS _MetadataVersionNumber
+            FROM
+                _DataHistoryMetadata AS m
+            GROUP BY
+                m._MetadataId
+        ) AS mdmax
+            ON md._MetadataId = mdmax._MetadataId
+            AND md._MetadataVersionNumber = mdmax._MetadataVersionNumber
+    ) AS q
+GROUP BY
+    q.MetadataId;

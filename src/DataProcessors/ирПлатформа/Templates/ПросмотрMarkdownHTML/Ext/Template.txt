@@ -367,8 +367,17 @@ if (typeof marked !== 'undefined') {
 window._1CAPI = window._1CAPI || {};
 
 // Функция установки текста (работает с marked и без него)
-window._1CAPI.setText = function(text, fontSize) {
+window._1CAPI.setText = function(text, fontSize, scrollLastCodeBlockToBottom) {
     var contentElement = document.getElementById('content');
+	if (scrollLastCodeBlockToBottom) {
+		setTimeout(function() {
+            var blocks = contentElement.querySelectorAll('.code-content');
+            if (blocks.length > 0) {
+                var lastBlock = blocks[blocks.length - 1];
+                lastBlock.scrollTop = lastBlock.scrollHeight;
+            }
+        }, 10);
+    }
     
     // Устанавливаем размер шрифта для блоков кода 1С
     if (fontSize) {
@@ -401,7 +410,7 @@ window._1CAPI.setText = function(text, fontSize) {
         // Режим без marked - просто выводим текст как есть
         contentElement.innerHTML = '<pre>' + highlight1C(text) + '</pre>';
         return true;
-    }
+    }  
 };
 </script>
 </body>

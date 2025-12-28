@@ -1,0 +1,39 @@
+﻿--{Запрос: СырыеВерсии ----------------------------------------
+SELECT
+	md._MetadataId AS MetadataId,
+	v._DataId AS DataId,
+	100 + OCTET_LENGTH(v._Content) AS RawSize
+--DELETE v -- Раскомментируй эту строку и удали строки выше для запроса удаления всех сырых версий этого типа
+FROM
+	_DataHistoryMetadata AS md
+	INNER JOIN _DataHistoryQueue0 AS v
+	ON md._MetadataId = v._MetadataId
+	INNER JOIN (
+		SELECT
+			m._MetadataId AS _MetadataId,
+			MAX(m._MetadataVersionNumber) AS _MetadataVersionNumber
+		FROM
+			_DataHistoryMetadata AS m
+		GROUP BY
+			m._MetadataId) AS mdmax
+	ON 0 = 0
+		AND md._MetadataId = mdmax._MetadataId
+		AND md._MetadataVersionNumber = mdmax._MetadataVersionNumber
+WHERE md._MetadataId = $1
+;
+--{Запрос: ГотовыеВерсии ----------------------------------------
+SELECT
+	md._MetadataId AS MetadataId,
+	l._DataId AS DataId,
+	v._VersionNumber AS VersionNumber,
+	v._Date AS Date,
+	100 + OCTET_LENGTH(v._UserName) * 2 + OCTET_LENGTH(v._UserFullName) * 2 + OCTET_LENGTH(v._Comment) * 2 + OCTET_LENGTH(v._Content) AS ReadySize
+FROM
+	_DataHistoryMetadata AS md
+	INNER JOIN _DataHistoryLatestVersions AS l
+	ON md._MetadataId = l._MetadataId
+	INNER JOIN _DataHistoryVersions AS v
+	ON 0 = 0
+		AND v._HistoryDataId = l._HistoryDataId
+		AND v._MetadataVersionNumber = md._MetadataVersionNumber
+WHERE md._MetadataId = $1
