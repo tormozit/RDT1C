@@ -50,4 +50,4 @@ FROM
 			AND md._MetadataId = mdmax._MetadataId
 			AND md._MetadataVersionNumber = mdmax._MetadataVersionNumber) AS q
 GROUP BY
-	q.MetadataId
+	q.MetadataId  

@@ -167,7 +167,7 @@
 
 Процедура HTMLОтображениеonclick(Элемент, pEvtObj)
 	
-	htmlElement = pEvtObj.srcElement;
+	htmlElement = pEvtObj.srcElement; // ОбработкаОбъект.ирТипHTMLElement
 	Если (htmlElement.id = "FullTextSearchListItem") Тогда
 		Если ирОбщий.РежимСовместимостиМеньше8_3_4Лкс() Тогда
 			номерВСписке = Число(htmlElement[ИмяСвойстваНомера]);

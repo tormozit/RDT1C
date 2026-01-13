@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ирРазработчик</xr:Item>
 			</DefaultRoles>
 			<Vendor>Tormozit</Vendor>
-			<Version>8.06.2</Version>
+			<Version>8.07.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -569,11 +569,16 @@
 			<DataProcessor>ирСравнениеТекстов</DataProcessor>
 			<DataProcessor>ирСтруктураХраненияБД</DataProcessor>
 			<DataProcessor>ирТестированиеМетаданных</DataProcessor>
+			<DataProcessor>ирТипGoldParserReduction</DataProcessor>
+			<DataProcessor>ирТипGoldParserToken</DataProcessor>
+			<DataProcessor>ирТипHTMLElement</DataProcessor>
 			<DataProcessor>ирТипКомпонента1CD</DataProcessor>
 			<DataProcessor>ирТипКомпонентаADOUtils</DataProcessor>
 			<DataProcessor>ирТипКомпонентаFuzzySearch</DataProcessor>
 			<DataProcessor>ирТипКомпонентаRegEx</DataProcessor>
 			<DataProcessor>ирТипКомпонентаОбщая</DataProcessor>
+			<DataProcessor>ирТипУзелDOM</DataProcessor>
+			<DataProcessor>ирТипУзелHTML</DataProcessor>
 			<DataProcessor>ирУдалениеОбъектовСКонтролемСсылок</DataProcessor>
 			<DataProcessor>ирУправлениеCOMКлассами1С</DataProcessor>
 			<DataProcessor>ирУправлениеИтогамиРегистров</DataProcessor>

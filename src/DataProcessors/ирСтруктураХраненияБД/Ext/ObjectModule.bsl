@@ -259,7 +259,7 @@
 	РазмерУдал=0;
 	РазмерУдалБлоб=0;
 	Если мКомпонентаCDDB.ОткрытьТаблицу(0,ИмяТаблицы) Тогда
-		РазмерУдалБлоб=мКомпонентаCDDB.GetDelBlobDataLength(0);
+		РазмерУдалБлоб=мКомпонентаCDDB.GetDelBlobDataLength(0); 
 		Рез=мКомпонентаCDDB.MoveToRecord(0,0);
 		NextInd=мКомпонентаCDDB.GetNextDelRecordIndex(0);
 		КолвоУдал=0;

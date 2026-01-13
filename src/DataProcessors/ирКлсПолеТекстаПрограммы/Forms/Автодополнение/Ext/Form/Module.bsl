@@ -777,7 +777,7 @@
 КонецПроцедуры
 
 Процедура Описаниеonclick(Элемент, pEvtObj)
-	htmlElement = pEvtObj.srcElement;
+	htmlElement = pEvtObj.srcElement; // ОбработкаОбъект.ирТипHTMLElement
 	Если htmlElement = Неопределено Тогда
 		Возврат;
 	КонецЕсли;
