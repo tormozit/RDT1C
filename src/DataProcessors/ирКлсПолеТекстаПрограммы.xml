@@ -3176,6 +3176,54 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
+					<Attribute uuid="461a8c1b-a4a2-4f8d-bdf7-39e8f5c0754b">
+						<Properties>
+							<Name>АдресКомпиляции</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес компиляции</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Адрес компиляции</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Адрес компиляции</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="cee0e1ff-0f1c-4c2a-89ce-57b681b5e147">
 						<Properties>
 							<Name>АктивноРасширение</Name>
@@ -6624,7 +6672,7 @@
 			<Form>ВыражениеЗапросаИзСтрокиВЧисло</Form>
 			<Form>ДеревоВызовов</Form>
 			<Form>ДеревоСвязейПоля</Form>
-			<Form>ИзмененныеМодули</Form>
+			<Form>_ИзмененныеМодули</Form>
 			<Form>КонструкторЗапроса</Form>
 			<Form>КонструкторМетода</Form>
 			<Form>КонтекстныеВызовы</Form>
