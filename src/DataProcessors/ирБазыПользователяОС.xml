@@ -36,6 +36,52 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="0802714d-38a2-4d4f-af2d-c6b0e9b348d3">
+				<Properties>
+					<Name>ИмяФайлаДопАтрибутов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла доп атрибутов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя файла доп атрибутов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Имя файла доп атрибутов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="1730c70d-e099-48fb-8f4f-8042a0ea4cef">
 				<Properties>
 					<Name>КаталогПортативныхИнструментов</Name>
@@ -51,6 +97,52 @@
 						<v8:item>
 							<v8:lang>uk</v8:lang>
 							<v8:content>Каталог портативных инструментов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="324d6b72-9554-468b-8c3d-8958ad22d553">
+				<Properties>
+					<Name>УказательОбщийВсехПлатформ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Указатель общий всех платформ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Указатель общий всех платформ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Указатель общий всех платформ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -128,21 +220,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b78d215c-09a1-4522-b0ae-0065fd55db94">
+			<Attribute uuid="cccb6786-c5f1-4e36-92b4-95dd2f8d39ef">
 				<Properties>
-					<Name>УказательОбщийПользователя</Name>
+					<Name>УказательОбщийПлатформы</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Указатель общий пользователя</v8:content>
+							<v8:content>Указатель общий платформы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Указатель общий пользователя</v8:content>
+							<v8:content>Указатель общий платформы</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Указатель общий пользователя</v8:content>
+							<v8:content>Указатель общий платформы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -174,21 +266,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="f1cec8e3-b0fa-4db0-a35f-2e6faa3c322b">
+			<Attribute uuid="b78d215c-09a1-4522-b0ae-0065fd55db94">
 				<Properties>
-					<Name>ФайлСписокОбщийПользователя</Name>
+					<Name>УказательОбщийПользователя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Файл список общий пользователя</v8:content>
+							<v8:content>Указатель общий пользователя</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Файл список общий пользователя</v8:content>
+							<v8:content>Указатель общий пользователя</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Файл список общий пользователя</v8:content>
+							<v8:content>Указатель общий пользователя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -266,21 +358,21 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="0802714d-38a2-4d4f-af2d-c6b0e9b348d3">
+			<Attribute uuid="f1cec8e3-b0fa-4db0-a35f-2e6faa3c322b">
 				<Properties>
-					<Name>ИмяФайлаДопАтрибутов</Name>
+					<Name>ФайлСписокОбщийПользователя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя файла доп атрибутов</v8:content>
+							<v8:content>Файл список общий пользователя</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Имя файла доп атрибутов</v8:content>
+							<v8:content>Файл список общий пользователя</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Имя файла доп атрибутов</v8:content>
+							<v8:content>Файл список общий пользователя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
